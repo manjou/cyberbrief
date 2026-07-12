@@ -1,0 +1,15 @@
+{
+  "news_feeds": [
+    {"name": "The Hacker News", "url": "https://feeds.feedburner.com/TheHackersNews", "weight": 1.0},
+    {"name": "BleepingComputer", "url": "https://www.bleepingcomputer.com/feed/", "weight": 1.0},
+    {"name": "Krebs on Security", "url": "https://krebsonsecurity.com/feed/", "weight": 1.2},
+    {"name": "SANS ISC", "url": "https://isc.sans.edu/rssfeed.xml", "weight": 1.1},
+    {"name": "Schneier on Security", "url": "https://www.schneier.com/feed/atom/", "weight": 0.9},
+    {"name": "SecurityWeek", "url": "https://www.securityweek.com/feed/", "weight": 0.9},
+    {"name": "CERT-Bund (DE)", "url": "https://wid.cert-bund.de/content/public/securityAdvisory/rss", "weight": 0.8}
+  ],
+  "max_age_hours": 36,
+  "top_stories": 8,
+  "top_cves": 5,
+  "min_cvss": 8.0
+}
