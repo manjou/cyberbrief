@@ -1,56 +1,58 @@
-# 🛡️ CyberBrief — Sunday, 12 July 2026
+# 🛡️ CyberBrief — Monday, 13 July 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
 ## 🔥 Top stories
 
-### 1. Hackers Weaponize Balochistan Police Portal in Multi-Group Espionage Campaigns
-*The Hacker News* — [read more](https://thehackernews.com/2026/07/hackers-weaponize-balochistan-police.html)
+### 1. iCagenda and Balbooa Forms Joomla Flaws Reportedly Exploited as Zero-Days
+*The Hacker News* — [read more](https://thehackernews.com/2026/07/icagenda-and-balbooa-forms-joomla-flaws.html)
 
-Cybersecurity researchers have disclosed details of sustained cyber espionage activity against several Pakistani law enforcement organizations undertaken by suspected China- and India-aligned threat actors between February 2024 and April 2026. "At Balochistan Police, the compromised assets included servers hosting web applications that manage police and citizen data, such as criminal and
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added two maximum-severity security flaws impacting iCagenda and Balbooa extensions for Joomla to its Known Exploited Vulnerabilities (KEV) catalog, following reports of zero-day exploitation in the wild. The vulnerabilities, both rated 10.0 on the CVSS scoring system, are below - CVE-2026-48939 - A vulnerability in the
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
 
-### 2. Claude Fable 5 stays free for paid users until July 19 as Anthropic buys more time
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/artificial-intelligence/claude-fable-5-stays-free-for-paid-users-until-july-19-as-anthropic-buys-more-time/)
+### 2. Centers Laboratory Data Breach Affects 540,000 Individuals
+*SecurityWeek* — [read more](https://www.securityweek.com/centers-laboratory-data-breach-affects-540000-individuals/)
 
-Anthropic has just extended access to Claude Fable 5 for paid subscribers until July 19, giving you another week to keep using the most powerful model. [...]
+The WorldLeaks extortion group claimed to have stolen 720 GB of data from the healthcare testing and laboratory services provider. The post Centers Laboratory Data Breach Affects 540,000 Individuals appeared first on SecurityWeek .
 
-### 3. RedHook Android malware now uses Wireless ADB for shell access
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/redhook-android-malware-now-uses-wireless-adb-for-shell-access/)
+> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
 
-A new version of the RedHook Android malware abuses the Android Wireless Debugging (Wireless ADB) mechanism in a novel way to gain shell-level privileges without requiring a computer connection. [...]
+### 3. Misconfigured Server Reveals Three Evilginx Phishing Operations Targeting Microsoft 365
+*The Hacker News* — [read more](https://thehackernews.com/2026/07/misconfigured-server-reveals-three.html)
 
-> 📋 **ISO 27001:** A.8.7 Protection against malware, A.8.2 Privileged access rights
+An attacker running a live Microsoft 365 phishing operation left a Python web server listening on a public port with directory listing switched on. The command that did it: python3 -m http.server 8080, was still sitting in the readable .bash_history. From that one lapse, French security firm Lexfo lifted the operator's entire toolkit and pivoted through it to two more
 
-### 4. Compromised jscrambler 8.14.0 npm Release Drops Rust Infostealer During Install
-*The Hacker News* — [read more](https://thehackernews.com/2026/07/compromised-jscrambler-8140-npm-release.html)
+> 📋 **ISO 27001:** A.6.3 Awareness, education and training
 
-The jscrambler npm package was compromised, and simply installing its 8.14.0 release runs an infostealer on your machine. Published on July 11, 2026, the malicious version carries a preinstall hook that drops and executes a native binary, one build each for Windows, macOS, and Linux. Socket flagged the release six minutes after it was published. If you or one of your
+### 4. [UPDATE] [hoch] Drupal AlternativeCommerce (Basket): Schwachstelle ermöglicht Codeausführung
+*CERT-Bund (DE)* — [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1702)
 
-> 📋 **ISO 27001:** A.8.7 Protection against malware, A.5.19 Supplier relationships
-
-### 5. Ghost Accounts Abuse GitHub API in Mass Recon Campaign
-*SecurityWeek* — [read more](https://www.securityweek.com/ghost-accounts-abuse-github-api-in-mass-recon-campaign/)
-
-Multiple campaigns are using ghost accounts to map GitHub organizations, including their repositories and members. The post Ghost Accounts Abuse GitHub API in Mass Recon Campaign appeared first on SecurityWeek .
-
-### 6. Australia warns of global campaign targeting vulnerable CMS platforms
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/australia-warns-of-global-campaign-targeting-vulnerable-cms-platforms/)
-
-The Australian Cyber Security Centre (ACSC) issued an alert about a global exploitation campaign targeting vulnerable content management systems (CMS) and plugins. [...]
+Ein entfernter, anonymer Angreifer kann eine Schwachstelle im Drupal-Modul "AlternativeCommerce" (Basket) ausnutzen, um beliebigen Programmcode auszuführen.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 7. 'Ghostcommit' hides prompt injection in images to fool AI agents, steal secrets
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/)
+### 5. Progress Prompts ShareFile Storage Zone Controller Shutdown Amid Security Concerns
+*SecurityWeek* — [read more](https://www.securityweek.com/progress-prompts-sharefile-storage-zone-controller-shutdown-amid-security-concerns/)
 
-A PNG hiding a prompt injection could steal your repo's secrets, researchers demonstrate. The technique, dubbed 'Ghostcommit,' slipped past AI code reviewers CodeRabbit and Bugbot, which never open image files at all, then convinced a coding agent to read a repo's .env and write every secret into the code as a list of numbers. [...]
+The company notified customers to manually shut down their servers while it is investigating a credible threat. The post Progress Prompts ShareFile Storage Zone Controller Shutdown Amid Security Concerns appeared first on SecurityWeek .
 
-### 8. Wireshark 4.6.7 Released, (Sat, Jul 11th)
-*SANS ISC* — [read more](https://isc.sans.edu/diary/rss/33146)
+### 6. [UPDATE] [mittel] OpenSSL: Mehrere Schwachstellen
+*CERT-Bund (DE)* — [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-0995)
 
-Wireshark release 4.6.7 fixes 12 vulnerabilities and 16 bugs.&#xd;
+Ein Angreifer kann mehrere Schwachstellen in OpenSSL ausnutzen, um einen Denial of Service Angriff durchzuführen, vertrauliche Informationen offenzulegen oder andere, nicht näher spezifizierte Angriffe durchzuführen.
+
+> 📋 **ISO 27001:** A.8.6 Capacity management
+
+### 7. [UPDATE] [mittel] X.Org X11: Mehrere Schwachstellen ermöglichen nicht näher spezifizierte Auswirkungen, möglicherweise Codeausführung
+*CERT-Bund (DE)* — [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2025-0435)
+
+Ein lokaler Angreifer kann mehrere Schwachstellen in X.Org X11 ausnutzen, um nicht spezifizierte Effekte zu verursachen, was möglicherweise zur Ausführung von beliebigem Code führt.
+
+### 8. [UPDATE] [mittel] Golang Go: Mehrere Schwachstellen ermöglichen Offenlegung von Informationen
+*CERT-Bund (DE)* — [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2239)
+
+Ein Angreifer kann mehrere Schwachstellen in Golang Go ausnutzen, um Informationen offenzulegen.
 
 ## 🚨 CVEs that matter today
 
@@ -64,10 +66,12 @@ Wireshark release 4.6.7 fixes 12 vulnerabilities and 16 bugs.&#xd;
 
 ## 📖 Jargon decoder
 
-- **RCE** — Remote Code Execution — the worst-case flaw: an attacker runs their own code on your system over the network.
 - **KEV** — CISA's Known Exploited Vulnerabilities catalog — CVEs confirmed to be abused by attackers in the real world. If it's in KEV, patching it jumps to the top of the list.
-- **EPSS** — Exploit Prediction Scoring System — a 0-100% probability that a CVE will be exploited in the next 30 days. Better prioritization signal than CVSS alone.
 - **CVSS** — Common Vulnerability Scoring System — rates how bad a vulnerability *could* be (0-10). High CVSS does not mean anyone is actually exploiting it.
+- **CVE** — Common Vulnerabilities and Exposures — the global ID system for security flaws, e.g. CVE-2026-12345.
+- **RCE** — Remote Code Execution — the worst-case flaw: an attacker runs their own code on your system over the network.
+- **zero-day** — A vulnerability attackers exploit before the vendor has released a patch — defenders start at zero days of warning.
+- **EPSS** — Exploit Prediction Scoring System — a 0-100% probability that a CVE will be exploited in the next 30 days. Better prioritization signal than CVSS alone.
 
 ---
 *Generated by [CyberBrief](https://github.com/manjou/cyberbrief) — free, open source, no AI required.*
