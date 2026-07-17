@@ -1,81 +1,83 @@
-# 🛡️ CyberBrief — Thursday, 16 July 2026
+# 🛡️ CyberBrief — Friday, 17 July 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
 ## 🔥 Top stories
 
-### 1. CISA Urges Immediate Patching of Exploited SharePoint Vulnerabilities
-*SecurityWeek* — [read more](https://www.securityweek.com/cisa-urges-immediate-patching-of-exploited-sharepoint-vulnerabilities/)
+### 1. CISA Adds Exploited SharePoint RCE Zero-Day CVE-2026-58644 to KEV
+*The Hacker News* — [read more](https://thehackernews.com/2026/07/cisa-adds-exploited-sharepoint-rce-zero.html)
 
-Three vulnerabilities are actively exploited in attacks, including two that have been targeted as zero-days. The post CISA Urges Immediate Patching of Exploited SharePoint Vulnerabilities appeared first on SecurityWeek .
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added a newly patched security flaw impacting Microsoft SharePoint Server to its Known Exploited Vulnerabilities (KEV) catalog, requiring Federal Civilian Executive Branch (FCEB) agencies to apply the fixes by July 19, 2026. The vulnerability in question is CVE-2026-58644 (CVSS score: 9.8), a critical deserialization
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 2. SonicWall warns of SMA1000 flaws exploited in zero-day attacks, patch now
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-sma1000-flaws-exploited-in-zero-day-attacks-patch-now/)
+### 2. CISA urges immediate action on actively exploited Fortinet flaws
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisa-warns-feds-to-patch-exploited-fortinet-fortisandbox-flaws-by-sunday/)
 
-SonicWall warns that threat actors have been exploiting two SMA1000 vulnerabilities, tracked as CVE-2026-15409 and CVE-2026-15410, in zero-day attacks and urges customers to install the newly released security updates. [...]
+CISA on Thursday ordered government agencies to prioritize patching two actively exploited vulnerabilities in the Fortinet FortiSandbox threat detection platform. [...]
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
 
-### 3. Two SonicWall SMA 1000 Zero-Days Exploited, One Could Enable Admin Commands
-*The Hacker News* — [read more](https://thehackernews.com/2026/07/two-sonicwall-sma-1000-zero-days.html)
+### 3. CISA orders feds to patch actively exploited Oracle flaw by Saturday
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-oracle-flaw-by-saturday/)
 
-SonicWall has warned of active exploitation of two zero-day vulnerabilities impacting Secure Mobile Access (SMA) 1000 series appliances, one of which could be exploited to achieve arbitrary command execution. The vulnerabilities are listed below - CVE-2026-15409 (CVSS score: 10.0) - A Server-side request forgery (SSRF) vulnerability that a remote unauthenticated attacker could exploit to
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
-
-### 4. CISA warns admins to patch actively exploited SharePoint flaws
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-patch-actively-exploited-sharepoint-flaws/)
-
-The U.S. Cybersecurity and Infrastructure Security Agency (CISA) warned Tuesday that attackers are actively exploiting three vulnerabilities to hack Internet-exposed on-premises SharePoint Server instances. [...]
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.34 Privacy and protection of PII
-
-### 5. Researcher Drops New Windows Zero-Day PoC Hours After Microsoft Patch Tuesday
-*The Hacker News* — [read more](https://thehackernews.com/2026/07/researcher-drops-new-windows-zero-day.html)
-
-Security researcher Chaotic Eclipse (aka Nightmare-Eclipse) has released a new proof-of-concept (PoC) exploit called LegacyHive. It has been described as a Windows User Profile Service arbitrary hive load elevation of privileges vulnerability. The Windows User Profile Service, also referred to as ProfSvc, is a core system component that manages user accounts and environments. "The PoC requires
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.8.2 Privileged access rights
-
-### 6. Vulnerabilities Patched by Fortinet, Ivanti, ServiceNow
-*SecurityWeek* — [read more](https://www.securityweek.com/vulnerabilities-patched-by-fortinet-ivanti-servicenow/)
-
-A critical security defect in the ServiceNow AI platform could allow remote attackers to execute arbitrary code. The post Vulnerabilities Patched by Fortinet, Ivanti, ServiceNow appeared first on SecurityWeek .
+CISA has ordered federal agencies to secure their systems by Saturday against ongoing attacks exploiting a critical vulnerability in the Oracle E-Business Suite financial application. [...]
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 7. Nightmare Eclipse Drops ‘LegacyHive’ Windows Zero-Day
-*SecurityWeek* — [read more](https://www.securityweek.com/nightmare-eclipse-drops-legacyhive-windows-zero-day/)
+### 4. 23andMe to pay $18 million in new genetics data breach settlement
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/23andme-to-pay-18-million-in-new-genetics-data-breach-settlement/)
 
-The researcher stripped the proof-of-concept (PoC) exploit to prevent immediate exploitation of the vulnerability. The post Nightmare Eclipse Drops LegacyHive Windows Zero-Day appeared first on SecurityWeek .
+Genetic testing company 23andMe has agreed to pay $18 million to settle claims from a coalition of 43 attorneys general that it failed to protect customers' genetic data. [...]
+
+> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
+
+### 5. Coca-Cola Suspends US Fairlife Production Due to Ransomware Attack
+*SecurityWeek* — [read more](https://www.securityweek.com/coca-cola-suspends-us-fairlife-production-due-to-ransomware-attack/)
+
+The company says the incident has not affected product quality and safety, nor Fairlife’s Canada production. The post Coca-Cola Suspends US Fairlife Production Due to Ransomware Attack appeared first on SecurityWeek .
+
+> 📋 **ISO 27001:** A.8.13 Information backup, A.5.24 Incident management planning
+
+### 6. ThreatsDay: Game Cheat Spyware, 24-Hour Ransomware, Chrome Sync Stalking + 12 More Stories
+*The Hacker News* — [read more](https://thehackernews.com/2026/07/threatsday-game-cheat-spyware-24-hour.html)
+
+A lot of this week’s trouble starts with something that looks close enough. A familiar repo. A useful installer. A harmless sync setting. Then the handoff goes bad, the box starts talking to someone else, and the damage moves faster than the explanation. Old bugs are back, weak defaults are earning their keep, and some attack paths are so plain they barely feel like research. Here’s the mess.
+
+> 📋 **ISO 27001:** A.8.13 Information backup
+
+### 7. Zoom warns of critical account takeover vulnerability
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/zoom-warns-of-critical-account-takeover-vulnerability/)
+
+Zoom is warning of a critical vulnerability in its desktop client and software development kit for Windows that could be exploited by an unauthenticated party to hijack accounts. [...]
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 8. Microsoft Patches Record 622 Flaws, Including Two Zero-Days Under Active Attack
-*The Hacker News* — [read more](https://thehackernews.com/2026/07/microsoft-patches-record-622-flaws.html)
+### 8. New Spirals ransomware encrypts victim network in under 24 hours
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/new-spirals-ransomware-encrypts-victim-network-in-under-24-hours/)
 
-Microsoft shipped its largest Patch Tuesday on record today, and two of the fixes close holes that attackers are already exploiting. The release covers 622 of Microsoft's own CVEs by its Security Update Guide count, more than triple June's previous high of around 200. Those two live bugs are the ones to grab first. Microsoft credits incident responders for both. Both are
+A new ransomware actor called Spirals completed a corporate intrusion, from initial access to data theft and encryption, in less than 24 hours. [...]
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
+> 📋 **ISO 27001:** A.8.13 Information backup, A.8.24 Use of cryptography
 
 ## 🚨 CVEs that matter today
 
 | CVE | Why it ranks | CVSS | EPSS | Exploited? |
 |-----|--------------|------|------|------------|
-| **CVE-2026-56164** | Microsoft SharePoint Server Missing Authentication for Critical Function Vulnerability | 9.8 | 7% | ⚠️ YES (KEV) |
-| **CVE-2026-15409** | SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability | 10.0 | 1% | ⚠️ YES (KEV) |
+| **CVE-2026-39808** | Fortinet FortiSandbox OS Command Injection Vulnerability | – | 49% | ⚠️ YES (KEV) |
 | **CVE-2026-48282** | Adobe ColdFusion Path Traversal Vulnerability | – | 29% | ⚠️ YES (KEV) |
 | **CVE-2008-4128** | Cisco IOS Cross-Site Request Forgery Vulnerability | – | 24% | ⚠️ YES (KEV) |
-| **CVE-2026-56290** | Joomlack Page Builder Improper Access Control Vulnerability | – | 3% | ⚠️ YES (KEV) |
+| **CVE-2026-25089** | Fortinet FortiSandbox OS Command Injection Vulnerability | – | 23% | ⚠️ YES (KEV) |
+| **CVE-2026-56164** | Microsoft SharePoint Server Missing Authentication for Critical Function Vulnerability | – | 6% | ⚠️ YES (KEV) |
 
 ## 📖 Jargon decoder
 
+- **KEV** — CISA's Known Exploited Vulnerabilities catalog — CVEs confirmed to be abused by attackers in the real world. If it's in KEV, patching it jumps to the top of the list.
 - **CVSS** — Common Vulnerability Scoring System — rates how bad a vulnerability *could* be (0-10). High CVSS does not mean anyone is actually exploiting it.
 - **CVE** — Common Vulnerabilities and Exposures — the global ID system for security flaws, e.g. CVE-2026-12345.
+- **RCE** — Remote Code Execution — the worst-case flaw: an attacker runs their own code on your system over the network.
 - **zero-day** — A vulnerability attackers exploit before the vendor has released a patch — defenders start at zero days of warning.
-- **KEV** — CISA's Known Exploited Vulnerabilities catalog — CVEs confirmed to be abused by attackers in the real world. If it's in KEV, patching it jumps to the top of the list.
+- **ransomware** — Malware that encrypts your files and demands payment. Modern gangs also steal data first and threaten to publish it (double extortion).
 - **EPSS** — Exploit Prediction Scoring System — a 0-100% probability that a CVE will be exploited in the next 30 days. Better prioritization signal than CVSS alone.
 
 ---
