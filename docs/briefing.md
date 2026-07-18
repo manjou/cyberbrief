@@ -1,4 +1,4 @@
-# 🛡️ CyberBrief — Friday, 17 July 2026
+# 🛡️ CyberBrief — Saturday, 18 July 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
@@ -18,56 +18,56 @@ CISA on Thursday ordered government agencies to prioritize patching two actively
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
 
-### 3. CISA orders feds to patch actively exploited Oracle flaw by Saturday
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-oracle-flaw-by-saturday/)
+### 3. In Other News: Iran Tracks US Military Phones, CrashStealer macOS Malware, CVD Blueprint
+*SecurityWeek* — [read more](https://www.securityweek.com/in-other-news-iran-tracks-us-military-phones-crashstealer-macos-malware-cvd-blueprint/)
 
-CISA has ordered federal agencies to secure their systems by Saturday against ongoing attacks exploiting a critical vulnerability in the Oracle E-Business Suite financial application. [...]
+Noteworthy stories that might have slipped under the radar: OpenClaw AI agents exploited via WhatsApp, ransomware hits naval defense firm TKMS, Lidl discloses data breach. The post In Other News: Iran Tracks US Military Phones, CrashStealer macOS Malware, CVD Blueprint appeared first on SecurityWeek .
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
+> 📋 **ISO 27001:** A.8.13 Information backup, A.8.7 Protection against malware
 
-### 4. 23andMe to pay $18 million in new genetics data breach settlement
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/23andme-to-pay-18-million-in-new-genetics-data-breach-settlement/)
+### 4. Ernst & Young discloses data breach after support system hack
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/ernst-and-young-discloses-data-breach-after-support-system-hack/)
 
-Genetic testing company 23andMe has agreed to pay $18 million to settle claims from a coalition of 43 attorneys general that it failed to protect customers' genetic data. [...]
+Ernst & Young is notifying customers of a data breach caused by the compromise of a third-party support ticket system used by its IT personnel. [...]
 
-> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
+> 📋 **ISO 27001:** A.5.19 Supplier relationships, A.5.34 Privacy and protection of PII
 
-### 5. Coca-Cola Suspends US Fairlife Production Due to Ransomware Attack
-*SecurityWeek* — [read more](https://www.securityweek.com/coca-cola-suspends-us-fairlife-production-due-to-ransomware-attack/)
+### 5. New Windows LegacyHive zero-day gives hackers admin privileges
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/new-windows-legacyhive-zero-day-exploit-grants-hackers-admin-access/)
 
-The company says the incident has not affected product quality and safety, nor Fairlife’s Canada production. The post Coca-Cola Suspends US Fairlife Production Due to Ransomware Attack appeared first on SecurityWeek .
+A security researcher using the "Nightmare Eclipse" handle has released a Windows zero-day exploit dubbed LegacyHive that allows attackers to escalate privileges on up-to-date Windows systems. [...]
 
-> 📋 **ISO 27001:** A.8.13 Information backup, A.5.24 Incident management planning
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.8.2 Privileged access rights
 
-### 6. ThreatsDay: Game Cheat Spyware, 24-Hour Ransomware, Chrome Sync Stalking + 12 More Stories
-*The Hacker News* — [read more](https://thehackernews.com/2026/07/threatsday-game-cheat-spyware-24-hour.html)
+### 6. GoldenEyeDog Subgroup Linked to DigiCert Breach and Code-Signing Certificate Theft
+*The Hacker News* — [read more](https://thehackernews.com/2026/07/goldeneyedog-subgroup-linked-to.html)
 
-A lot of this week’s trouble starts with something that looks close enough. A familiar repo. A useful installer. A harmless sync setting. Then the handoff goes bad, the box starts talking to someone else, and the damage moves faster than the explanation. Old bugs are back, weak defaults are earning their keep, and some attack paths are so plain they barely feel like research. Here’s the mess.
+Cybersecurity researchers have attributed the April 2026 DigiCert security incident to a threat activity cluster dubbed CylindricalCanine. Expel, which shared technical details of the event, described the threat actor as a sub-group of GoldenEyeDog (aka APT-Q-27, Dragon Breath, and Miuuti Group), a Chinese cybercrime group known for its targeting of the gambling and gaming sectors using
+
+> 📋 **ISO 27001:** A.5.24 Incident management planning, A.8.24 Use of cryptography
+
+### 7. Armenia Detains Russian Tourist on U.S. Warrant for REvil Hacker, Lawyers Say Wrong Man
+*The Hacker News* — [read more](https://thehackernews.com/2026/07/armenia-detains-russian-tourist-on-us.html)
+
+Armenia has held a Russian tourist named Aleksandr Ermakov in a detention center since June 28, on a U.S. extradition request for a REvil ransomware suspect named Aleksandr Ermakov. His wife, Maria Yurova, told REN TV that border officers pulled him out of the departure hall at Yerevan's Zvartnots airport, held up a phone with a photo of him off his VKontakte page, and walked him into a side
 
 > 📋 **ISO 27001:** A.8.13 Information backup
 
-### 7. Zoom warns of critical account takeover vulnerability
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/zoom-warns-of-critical-account-takeover-vulnerability/)
+### 8. Seven Malicious Vite npm Packages Use Blockchain C2 to Deliver a RAT
+*The Hacker News* — [read more](https://thehackernews.com/2026/07/seven-malicious-vite-npm-packages-use.html)
 
-Zoom is warning of a critical vulnerability in its desktop client and software development kit for Windows that could be exploited by an unauthenticated party to hijack accounts. [...]
+Cybersecurity researchers have discovered a cluster of seven malicious npm packages targeting the Vite frontend tooling ecosystem as part of a software supply chain attack. The malicious package campaign, codenamed ViteVenom by Checkmarx, marks an expansion of ChainVeil, which was observed using an "unprecedented" four-tier blockchain-based command-and-control (C2) infrastructure spanning Tron,
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
-
-### 8. New Spirals ransomware encrypts victim network in under 24 hours
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/new-spirals-ransomware-encrypts-victim-network-in-under-24-hours/)
-
-A new ransomware actor called Spirals completed a corporate intrusion, from initial access to data theft and encryption, in less than 24 hours. [...]
-
-> 📋 **ISO 27001:** A.8.13 Information backup, A.8.24 Use of cryptography
+> 📋 **ISO 27001:** A.5.19 Supplier relationships
 
 ## 🚨 CVEs that matter today
 
 | CVE | Why it ranks | CVSS | EPSS | Exploited? |
 |-----|--------------|------|------|------------|
-| **CVE-2026-39808** | Fortinet FortiSandbox OS Command Injection Vulnerability | – | 49% | ⚠️ YES (KEV) |
+| **CVE-2026-39808** | Fortinet FortiSandbox OS Command Injection Vulnerability | – | 84% | ⚠️ YES (KEV) |
+| **CVE-2026-25089** | Fortinet FortiSandbox OS Command Injection Vulnerability | – | 36% | ⚠️ YES (KEV) |
 | **CVE-2026-48282** | Adobe ColdFusion Path Traversal Vulnerability | – | 29% | ⚠️ YES (KEV) |
 | **CVE-2008-4128** | Cisco IOS Cross-Site Request Forgery Vulnerability | – | 24% | ⚠️ YES (KEV) |
-| **CVE-2026-25089** | Fortinet FortiSandbox OS Command Injection Vulnerability | – | 23% | ⚠️ YES (KEV) |
 | **CVE-2026-56164** | Microsoft SharePoint Server Missing Authentication for Critical Function Vulnerability | – | 6% | ⚠️ YES (KEV) |
 
 ## 📖 Jargon decoder
