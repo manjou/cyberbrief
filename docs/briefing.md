@@ -1,64 +1,62 @@
-# 🛡️ CyberBrief — Saturday, 18 July 2026
+# 🛡️ CyberBrief — Sunday, 19 July 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
 ## 🔥 Top stories
 
-### 1. CISA Adds Exploited SharePoint RCE Zero-Day CVE-2026-58644 to KEV
-*The Hacker News* — [read more](https://thehackernews.com/2026/07/cisa-adds-exploited-sharepoint-rce-zero.html)
+### 1. WordPress Core "wp2shell" RCE flaws get public exploits, patch now
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/wordpress-core-wp2shell-rce-flaws-get-public-exploits-patch-now/)
 
-The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added a newly patched security flaw impacting Microsoft SharePoint Server to its Known Exploited Vulnerabilities (KEV) catalog, requiring Federal Civilian Executive Branch (FCEB) agencies to apply the fixes by July 19, 2026. The vulnerability in question is CVE-2026-58644 (CVSS score: 9.8), a critical deserialization
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
-
-### 2. CISA urges immediate action on actively exploited Fortinet flaws
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisa-warns-feds-to-patch-exploited-fortinet-fortisandbox-flaws-by-sunday/)
-
-CISA on Thursday ordered government agencies to prioritize patching two actively exploited vulnerabilities in the Fortinet FortiSandbox threat detection platform. [...]
+Public exploits have been released for the critical "wp2shell" remote code execution vulnerabilities affecting WordPress Core, making it imperative that administrators patch their sites immediately. [...]
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
 
-### 3. In Other News: Iran Tracks US Military Phones, CrashStealer macOS Malware, CVD Blueprint
-*SecurityWeek* — [read more](https://www.securityweek.com/in-other-news-iran-tracks-us-military-phones-crashstealer-macos-malware-cvd-blueprint/)
+### 2. Update now: 7-Zip fixes RCE flaw exploitable with malicious archives
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/update-now-7-zip-fixes-rce-flaw-exploitable-with-malicious-archives/)
 
-Noteworthy stories that might have slipped under the radar: OpenClaw AI agents exploited via WhatsApp, ransomware hits naval defense firm TKMS, Lidl discloses data breach. The post In Other News: Iran Tracks US Military Phones, CrashStealer macOS Malware, CVD Blueprint appeared first on SecurityWeek .
+7-Zip version 26.02 was released to fix a remote code execution vulnerability that could allow attackers to execute malicious code by convincing users to open specially crafted compressed files. [...]
 
-> 📋 **ISO 27001:** A.8.13 Information backup, A.8.7 Protection against malware
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 4. Ernst & Young discloses data breach after support system hack
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/ernst-and-young-discloses-data-breach-after-support-system-hack/)
+### 3. New wp2shell WordPress Core Flaw Lets Unauthenticated Attackers Run Code
+*The Hacker News* — [read more](https://thehackernews.com/2026/07/new-wp2shell-wordpress-core-flaw-lets.html)
 
-Ernst & Young is notifying customers of a data breach caused by the compromise of a third-party support ticket system used by its IT personnel. [...]
+Updated July 18, 2026: the two flaws now carry CVE IDs, the full mechanism has been published, a persistent-object-cache condition has surfaced, and a working proof-of-concept is public. The story below reflects all of it. An anonymous HTTP request can run code on a WordPress site. The bug is in core, so a bare install with zero plugins is exploitable. Every 6.9 and 7.0 site was in range until
 
-> 📋 **ISO 27001:** A.5.19 Supplier relationships, A.5.34 Privacy and protection of PII
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
 
-### 5. New Windows LegacyHive zero-day gives hackers admin privileges
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/new-windows-legacyhive-zero-day-exploit-grants-hackers-admin-access/)
+### 4. Microsoft warns of surge in ACR Stealer attacks on customers
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/microsoft-warns-of-surge-in-acr-stealer-attacks-on-customers/)
 
-A security researcher using the "Nightmare Eclipse" handle has released a Windows zero-day exploit dubbed LegacyHive that allows attackers to escalate privileges on up-to-date Windows systems. [...]
+Microsoft has observed a surge in attacks using the ACR Stealer malware to steal browser-stored passwords, authentication tokens, and sensitive documents from its enterprise customers. [...]
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.8.2 Privileged access rights
+> 📋 **ISO 27001:** A.8.7 Protection against malware, A.5.17 Authentication information
 
-### 6. GoldenEyeDog Subgroup Linked to DigiCert Breach and Code-Signing Certificate Theft
-*The Hacker News* — [read more](https://thehackernews.com/2026/07/goldeneyedog-subgroup-linked-to.html)
+### 5. Abbott probes two cyber incidents amid extortion claims
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/abbott-laboratories-probes-two-cyber-incidents-amid-extortion-claims/)
 
-Cybersecurity researchers have attributed the April 2026 DigiCert security incident to a threat activity cluster dubbed CylindricalCanine. Expel, which shared technical details of the event, described the threat actor as a sub-group of GoldenEyeDog (aka APT-Q-27, Dragon Breath, and Miuuti Group), a Chinese cybercrime group known for its targeting of the gambling and gaming sectors using
+Abbott Laboratories is investigating two separate cybersecurity incidents after confirming unauthorized access to internal legacy Exact Sciences systems in its Cancer Diagnostics business, while also investigating a separate claim that attackers breached its LabCentral portal and stole company data. [...]
 
-> 📋 **ISO 27001:** A.5.24 Incident management planning, A.8.24 Use of cryptography
+> 📋 **ISO 27001:** A.5.24 Incident management planning
 
-### 7. Armenia Detains Russian Tourist on U.S. Warrant for REvil Hacker, Lawyers Say Wrong Man
-*The Hacker News* — [read more](https://thehackernews.com/2026/07/armenia-detains-russian-tourist-on-us.html)
+### 6. The Future of Age Verification: Your Face Never Leaves Your Device
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/the-future-of-age-verification-your-face-never-leaves-your-device/)
 
-Armenia has held a Russian tourist named Aleksandr Ermakov in a detention center since June 28, on a U.S. extradition request for a REvil ransomware suspect named Aleksandr Ermakov. His wife, Maria Yurova, told REN TV that border officers pulled him out of the departure hall at Yerevan's Zvartnots airport, held up a phone with a photo of him off his VKontakte page, and walked him into a side
+As age verification laws expand worldwide, organizations face growing pressure to protect users' privacy while meeting regulatory requirements. Incode explains how on-device age estimation verifies age without transmitting or storing facial images, reducing biometric privacy risks while supporting compliance. [...]
 
-> 📋 **ISO 27001:** A.8.13 Information backup
+> 📋 **ISO 27001:** A.5.23 Cloud services security
 
-### 8. Seven Malicious Vite npm Packages Use Blockchain C2 to Deliver a RAT
-*The Hacker News* — [read more](https://thehackernews.com/2026/07/seven-malicious-vite-npm-packages-use.html)
+### 7. Friday Squid Blogging: Squid Washing Up on Cape Cod Beach
+*Schneier on Security* — [read more](https://www.schneier.com/blog/archives/2026/07/friday-squid-blogging-squid-washing-up-on-cape-cod-beach.html)
 
-Cybersecurity researchers have discovered a cluster of seven malicious npm packages targeting the Vite frontend tooling ecosystem as part of a software supply chain attack. The malicious package campaign, codenamed ViteVenom by Checkmarx, marks an expansion of ChainVeil, which was observed using an "unprecedented" four-tier blockchain-based command-and-control (C2) infrastructure spanning Tron,
+Lots of articles about this . As usual, you can also use this squid post to talk about the security stories in the news that I haven t covered. Blog moderation policy.
 
-> 📋 **ISO 27001:** A.5.19 Supplier relationships
+### 8. OpenSSL HollowByte Flaw Could Freeze Server Memory with 11-Byte TLS Requests
+*The Hacker News* — [read more](https://thehackernews.com/2026/07/openssl-hollowbyte-flaw-could-freeze.html)
+
+Eleven bytes will make an unpatched OpenSSL server set aside up to 131 KB of memory for a message that never arrives. On the glibc systems Okta tested, that memory is gone until the process restarts. OpenSSL shipped the HollowByte fix in June with no CVE, no advisory, and no changelog entry pointing at it. Okta's Red Team, which reported the denial-of-service bug and named it, published the
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.8.24 Use of cryptography
 
 ## 🚨 CVEs that matter today
 
@@ -72,13 +70,11 @@ Cybersecurity researchers have discovered a cluster of seven malicious npm packa
 
 ## 📖 Jargon decoder
 
-- **KEV** — CISA's Known Exploited Vulnerabilities catalog — CVEs confirmed to be abused by attackers in the real world. If it's in KEV, patching it jumps to the top of the list.
-- **CVSS** — Common Vulnerability Scoring System — rates how bad a vulnerability *could* be (0-10). High CVSS does not mean anyone is actually exploiting it.
 - **CVE** — Common Vulnerabilities and Exposures — the global ID system for security flaws, e.g. CVE-2026-12345.
 - **RCE** — Remote Code Execution — the worst-case flaw: an attacker runs their own code on your system over the network.
-- **zero-day** — A vulnerability attackers exploit before the vendor has released a patch — defenders start at zero days of warning.
-- **ransomware** — Malware that encrypts your files and demands payment. Modern gangs also steal data first and threaten to publish it (double extortion).
+- **KEV** — CISA's Known Exploited Vulnerabilities catalog — CVEs confirmed to be abused by attackers in the real world. If it's in KEV, patching it jumps to the top of the list.
 - **EPSS** — Exploit Prediction Scoring System — a 0-100% probability that a CVE will be exploited in the next 30 days. Better prioritization signal than CVSS alone.
+- **CVSS** — Common Vulnerability Scoring System — rates how bad a vulnerability *could* be (0-10). High CVSS does not mean anyone is actually exploiting it.
 
 ---
 *Generated by [CyberBrief](https://github.com/manjou/cyberbrief) — free, open source, no AI required.*
