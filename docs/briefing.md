@@ -1,62 +1,62 @@
-# 🛡️ CyberBrief — Sunday, 19 July 2026
+# 🛡️ CyberBrief — Monday, 20 July 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
 ## 🔥 Top stories
 
-### 1. WordPress Core "wp2shell" RCE flaws get public exploits, patch now
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/wordpress-core-wp2shell-rce-flaws-get-public-exploits-patch-now/)
+### 1. Critical NGINX Vulnerability Can Crash Workers and May Allow Remote Code Execution
+*The Hacker News* — [read more](https://thehackernews.com/2026/07/critical-nginx-vulnerability-can-crash.html)
 
-Public exploits have been released for the critical "wp2shell" remote code execution vulnerabilities affecting WordPress Core, making it imperative that administrators patch their sites immediately. [...]
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
-
-### 2. Update now: 7-Zip fixes RCE flaw exploitable with malicious archives
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/update-now-7-zip-fixes-rce-flaw-exploitable-with-malicious-archives/)
-
-7-Zip version 26.02 was released to fix a remote code execution vulnerability that could allow attackers to execute malicious code by convincing users to open specially crafted compressed files. [...]
+F5 has shipped fixes for a critical nginx flaw that lets a remote, unauthenticated attacker trigger a heap buffer overflow in the worker process with crafted HTTP requests. CVE-2026-42533 was patched on July 15 in nginx 1.30.4 (stable) and 1.31.3 (mainline), and in NGINX Plus 37.0.3.1; anyone on an earlier build should upgrade. Triggering it can crash or restart the worker, causing a denial of
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 3. New wp2shell WordPress Core Flaw Lets Unauthenticated Attackers Run Code
-*The Hacker News* — [read more](https://thehackernews.com/2026/07/new-wp2shell-wordpress-core-flaw-lets.html)
+### 2. SonicWall SMA Zero-Days Exploited Before Disclosure to Gain Root Access
+*The Hacker News* — [read more](https://thehackernews.com/2026/07/sonicwall-sma-zero-days-exploited.html)
 
-Updated July 18, 2026: the two flaws now carry CVE IDs, the full mechanism has been published, a persistent-object-cache condition has surfaced, and a working proof-of-concept is public. The story below reflects all of it. An anonymous HTTP request can run code on a WordPress site. The bug is in core, so a bare install with zero plugins is exploitable. Every 6.9 and 7.0 site was in range until
+A previously undocumented threat actor has been attributed to the exploitation of recently disclosed SonicWall Secure Mobile Access (SMA) 1000 series VPN appliances as zero-days prior their public disclosure since June 22, 2026. Cybersecurity company Volexity is tracking the activity under the moniker UTA0533. The discovery was made following an incident response investigation earlier this
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.24 Incident management planning
 
-### 4. Microsoft warns of surge in ACR Stealer attacks on customers
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/microsoft-warns-of-surge-in-acr-stealer-attacks-on-customers/)
+### 3. World's Largest AI Model Repository Hugging Face Breached by Autonomous AI Agent
+*The Hacker News* — [read more](https://thehackernews.com/2026/07/worlds-largest-ai-model-repository.html)
 
-Microsoft has observed a surge in attacks using the ACR Stealer malware to steal browser-stored passwords, authentication tokens, and sensitive documents from its enterprise customers. [...]
+In an ironic twist, open-source artificial intelligence (AI) platform Hugging Face revealed that it was the victim of a hack perpetrated by an autonomous AI agent system. The company said it detected and responded to the incident targeting its production infrastructure earlier last week. "We identified unauthorized access to a limited set of internal datasets and to several credentials used by
 
-> 📋 **ISO 27001:** A.8.7 Protection against malware, A.5.17 Authentication information
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
 
-### 5. Abbott probes two cyber incidents amid extortion claims
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/abbott-laboratories-probes-two-cyber-incidents-amid-extortion-claims/)
+### 4. UAC-0145 Uses ClickFix CAPTCHAs to Infect Ukrainian Devices wih Malware
+*The Hacker News* — [read more](https://thehackernews.com/2026/07/uac-0145-uses-clickfix-captchas-to.html)
 
-Abbott Laboratories is investigating two separate cybersecurity incidents after confirming unauthorized access to internal legacy Exact Sciences systems in its Cancer Diagnostics business, while also investigating a separate claim that attackers breached its LabCentral portal and stole company data. [...]
+Russian state-sponsored threat actors have been observed leveraging the infamous ClickFix strategy to trick Ukrainian targets into infecting their own machines with data-stealing malware. According to the Computer Emergency Response Team of Ukraine (CERT-UA), the activity has been attributed to UAC-0145, a sub-cluster within Sandworm, an advanced hacking unit affiliated with GRU, Russia's
 
-> 📋 **ISO 27001:** A.5.24 Incident management planning
+> 📋 **ISO 27001:** A.8.7 Protection against malware, A.5.24 Incident management planning
 
-### 6. The Future of Age Verification: Your Face Never Leaves Your Device
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/the-future-of-age-verification-your-face-never-leaves-your-device/)
+### 5. WP2Shell WordPress Vulnerabilities Exploited in the Wild
+*SecurityWeek* — [read more](https://www.securityweek.com/wp2shell-wordpress-vulnerabilities-exploited-in-the-wild/)
 
-As age verification laws expand worldwide, organizations face growing pressure to protect users' privacy while meeting regulatory requirements. Incode explains how on-device age estimation verifies age without transmitting or storing facial images, reducing biometric privacy risks while supporting compliance. [...]
+Exploitation of the new WordPress vulnerabilities tracked as CVE-2026-60137 and CVE-2026-63030 started soon after disclosure. The post WP2Shell WordPress Vulnerabilities Exploited in the Wild appeared first on SecurityWeek .
 
-> 📋 **ISO 27001:** A.5.23 Cloud services security
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 7. Friday Squid Blogging: Squid Washing Up on Cape Cod Beach
-*Schneier on Security* — [read more](https://www.schneier.com/blog/archives/2026/07/friday-squid-blogging-squid-washing-up-on-cape-cod-beach.html)
+### 6. SleeperGem Uses Three Malicious RubyGems Packages to Target Developer Machines
+*The Hacker News* — [read more](https://thehackernews.com/2026/07/sleepergem-uses-three-malicious.html)
 
-Lots of articles about this . As usual, you can also use this squid post to talk about the security stories in the news that I haven t covered. Blog moderation policy.
+Cybersecurity researchers have flagged a new software supply chain attack codenamed SleeperGem targeting the Ruby ecosystem after three malicious gems were published to RubyGems with the end goal of serving additional payloads. The rogue gems are listed below - git_credential_manager (versions 2.8.0, 2.8.1, 2.8.2, 2.8.3) - Published on July 18, 2026 Dendreo (versions 1.1.3, 1.1.4) -
 
-### 8. OpenSSL HollowByte Flaw Could Freeze Server Memory with 11-Byte TLS Requests
-*The Hacker News* — [read more](https://thehackernews.com/2026/07/openssl-hollowbyte-flaw-could-freeze.html)
+> 📋 **ISO 27001:** A.5.19 Supplier relationships, A.5.17 Authentication information
 
-Eleven bytes will make an unpatched OpenSSL server set aside up to 131 KB of memory for a message that never arrives. On the glibc systems Okta tested, that memory is gone until the process restarts. OpenSSL shipped the HollowByte fix in June with no CVE, no advisory, and no changelog entry pointing at it. Okta's Red Team, which reported the denial-of-service bug and named it, published the
+### 7. Chrome 150 Update Patches Severe Memory Safety Bugs
+*SecurityWeek* — [read more](https://www.securityweek.com/chrome-150-update-patches-severe-memory-safety-bugs/)
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.8.24 Use of cryptography
+The fresh security update resolves six critical and high-severity use-after-free vulnerabilities. The post Chrome 150 Update Patches Severe Memory Safety Bugs appeared first on SecurityWeek .
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
+
+### 8. [UPDATE] [hoch] FreeRDP: Mehrere Schwachstellen
+*CERT-Bund (DE)* — [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2384)
+
+Ein Angreifer kann mehrere Schwachstellen in FreeRDP ausnutzen, um beliebigen Programmcode auszuführen, Sicherheitsmaßnahmen zu umgehen, vertrauliche Informationen offenzulegen, Daten zu manipulieren oder einen Denial-of-Service-Zustand auszulösen.
 
 ## 🚨 CVEs that matter today
 
@@ -66,12 +66,13 @@ Eleven bytes will make an unpatched OpenSSL server set aside up to 131 KB of mem
 | **CVE-2026-25089** | Fortinet FortiSandbox OS Command Injection Vulnerability | – | 36% | ⚠️ YES (KEV) |
 | **CVE-2026-48282** | Adobe ColdFusion Path Traversal Vulnerability | – | 29% | ⚠️ YES (KEV) |
 | **CVE-2008-4128** | Cisco IOS Cross-Site Request Forgery Vulnerability | – | 24% | ⚠️ YES (KEV) |
-| **CVE-2026-56164** | Microsoft SharePoint Server Missing Authentication for Critical Function Vulnerability | – | 6% | ⚠️ YES (KEV) |
+| **CVE-2026-56291** | Balbooa Forms Unrestricted Upload of File with Dangerous Type Vulnerability | – | 9% | ⚠️ YES (KEV) |
 
 ## 📖 Jargon decoder
 
 - **CVE** — Common Vulnerabilities and Exposures — the global ID system for security flaws, e.g. CVE-2026-12345.
 - **RCE** — Remote Code Execution — the worst-case flaw: an attacker runs their own code on your system over the network.
+- **zero-day** — A vulnerability attackers exploit before the vendor has released a patch — defenders start at zero days of warning.
 - **KEV** — CISA's Known Exploited Vulnerabilities catalog — CVEs confirmed to be abused by attackers in the real world. If it's in KEV, patching it jumps to the top of the list.
 - **EPSS** — Exploit Prediction Scoring System — a 0-100% probability that a CVE will be exploited in the next 30 days. Better prioritization signal than CVSS alone.
 - **CVSS** — Common Vulnerability Scoring System — rates how bad a vulnerability *could* be (0-10). High CVSS does not mean anyone is actually exploiting it.
