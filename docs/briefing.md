@@ -1,74 +1,74 @@
-# 🛡️ CyberBrief — Wednesday, 22 July 2026
+# 🛡️ CyberBrief — Thursday, 23 July 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
 ## 🔥 Top stories
 
-### 1. WordPress wp2shell Exploitation Grows as Public Exploit Fuels Mass Scanning
-*The Hacker News* — [read more](https://thehackernews.com/2026/07/wordpress-wp2shell-exploitation-grows.html)
+### 1. Hackers Exploit Windmill Flaw to Read Arbitrary Server Files Without Authentication
+*The Hacker News* — [read more](https://thehackernews.com/2026/07/hackers-exploit-windmill-flaw-to-read.html)
 
-Attackers have begun to exploit two critical vulnerabilities in WordPress that, when combined together, enable unauthenticated remote code execution (RCE) and complete compromise of vulnerable websites. The two security flaws, tracked as CVE-2026-63030 and CVE-2026-60137, have been codenamed wp2shell. "By the early hours of Saturday morning (UTC), successful exploitation was already well
+A high-severity security flaw impacting open-source developer platform Windmill has come under active exploitation in the wild, per VulnCheck. The vulnerability in question is CVE-2026-29059 (CVSS score: 7.5), a case of unauthenticated path traversal impacting Windmill's "get_log_file" endpoint ("/api/w/{workspace}/jobs_u/get_log_file/{filename}"). "The filename parameter is concatenated into
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
 
-### 2. Critical Palo Alto VPN bug now exploited by Qilin ransomware gang
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/critical-globalprotect-vpn-bug-now-exploited-in-ransomware-attacks/)
+### 2. CISA orders urgent action on actively exploited Langflow RCE flaw
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-langflow-rce-flaw/)
 
-The Qilin ransomware gang is exploiting a critical PAN-OS GlobalProtect authentication bypass flaw to breach victims' networks, according to cybersecurity company Arctic Wolf. [...]
+The Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday ordered U.S. government agencies to prioritize patching an actively exploited vulnerability in the Langflow visual framework for building AI agents. [...]
 
-> 📋 **ISO 27001:** A.8.13 Information backup, A.8.8 Management of technical vulnerabilities
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 3. Anubis ransomware claims Coca-Cola Fairlife attack, threatens data leak
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/anubis-ransomware-claims-coca-cola-fairlife-attack-threatens-data-leak/)
+### 3. Swiss rail giant Stadler rejects $12.3M ransom demand after cyberattack
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/swiss-rail-giant-stadler-rejects-123m-ransom-demand-after-cyberattack/)
 
-The Anubis ransomware gang has claimed responsibility for the cyberattack on Coca-Cola's Fairlife dairy subsidiary, threatening to publish allegedly stolen corporate data unless the company pays a ransom. [...]
+Swiss rail vehicle manufacturer Stadler Rail says the Everest ransomware gang demanded about $12.3 million after breaching a data exchange platform shared with one of its suppliers. [...]
 
-> 📋 **ISO 27001:** A.8.13 Information backup, A.5.34 Privacy and protection of PII
+> 📋 **ISO 27001:** A.8.13 Information backup
 
-### 4. Critical SharePoint RCE flaw exploited to steal machine keys
+### 4. Suno, Paidwork Data Breaches Affect Tens of Millions of Accounts
+*SecurityWeek* — [read more](https://www.securityweek.com/suno-paidwork-data-breaches-affect-tens-of-millions-of-accounts/)
+
+Hackers leaked names, email addresses, phone numbers, passwords, and financial information stolen from the two platforms. The post Suno, Paidwork Data Breaches Affect Tens of Millions of Accounts appeared first on SecurityWeek .
+
+> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII, A.5.17 Authentication information
+
+### 5. Critical SharePoint RCE flaw exploited to steal machine keys
 *BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/critical-sharepoint-rce-flaw-exploited-to-steal-machine-keys/)
 
 Hackers are actively exploiting the critical CVE-2026-50522 vulnerability in Microsoft SharePoint to steal machine keys and maintain access even after affected servers are patched. [...]
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 5. Estée Lauder discloses data breach via Oracle E-Business flaw
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/est-e-lauder-discloses-data-breach-via-oracle-e-business-flaw/)
+### 6. South Korea discloses data breach impacting diplomats worldwide
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/south-korea-discloses-data-breach-impacting-diplomats-worldwide/)
 
-Cosmetics giant Estée Lauder is notifying employees of a data breach after hackers exploited a flaw in Oracle E-Business Suite that the company used for human resources (HR) operations. [...]
+South Korea disclosed that hackers breached the National Diplomatic Academy's online education system for ten months and stole personal information belonging to current and former employees of the Ministry of Foreign Affairs (MFA), including overseas diplomats. [...]
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.34 Privacy and protection of PII
+> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII, A.5.17 Authentication information
 
-### 6. Critical SharePoint RCE CVE-2026-50522 Under Active Exploitation After Public PoC
-*The Hacker News* — [read more](https://thehackernews.com/2026/07/critical-sharepoint-rce-cve-2026-50522.html)
-
-A third SharePoint Server flaw patched by Microsoft as part of its Patch Tuesday update for July 2026 has come under active exploitation, per watchTowr. The vulnerability in question is CVE-2026-50522 (CVSS score: 9.8), a critical deserialization of untrusted data in Microsoft Office SharePoint that could allow an unauthorized attacker to execute code over a network. Microsoft credited DEVCORE
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
-
-### 7. New ENCFORGE Ransomware Targets AI Model Files in Langflow RCE Attack
-*The Hacker News* — [read more](https://thehackernews.com/2026/07/new-encforge-ransomware-targets-ai.html)
-
-Researchers at Sysdig have linked a second attack on the same Langflow server to JADEPUFFER, the AI-agent-driven operator it first documented earlier this month. The same operator has now been spotted deploying ENCFORGE, a new compiled Go ransomware designed to encrypt model weights, vector indexes, training datasets, and other AI infrastructure files across the host filesystem. The entry
-
-> 📋 **ISO 27001:** A.8.13 Information backup, A.8.8 Management of technical vulnerabilities
-
-### 8. Police Dismantle Kratos Phishing Kit Built to Steal Microsoft 365 Sessions and Bypass MFA
+### 7. Police Dismantle Kratos Phishing Kit Built to Steal Microsoft 365 Sessions and Bypass MFA
 *The Hacker News* — [read more](https://thehackernews.com/2026/07/police-dismantle-kratos-phishing-kit.html)
 
 German and US law enforcement have taken down the core infrastructure of Kratos, described by German investigators as one of the world's most widely used criminal phishing kits, and Indonesian authorities arrested the man they say developed and ran it. In a joint announcement on Monday, the Frankfurt public prosecutor's cybercrime unit (ZIT) and Germany's Federal Criminal Police Office (BKA)
 
 > 📋 **ISO 27001:** A.6.3 Awareness, education and training, A.8.8 Management of technical vulnerabilities
 
+### 8. Chick-fil-A discloses data breach after credential stuffing attacks
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/chick-fil-a-discloses-data-breach-after-credential-stuffing-attacks/)
+
+American fast food restaurant chain Chick-fil-A is notifying customers of a data breach after their accounts were hacked in a wave of recent credential stuffing attacks. [...]
+
+> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII, A.5.17 Authentication information
+
 ## 🚨 CVEs that matter today
 
 | CVE | Why it ranks | CVSS | EPSS | Exploited? |
 |-----|--------------|------|------|------------|
 | **CVE-2026-39808** | Fortinet FortiSandbox OS Command Injection Vulnerability | – | 84% | ⚠️ YES (KEV) |
+| **CVE-2026-0770** | Langflow Inclusion of Functionality from Untrusted Control Sphere Vulnerability | – | 55% | ⚠️ YES (KEV) |
+| **CVE-2026-16232** | Check Point SmartConsole Improper Authentication Vulnerability | 9.1 | 0% | ⚠️ YES (KEV) |
+| **CVE-2026-63030** | WordPress Core Interpretation Conflict Vulnerability | – | 39% | ⚠️ YES (KEV) |
 | **CVE-2026-25089** | Fortinet FortiSandbox OS Command Injection Vulnerability | – | 36% | ⚠️ YES (KEV) |
-| **CVE-2008-4128** | Cisco IOS Cross-Site Request Forgery Vulnerability | – | 24% | ⚠️ YES (KEV) |
-| **CVE-2026-0770** | Langflow Inclusion of Functionality from Untrusted Control Sphere Vulnerability | – | 10% | ⚠️ YES (KEV) |
-| **CVE-2026-63030** | WordPress Core Interpretation Conflict Vulnerability | – | 9% | ⚠️ YES (KEV) |
 
 ## 📖 Jargon decoder
 
