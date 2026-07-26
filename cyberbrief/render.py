@@ -6,6 +6,7 @@ import html
 from datetime import datetime, timezone
 
 from .iso import GLOSSARY, map_controls
+from .theme import THEME_BLURB
 
 
 def _controls_line(item: dict) -> str:
@@ -26,10 +27,40 @@ def glossary_terms_used(stories: list[dict], cves: list[dict]) -> list[tuple[str
     return used
 
 
-def to_markdown(stories: list[dict], cves: list[dict], errors: list[str]) -> str:
+def _recap_takeaway(item: dict) -> str:
+    text = (item.get("explanation") or item.get("summary") or "").strip()
+    takeaway = text.split(". ")[0].strip()
+    if takeaway and not takeaway.endswith((".", "!", "?")):
+        takeaway += "."
+    return takeaway
+
+
+def _recap_cve_line(cves: list[dict]) -> str:
+    kev_count = sum(1 for v in cves if v.get("kev"))
+    top = cves[0]
+    cvss = f"{top['cvss']:.1f}" if top.get("cvss") else "–"
+    return f"{len(cves)} CVEs flagged today ({kev_count} in active-exploitation KEV) — top: {top['cve']} ({cvss} CVSS, {top['epss'] * 100:.0f}% EPSS)"
+
+
+def to_markdown(
+    stories: list[dict], cves: list[dict], errors: list[str], theme: str | None = None, recap: bool = False
+) -> str:
     today = datetime.now(timezone.utc).strftime("%A, %d %B %Y")
-    lines = [f"# 🛡️ CyberBrief — {today}", "",
+    title = f"# 🛡️ CyberBrief — {theme} — {today}" if theme else f"# 🛡️ CyberBrief — {today}"
+    lines = [title, "",
              "*Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*", ""]
+    if theme:
+        lines.append(f"*{THEME_BLURB[theme]}*\n")
+
+    if recap:
+        lines.append("## 🕔 5pm recap\n")
+        lines.append("*Didn't get through this morning? Here's the quick version — full detail is still below.*\n")
+        for s in stories:
+            takeaway = _recap_takeaway(s)
+            lines.append(f"- **{s['title']}** — {takeaway} [read more]({s['link']})")
+        if cves:
+            lines.append(f"- {_recap_cve_line(cves)}")
+        lines.append("")
 
     lines.append("## 🔥 Top stories\n")
     for i, s in enumerate(stories, 1):
@@ -103,17 +134,46 @@ dl dt { font-weight:600; margin-top:0.7rem; }
 dl dd { margin:0.1rem 0 0; color:var(--muted); }
 footer { margin-top:3rem; color:var(--muted); font-size:0.85rem; }
 footer a { color:inherit; }
+.recap { background:var(--tag); border-radius:10px; padding:1rem 1.25rem; margin:1.25rem 0; }
+.recap h2 { margin-top:0; border-bottom:none; padding-bottom:0; }
+.recap ul { margin:0.5rem 0 0; padding-left:1.2rem; }
+.recap li { margin:0.4rem 0; }
 """
 
 
-def to_html(stories: list[dict], cves: list[dict], errors: list[str]) -> str:
+def _recap_html(stories: list[dict], cves: list[dict]) -> str:
+    e = html.escape
+    items = [
+        f"<li><strong>{e(s['title'])}</strong> — {e(_recap_takeaway(s))} "
+        f"<a href='{e(s['link'])}'>read more</a></li>"
+        for s in stories
+    ]
+    if cves:
+        items.append(f"<li>{e(_recap_cve_line(cves))}</li>")
+    return (
+        "<div class='recap'><h2>🕔 5pm recap</h2>"
+        "<p class='sub'>Didn't get through this morning? Here's the quick version — full detail is still below.</p>"
+        f"<ul>{''.join(items)}</ul></div>"
+    )
+
+
+def to_html(
+    stories: list[dict], cves: list[dict], errors: list[str], theme: str | None = None, recap: bool = False
+) -> str:
     today = datetime.now(timezone.utc).strftime("%A, %d %B %Y")
     e = html.escape
+    title = f"CyberBrief — {theme} — {today}" if theme else f"CyberBrief — {today}"
+    h1 = f"🛡️ CyberBrief <span class='sub' style='font-size:0.6em'>· {e(theme)}</span>" if theme else "🛡️ CyberBrief"
     parts = [f"<!doctype html><html lang='en'><head><meta charset='utf-8'>",
              "<meta name='viewport' content='width=device-width, initial-scale=1'>",
-             f"<title>CyberBrief — {e(today)}</title><style>{HTML_STYLE}</style></head><body><main>",
-             f"<h1>🛡️ CyberBrief</h1><p class='sub'>{e(today)} · ranked by real-world urgency "
+             f"<title>{e(title)}</title><style>{HTML_STYLE}</style></head><body><main>",
+             f"<h1>{h1}</h1><p class='sub'>{e(today)} · ranked by real-world urgency "
              "(KEV → EPSS → CVSS) · explained for humans</p>"]
+    if theme:
+        parts.append(f"<p class='sub'>{e(THEME_BLURB[theme])}</p>")
+
+    if recap:
+        parts.append(_recap_html(stories, cves))
 
     parts.append("<h2>🔥 Top stories</h2>")
     for s in stories:

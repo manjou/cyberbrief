@@ -12,6 +12,8 @@ from __future__ import annotations
 
 from datetime import datetime, timezone
 
+from .theme import NETWORK_VENDOR_KEYWORDS, theme_score
+
 KEYWORD_SCORES = {
     "zero-day": 30, "0-day": 30, "actively exploited": 30, "in the wild": 25,
     "ransomware": 25, "supply chain": 22, "backdoor": 20, "critical": 15,
@@ -54,19 +56,22 @@ def dedupe(items: list[dict]) -> list[dict]:
     return [item for _, item in kept]
 
 
-def rank_news(items: list[dict], top_n: int = 8) -> list[dict]:
+def rank_news(items: list[dict], top_n: int = 8, theme: str | None = None) -> list[dict]:
     now = datetime.now(timezone.utc)
     for item in items:
         text = f"{item['title']} {item['summary']}"
         score = _keyword_score(text) * item.get("weight", 1.0)
         age_h = (now - item["published"]).total_seconds() / 3600 if item.get("published") else 36
         score += max(0.0, 12 - age_h / 3)  # freshness bonus, fades over ~36h
+        score += theme_score(text, theme)
         item["score"] = round(score, 1)
     ranked = sorted(items, key=lambda i: i["score"], reverse=True)
     return dedupe(ranked)[:top_n]
 
 
-def rank_cves(kev: list[dict], nvd: list[dict], epss: dict[str, float], top_n: int = 5) -> list[dict]:
+def rank_cves(
+    kev: list[dict], nvd: list[dict], epss: dict[str, float], top_n: int = 5, theme: str | None = None
+) -> list[dict]:
     merged: dict[str, dict] = {}
     for v in nvd:
         merged[v["cve"]] = v
@@ -82,6 +87,10 @@ def rank_cves(kev: list[dict], nvd: list[dict], epss: dict[str, float], top_n: i
             score += 20
         score += v["epss"] * 40
         score += v.get("cvss", 0.0) * 2
+        if theme == "Net+":
+            text = f"{v.get('vendor', '')} {v.get('product', '')} {v.get('name', '')}".lower()
+            if any(kw in text for kw in NETWORK_VENDOR_KEYWORDS):
+                score += 15
         v["score"] = round(score, 1)
 
     return sorted(merged.values(), key=lambda v: v["score"], reverse=True)[:top_n]

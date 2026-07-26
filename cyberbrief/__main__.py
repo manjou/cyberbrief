@@ -9,6 +9,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from . import explain, fetch, rank, render
+from .theme import theme_for_date
+
+CACHE_PATH = Path("cache/latest.json")
 
 
 def main() -> int:
@@ -16,7 +19,19 @@ def main() -> int:
     parser.add_argument("--config", default="feeds.json", help="path to feeds config")
     parser.add_argument("--out", default="docs", help="output directory")
     parser.add_argument("--no-ai", action="store_true", help="skip AI explanations even if API key is set")
+    parser.add_argument(
+        "--recap", action="store_true",
+        help="regenerate today's page with a condensed 5pm recap section, reusing this morning's "
+             "data instead of fetching or calling the AI layer again",
+    )
     args = parser.parse_args()
+
+    today_dt = datetime.now(timezone.utc)
+    today = today_dt.strftime("%Y-%m-%d")
+    theme = theme_for_date(today_dt)
+
+    if args.recap:
+        return _recap(args, today)
 
     config = json.loads(Path(args.config).read_text())
 
@@ -28,12 +43,12 @@ def main() -> int:
     kev = _safe(fetch.fetch_kev, errors, "CISA KEV")
     nvd = _safe(lambda: fetch.fetch_nvd_recent(config.get("min_cvss", 8.0)), errors, "NVD")
 
-    stories = rank.rank_news(news, config.get("top_stories", 8))
+    stories = rank.rank_news(news, config.get("top_stories", 8), theme=theme)
 
     cve_ids = sorted({v["cve"] for v in kev + nvd})
     epss = fetch.fetch_epss(cve_ids) if cve_ids else {}
-    cves = rank.rank_cves(kev, nvd, epss, config.get("top_cves", 5))
-    print(f"  {len(stories)} stories, {len(cves)} CVEs selected", file=sys.stderr)
+    cves = rank.rank_cves(kev, nvd, epss, config.get("top_cves", 5), theme=theme)
+    print(f"  {len(stories)} stories, {len(cves)} CVEs selected" + (f" (theme: {theme})" if theme else ""), file=sys.stderr)
 
     if not args.no_ai:
         explanations, ai_error = explain.explain_items(stories + cves)
@@ -45,18 +60,45 @@ def main() -> int:
             errors.append(f"AI explanations ({ai_error})")
             print(f"  AI explanations failed: {ai_error}", file=sys.stderr)
 
-    out = Path(args.out)
-    (out / "archive").mkdir(parents=True, exist_ok=True)
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    _write_outputs(Path(args.out), today, stories, cves, errors, theme, recap=False)
 
-    html_page = render.to_html(stories, cves, errors)
+    CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    CACHE_PATH.write_text(json.dumps(
+        {"date": today, "theme": theme, "stories": stories, "cves": cves, "errors": errors}, default=str
+    ))
+
+    return 0
+
+
+def _recap(args: argparse.Namespace, today: str) -> int:
+    if not CACHE_PATH.exists():
+        print(f"No cached data at {CACHE_PATH} -- run the morning briefing first.", file=sys.stderr)
+        return 1
+    cached = json.loads(CACHE_PATH.read_text())
+    if cached.get("date") != today:
+        print(f"Cached data is from {cached.get('date')}, not today ({today}) -- skipping recap.", file=sys.stderr)
+        return 1
+
+    _write_outputs(
+        Path(args.out), today, cached["stories"], cached["cves"], cached["errors"], cached.get("theme"), recap=True
+    )
+    print(f"Recap written to {args.out}/index.html and {args.out}/briefing.md", file=sys.stderr)
+    return 0
+
+
+def _write_outputs(
+    out: Path, today: str, stories: list[dict], cves: list[dict], errors: list[str],
+    theme: str | None, recap: bool,
+) -> None:
+    (out / "archive").mkdir(parents=True, exist_ok=True)
+
+    html_page = render.to_html(stories, cves, errors, theme=theme, recap=recap)
     (out / "index.html").write_text(html_page)
     (out / "archive" / f"{today}.html").write_text(html_page)
-    (out / "briefing.md").write_text(render.to_markdown(stories, cves, errors))
+    (out / "briefing.md").write_text(render.to_markdown(stories, cves, errors, theme=theme, recap=recap))
     _write_archive_index(out / "archive")
 
     print(f"Briefing written to {out}/index.html and {out}/briefing.md", file=sys.stderr)
-    return 0
 
 
 def _safe(fn, errors: list[str], label: str):

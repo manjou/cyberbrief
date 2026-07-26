@@ -12,14 +12,32 @@ Staying current in security is a firehose problem: dozens of feeds, hundreds of 
 
 ## What it does
 
-Every morning (GitHub Actions, 05:30 UTC) CyberBrief:
+Every weekday morning, Mon-Fri (GitHub Actions, 05:30 UTC — no runs on weekends), CyberBrief:
 
 1. Pulls the top security news feeds — The Hacker News, BleepingComputer, Krebs on Security, SANS ISC, Schneier, SecurityWeek, CERT-Bund
 2. Pulls the **CISA Known Exploited Vulnerabilities** catalog and recent high-severity CVEs from **NVD**, enriched with **EPSS** exploit-probability scores
 3. Ranks and dedupes everything with a transparent scoring model — **no AI required, zero dependencies, pure Python stdlib**
 4. Publishes an HTML briefing (GitHub Pages) + Markdown version, with a jargon decoder for newcomers and ISO 27001 control tags on every story
 
-Optionally, set an `ANTHROPIC_API_KEY` secret and each item gets a 2–3 sentence beginner-friendly explanation from Claude (one batched Haiku call ≈ a cent a day).
+Optionally, set an `ANTHROPIC_API_KEY` secret and each item gets a 2–3 sentence beginner-friendly explanation from Claude (one batched Haiku call ≈ a cent a day). If the AI call fails for any reason (bad/expired key, rate limit, outage), that's surfaced visibly on the page as "Sources unavailable this run" instead of silently degrading to raw feed text.
+
+### Weekday themes
+
+Each weekday has a focus, so no single day tries to cover everything:
+
+| Day | Theme | Focus |
+|-----|-------|-------|
+| Mon | SOC | Active exploitation, incident response, threat activity |
+| Tue | GRC | Breaches, regulation, compliance impact |
+| Wed | Net+ | Network infrastructure — a lighter refresh day |
+| Thu | SOC | Active exploitation, incident response, threat activity |
+| Fri | GRC | Breaches, regulation, compliance impact |
+
+Themes bias ranking toward the day's focus (see `cyberbrief/theme.py`) but never exclude everything else — a quiet day for one theme still fills out with the best overall stories, so the briefing is never empty. Edit `WEEKDAY_THEME` and `THEME_KEYWORDS` in `theme.py` to change the rotation or focus areas.
+
+### 5pm recap
+
+A second run at ~17:00 (15:00 UTC, Mon-Fri) adds a condensed one-line-per-story recap on top of the same page — no new fetching, no new AI cost, just a quick-scan summary of the exact same morning items, for anyone who didn't finish reading before then.
 
 ## Run it yourself
 

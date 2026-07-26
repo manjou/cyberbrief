@@ -2,14 +2,26 @@ name: Daily briefing
 
 on:
   schedule:
-    - cron: "30 5 * * *"   # 05:30 UTC every day
-  workflow_dispatch: {}     # manual run button
+    - cron: "30 5 * * 1-5"   # 05:30 UTC, Mon-Fri (morning briefing, themed SOC/GRC/Net+)
+    - cron: "0 15 * * 1-5"   # 15:00 UTC, Mon-Fri (~17:00 Europe/Berlin in summer; ~16:00 once DST ends)
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Which run to trigger manually"
+        type: choice
+        default: morning
+        options:
+          - morning
+          - recap
 
 permissions:
   contents: write
 
 jobs:
-  briefing:
+  morning:
+    if: >
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'morning') ||
+      github.event.schedule == '30 5 * * 1-5'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -28,6 +40,29 @@ jobs:
         run: |
           git config user.name "cyberbrief-bot"
           git config user.email "actions@github.com"
-          git add docs
+          git add docs cache
           git diff --cached --quiet || git commit -m "briefing: $(date -u +%F)"
+          git push
+
+  recap:
+    if: >
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'recap') ||
+      github.event.schedule == '0 15 * * 1-5'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate recap
+        run: python -m cyberbrief --recap --out docs
+
+      - name: Commit and push
+        run: |
+          git config user.name "cyberbrief-bot"
+          git config user.email "actions@github.com"
+          git add docs
+          git diff --cached --quiet || git commit -m "recap: $(date -u +%F)"
           git push
