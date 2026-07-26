@@ -23,11 +23,14 @@ Return ONLY a JSON object mapping item number (string) to explanation. Items:
 {items}"""
 
 
-def explain_items(items: list[dict]) -> dict[int, str]:
-    """Returns {index: explanation}. Empty dict if no API key or on any failure."""
+def explain_items(items: list[dict]) -> tuple[dict[int, str], str | None]:
+    """Returns (explanations, error). error is None when explanations succeeded or
+    the AI layer was intentionally skipped (no key configured) -- only set when a
+    key was present but the call failed, so a real outage/expiry is visible in the
+    briefing instead of silently degrading to raw feed text."""
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key or not items:
-        return {}
+        return {}, None
 
     numbered = "\n".join(
         f"{i + 1}. {it.get('title') or it.get('cve', '')}: "
@@ -53,6 +56,6 @@ def explain_items(items: list[dict]) -> dict[int, str]:
             text = json.loads(resp.read())["content"][0]["text"]
         start, end = text.find("{"), text.rfind("}") + 1
         parsed = json.loads(text[start:end])
-        return {int(k) - 1: v for k, v in parsed.items()}
-    except Exception:  # noqa: BLE001 - AI layer is strictly optional
-        return {}
+        return {int(k) - 1: v for k, v in parsed.items()}, None
+    except Exception as exc:  # noqa: BLE001 - AI layer is strictly optional
+        return {}, type(exc).__name__

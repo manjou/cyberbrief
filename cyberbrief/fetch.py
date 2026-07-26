@@ -45,6 +45,28 @@ def _strip_html(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
+FEED_BOILERPLATE_RE = re.compile(
+    r"\s*(the post .+ appeared first on .+|read more|continue reading)\.?\s*$",
+    re.IGNORECASE,
+)
+TRAILING_ELLIPSIS_RE = re.compile(r"\s*(\[…\]|\[\.\.\.\]|…|\.\.\.)\s*$")
+SENTENCE_END_RE = re.compile(r"[.!?](?=\s|$)")
+
+
+def _clean_summary(text: str, limit: int = 500) -> str:
+    """Strip common feed boilerplate and truncate at a sentence boundary, not mid-word."""
+    text = FEED_BOILERPLATE_RE.sub("", text)
+    text = TRAILING_ELLIPSIS_RE.sub("", text).strip()
+    if len(text) <= limit:
+        return text
+    truncated = text[:limit]
+    ends = [m.end() for m in SENTENCE_END_RE.finditer(truncated)]
+    if ends and ends[-1] > limit * 0.4:
+        return truncated[: ends[-1]].strip()
+    last_space = truncated.rfind(" ")
+    return (truncated[:last_space] if last_space > 0 else truncated).rstrip(".,;:") + "…"
+
+
 def _parse_date(raw: str):
     if not raw:
         return None
@@ -72,7 +94,7 @@ def parse_feed(xml_bytes: bytes, source: str, weight: float) -> list[dict]:
             "weight": weight,
             "title": _text(node, "title"),
             "link": _text(node, "link"),
-            "summary": _strip_html(_text(node, "description"))[:500],
+            "summary": _clean_summary(_strip_html(_text(node, "description"))),
             "published": _parse_date(_text(node, "pubDate", "{http://purl.org/dc/elements/1.1/}date")),
         })
     for node in root.iter(f"{ATOM}entry"):  # Atom
@@ -85,7 +107,7 @@ def parse_feed(xml_bytes: bytes, source: str, weight: float) -> list[dict]:
             "weight": weight,
             "title": _text(node, f"{ATOM}title"),
             "link": link,
-            "summary": _strip_html(_text(node, f"{ATOM}summary", f"{ATOM}content"))[:500],
+            "summary": _clean_summary(_strip_html(_text(node, f"{ATOM}summary", f"{ATOM}content"))),
             "published": _parse_date(_text(node, f"{ATOM}updated", f"{ATOM}published")),
         })
     return items

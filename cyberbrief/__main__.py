@@ -36,11 +36,14 @@ def main() -> int:
     print(f"  {len(stories)} stories, {len(cves)} CVEs selected", file=sys.stderr)
 
     if not args.no_ai:
-        explanations = explain.explain_items(stories + cves)
+        explanations, ai_error = explain.explain_items(stories + cves)
         for idx, text in explanations.items():
             (stories + cves)[idx]["explanation"] = text
         if explanations:
             print(f"  AI explanations added for {len(explanations)} items", file=sys.stderr)
+        elif ai_error:
+            errors.append(f"AI explanations ({ai_error})")
+            print(f"  AI explanations failed: {ai_error}", file=sys.stderr)
 
     out = Path(args.out)
     (out / "archive").mkdir(parents=True, exist_ok=True)
