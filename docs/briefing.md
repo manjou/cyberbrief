@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **MCBS Data Breach Affects 1.2 Million Individuals** — A ransomware group called PEAR claims to have stolen 3 TB of data (sensitive medical and business information) from MCBS, affecting 1.2 million people. [read more](https://www.securityweek.com/mcbs-data-breach-affects-1-2-million-individuals/)
+- **GitHub, PyPI add time-based defenses against supply chain attacks** — GitHub and PyPI (repositories where developers get code libraries) added time-based checks to Dependabot (a tool that automatically updates software dependencies) to catch malicious code injected into supply chains before it spreads widely. [read more](https://www.bleepingcomputer.com/news/security/github-pypi-add-time-absed-defenses-against-supply-chain-attacks/)
+- **[UPDATE] [hoch] Microsoft Azure, Copilot, Exchange, Surface: Mehrere Schwachstellen** — Microsoft released updates for multiple vulnerabilities across Azure cloud services, Microsoft 365 Copilot, Exchange email, and Surface devices that could allow attackers to gain unauthorized privileges, run malicious code, alter data, or steal confidential information. [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2502)
+- **Scans for ESAFENET CDG 3 Document Management System Weak Logins, (Sun, Jul 26th)** — Security researchers found that ESAFENET's CDG 3 document management system (designed to prevent data leaks, mainly used in China) contains weak login protections that attackers are actively scanning for. [read more](https://isc.sans.edu/diary/rss/33184)
+- **[UPDATE] [hoch] Google Chrome: Mehrere Schwachstellen ermöglichen nicht spezifizierten Angriff** — Google Chrome has multiple unspecified vulnerabilities that attackers can exploit to carry out attacks; specific details are limited in this notice. [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2497)
+- **[UPDATE] [mittel] Exim: Mehrere Schwachstellen** — Exim (an email transport software) has multiple vulnerabilities that a local attacker (someone with access to the same system) can exploit to run arbitrary commands and escalate their privileges. [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2494)
+- **[UPDATE] [hoch] Mozilla Firefox und Thunderbird: Mehrere Schwachstellen** — Mozilla Firefox and Thunderbird browsers/email clients have multiple vulnerabilities allowing attackers to execute code, bypass security features, steal information, escalate privileges, break out of security sandboxes (isolated environments), and disrupt service. [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2458)
+- **[UPDATE] [hoch] Linux Kernel: Mehrere Schwachstellen** — The Linux Kernel (core of the operating system) has multiple vulnerabilities that attackers can exploit, potentially causing denial-of-service (system crashes), privilege escalation, unauthorized code execution, or memory corruption. [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1279)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-63030 (– CVSS, 98% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. MCBS Data Breach Affects 1.2 Million Individuals
