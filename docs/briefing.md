@@ -4,6 +4,20 @@
 
 *Today's focus: network infrastructure — a lighter refresh day.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **QuickFox Supply Chain Attack Delivers FDMTP Backdoor via Trojanized Windows Installer** — Attackers compromised QuickFox's software distribution to inject a backdoor (a hidden remote access tool) into legitimate installer files that users downloaded. [read more](https://thehackernews.com/2026/08/quickfox-supply-chain-attack-delivers.html)
+- **TP-Link patches Omada ZTP flaws allowing hackers to breach networks** — TP-Link released security fixes for 15 separate weaknesses in the automatic setup feature (ZTP) of its Omada network devices that could let attackers gain complete control of those devices. [read more](https://www.bleepingcomputer.com/news/security/tp-link-patches-omada-ztp-flaws-allowing-hackers-to-breach-networks/)
+- **Hotel Wi-Fi attacks use custom malware to breach Microsoft 365 accounts** — A Russian-linked hacking group (Midnight Blizzard, also called APT29) ran a coordinated campaign targeting hotel Wi-Fi networks to steal login credentials for Microsoft 365 accounts (email, cloud storage, etc.). [read more](https://www.bleepingcomputer.com/news/security/hotel-wi-fi-attacks-use-custom-malware-to-breach-microsoft-365-accounts/)
+- **CISA Adds Exploited N-able N-central Flaw to KEV After Customer Compromises** — A serious vulnerability in N-able N-central (remote management software used by IT teams) was actively being exploited by attackers in real environments, so CISA added it to a public list of known exploited flaws that organizations should prioritize patching. [read more](https://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html)
+- **Botnet Hunting for Vulnerabilities in Diagnostic Tools, (Tue, Aug 4th)** — Attackers deployed automated malware (a botnet) that is actively scanning for and attempting to exploit known weaknesses in diagnostic and troubleshooting tools on networks. [read more](https://isc.sans.edu/diary/rss/33214)
+- **When Vibe Hacking Turns AI into the Junior Hacker Every Adversary Always Wanted** — AI tools are lowering the barrier to entry for launching cyberattacks because they can help less-skilled attackers automate complex hacking tasks that previously required deep technical knowledge. [read more](https://thehackernews.com/2026/08/when-vibe-hacking-turns-ai-into-junior.html)
+- **Phishing service spoofs RingCentral to steal Microsoft 365 accounts** — The Greatness phishing service (a tool that criminals rent to launch attacks) now offers multiple tactics to steal Microsoft 365 login credentials: sending fake login pages, intercepting communication between user and legitimate service (adversary-in-the-middle), and exploiting device authentication flows. [read more](https://www.bleepingcomputer.com/news/security/phishing-service-spoofs-ringcentral-to-steal-microsoft-365-accounts/)
+- **Varonis Agent IBAC keeps AI agents within their intended boundaries** — Varonis developed a control system that monitors AI agents (automated software) to detect when they drift from their intended purpose and automatically stop them from performing unauthorized actions. [read more](https://www.bleepingcomputer.com/news/security/varonis-agent-ibac-keeps-ai-agents-within-their-intended-boundaries/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-16232 (– CVSS, 71% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. QuickFox Supply Chain Attack Delivers FDMTP Backdoor via Trojanized Windows Installer
