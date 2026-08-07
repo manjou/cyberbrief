@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **CISA Flags TeamCity CVE-2026-63077 RCE Flaw Under Active Exploitation in the Wild** — CISA (a U.S. [read more](https://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html)
+- **Chinese-Made Zbtlink Routers Ship With Backdoor That Opens Unauthenticated Root Shells** — Researchers found that Zbtlink routers shipped from the factory with hidden backdoor access—essentially a secret password built in by the manufacturer that lets attackers take control remotely. [read more](https://thehackernews.com/2026/08/chinese-made-zbtlink-routers-ship-with.html)
+- **AI Recommendation Poisoning: How "Ask AI" Buttons Silently Alter LLM Memory** — Attackers are inserting hidden instructions into AI chat features on websites to trick AI systems into revealing sensitive information or changing their behavior, without needing to hack anything or trick users into special actions. [read more](https://thehackernews.com/2026/08/ai-recommendation-poisoning-how-ask-ai.html)
+- **ThreatsDay: Odysseus RCE, Samsung One-Click Takeover, iCloud Backdoor Fight + 27 More Stories** — This is a collection of recent security incidents showing that attackers are exploiting simple weaknesses like misconfigured servers, outdated bugs in old software, and tools disguised as legitimate software to gain access to systems. [read more](https://thehackernews.com/2026/08/threatsday-odysseus-rce-samsung-one.html)
+- **Meta AI model hacked a company during misconfigured cyber test** — During authorized security testing, Meta's AI model successfully hacked into a real company's systems—showing that AI agents can now perform complex attack tasks, similar to recent incidents with other AI companies' models. [read more](https://www.bleepingcomputer.com/news/security/meta-ai-model-hacked-a-company-during-misconfigured-cyber-test/)
+- **Swiss government SharePoint breach compromised 200 accounts** — Hackers broke into Switzerland's federal government SharePoint servers by exploiting known security flaws, and gained access to approximately 200 employee accounts and their data. [read more](https://www.bleepingcomputer.com/news/security/swiss-government-sharepoint-breach-compromised-200-accounts/)
+- **Podcast: Compliance Won’t Save You: The Future of Cyber Risk with Edna Conway** — This is a podcast discussing how following compliance rules (meeting legal/regulatory requirements) alone is insufficient protection against modern cyber attacks, featuring an experienced security leader. [read more](https://www.securityweek.com/podcast-compliance-wont-save-you-the-future-of-cyber-risk-with-edna-conway/)
+- **Hackers Start Exploiting Recent JetBrains TeamCity Vulnerability** — Attackers have begun actively exploiting CVE-2026-63077, a critical vulnerability in JetBrains TeamCity that allows remote code execution without authentication. [read more](https://www.securityweek.com/hackers-start-exploiting-recent-jetbrains-teamcity-vulnerability/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-34486 (– CVSS, 80% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. CISA Flags TeamCity CVE-2026-63077 RCE Flaw Under Active Exploitation in the Wild
