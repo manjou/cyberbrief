@@ -4,6 +4,15 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Critical Flaws Discovered in Belgian eID Software Used by 2 Million People** — Security researchers found serious flaws in software that Belgian citizens use to verify their identity online (eID = electronic ID), affecting millions of people and critical institutions like banks and government offices. [read more](https://www.securityweek.com/critical-flaws-discovered-in-belgian-eid-software-used-by-2-million-people/)
+- **OpenAI's Next AI Model Astra Shows Cyber Performance Strong Enough to Trigger Pause** — OpenAI tested its new AI model Astra and found it performed so well at hacking tasks and writing exploit code (agentic coding = AI that acts independently to solve problems) that the company decided to pause internal testing to evaluate safety risks first. [read more](https://thehackernews.com/2026/08/openais-next-ai-model-astra-shows-cyber.html)
+- **ISC Stormcast For Monday, August 10th, 2026 https://isc.sans.edu/podcastdetail/10044, (Mon, Aug 10th)** — This item references a podcast episode but provides no substantive information about a security event or vulnerability. [read more](https://isc.sans.edu/diary/rss/33228)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-8037 (– CVSS, 99% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Critical Flaws Discovered in Belgian eID Software Used by 2 Million People
