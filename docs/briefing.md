@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **⚡ Weekly Recap: AI Goes Rogue, Metabase 0-Day, MCP Supply-Chain Attacks, and Router Backdoors** — This week showed that most breaches start with routine actions—developers cloning code repos, employees answering calls, or systems left at factory defaults—rather than sophisticated hacking. [read more](https://thehackernews.com/2026/08/weekly-recap-ai-goes-rogue-metabase-0.html)
+- **Critical Progress LoadMaster flaw now actively exploited in attacks** — Hackers are actively attacking a critical flaw in Progress Kemp LoadMaster (a device that distributes network traffic) using command injection—a technique where attackers insert malicious commands into normal input fields. [read more](https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-progress-loadmaster-flaw-exploited-in-attacks/)
+- **Valve notifies Steam hardware customers of a data breach** — Hackers broke into CEVA Logistics (a company that ships Steam hardware) and stole customer data, which Valve is now notifying. [read more](https://www.bleepingcomputer.com/news/security/valve-notifies-steam-hardware-customers-of-a-data-breach/)
+- **BdThemes Supply Chain Attack Poisons JSON to Create Rogue WordPress Admins** — BdThemes, a WordPress plugin vendor, was compromised in a supply chain attack where attackers poisoned the JSON configuration files to create unauthorized admin accounts in websites using their plugins. [read more](https://thehackernews.com/2026/08/bdthemes-supply-chain-attack-poisons.html)
+- **China-Linked Hackers Deploy New StormEncryptor Ransomware, Likely via N-central Flaw** — A Chinese-linked threat group has started using a new ransomware called StormEncryptor, likely deployed through a flaw in N-able N-central (remote management software). [read more](https://thehackernews.com/2026/08/china-linked-hackers-deploy-new.html)
+- **Metabase Patches Vulnerability Exploited as Zero-Day** — Metabase (a data visualization tool) had a vulnerability that let attackers gain full admin access without a password—this flaw was being exploited before Metabase released a fix. [read more](https://www.securityweek.com/metabase-patches-vulnerability-exploited-as-zero-day/)
+- **CISA: SonicWall SMA1000 flaws now exploited by ransomware gangs** — Ransomware gangs are now exploiting two recently patched flaws in SonicWall SMA1000 (a remote access device), including a server-side request forgery (SSRF) flaw that lets attackers trick the device into making requests on their behalf. [read more](https://www.bleepingcomputer.com/news/security/cisa-sonicwall-sma1000-flaws-now-exploited-by-ransomware-gangs/)
+- **CISA Urges Immediate Patching of Exploited Progress LoadMaster Vulnerability** — Progress LoadMaster has a critical flaw where attackers can run arbitrary commands (instructions of their choice) without logging in first. [read more](https://www.securityweek.com/cisa-urges-immediate-patching-of-exploited-progress-loadmaster-vulnerability/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-8037 (– CVSS, 99% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. ⚡ Weekly Recap: AI Goes Rogue, Metabase 0-Day, MCP Supply-Chain Attacks, and Router Backdoors
