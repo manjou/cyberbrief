@@ -4,6 +4,20 @@
 
 *Today's focus: network infrastructure — a lighter refresh day.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Microsoft Patch Tuesday August 2026, (Tue, Aug 11th)** — Microsoft released security patches for 418 vulnerabilities in August 2026, with 62 being critical severity and 1 already being actively used in real attacks. [read more](https://isc.sans.edu/diary/rss/33236)
+- **CISA: Microsoft SharePoint flaw now exploited in ransomware attacks** — CISA confirmed that ransomware gangs are exploiting a SharePoint vulnerability (a tool used to share files and information in organizations) to break into networks and encrypt data for extortion. [read more](https://www.bleepingcomputer.com/news/security/cisa-microsoft-sharepoint-flaw-now-exploited-in-ransomware-attacks/)
+- **Gunra Ransomware Exploits Fortinet and Schneider Electric Flaws to Breach Networks** — Gunra ransomware criminals are exploiting known vulnerabilities in Fortinet and Schneider Electric products to break into healthcare, finance, and government organizations worldwide. [read more](https://thehackernews.com/2026/08/gunra-ransomware-exploits-fortinet-and.html)
+- **Cisco warns of ASA and FTD VPN flaw exploited to crash devices** — Cisco discovered that attackers are actively exploiting a denial-of-service vulnerability in its ASA and FTD firewalls—devices that protect network boundaries—to remotely crash them and knock them offline. [read more](https://www.bleepingcomputer.com/news/security/cisco-warns-of-asa-and-ftd-vpn-flaw-exploited-to-crash-devices/)
+- **DeadLock Ransomware Uses Polygon Smart Contracts to Make Extortion Infra Harder to Disrupt** — The DeadLock ransomware group is using blockchain and decentralized messaging services to manage their extortion operations and make it harder for authorities to shut down their infrastructure. [read more](https://thehackernews.com/2026/08/deadlock-ransomware-uses-polygon-smart.html)
+- **Sandworm-Linked UAC-0145 Uses Fake Job Interviews to Push VPN That Can Run Commands** — Russian state-sponsored hackers are posing as job recruiters to trick IT workers in Ukraine into installing malware-laden VPN software that gives the attackers remote command-and-control capabilities on their machines. [read more](https://thehackernews.com/2026/08/sandworm-linked-uac-0145-uses-fake-job.html)
+- **Cisco Patches Firewall Zero-Day Exploited for DoS Attacks** — Cisco patched a zero-day vulnerability (CVE-2026-20349) in its firewalls that allows unauthenticated attackers to remotely crash the device by sending specially-crafted requests, causing a denial-of-service. [read more](https://www.securityweek.com/cisco-patches-firewall-zero-day-exploited-for-dos-attacks/)
+- **Microsoft Patches 398 Flaws Including a Windows Driver Zero-Day Under Active Attack** — Microsoft patched a Windows kernel driver vulnerability that is already being actively exploited; an attacker with some code running on a machine can use it to escalate to SYSTEM level—the highest privilege in Windows. [read more](https://thehackernews.com/2026/08/microsoft-patches-398-flaws-including.html)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-8037 (– CVSS, 99% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Microsoft Patch Tuesday August 2026, (Tue, Aug 11th)
