@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Cisco ASA and FTD Flaw Exploited in the Wild Can Trigger Remote DoS** — Cisco discovered a serious flaw in their firewall products (ASA and FTD) that attackers are already using to crash these devices remotely. [read more](https://thehackernews.com/2026/08/cisco-asa-and-ftd-flaw-exploited-in.html)
+- **Lazarus Exploits Windows Zero-Day to Gain SYSTEM Access and Deploy Backdoor** — North Korea's Lazarus Group discovered and exploited a previously unknown Windows flaw to break into defense and aerospace companies in multiple countries, installing hidden backdoor software (ForestTiger) that gives them ongoing access. [read more](https://thehackernews.com/2026/08/lazarus-exploits-windows-zero-day-to.html)
+- **Fresh Windows Zero-Day Exploited in North Korean Cyberattacks** — Attackers used a Windows zero-day (previously unknown vulnerability) to gain complete control of victim systems and install the ForestTiger backdoor for persistent access. [read more](https://www.securityweek.com/fresh-windows-zero-day-exploited-in-north-korean-cyberattacks/)
+- **SAP Commerce Cloud Flaw Could Let Unauthenticated Attackers Execute Arbitrary Code** — SAP released an emergency patch for a maximum-severity flaw in their Commerce Cloud product that would let attackers without login credentials run any code they want on affected systems. [read more](https://thehackernews.com/2026/08/sap-commerce-cloud-flaw-could-let.html)
+- **Cisco warns of ASA and FTD VPN flaw exploited to crash devices** — Cisco reported that attackers are actively exploiting a high-severity flaw in Secure Firewall (ASA and FTD) to remotely crash these devices and knock them offline. [read more](https://www.bleepingcomputer.com/news/security/cisco-warns-of-asa-and-ftd-vpn-flaw-exploited-to-crash-devices/)
+- **Microsoft Plugs Nearly 400 Security Holes** — Microsoft released patches for nearly 400 security holes across Windows and their software products, including one flaw that attackers are already exploiting and two others that details were publicly shared. [read more](https://krebsonsecurity.com/2026/08/microsoft-plugs-nearly-400-security-holes/)
+- **Stealthy ‘City-Forum’ Attacks Target Salesforce and ServiceNow With Custom Toolset** — Researchers discovered a new attack campaign (City-Forum) targeting Salesforce and ServiceNow by exploiting guest access features to quietly gather and steal exposed customer data without leaving obvious traces. [read more](https://www.securityweek.com/stealthy-city-forum-attacks-target-salesforce-and-servicenow-with-custom-toolset/)
+- **SharePoint Vulnerability Exploited Shortly After PoC Release** — A SharePoint vulnerability that Microsoft patched in July was later exploited in real attacks after someone publicly released proof-of-concept code showing how the flaw works. [read more](https://www.securityweek.com/sharepoint-vulnerability-exploited-shortly-after-poc-release/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-8037 (– CVSS, 99% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Cisco ASA and FTD Flaw Exploited in the Wild Can Trigger Remote DoS
