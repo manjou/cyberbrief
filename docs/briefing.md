@@ -1,80 +1,66 @@
-# 🛡️ CyberBrief — Net+ — Wednesday, 12 August 2026
+# 🛡️ CyberBrief — SOC — Thursday, 13 August 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
-*Today's focus: network infrastructure — a lighter refresh day.*
-
-## 🕔 5pm recap
-
-*Didn't get through this morning? Here's the quick version — full detail is still below.*
-
-- **Microsoft Patch Tuesday August 2026, (Tue, Aug 11th)** — Microsoft released security patches for 418 vulnerabilities in August 2026, with 62 being critical severity and 1 already being actively used in real attacks. [read more](https://isc.sans.edu/diary/rss/33236)
-- **CISA: Microsoft SharePoint flaw now exploited in ransomware attacks** — CISA confirmed that ransomware gangs are exploiting a SharePoint vulnerability (a tool used to share files and information in organizations) to break into networks and encrypt data for extortion. [read more](https://www.bleepingcomputer.com/news/security/cisa-microsoft-sharepoint-flaw-now-exploited-in-ransomware-attacks/)
-- **Gunra Ransomware Exploits Fortinet and Schneider Electric Flaws to Breach Networks** — Gunra ransomware criminals are exploiting known vulnerabilities in Fortinet and Schneider Electric products to break into healthcare, finance, and government organizations worldwide. [read more](https://thehackernews.com/2026/08/gunra-ransomware-exploits-fortinet-and.html)
-- **Cisco warns of ASA and FTD VPN flaw exploited to crash devices** — Cisco discovered that attackers are actively exploiting a denial-of-service vulnerability in its ASA and FTD firewalls—devices that protect network boundaries—to remotely crash them and knock them offline. [read more](https://www.bleepingcomputer.com/news/security/cisco-warns-of-asa-and-ftd-vpn-flaw-exploited-to-crash-devices/)
-- **DeadLock Ransomware Uses Polygon Smart Contracts to Make Extortion Infra Harder to Disrupt** — The DeadLock ransomware group is using blockchain and decentralized messaging services to manage their extortion operations and make it harder for authorities to shut down their infrastructure. [read more](https://thehackernews.com/2026/08/deadlock-ransomware-uses-polygon-smart.html)
-- **Sandworm-Linked UAC-0145 Uses Fake Job Interviews to Push VPN That Can Run Commands** — Russian state-sponsored hackers are posing as job recruiters to trick IT workers in Ukraine into installing malware-laden VPN software that gives the attackers remote command-and-control capabilities on their machines. [read more](https://thehackernews.com/2026/08/sandworm-linked-uac-0145-uses-fake-job.html)
-- **Cisco Patches Firewall Zero-Day Exploited for DoS Attacks** — Cisco patched a zero-day vulnerability (CVE-2026-20349) in its firewalls that allows unauthenticated attackers to remotely crash the device by sending specially-crafted requests, causing a denial-of-service. [read more](https://www.securityweek.com/cisco-patches-firewall-zero-day-exploited-for-dos-attacks/)
-- **Microsoft Patches 398 Flaws Including a Windows Driver Zero-Day Under Active Attack** — Microsoft patched a Windows kernel driver vulnerability that is already being actively exploited; an attacker with some code running on a machine can use it to escalate to SYSTEM level—the highest privilege in Windows. [read more](https://thehackernews.com/2026/08/microsoft-patches-398-flaws-including.html)
-- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-8037 (– CVSS, 99% EPSS)
+*Today's focus: active exploitation, incident response, and threat activity.*
 
 ## 🔥 Top stories
 
-### 1. Microsoft Patch Tuesday August 2026, (Tue, Aug 11th)
-*SANS ISC* — [read more](https://isc.sans.edu/diary/rss/33236)
+### 1. Cisco ASA and FTD Flaw Exploited in the Wild Can Trigger Remote DoS
+*The Hacker News* — [read more](https://thehackernews.com/2026/08/cisco-asa-and-ftd-flaw-exploited-in.html)
 
-Microsoft released security patches for 418 vulnerabilities in August 2026, with 62 being critical severity and 1 already being actively used in real attacks. This matters because attackers often target newly-disclosed vulnerabilities before organizations can apply patches, and the high number of critical flaws means many systems are at risk. Defenders typically prioritize applying patches for critical vulnerabilities and those known to be exploited, often within days, and may temporarily restrict access to affected systems until patches are deployed.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.8.2 Privileged access rights
-
-### 2. CISA: Microsoft SharePoint flaw now exploited in ransomware attacks
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisa-microsoft-sharepoint-flaw-now-exploited-in-ransomware-attacks/)
-
-CISA confirmed that ransomware gangs are exploiting a SharePoint vulnerability (a tool used to share files and information in organizations) to break into networks and encrypt data for extortion. This matters because SharePoint is widely used and an actively-exploited vulnerability means attackers have working attack code they can reuse against many targets. Defenders should patch this vulnerability immediately on all SharePoint systems and monitor for suspicious SharePoint activity, particularly file encryption or unusual access patterns.
-
-> 📋 **ISO 27001:** A.8.13 Information backup, A.8.8 Management of technical vulnerabilities
-
-### 3. Gunra Ransomware Exploits Fortinet and Schneider Electric Flaws to Breach Networks
-*The Hacker News* — [read more](https://thehackernews.com/2026/08/gunra-ransomware-exploits-fortinet-and.html)
-
-Gunra ransomware criminals are exploiting known vulnerabilities in Fortinet and Schneider Electric products to break into healthcare, finance, and government organizations worldwide. This matters because these sectors handle critical services and sensitive data, and criminals targeting them suggests the flaws are being weaponized at scale. Defenders in these sectors should urgently patch these products, monitor for exploitation attempts, and ensure backups are isolated so ransomware cannot encrypt them.
-
-> 📋 **ISO 27001:** A.8.13 Information backup, A.8.8 Management of technical vulnerabilities
-
-### 4. Cisco warns of ASA and FTD VPN flaw exploited to crash devices
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisco-warns-of-asa-and-ftd-vpn-flaw-exploited-to-crash-devices/)
-
-Cisco discovered that attackers are actively exploiting a denial-of-service vulnerability in its ASA and FTD firewalls—devices that protect network boundaries—to remotely crash them and knock them offline. This matters because a crashed firewall leaves an organization's network temporarily unprotected and causes service outages. Defenders should apply Cisco's security patch immediately and consider temporarily implementing workarounds like rate-limiting VPN connections to prevent crashes while patches are deployed.
+Cisco discovered a serious flaw in their firewall products (ASA and FTD) that attackers are already using to crash these devices remotely. This matters because firewalls are critical security tools that protect networks, so crashing them leaves companies vulnerable to further attacks. Defenders need to apply Cisco's security patches immediately and monitor their firewall logs for signs of attack attempts.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.8.20 Networks security
 
-### 5. DeadLock Ransomware Uses Polygon Smart Contracts to Make Extortion Infra Harder to Disrupt
-*The Hacker News* — [read more](https://thehackernews.com/2026/08/deadlock-ransomware-uses-polygon-smart.html)
+### 2. Lazarus Exploits Windows Zero-Day to Gain SYSTEM Access and Deploy Backdoor
+*The Hacker News* — [read more](https://thehackernews.com/2026/08/lazarus-exploits-windows-zero-day-to.html)
 
-The DeadLock ransomware group is using blockchain and decentralized messaging services to manage their extortion operations and make it harder for authorities to shut down their infrastructure. This matters because decentralized systems are distributed across many computers worldwide, making them resilient to takedowns compared to traditional centralized servers. Defenders cannot easily block these channels, so focus shifts to preventing initial compromise through strong access controls and monitoring for unusual data exfiltration.
+North Korea's Lazarus Group discovered and exploited a previously unknown Windows flaw to break into defense and aerospace companies in multiple countries, installing hidden backdoor software (ForestTiger) that gives them ongoing access. This is serious because aerospace and defense organizations hold sensitive information, and backdoors allow attackers to steal data or launch future attacks undetected. Defenders must apply Microsoft's patch, scan systems for the ForestTiger backdoor, and assume their networks may have been compromised until proven otherwise.
 
-> 📋 **ISO 27001:** A.8.13 Information backup, A.8.8 Management of technical vulnerabilities
+> 📋 **ISO 27001:** A.8.7 Protection against malware, A.8.8 Management of technical vulnerabilities
 
-### 6. Sandworm-Linked UAC-0145 Uses Fake Job Interviews to Push VPN That Can Run Commands
-*The Hacker News* — [read more](https://thehackernews.com/2026/08/sandworm-linked-uac-0145-uses-fake-job.html)
+### 3. Fresh Windows Zero-Day Exploited in North Korean Cyberattacks
+*SecurityWeek* — [read more](https://www.securityweek.com/fresh-windows-zero-day-exploited-in-north-korean-cyberattacks/)
 
-Russian state-sponsored hackers are posing as job recruiters to trick IT workers in Ukraine into installing malware-laden VPN software that gives the attackers remote command-and-control capabilities on their machines. This matters because IT workers often have elevated access, making them high-value targets, and social engineering exploits human trust rather than technical vulnerabilities. Defenders should conduct security awareness training, implement email filtering to catch suspicious recruitment messages, and require verification of job opportunities through official company channels.
+Attackers used a Windows zero-day (previously unknown vulnerability) to gain complete control of victim systems and install the ForestTiger backdoor for persistent access. This matters because full system control means attackers can steal anything, modify files, or use the computer to attack other networks. Defenders should patch Windows immediately, hunt for ForestTiger indicators of compromise, and implement detection rules to catch similar backdoor activity.
 
-> 📋 **ISO 27001:** A.8.7 Protection against malware, A.6.3 Awareness, education and training
+> 📋 **ISO 27001:** A.8.7 Protection against malware, A.8.8 Management of technical vulnerabilities
 
-### 7. Cisco Patches Firewall Zero-Day Exploited for DoS Attacks
-*SecurityWeek* — [read more](https://www.securityweek.com/cisco-patches-firewall-zero-day-exploited-for-dos-attacks/)
+### 4. SAP Commerce Cloud Flaw Could Let Unauthenticated Attackers Execute Arbitrary Code
+*The Hacker News* — [read more](https://thehackernews.com/2026/08/sap-commerce-cloud-flaw-could-let.html)
 
-Cisco patched a zero-day vulnerability (CVE-2026-20349) in its firewalls that allows unauthenticated attackers to remotely crash the device by sending specially-crafted requests, causing a denial-of-service. This matters because firewalls are critical security boundaries and an unauthenticated crash means attackers need no credentials or access—just network visibility to the firewall. Defenders should apply this patch immediately as it requires no authentication to exploit, and consider implementing network segmentation to limit who can reach the firewall.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
-
-### 8. Microsoft Patches 398 Flaws Including a Windows Driver Zero-Day Under Active Attack
-*The Hacker News* — [read more](https://thehackernews.com/2026/08/microsoft-patches-398-flaws-including.html)
-
-Microsoft patched a Windows kernel driver vulnerability that is already being actively exploited; an attacker with some code running on a machine can use it to escalate to SYSTEM level—the highest privilege in Windows. This matters because privilege escalation turns a limited foothold into full system control, allowing attackers to steal everything, install backdoors, or move laterally through the network. Defenders should treat this as high-priority, patch immediately, and audit systems for signs of prior exploitation or suspicious privilege changes.
+SAP released an emergency patch for a maximum-severity flaw in their Commerce Cloud product that would let attackers without login credentials run any code they want on affected systems. This is critical because it requires no authentication (meaning attackers don't need a username/password) and affects a widely-used e-commerce platform. Defenders must patch SAP Commerce Cloud immediately, review access logs for suspicious activity, and scan systems for signs of unauthorized code execution.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
+
+### 5. Cisco warns of ASA and FTD VPN flaw exploited to crash devices
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisco-warns-of-asa-and-ftd-vpn-flaw-exploited-to-crash-devices/)
+
+Cisco reported that attackers are actively exploiting a high-severity flaw in Secure Firewall (ASA and FTD) to remotely crash these devices and knock them offline. This matters because a crashed firewall stops protecting the network, potentially allowing attackers to access protected systems. Defenders should urgently apply patches, enable monitoring for crash attempts, and test failover systems to ensure backup protection if the firewall goes down.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.8.20 Networks security
+
+### 6. Microsoft Plugs Nearly 400 Security Holes
+*Krebs on Security* — [read more](https://krebsonsecurity.com/2026/08/microsoft-plugs-nearly-400-security-holes/)
+
+Microsoft released patches for nearly 400 security holes across Windows and their software products, including one flaw that attackers are already exploiting and two others that details were publicly shared. This matters because the volume of vulnerabilities means some systems will be patched late, giving attackers a window to attack unpatched computers. Defenders should prioritize patching the actively exploited vulnerability first, test patches before deploying widely, and track which systems remain unpatched.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
+
+### 7. Stealthy ‘City-Forum’ Attacks Target Salesforce and ServiceNow With Custom Toolset
+*SecurityWeek* — [read more](https://www.securityweek.com/stealthy-city-forum-attacks-target-salesforce-and-servicenow-with-custom-toolset/)
+
+Researchers discovered a new attack campaign (City-Forum) targeting Salesforce and ServiceNow by exploiting guest access features to quietly gather and steal exposed customer data without leaving obvious traces. This matters because Salesforce and ServiceNow store sensitive customer and business information, so this attack likely affected many companies using these platforms. Defenders should audit guest access settings, enable detailed logging, search for signs of unauthorized data access, and consider restricting or requiring authentication for guest features.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.34 Privacy and protection of PII
+
+### 8. SharePoint Vulnerability Exploited Shortly After PoC Release
+*SecurityWeek* — [read more](https://www.securityweek.com/sharepoint-vulnerability-exploited-shortly-after-poc-release/)
+
+A SharePoint vulnerability that Microsoft patched in July was later exploited in real attacks after someone publicly released proof-of-concept code showing how the flaw works. This matters because public exploit code makes attacks easier and more widespread since attackers don't need to develop their own tools. Defenders should have already applied the July patch, but if they haven't, they need to do so urgently and verify no breach occurred.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
 ## 🚨 CVEs that matter today
 
@@ -82,19 +68,19 @@ Microsoft patched a Windows kernel driver vulnerability that is already being ac
 |-----|--------------|------|------|------------|
 | **CVE-2026-8037** | Progress LoadMaster Command Injection Vulnerability | – | 99% | ⚠️ YES (KEV) |
 | **CVE-2026-34486** | Apache Tomcat Missing Encryption of Sensitive Data Vulnerability | – | 83% | ⚠️ YES (KEV) |
-| **CVE-2026-20349** | Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Heap Inspection Vulnerability | 8.6 | 0% | ⚠️ YES (KEV) |
-| **CVE-2026-72898** | Metabase SQL Injection Vulnerability | 10.0 | 1% | ⚠️ YES (KEV) |
-| **CVE-2026-20316** | Cisco Secure Firewall Management Center Use of Hard-coded Password Vulnerability | – | 1% | ⚠️ YES (KEV) |
+| **CVE-2026-20349** | Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Heap Inspection Vulnerability | 8.6 | 1% | ⚠️ YES (KEV) |
+| **CVE-2026-9198** | IBM Langflow Code Injection Vulnerability | – | 17% | ⚠️ YES (KEV) |
+| **CVE-2026-63077** | JetBrains TeamCity Deserialization of Untrusted Data Vulnerability | – | 11% | ⚠️ YES (KEV) |
 
-**CVE-2026-8037** — CVE-2026-8037 is a command injection vulnerability in Progress LoadMaster, meaning an attacker can send specially-crafted input that tricks the software into executing arbitrary operating system commands. This matters because successful command injection gives attackers the ability to run any command with the privileges of the LoadMaster application, potentially compromising dependent systems. Defenders should patch LoadMaster immediately, restrict who can access it over the network, and monitor for suspicious input or unexpected command execution.
+**CVE-2026-8037** — Progress LoadMaster contains a command injection vulnerability (CVE-2026-8037) that allows attackers to inject malicious commands into the system. This matters because LoadMaster is a load balancer that sits in front of critical applications, so compromising it gives attackers access to important systems. Defenders should apply Progress patches, restrict access to LoadMaster administration interfaces, and monitor for suspicious command execution.
 
-**CVE-2026-34486** — CVE-2026-34486 is a vulnerability in Apache Tomcat (a widely-used application server) where sensitive data is not encrypted, making it readable to attackers who intercept traffic or access stored data. This matters because unencrypted sensitive data—like passwords, API keys, or personal information—can be easily stolen and reused for further attacks. Defenders should patch Tomcat, enable encryption for data in transit (HTTPS/TLS) and at rest, and audit what sensitive information their Tomcat instances handle.
+**CVE-2026-34486** — Apache Tomcat has a vulnerability (CVE-2026-34486) where sensitive data is stored without encryption, meaning attackers who access the system can read confidential information in plain text. This matters because unencrypted sensitive data (like passwords or tokens) is easy for attackers to steal and misuse. Defenders should update Tomcat, encrypt sensitive data at rest, review access controls, and search for evidence of data theft.
 
-**CVE-2026-20349** — CVE-2026-20349 is a denial-of-service flaw in Cisco Secure Firewall that allows an unauthenticated attacker to remotely send traffic that causes the firewall to unexpectedly restart. This matters because restarting a firewall disrupts all traffic flowing through it and temporarily removes network security protections. Defenders should prioritize patching this vulnerability and monitor for unusual traffic patterns targeting their firewalls, as attackers may test for this vulnerability before launching a larger attack.
+**CVE-2026-20349** — CVE-2026-20349 is a flaw in Cisco's Secure Firewall VPN service where unauthenticated remote attackers can send specially crafted requests to crash the firewall device. This matters because VPN is often the remote access point for employees, so crashing it disables secure remote work and potentially leaves networks exposed. Defenders must patch Cisco Secure Firewall immediately, monitor VPN logs for malicious requests, and ensure backup VPN capacity is available.
 
-**CVE-2026-72898** — CVE-2026-72898 is a SQL injection vulnerability in Metabase (a data analytics tool) that allows unauthenticated attackers to inject malicious database queries via the password reset endpoint and gain full administrator access. This matters because administrator access to Metabase means attackers can read all connected databases, modify queries, and potentially extract or manipulate sensitive business data. Defenders should patch Metabase immediately, restrict network access to it, and review who has been granted administrator access recently.
+**CVE-2026-9198** — IBM Langflow contains a code injection vulnerability (CVE-2026-9198) where attackers can insert and execute malicious code within the application. This matters because code injection gives attackers complete control to steal data, modify systems, or move deeper into the network. Defenders should update IBM Langflow, restrict network access to it, review activity logs for suspicious code execution, and scan for signs of compromise.
 
-**CVE-2026-20316** — CVE-2026-20316 is a vulnerability in Cisco Secure Firewall Management Center (the central administration console for firewalls) where a hard-coded password is embedded in the software and cannot be changed by administrators. This matters because anyone who knows this password can authenticate to the management console and reconfigure or disable all firewalls the organization manages. Defenders should patch immediately, restrict network access to the management center to only authorized administrators, and monitor access logs for unauthorized login attempts using this credential.
+**CVE-2026-63077** — JetBrains TeamCity has a deserialization vulnerability (CVE-2026-63077) where untrusted data is processed in a way that allows attackers to execute arbitrary code. This matters because TeamCity is used for software builds and deployments, so compromising it could let attackers inject malicious code into software products. Defenders must patch TeamCity immediately, audit recent builds for tampering, restrict network access, and implement additional validation of serialized data.
 
 ## 📖 Jargon decoder
 
@@ -102,7 +88,6 @@ Microsoft patched a Windows kernel driver vulnerability that is already being ac
 - **CVE** — Common Vulnerabilities and Exposures — the global ID system for security flaws, e.g. CVE-2026-12345.
 - **RCE** — Remote Code Execution — the worst-case flaw: an attacker runs their own code on your system over the network.
 - **zero-day** — A vulnerability attackers exploit before the vendor has released a patch — defenders start at zero days of warning.
-- **ransomware** — Malware that encrypts your files and demands payment. Modern gangs also steal data first and threaten to publish it (double extortion).
 - **KEV** — CISA's Known Exploited Vulnerabilities catalog — CVEs confirmed to be abused by attackers in the real world. If it's in KEV, patching it jumps to the top of the list.
 - **EPSS** — Exploit Prediction Scoring System — a 0-100% probability that a CVE will be exploited in the next 30 days. Better prioritization signal than CVSS alone.
 
