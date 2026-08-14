@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Trezor discloses data breach affecting nearly 14,000 customers** — Trezor, a company that makes hardware wallets (specialized devices for storing cryptocurrency), had customer information exposed when one of its third-party vendors (ShipMonk, who handles shipping) was compromised. [read more](https://www.bleepingcomputer.com/news/security/trezor-discloses-data-breach-affecting-nearly-14-000-customers/)
+- **Microsoft patches LegacyHive Windows zero-day vulnerability** — Microsoft released security patches for a Windows vulnerability called LegacyHive that was publicly disclosed without advance warning (a 'zero-day'), meaning attackers could immediately start using it before patches were available. [read more](https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-legacyhive-windows-zero-day-vulnerability/)
+- **Critical VMware vCenter RCE flaw exploited for reverse SSH access** — A serious flaw in VMware vCenter (software that manages virtual machines in data centers) is being actively exploited by attackers to install a backdoor (reverse SSH tool) that gives them persistent remote access. [read more](https://www.bleepingcomputer.com/news/security/critical-vmware-vcenter-rce-flaw-exploited-for-reverse-ssh-access/)
+- **Apple sends new ‘Threat Notification’ alerts over mercenary spyware attacks** — Apple is sending direct warnings to iPhone users who appear to be targeted by mercenary spyware (commercial hacking tools sold to governments and wealthy entities), alerting them that their devices may be under attack. [read more](https://www.bleepingcomputer.com/news/apple/apple-sends-new-threat-notification-alerts-over-mercenary-spyware-attacks/)
+- **Attackers Exploit SharePoint Authentication Bypass After Public PoC Release** — Attackers have started actively exploiting CVE-2026-55040, a critical SharePoint flaw (score 9.1 out of 10 severity) involving weak authentication, shortly after someone publicly released proof-of-concept code showing how it works. [read more](https://thehackernews.com/2026/08/attackers-exploit-sharepoint.html)
+- **Hackers exploit critical Adobe Commerce flaw to hijack customer accounts** — Attackers are exploiting CVE-2026-71362 in Adobe Commerce and Magento (e-commerce platforms that run online stores) to take control of customer accounts, potentially stealing payment information or personal data. [read more](https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-adobe-commerce-flaw-to-hijack-customer-accounts/)
+- **Akira hackers disable EDR with Safe Mode, steal data but fail to encrypt** — An Akira ransomware group disabled endpoint detection and response (EDR) security software—which watches for malicious behavior on computers—by restarting the infected system into Safe Mode, a Windows diagnostic mode where EDR doesn't load. [read more](https://www.bleepingcomputer.com/news/security/akira-hackers-disable-edr-with-safe-mode-steal-data-but-fail-to-encrypt/)
+- **Adobe Commerce Bug Targeted Immediately After Disclosure** — The first real attacks exploiting CVE-2026-71362 in Adobe Commerce were detected very quickly after Adobe published patches, suggesting attackers were prepared with exploit code and immediately began targeting unpatched systems. [read more](https://www.securityweek.com/adobe-commerce-bug-targeted-immediately-after-disclosure/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-8037 (– CVSS, 99% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Trezor discloses data breach affecting nearly 14,000 customers
