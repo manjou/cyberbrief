@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **SafePal data breach impacts 39,798 customers, stolen info for sale** — SafePal, a company that makes hardware wallets for storing cryptocurrency, had a security flaw that allowed attackers to steal customer order information from about 39,798 people. [read more](https://www.bleepingcomputer.com/news/security/safepal-data-breach-impacts-39-798-customers-stolen-info-for-sale/)
+- **New AmnesiaStealer macOS malware hijacks browser sessions via remote control** — A new malware called AmnesiaStealer is infecting macOS computers through ClickFix attacks (fake tech support pop-ups), and it can remotely hijack a victim's web browser sessions in real-time. [read more](https://www.bleepingcomputer.com/news/security/new-amnesiastealer-macos-malware-hijacks-browser-sessions-via-remote-control/)
+- **[UPDATE] [kritisch] SAP Patch Day August 2026: Mehrere Schwachstellen** — SAP, a widely-used enterprise software platform, released multiple critical security patches for August 2026 that fix flaws allowing attackers to run unauthorized code, escalate privileges (gain higher access levels), bypass security controls, and steal sensitive data or login credentials. [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2746)
+- **[UPDATE] [hoch] GStreamer: Mehrere Schwachstellen** — GStreamer, a widely-used multimedia library that many applications depend on, has multiple vulnerabilities that attackers can exploit to corrupt data, cause denial-of-service (crash or freeze systems), leak sensitive information, or potentially run arbitrary code. [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2662)
+- **[UPDATE] [mittel] Wireshark: Mehrere Schwachstellen ermöglichen Denial of Service** — Wireshark, a network analysis tool used by IT professionals, contains multiple vulnerabilities that remote attackers can exploit to cause denial-of-service attacks (making Wireshark crash or become unusable). [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2806)
+- **ISC Stormcast For Monday, August 17th, 2026 https://isc.sans.edu/podcastdetail/10054, (Mon, Aug 17th)** — This is a reference to a cybersecurity podcast episode from the SANS Internet Storm Center; no specific incident details are provided in the entry. [read more](https://isc.sans.edu/diary/rss/33250)
+- **Anthropic confirms Claude is down in major outage affecting multiple services** — Anthropic's Claude AI service experienced a major outage affecting multiple services, with users unable to log in and experiencing degraded performance. [read more](https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-confirms-claude-is-down-in-major-outage-affecting-multiple-services/)
+- **Wireshark 4.6.8 Released, (Sun, Aug 16th)** — Wireshark released version 4.6.8, which fixes 28 security vulnerabilities and 25 software bugs. [read more](https://isc.sans.edu/diary/rss/33248)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-8037 (– CVSS, 99% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. SafePal data breach impacts 39,798 customers, stolen info for sale
