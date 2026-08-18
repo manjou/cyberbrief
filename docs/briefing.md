@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Forminator WordPress Flaw Can Enable Unauthenticated RCE via Malicious PHP Uploads** — A WordPress plugin called Forminator, used by over 600,000 websites, has a critical flaw that lets attackers upload and run malicious code without logging in first. [read more](https://thehackernews.com/2026/08/forminator-wordpress-flaw-can-enable.html)
+- **French tax authority data breach affects 678,000 individuals** — Attackers gained unauthorized access to French tax authority systems and stole personal information belonging to 678,000 people, likely including tax records and identification details. [read more](https://www.bleepingcomputer.com/news/security/french-tax-authority-data-breach-affects-678-000-individuals/)
+- **SafePal data breach impacts 39,798 customers, stolen info for sale** — A vulnerability in SafePal's cryptocurrency wallet service was exploited to steal customer order and personal information from about 39,798 users, and criminals are now selling this data. [read more](https://www.bleepingcomputer.com/news/security/safepal-data-breach-impacts-39-798-customers-stolen-info-for-sale/)
+- **Pokémon Center data breach exposes customer info, cancels some orders** — Pokémon Center customer data was stolen by hackers who compromised a third-party logistics company (CEVA Logistics) that handles their shipments. [read more](https://www.bleepingcomputer.com/news/security/pokemon-center-data-breach-exposes-customer-info-cancels-some-orders/)
+- **680,000 Impacted by French Tax Authority Data Breach** — Hackers obtained stolen usernames and passwords (compromised credentials) and used them to break into French tax authority systems to access both business and personal tax records. [read more](https://www.securityweek.com/680000-impacted-by-french-tax-authority-data-breach/)
+- **Microsoft working on Defender patch for ShieldBreak zero-day** — Microsoft is developing a security fix for a previously unknown vulnerability (zero-day) in Windows Defender called ShieldBreak that was publicly revealed by a security researcher. [read more](https://www.bleepingcomputer.com/news/security/microsoft-working-on-defender-patch-for-shieldbreak-zero-day/)
+- **Philips and GE investigating Clop ransomware data theft claims** — Major technology companies GE and Philips are investigating whether the Clop ransomware group broke into their systems and stole confidential data. [read more](https://www.bleepingcomputer.com/news/security/philips-and-ge-investigating-clop-ransomware-data-theft-claims/)
+- **40,000 Impacted by SafePal Data Breach** — Hackers exploited a flaw in SafePal's order-tracking feature to access the personal and order information of approximately 40,000 customers. [read more](https://www.securityweek.com/40000-impacted-by-safepal-data-breach/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-8037 (– CVSS, 99% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Forminator WordPress Flaw Can Enable Unauthenticated RCE via Malicious PHP Uploads
