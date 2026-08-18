@@ -1,74 +1,66 @@
-# 🛡️ CyberBrief — SOC — Monday, 17 August 2026
+# 🛡️ CyberBrief — GRC — Tuesday, 18 August 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
-*Today's focus: active exploitation, incident response, and threat activity.*
-
-## 🕔 5pm recap
-
-*Didn't get through this morning? Here's the quick version — full detail is still below.*
-
-- **SafePal data breach impacts 39,798 customers, stolen info for sale** — SafePal, a company that makes hardware wallets for storing cryptocurrency, had a security flaw that allowed attackers to steal customer order information from about 39,798 people. [read more](https://www.bleepingcomputer.com/news/security/safepal-data-breach-impacts-39-798-customers-stolen-info-for-sale/)
-- **New AmnesiaStealer macOS malware hijacks browser sessions via remote control** — A new malware called AmnesiaStealer is infecting macOS computers through ClickFix attacks (fake tech support pop-ups), and it can remotely hijack a victim's web browser sessions in real-time. [read more](https://www.bleepingcomputer.com/news/security/new-amnesiastealer-macos-malware-hijacks-browser-sessions-via-remote-control/)
-- **[UPDATE] [kritisch] SAP Patch Day August 2026: Mehrere Schwachstellen** — SAP, a widely-used enterprise software platform, released multiple critical security patches for August 2026 that fix flaws allowing attackers to run unauthorized code, escalate privileges (gain higher access levels), bypass security controls, and steal sensitive data or login credentials. [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2746)
-- **[UPDATE] [hoch] GStreamer: Mehrere Schwachstellen** — GStreamer, a widely-used multimedia library that many applications depend on, has multiple vulnerabilities that attackers can exploit to corrupt data, cause denial-of-service (crash or freeze systems), leak sensitive information, or potentially run arbitrary code. [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2662)
-- **[UPDATE] [mittel] Wireshark: Mehrere Schwachstellen ermöglichen Denial of Service** — Wireshark, a network analysis tool used by IT professionals, contains multiple vulnerabilities that remote attackers can exploit to cause denial-of-service attacks (making Wireshark crash or become unusable). [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2806)
-- **ISC Stormcast For Monday, August 17th, 2026 https://isc.sans.edu/podcastdetail/10054, (Mon, Aug 17th)** — This is a reference to a cybersecurity podcast episode from the SANS Internet Storm Center; no specific incident details are provided in the entry. [read more](https://isc.sans.edu/diary/rss/33250)
-- **Anthropic confirms Claude is down in major outage affecting multiple services** — Anthropic's Claude AI service experienced a major outage affecting multiple services, with users unable to log in and experiencing degraded performance. [read more](https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-confirms-claude-is-down-in-major-outage-affecting-multiple-services/)
-- **Wireshark 4.6.8 Released, (Sun, Aug 16th)** — Wireshark released version 4.6.8, which fixes 28 security vulnerabilities and 25 software bugs. [read more](https://isc.sans.edu/diary/rss/33248)
-- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-8037 (– CVSS, 99% EPSS)
+*Today's focus: breaches, regulation, and compliance impact.*
 
 ## 🔥 Top stories
 
-### 1. SafePal data breach impacts 39,798 customers, stolen info for sale
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/safepal-data-breach-impacts-39-798-customers-stolen-info-for-sale/)
+### 1. Forminator WordPress Flaw Can Enable Unauthenticated RCE via Malicious PHP Uploads
+*The Hacker News* — [read more](https://thehackernews.com/2026/08/forminator-wordpress-flaw-can-enable.html)
 
-SafePal, a company that makes hardware wallets for storing cryptocurrency, had a security flaw that allowed attackers to steal customer order information from about 39,798 people. This matters because the stolen data (names, addresses, payment details) can be used for fraud, identity theft, or targeted phishing attacks against cryptocurrency users. Defenders typically notify affected customers, investigate how the flaw was exploited, patch the vulnerability, monitor for data being sold on dark web markets, and may offer credit monitoring services.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.34 Privacy and protection of PII
-
-### 2. New AmnesiaStealer macOS malware hijacks browser sessions via remote control
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/new-amnesiastealer-macos-malware-hijacks-browser-sessions-via-remote-control/)
-
-A new malware called AmnesiaStealer is infecting macOS computers through ClickFix attacks (fake tech support pop-ups), and it can remotely hijack a victim's web browser sessions in real-time. This matters because an attacker can impersonate the victim, steal login credentials, transfer money, or access sensitive accounts while the victim watches. Defenders typically block ClickFix domains, educate users not to click suspicious pop-ups, monitor for AmnesiaStealer signatures, and recommend keeping macOS and browsers patched.
-
-> 📋 **ISO 27001:** A.8.7 Protection against malware
-
-### 3. [UPDATE] [kritisch] SAP Patch Day August 2026: Mehrere Schwachstellen
-*CERT-Bund (DE)* — [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2746)
-
-SAP, a widely-used enterprise software platform, released multiple critical security patches for August 2026 that fix flaws allowing attackers to run unauthorized code, escalate privileges (gain higher access levels), bypass security controls, and steal sensitive data or login credentials. This matters because SAP systems often contain critical business and financial data, so compromises can have severe business impact across entire organizations. Defenders typically apply patches immediately on a priority schedule, test them in staging environments first, scan systems for signs of exploitation, and prioritize SAP systems in their update schedules.
+A WordPress plugin called Forminator, used by over 600,000 websites, has a critical flaw that lets attackers upload and run malicious code without logging in first. This matters because attackers can take complete control of affected websites to steal data, inject malware, or use the site for further attacks. Defenders should immediately update the plugin to the patched version, disable it if a patch isn't available, and check their servers for signs of unauthorized code execution or file uploads.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 4. [UPDATE] [hoch] GStreamer: Mehrere Schwachstellen
-*CERT-Bund (DE)* — [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2662)
+### 2. French tax authority data breach affects 678,000 individuals
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/french-tax-authority-data-breach-affects-678-000-individuals/)
 
-GStreamer, a widely-used multimedia library that many applications depend on, has multiple vulnerabilities that attackers can exploit to corrupt data, cause denial-of-service (crash or freeze systems), leak sensitive information, or potentially run arbitrary code. This matters because GStreamer is embedded in many applications and operating systems, so a single flaw can affect numerous programs across many users. Defenders typically update GStreamer immediately, check which applications and systems use it, test updates in non-production environments first, and monitor for exploitation attempts.
+Attackers gained unauthorized access to French tax authority systems and stole personal information belonging to 678,000 people, likely including tax records and identification details. This matters because exposed personal data can be used for identity theft, fraud, or sold on criminal marketplaces, and tax records are particularly sensitive. Defenders and the affected organization should notify impacted individuals, monitor for fraudulent activity, reset compromised credentials, and investigate how attackers gained initial access.
 
-### 5. [UPDATE] [mittel] Wireshark: Mehrere Schwachstellen ermöglichen Denial of Service
-*CERT-Bund (DE)* — [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2806)
+> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
 
-Wireshark, a network analysis tool used by IT professionals, contains multiple vulnerabilities that remote attackers can exploit to cause denial-of-service attacks (making Wireshark crash or become unusable). This matters because compromised analysis tools can disrupt security monitoring or be weaponized if an attacker tricks an analyst into opening a malicious file. Defenders typically update Wireshark promptly, avoid opening untrusted packet capture files, and warn users about the vulnerability.
+### 3. SafePal data breach impacts 39,798 customers, stolen info for sale
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/safepal-data-breach-impacts-39-798-customers-stolen-info-for-sale/)
 
-> 📋 **ISO 27001:** A.8.6 Capacity management
+A vulnerability in SafePal's cryptocurrency wallet service was exploited to steal customer order and personal information from about 39,798 users, and criminals are now selling this data. This matters because stolen customer data can be used for targeted fraud, phishing attacks, or identity theft, and the public sale of data increases the risk of misuse. Defenders should patch the vulnerable function, notify customers to change passwords, monitor for fraudulent transactions, and track where the stolen data is being distributed.
 
-### 6. ISC Stormcast For Monday, August 17th, 2026 https://isc.sans.edu/podcastdetail/10054, (Mon, Aug 17th)
-*SANS ISC* — [read more](https://isc.sans.edu/diary/rss/33250)
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.34 Privacy and protection of PII
 
-This is a reference to a cybersecurity podcast episode from the SANS Internet Storm Center; no specific incident details are provided in the entry. Without knowing the podcast content, no vulnerability or incident can be assessed. Defenders would typically listen to the podcast to learn about current threats and update their security strategies accordingly.
+### 4. Pokémon Center data breach exposes customer info, cancels some orders
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/pokemon-center-data-breach-exposes-customer-info-cancels-some-orders/)
 
-### 7. Anthropic confirms Claude is down in major outage affecting multiple services
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-confirms-claude-is-down-in-major-outage-affecting-multiple-services/)
+Pokémon Center customer data was stolen by hackers who compromised a third-party logistics company (CEVA Logistics) that handles their shipments. This matters because customer names, addresses, order history, and contact information can be used for targeted fraud or phishing attacks against Pokémon fans. Defenders should verify all systems used by third-party vendors, require stronger security controls from partners, and monitor customer accounts for suspicious activity.
 
-Anthropic's Claude AI service experienced a major outage affecting multiple services, with users unable to log in and experiencing degraded performance. This matters because service outages can disrupt workflows for many organizations relying on Claude, and extended outages may indicate a security incident or infrastructure compromise. Defenders typically check official status pages, communicate with their teams, implement backup solutions, monitor for similar issues, and wait for the vendor to restore service and provide a public incident report.
+> 📋 **ISO 27001:** A.5.19 Supplier relationships, A.5.34 Privacy and protection of PII
 
-> 📋 **ISO 27001:** A.8.6 Capacity management
+### 5. 680,000 Impacted by French Tax Authority Data Breach
+*SecurityWeek* — [read more](https://www.securityweek.com/680000-impacted-by-french-tax-authority-data-breach/)
 
-### 8. Wireshark 4.6.8 Released, (Sun, Aug 16th)
-*SANS ISC* — [read more](https://isc.sans.edu/diary/rss/33248)
+Hackers obtained stolen usernames and passwords (compromised credentials) and used them to break into French tax authority systems to access both business and personal tax records. This matters because it shows attackers often exploit weak password practices and reused credentials to breach even large government organizations. Defenders should enforce multi-factor authentication (requiring a second verification step beyond passwords), monitor for suspicious login activity, and require employees to use strong unique passwords.
 
-Wireshark released version 4.6.8, which fixes 28 security vulnerabilities and 25 software bugs. This matters because each vulnerability could have been exploited by attackers to crash the tool or execute code if users opened malicious files. Defenders typically schedule and deploy this update to all systems using Wireshark, prioritizing it as a security patch, and note the fixes for compliance documentation.
+> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII, A.5.17 Authentication information
+
+### 6. Microsoft working on Defender patch for ShieldBreak zero-day
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/microsoft-working-on-defender-patch-for-shieldbreak-zero-day/)
+
+Microsoft is developing a security fix for a previously unknown vulnerability (zero-day) in Windows Defender called ShieldBreak that was publicly revealed by a security researcher. This matters because the vulnerability is currently unpatched, leaving all affected Microsoft Defender users at risk until the patch is released. Defenders should watch for the patch release, apply it immediately when available, and use alternate security tools if they cannot patch quickly.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
+
+### 7. Philips and GE investigating Clop ransomware data theft claims
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/philips-and-ge-investigating-clop-ransomware-data-theft-claims/)
+
+Major technology companies GE and Philips are investigating whether the Clop ransomware group broke into their systems and stole confidential data. This matters because ransomware gangs typically steal data before encrypting it, meaning they can demand payment either to decrypt files or to keep stolen information secret. Defenders should check logs for unauthorized access, verify data integrity, and prepare for possible extortion demands or data ransom negotiations.
+
+> 📋 **ISO 27001:** A.8.13 Information backup
+
+### 8. 40,000 Impacted by SafePal Data Breach
+*SecurityWeek* — [read more](https://www.securityweek.com/40000-impacted-by-safepal-data-breach/)
+
+Hackers exploited a flaw in SafePal's order-tracking feature to access the personal and order information of approximately 40,000 customers. This matters because exposed order data can reveal purchase patterns, shipping addresses, and personal preferences that enable targeted fraud or future attacks. Defenders should fix the vulnerable tracking function, audit what data was accessed, notify affected customers, and implement input validation (checking that user input is safe before processing it).
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.34 Privacy and protection of PII
 
 ## 🚨 CVEs that matter today
 
@@ -80,23 +72,25 @@ Wireshark released version 4.6.8, which fixes 28 security vulnerabilities and 25
 | **CVE-2026-63077** | JetBrains TeamCity Deserialization of Untrusted Data Vulnerability | – | 11% | ⚠️ YES (KEV) |
 | **CVE-2026-72898** | Metabase SQL Injection Vulnerability | – | 10% | ⚠️ YES (KEV) |
 
-**CVE-2026-8037** — Progress LoadMaster, a load-balancing appliance used to distribute network traffic, has a command injection vulnerability (CVE-2026-8037) allowing attackers to run arbitrary system commands. This matters because LoadMaster sits between users and critical applications, so compromising it could allow attackers to intercept traffic, access backend systems, or disrupt services. Defenders typically apply vendor patches, restrict network access to LoadMaster, monitor for suspicious commands in logs, and check for signs of prior exploitation.
+**CVE-2026-8037** — A vulnerability in Progress LoadMaster (a load-balancing appliance) allows attackers to inject and execute arbitrary commands on the device by exploiting improper input handling. This matters because compromised load balancers can intercept or redirect all traffic flowing through them, potentially affecting thousands of downstream users and systems. Defenders should patch LoadMaster immediately, restrict administrative access, monitor for suspicious commands being executed, and check device logs for signs of exploitation.
 
-**CVE-2026-34486** — Apache Tomcat, a widely-used web application server, has a vulnerability (CVE-2026-34486) where sensitive data is not properly encrypted in storage or transmission. This matters because unencrypted sensitive data can be stolen if an attacker gains access to the server or intercepts network traffic, potentially exposing user credentials, payment information, or personal data. Defenders typically apply the patch, audit their Tomcat configurations to ensure encryption is enabled, review access logs for suspicious activity, and consider re-encrypting any data that may have been exposed.
+**CVE-2026-34486** — Apache Tomcat (a web application server) has a flaw where sensitive data such as passwords or API keys are stored without encryption in memory or on disk. This matters because if an attacker gains access to the server's files or memory, they can easily read unencrypted secrets and use them to compromise other systems. Defenders should update Tomcat, use external secret management tools to store sensitive data, and enable encryption for data at rest (stored data).
 
-**CVE-2026-9198** — IBM Langflow, an AI workflow development platform, contains a code injection vulnerability (CVE-2026-9198) allowing attackers to inject and execute malicious code. This matters because an attacker can run arbitrary code within the Langflow environment to steal data, modify workflows, or compromise systems connected to it. Defenders typically update Langflow immediately, validate that workflows have not been tampered with, audit access logs, and restrict who can modify workflows.
+**CVE-2026-9198** — IBM Langflow (a tool for building AI applications) has a code injection vulnerability that allows attackers to execute arbitrary code by inserting malicious input into the application. This matters because attackers can gain full control of servers running Langflow and use them to steal data, deploy malware, or attack connected systems. Defenders should patch Langflow, validate all user inputs before processing them, and run the application with minimal permissions (principle of least privilege).
 
-**CVE-2026-63077** — JetBrains TeamCity, a continuous integration/continuous deployment (CI/CD) tool used to automate software builds and deployments, has a deserialization vulnerability (CVE-2026-63077) where untrusted data is processed in an unsafe way. This matters because CI/CD tools have high privileges in development environments, so compromising them can allow attackers to inject malicious code into software builds or access source code repositories. Defenders typically patch TeamCity urgently, review build logs for suspicious activity, audit who has access to the system, and consider re-building any software compiled after the vulnerability was introduced.
+**CVE-2026-63077** — JetBrains TeamCity (a continuous integration tool) has a flaw in how it handles untrusted data that deserializes (converts serialized data back into executable code) without proper verification. This matters because attackers can craft malicious serialized data that executes arbitrary code when TeamCity processes it. Defenders should patch TeamCity immediately, restrict network access to it, monitor for unusual build job execution, and never accept serialized data from untrusted sources.
 
-**CVE-2026-72898** — Metabase, a business intelligence and data visualization tool, contains a SQL injection vulnerability (CVE-2026-72898) allowing attackers to craft malicious queries to access unauthorized data. This matters because Metabase often connects to sensitive business databases and data warehouses, so SQL injection can expose financial records, customer data, or other confidential information. Defenders typically apply the patch, audit Metabase access logs for suspicious queries, review database permissions, validate that no unauthorized data was accessed, and implement query monitoring.
+**CVE-2026-72898** — Metabase (a business analytics tool) has a SQL injection vulnerability that allows attackers to manipulate database queries by inserting malicious SQL code into user inputs. This matters because attackers can bypass authentication, read sensitive business data, modify or delete records, or escalate their privileges. Defenders should patch Metabase, use parameterized queries (safe SQL statements that separate code from data), and restrict database permissions to only what's necessary.
 
 ## 📖 Jargon decoder
 
+- **CVSS** — Common Vulnerability Scoring System — rates how bad a vulnerability *could* be (0-10). High CVSS does not mean anyone is actually exploiting it.
 - **CVE** — Common Vulnerabilities and Exposures — the global ID system for security flaws, e.g. CVE-2026-12345.
 - **RCE** — Remote Code Execution — the worst-case flaw: an attacker runs their own code on your system over the network.
+- **zero-day** — A vulnerability attackers exploit before the vendor has released a patch — defenders start at zero days of warning.
+- **ransomware** — Malware that encrypts your files and demands payment. Modern gangs also steal data first and threaten to publish it (double extortion).
 - **KEV** — CISA's Known Exploited Vulnerabilities catalog — CVEs confirmed to be abused by attackers in the real world. If it's in KEV, patching it jumps to the top of the list.
 - **EPSS** — Exploit Prediction Scoring System — a 0-100% probability that a CVE will be exploited in the next 30 days. Better prioritization signal than CVSS alone.
-- **CVSS** — Common Vulnerability Scoring System — rates how bad a vulnerability *could* be (0-10). High CVSS does not mean anyone is actually exploiting it.
 
 ---
 *Generated by [CyberBrief](https://github.com/manjou/cyberbrief) — free, open source, no AI required.*
