@@ -4,6 +4,20 @@
 
 *Today's focus: network infrastructure — a lighter refresh day.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **CISA Flags Actively Exploited Ray Flaw That Can Trigger Browser-Based RCE** — A critical flaw in Ray (a Python tool for running distributed computing tasks) is being actively exploited by attackers to run malicious code directly in web browsers. [read more](https://thehackernews.com/2026/08/cisa-flags-actively-exploited-ray-flaw.html)
+- **CISA: Windows Task Host flaw now exploited by ransomware gangs** — Ransomware gangs have started exploiting a Windows vulnerability in Task Host (a Windows system component) that was first reported as at-risk in April. [read more](https://www.bleepingcomputer.com/news/security/cisa-windows-task-host-flaw-now-exploited-by-ransomware-gangs/)
+- **Ransom Busters Claims It Hacked Ransomware Servers, Asks Victims for Up to $60,000** — A group calling themselves 'Ransom Busters' is contacting organizations that have already been hit by ransomware, offering to delete stolen data from ransomware gang servers for $20,000–$60,000 per victim. [read more](https://thehackernews.com/2026/08/ransom-busters-claims-it-hacked.html)
+- **Forminator WordPress Flaw Can Enable Unauthenticated RCE via Malicious PHP Uploads** — A critical flaw in Forminator, a WordPress form-building plugin used by over 600,000 sites, allows attackers without credentials to upload and run malicious PHP code on vulnerable websites. [read more](https://thehackernews.com/2026/08/forminator-wordpress-flaw-can-enable.html)
+- **Attackers Exploit MLflow SSRF Flaw to Steal Cloud Credentials and Secrets** — Two critical flaws in MLflow (an AI platform) and FUXA (industrial automation software) allow attackers to bypass normal access controls (SSRF attacks) and steal cloud credentials and secrets like API keys. [read more](https://thehackernews.com/2026/08/attackers-exploit-mlflow-ssrf-flaw-to.html)
+- **Clop created custom web shell for Windchill data theft attacks** — The Clop ransomware gang created a custom hacking tool designed specifically for PTC Windchill (engineering/product data management software) that can steal credentials and files directly from servers. [read more](https://www.bleepingcomputer.com/news/security/clop-created-custom-web-shell-for-windchill-data-theft-attacks/)
+- **Heights Finance Data Breach Impacts at Least 1.2 Million Individuals** — Hackers accessed Heights Finance's systems and stole personal data on at least 1.2 million people, including names, addresses, phone numbers, Social Security numbers, and financial information. [read more](https://www.securityweek.com/heights-finance-data-breach-impacts-at-least-1-2-million-individuals/)
+- **GitLab Patches Critical Code Injection Vulnerability** — GitLab, a platform for managing and sharing code, has a flaw that allows unauthenticated attackers (those without valid login credentials) to modify code, delete user accounts, and remove entire projects. [read more](https://www.securityweek.com/gitlab-patches-critical-code-injection-vulnerability/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-8037 (– CVSS, 99% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. CISA Flags Actively Exploited Ray Flaw That Can Trigger Browser-Based RCE
