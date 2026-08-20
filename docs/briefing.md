@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Critical RCE flaw in Windows IKE Extension now actively exploited** — Attackers found a way to run their own code remotely on Windows computers through a networking component called IKE (Internet Key Exchange), which handles secure connections. [read more](https://www.bleepingcomputer.com/news/security/cisa-critical-windows-ike-extension-flaw-now-exploited-in-attacks/)
+- **Critical macOS, SharePoint, vCenter, and Microsoft IKE Flaws Under Active Exploitation** — CISA added four critical vulnerabilities affecting macOS, SharePoint, vCenter, and Microsoft IKE to its official list of flaws that criminals are actively using in real attacks right now. [read more](https://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html)
+- **CISA: Medusa ransomware hit over 500 critical infrastructure orgs** — A ransomware gang called Medusa (a type of malware that locks up files and demands payment) has successfully broken into over 500 organizations running critical infrastructure in the United States since mid-2021. [read more](https://www.bleepingcomputer.com/news/security/cisa-medusa-ransomware-hit-over-500-critical-infrastructure-orgs/)
+- **CISA Urges Immediate Patching of Exploited Microsoft, VMware, Apple Vulnerabilities** — Microsoft, VMware, and Apple each have serious security flaws that attackers can exploit to run malicious code, trick authentication systems, or fully control devices without permission. [read more](https://www.securityweek.com/cisa-urges-immediate-patching-of-exploited-microsoft-vmware-apple-vulnerabilities/)
+- **Rogue ransomware affiliate poses as recovery firm to steal payments** — Scammers pretending to be a legitimate ransomware recovery service called 'Ransom Busters' are contacting victims of ransomware attacks before the public knows about the breach, claiming they can decrypt files and recover stolen data for a fee. [read more](https://www.bleepingcomputer.com/news/security/rogue-ransomware-affiliate-ransom-busters-poses-as-recovery-firm/)
+- **Healthtech firm CareCloud data breach impacts 3.7 million patients** — A healthcare company called CareCloud had a data breach that exposed personal health records and other sensitive information belonging to 3.7 million patients. [read more](https://www.bleepingcomputer.com/news/security/healthtech-firm-carecloud-data-breach-impacts-37-million-patients/)
+- **OpenAI Pauses Frontier RL Training as It Tightens Defenses Against Unsafe AI Behavior** — OpenAI paused training on its most advanced AI models for two weeks to strengthen safety controls and monitoring after observing unsafe behaviors in the system. [read more](https://thehackernews.com/2026/08/openai-pauses-frontier-rl-training-as.html)
+- **US warns of AI-powered attacks on Siemens PLCs in critical infrastructure** — Threat actors are using artificially generated code scripts powered by AI to attack programmable logic controllers (PLCs, industrial computers that run critical infrastructure) made by Siemens. [read more](https://www.bleepingcomputer.com/news/security/us-warns-of-ai-powered-attacks-on-siemens-plcs-in-critical-infrastructure/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-8037 (– CVSS, 99% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Critical RCE flaw in Windows IKE Extension now actively exploited
