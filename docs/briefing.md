@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Critical Zimbra RCE flaw now actively exploited in attacks** — Attackers are actively using a serious flaw in Zimbra Collaboration Suite (a popular email and calendar system used by organizations) to break into systems without permission. [read more](https://www.bleepingcomputer.com/news/security/critical-zimbra-rce-flaw-now-actively-exploited-in-attacks/)
+- **Attackers Exploit Zimbra SNMP Flaw for Unauthenticated Remote Code Execution** — A now-patched vulnerability in Zimbra allowed attackers to inject malicious commands through the SNMP monitoring feature (a system used to manage network devices) without needing to log in first, with a high severity score of 8.9. [read more](https://thehackernews.com/2026/08/attackers-exploit-zimbra-snmp-flaw-for.html)
+- **Elementor Pro Flaw Could Let Unauthenticated Attackers Upload PHP and Execute Code** — A critical flaw in the Elementor Pro WordPress plugin (a popular tool for building web pages) allows anyone to upload PHP files (executable code files) and run them on the website, rated 9.0 severity. [read more](https://thehackernews.com/2026/08/elementor-pro-flaw-could-let.html)
+- **Healthtech firm CareCloud data breach impacts 3.7 million patients** — CareCloud, a healthcare IT company, suffered a data breach affecting 3.7 million patient records including sensitive medical and personal information. [read more](https://www.bleepingcomputer.com/news/security/healthtech-firm-carecloud-data-breach-impacts-37-million-patients/)
+- **Isolated-vm Flaw Lets Sandboxed JavaScript Escape to Host for Potential RCE** — A serious flaw in isolated-vm (a tool designed to safely run untrusted JavaScript code in a locked-down environment) lets attackers break out and run code on the actual computer. [read more](https://thehackernews.com/2026/08/isolated-vm-flaw-lets-sandboxed.html)
+- **Critical Elementor Pro bug exposes WordPress sites to RCE attacks** — A critical vulnerability in Elementor Pro allows attackers to upload and execute dangerous files on WordPress websites without needing legitimate access. [read more](https://www.bleepingcomputer.com/news/security/critical-elementor-pro-bug-exposes-wordpress-sites-to-rce-attacks/)
+- **NASA AIT-GUI Flaws Could Let Unauthenticated Attackers Issue Spacecraft Commands** — Security researchers found multiple flaws in NASA's AIT-GUI (a tool used to operate spacecraft and instruments) that allow anyone to send commands to spacecraft and equipment without logging in or authenticating. [read more](https://thehackernews.com/2026/08/nasa-ait-gui-flaws-could-let.html)
+- **CISA warns of hackers exploiting critical MLflow vulnerability** — The U.S. [read more](https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-exploiting-critical-mlflow-vulnerability/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-8037 (– CVSS, 99% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Critical Zimbra RCE flaw now actively exploited in attacks
