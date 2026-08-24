@@ -4,6 +4,14 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **ToxicPanda Android malware uses VPN permissions to block Google Play** — ToxicPanda is malware (malicious software) designed for Android phones that has been updated to attack 349 different apps and respond to 167 different commands from attackers. [read more](https://www.bleepingcomputer.com/news/security/toxicpanda-android-malware-uses-vpn-permissions-to-block-google-play/)
+- **ISC Stormcast For Monday, August 24th, 2026 https://isc.sans.edu/podcastdetail/10064, (Mon, Aug 24th)** — This is a reference to a security podcast episode; no specific threat details are provided here. [read more](https://isc.sans.edu/diary/rss/33276)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-33824 (– CVSS, 78% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. ToxicPanda Android malware uses VPN permissions to block Google Play
