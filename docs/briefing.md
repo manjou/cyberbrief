@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **CISA orders urgent patching of actively exploited Zimbra flaw** — A vulnerability (a security weakness) in Zimbra Collaboration Suite email software is being actively exploited by attackers right now. [read more](https://www.bleepingcomputer.com/news/security/cisa-orders-urgent-patching-of-actively-exploited-zimbra-flaw/)
+- **Critical Keycloak Password Reset Flaw Could Let Unauthenticated Attackers Take Over Any Account** — Keycloak is software that manages who can log into systems and access what resources; a critical flaw allows someone without any credentials to reset any user's password and take over their account. [read more](https://thehackernews.com/2026/08/critical-keycloak-password-reset-flaw.html)
+- **Personal Information Exposed in Apollo Global Data Breach** — Apollo Global, a large investment firm, experienced a data breach where attackers stole personal information, likely as part of a targeted campaign against financial companies. [read more](https://www.securityweek.com/personal-information-exposed-in-apollo-global-data-breach/)
+- **WordlistLoader Delivers Amatera via ClickFix, SynkLoader Phishes Windows Passwords** — Researchers discovered two new malware tools (WordlistLoader and SynkLoader) that attackers use to deliver additional malware and steal credentials like passwords; these tools are being sold or shared with ransomware groups. [read more](https://thehackernews.com/2026/08/wordlistloader-delivers-amatera-via.html)
+- **ReliaQuest confirms failed data-theft attack after ShinyHunters breach** — An attacker impersonated a ReliaQuest security team member and tricked an employee into giving up access (a social engineering attack); the attacker then tried to steal data but ReliaQuest detected and stopped it. [read more](https://www.bleepingcomputer.com/news/security/reliaquest-confirms-failed-data-theft-attack-after-shinyhunters-breach/)
+- **South Korean startup platform breach exposes key management failures** — A South Korean government startup platform was breached because its encryption key—the digital secret needed to unlock encrypted data—was stored in the same location as the encrypted data instead of being kept separate and protected. [read more](https://www.bleepingcomputer.com/news/security/south-korean-startup-platform-breach-exposes-key-management-failures/)
+- **TikTok reaches $400M settlement with US over COPPA violations** — TikTok was fined $400 million for violating COPPA, a U.S. [read more](https://www.bleepingcomputer.com/news/legal/tiktok-reaches-400m-settlement-with-us-over-coppa-violations/)
+- **Uber Fined Nearly $1 Billion by Dutch Regulators Over Automated Suspensions of Driver Accounts** — Dutch regulators fined Uber 825 million euros for violating the GDPR (Europe's data protection regulation) by suspending driver accounts automatically without proper review or explanation. [read more](https://www.securityweek.com/uber-fined-nearly-1-billion-by-dutch-regulators-over-automated-suspensions-of-driver-accounts/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-72898 (– CVSS, 79% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. CISA orders urgent patching of actively exploited Zimbra flaw
