@@ -4,6 +4,20 @@
 
 *Today's focus: network infrastructure — a lighter refresh day.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Actively Exploited Oracle WebLogic Flaw Lets Unauthenticated Attackers Access Critical Data** — A critical security flaw in Oracle's WebLogic Server (enterprise application software) can be exploited by attackers without needing to log in, allowing them to steal sensitive data. [read more](https://thehackernews.com/2026/08/actively-exploited-oracle-weblogic-flaw.html)
+- **Hospital operator Nutex Health says data stolen in cyberattack** — An unauthorized person or group gained access to Nutex Health's servers and copied confidential company data without permission. [read more](https://www.bleepingcomputer.com/news/security/hospital-operator-nutex-health-says-data-stolen-in-cyberattack/)
+- **LACMA data breach last year exposed social security and medical data** — LACMA experienced a data breach last year where someone accessed and copied visitor and employee information, including social security numbers and medical details. [read more](https://www.bleepingcomputer.com/news/security/lacma-data-breach-last-year-exposed-social-security-and-medical-data/)
+- **CISA Warns of Exploited Gitea Vulnerability** — Gitea (a self-hosted code repository platform similar to GitHub) had a remote code execution vulnerability—meaning attackers could run malicious commands on servers running vulnerable versions. [read more](https://www.securityweek.com/cisa-warns-of-exploited-gitea-vulnerability/)
+- **Unpatched Calix flaw lets hackers bypass NAT to expose internal devices** — Residential routers made by Calix contain an unpatched security flaw that allows remote attackers to create port-forwarding rules, essentially punching a hole through the router's firewall (NAT, or Network Address Translation) to expose private home or small-business networks to the internet. [read more](https://www.bleepingcomputer.com/news/security/unpatched-calix-flaw-lets-hackers-bypass-nat-to-expose-internal-devices/)
+- **Hackers breached over 270 Zimbra servers in ongoing attacks** — Attackers exploited a serious vulnerability in Zimbra Collaboration Suite (an email and collaboration platform) to break into over 270 separate Zimbra installations and execute malicious code on those servers. [read more](https://www.bleepingcomputer.com/news/security/hackers-breached-over-270-zimbra-servers-in-ongoing-attacks/)
+- **U.S. Sanctions Iran-Linked Hackers Behind Critical Infrastructure Breaches** — The U.S. [read more](https://thehackernews.com/2026/08/us-sanctions-iran-linked-hackers-behind.html)
+- **Police arrests dozens of suspects in global cybercrime crackdown** — Police and cybercrime investigators from 22 countries worked together to identify 263 suspects involved in organized cybercrime networks run by African crime groups, resulting in 58 arrests. [read more](https://www.bleepingcomputer.com/news/security/police-arrests-dozens-of-suspects-in-global-cybercrime-crackdown/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-59310 (– CVSS, 46% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Actively Exploited Oracle WebLogic Flaw Lets Unauthenticated Attackers Access Critical Data
