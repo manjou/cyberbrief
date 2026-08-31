@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **TerminalFix Uses Fake Cloudflare CAPTCHAs to Deploy Reverse-Tunnel Backdoor** — Attackers created fake CAPTCHA pages (security challenges) that look like Cloudflare's to trick users into copying and running malicious commands in Windows Terminal or PowerShell, which are programs that let you control your computer with text commands. [read more](https://thehackernews.com/2026/08/terminalfix-uses-fake-cloudflare.html)
+- **Extortion Group Claims Manchester Airports Group Data Breach** — An extortion group called FulcrumSec says they stole over 80 GB of data from Manchester Airports Group and threatened to publish it unless paid. [read more](https://www.securityweek.com/extortion-group-claims-manchester-airports-group-data-breach/)
+- **Berlin Won’t Pay Extortion Group Claiming Data Theft** — The Rhysida ransomware group (a group that encrypts data and demands payment) claimed they stole over 5 TB of sensitive data from a German organization and demanded money, but Berlin officials refused to pay. [read more](https://www.securityweek.com/berlin-wont-pay-extortion-group-claiming-data-theft/)
+- **More Details Emerge on Exploited PaperCut Vulnerabilities** — PaperCut, a popular print management software, released a second emergency security fix for serious flaws that attackers were already exploiting; these flaws are now tracked as CVE-2026-82078 and CVE-2026-81578 (formal identifiers). [read more](https://www.securityweek.com/more-details-emerge-on-exploited-papercut-vulnerabilities/)
+- **China-Linked Fire Ant Hijacks Cisco Routers to Steal Credentials and Blind Security Logs** — A Chinese government-linked hacking group called Fire Ant expanded their cyberattacks from VMware hypervisors (virtual computer hosts) to also target Cisco routers and authentication servers that control network access, aiming to steal login credentials and disable security logging. [read more](https://thehackernews.com/2026/08/china-linked-fire-ant-hijacks-cisco.html)
+- **Judge Says Pentagon’s Measures Against Anthropic Were ‘Illegal and Baseless’** — A judge ruled that the Pentagon's decision to label Anthropic (an AI company) as a supply chain risk was 'illegal and baseless'—meaning without legal or factual grounds—as part of Anthropic's lawsuit against the government. [read more](https://www.securityweek.com/judge-says-pentagons-measures-against-anthropic-were-illegal-and-baseless/)
+- **Critical Ruby on Rails Vulnerability in Attackers’ Crosshairs** — A critical vulnerability in Ruby on Rails (a software framework for building web applications) called KindaRails2Shell allows attackers to read arbitrary files from a server and run their own code remotely. [read more](https://www.securityweek.com/critical-ruby-on-rails-vulnerability-in-attackers-crosshairs/)
+- **Anthropic warns infostealer malware is hijacking Claude sessions to drain usage** — Anthropic warned that infostealer malware (malicious software that captures passwords and login information) on some users' computers has stolen their active Claude AI login sessions, allowing attackers to use Claude accounts and rack up usage charges. [read more](https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-warns-infostealer-malware-is-hijacking-claude-sessions-to-drain-usage/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-60004 (– CVSS, 85% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. TerminalFix Uses Fake Cloudflare CAPTCHAs to Deploy Reverse-Tunnel Backdoor
