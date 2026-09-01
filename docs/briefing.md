@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **9.5 Million Impacted by Aesto Health Data Breach** — Hackers broke into Aesto Health's cloud storage system (AWS) and stole 9.5 million people's personal and medical records. [read more](https://www.securityweek.com/9-5-million-impacted-by-aesto-health-data-breach/)
+- **Critical JFrog Artifactory Vulnerability Reportedly Exploited in the Wild** — A serious flaw in JFrog Artifactory (software that manages code packages) was publicly disclosed, and attackers began exploiting it within days—before many companies could apply the fix. [read more](https://www.securityweek.com/critical-jfrog-artifactory-vulnerability-reportedly-exploited-in-the-wild/)
+- **McKesson Confirms Data Breach as Attacker Deadline Looms** — An extortion gang claims to have stolen 284 million records from McKesson, a major healthcare distributor, and is threatening to release the data unless paid. [read more](https://www.securityweek.com/mckesson-confirms-data-breach-as-attacker-deadline-looms/)
+- **Recently patched PaperCut zero-days used in data theft attacks** — Two previously unknown vulnerabilities (zero-days) in PaperCut print management software were actively used by hackers to steal data; the company released patches last week, but attackers are now using the same flaws against other targets who haven't patched yet. [read more](https://www.bleepingcomputer.com/news/security/recently-patched-papercut-zero-days-used-in-data-theft-attacks/)
+- **Berlin confirms data theft after Rhysida ransomware attack claims** — The Rhysida ransomware gang encrypted Berlin's city government systems and is now demanding payment by threatening to publicly release stolen data. [read more](https://www.bleepingcomputer.com/news/security/berlin-confirms-data-theft-after-rhysida-ransomware-attack-claims/)
+- **WatchGuard Patches Critical Vulnerabilities** — WatchGuard discovered three serious flaws in Fireware OS (software running on network firewalls) that would let remote attackers take complete control without needing a password. [read more](https://www.securityweek.com/watchguard-patches-critical-vulnerabilities/)
+- **Aurora Ransomware Operators Use Cursor AI in Attacks Against 10 Targets** — Ransomware attackers linked to Aurora have been using Cursor, an AI coding tool, to automate their network break-ins against at least 10 targets. [read more](https://thehackernews.com/2026/08/aurora-ransomware-operators-use-cursor.html)
+- **Microsoft warns of TerminalFix attacks deploying reverse tunnels** — Hackers are using fake security verification popups (pretending to be Cloudflare CAPTCHA challenges) on compromised websites to trick visitors into running malicious commands in Windows Terminal. [read more](https://www.bleepingcomputer.com/news/security/microsoft-warns-of-terminalfix-attacks-deploying-reverse-tunnels/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-60004 (– CVSS, 85% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. 9.5 Million Impacted by Aesto Health Data Breach
