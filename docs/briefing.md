@@ -4,6 +4,20 @@
 
 *Today's focus: network infrastructure — a lighter refresh day.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **SonicWall warns of actively exploited SMA1000 zero-day flaws** — SonicWall discovered two previously unknown vulnerabilities (zero-days) in their SMA1000 remote access device that attackers are already using in real attacks by combining them together. [read more](https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-actively-exploited-sma1000-zero-day-flaws/)
+- **GeoNetwork Fixes Unauthenticated RCE Chain Affecting Government Geoportal Backends** — GeoNetwork, software that manages geographic data for government agencies, had two security gaps that attackers could chain together to run malicious code without needing a password. [read more](https://thehackernews.com/2026/09/geonetwork-fixes-unauthenticated-rce.html)
+- **Critical Langflow flaw exploited to steal OpenAI and AWS keys** — Criminals found an unauthenticated remote code execution flaw (CVE-2026-0768) in Langflow, an AI development tool, and are actively exploiting it to steal sensitive credentials like OpenAI and AWS access keys from compromised systems. [read more](https://www.bleepingcomputer.com/news/security/critical-langflow-flaw-exploited-to-steal-openai-and-aws-keys/)
+- **Attackers Exploit Critical Switchvox Flaw to Deploy Reverse Shells Without Credentials** — A critical SQL injection vulnerability (CVE-2026-9586, severity 9.3) in Sangoma Switchvox VoIP systems allows attackers to run malicious code without authentication and deploy reverse shells (a backdoor giving attacker remote control). [read more](https://thehackernews.com/2026/09/attackers-exploit-critical-switchvox.html)
+- **SonicWall Warns of Two SMA1000 Zero-Days Exploited in Attacks** — Two SonicWall SMA1000 vulnerabilities (CVE-2026-83549 and CVE-2026-83548) can be stacked together by attackers to gain complete remote control without any credentials, and active exploitation is occurring. [read more](https://www.securityweek.com/sonicwall-warns-of-two-sma1000-zero-days-exploited-in-attacks/)
+- **Ransomware Gang Claims Nutex Health Data Breach** — A ransomware gang claims to have stolen a large amount of sensitive data from Nutex Health, including patient records, employee information, and financial data, which the company confirmed to the SEC. [read more](https://www.securityweek.com/ransomware-gang-claims-nutex-health-data-breach/)
+- **Authorities Turn Sality's P2P Network Against Itself, Cutting Off New Malware Payloads** — U.S. [read more](https://thehackernews.com/2026/09/authorities-turn-salitys-p2p-network.html)
+- **Researchers Use Claude to Port Pre-Auth RCE Exploit From One PLC Model to Another** — Researchers demonstrated using an AI tool (Claude) to convert a working remote code execution exploit designed for one WAGO industrial controller model into a working exploit for a different model, proving AI can accelerate the adaptation of attacks. [read more](https://thehackernews.com/2026/09/researchers-use-claude-to-port-pre-auth.html)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-60004 (– CVSS, 87% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. SonicWall warns of actively exploited SMA1000 zero-day flaws
