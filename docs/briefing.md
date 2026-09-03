@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **SonicWall warns of actively exploited SMA1000 zero-day flaws** — SonicWall discovered that attackers are actively using two previously unknown security flaws (zero-days) in its SMA1000 VPN appliances by chaining them together to take control of systems remotely. [read more](https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-actively-exploited-sma1000-zero-day-flaws/)
+- **SonicWall Warns of Two SMA1000 Zero-Days Exploited in Attacks** — Two specific zero-day vulnerabilities (CVE-2026-83549 and CVE-2026-83548) in SonicWall SMA1000 devices allow attackers to execute code remotely without needing valid login credentials by combining the flaws. [read more](https://www.securityweek.com/sonicwall-warns-of-two-sma1000-zero-days-exploited-in-attacks/)
+- **Attackers Exploit Critical Switchvox Flaw to Deploy Reverse Shells Without Credentials** — Attackers have found a way to exploit a severe SQL injection flaw (a type of database attack where malicious code is inserted into queries) in Sangoma Switchvox VoIP systems to run arbitrary code and establish reverse shells (backdoor connections giving attackers remote control) without authentication. [read more](https://thehackernews.com/2026/09/attackers-exploit-critical-switchvox.html)
+- **GeoNetwork Fixes Unauthenticated RCE Chain Affecting Government Geoportal Backends** — Two separate weaknesses in GeoNetwork (an open-source catalog tool used by government agencies to organize geospatial data) can be chained together to allow remote code execution on unpatched systems. [read more](https://thehackernews.com/2026/09/geonetwork-fixes-unauthenticated-rce.html)
+- **Researchers Use Claude to Port Pre-Auth RCE Exploit From One PLC Model to Another** — Researchers demonstrated that an AI model (Claude) can automatically adapt an existing exploit originally written for one industrial controller model to work against a different model, successfully executing attacker code on real hardware. [read more](https://thehackernews.com/2026/09/researchers-use-claude-to-port-pre-auth.html)
+- **OpenAI’s Astra Crosses ‘Critical’ Cyber Threshold After Finding Zero-Days** — OpenAI's Astra AI system has reached a capability level where it can independently discover and exploit previously unknown security flaws (zero-days) across many well-defended systems without human guidance. [read more](https://www.securityweek.com/openais-astra-becomes-first-model-to-cross-critical-cybersecurity-threshold/)
+- **Attackers Exploit Two SonicWall SMA 1000 Zero-Days That May Form an Attack Chain** — SonicWall has patched two security flaws (discovered internally) affecting its SMA 1000 VPN appliances that attackers have already weaponized, with the flaws potentially working together in coordinated attacks. [read more](https://thehackernews.com/2026/09/attackers-exploit-two-sonicwall-sma.html)
+- **Sality botnet infrastructure dismantled in joint global takedown** — International law enforcement agencies and cybersecurity companies worked together to shut down the command-and-control infrastructure supporting the Sality botnet (a distributed network of infected computers controlled remotely). [read more](https://www.bleepingcomputer.com/news/security/sality-botnet-infrastructure-dismantled-in-joint-global-takedown/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-60004 (– CVSS, 87% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. SonicWall warns of actively exploited SMA1000 zero-day flaws
