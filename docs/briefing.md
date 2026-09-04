@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Google Releases Chrome Update to Patch Actively Exploited V8 Zero-Day** — Google released a security update for Chrome that fixes a bug in V8 (the JavaScript engine) that attackers were already actively exploiting in real attacks. [read more](https://thehackernews.com/2026/09/google-releases-chrome-update-to-patch.html)
+- **Researcher Releases FalconFlank PoC Showing Privilege Escalation in CrowdStrike Falcon** — A researcher publicly released code demonstrating how to exploit a privilege escalation flaw in CrowdStrike Falcon (a security tool that runs on computers with high system permissions). [read more](https://thehackernews.com/2026/09/researcher-releases-falconflank-poc.html)
+- **Over 440,000 Exploit Attempts Target Super Forms and Elementor Pro RCE Flaws** — Attackers are actively exploiting two serious vulnerabilities in popular WordPress plugins (Super Forms and Elementor Pro) that allow remote code execution (running their own code on the website server). [read more](https://thehackernews.com/2026/09/over-440000-exploit-attempts-target.html)
+- **Cisco Warns of Unpatched Secure Email Flaws, Patches Critical Switch Vulnerabilities** — Cisco disclosed flaws in their secure email system that could leak encrypted email contents, and separately released patches for switch software bugs that could allow attackers remote code execution and to bypass authentication. [read more](https://www.securityweek.com/cisco-warns-of-unpatched-secure-email-flaws-patches-critical-switch-vulnerabilities/)
+- **French hospital fined €500,000 after breach exposes data of 727,000** — A French hospital failed to properly secure patient data, which resulted in a breach exposing information on 727,000 people and a €500,000 fine from the data protection authority. [read more](https://www.bleepingcomputer.com/news/security/french-hospital-fined-500-000-after-breach-exposes-data-of-727-000/)
+- **HPE patches critical ArubaOS-CX remote code execution flaw** — HPE released a security patch for a critical vulnerability in ArubaOS-CX (network operating system software) that could allow remote code execution on network switches. [read more](https://www.bleepingcomputer.com/news/security/hpe-patches-critical-arubaos-cx-remote-code-execution-flaw/)
+- **Thomson Reuters Court Software Breach May Have Exposed SSNs and Sealed Data** — Thomson Reuters disclosed that unauthorized attackers accessed files from C-Track, their court case management software, in March 2026, potentially exposing social security numbers and sealed legal documents across multiple U.S. [read more](https://thehackernews.com/2026/09/thomson-reuters-court-software-breach.html)
+- **Critical Cisco Nexus 9000 Flaw Lets Unauthenticated Remote Attackers Run Code as Root** — Cisco patched a critical flaw in Nexus 9000 network switches that allows an attacker without any credentials to remotely execute code with root privileges (full system control) and released a security hardening update. [read more](https://thehackernews.com/2026/09/critical-cisco-nexus-9000-flaw-lets.html)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-60004 (– CVSS, 87% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Google Releases Chrome Update to Patch Actively Exploited V8 Zero-Day
