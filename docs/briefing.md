@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **N-able Issues Fourth N-central Hotfix in Five Weeks for Unauthenticated RCE Flaw** — N-able released a fourth emergency fix in five weeks for N-central software because attackers found and exploited a critical flaw that lets them run code without permission on affected servers. [read more](https://thehackernews.com/2026/09/n-able-issues-fourth-n-central-hotfix.html)
+- **N-able patches max severity N-central flaw amid ongoing attacks** — N-able issued an emergency patch for a maximum-severity (the worst rating) flaw in their N-central remote monitoring and management platform that allows attackers to execute arbitrary code and take control of systems. [read more](https://www.bleepingcomputer.com/news/security/n-able-patches-max-severity-n-central-flaw-amid-ongoing-attacks/)
+- **JSCeal Malware Can Bypass Google Authentication Using Stolen Session Cookies** — Researchers found JSCeal, a malware written in JavaScript that steals login credentials, watches user activity, intercepts network traffic, and can bypass Google's two-factor authentication by stealing existing session cookies (which act like reusable login tokens). [read more](https://thehackernews.com/2026/09/jsceal-malware-can-bypass-google.html)
+- **Critical MikroTik Vulnerability - Patch Now, (Sun, Sep 6th)** — MikroTik released a patch for a flaw that allows attackers to log into SSH (a remote management tool) without a password, and this flaw was already being exploited by attackers in real attacks. [read more](https://isc.sans.edu/diary/rss/33314)
+- **Attackers conceal phishing lures using invisible Unicode characters** — Attackers are using invisible Unicode characters (special text characters not visible on screen) hidden in phishing emails to disguise malicious links and bypass email security filters that scan for suspicious content. [read more](https://www.bleepingcomputer.com/news/security/attackers-conceal-phishing-lures-using-invisible-unicode-characters/)
+- **Hackers exploit new MikroTik RouterOS flaws to hijack routers** — Attackers are chaining together two recently disclosed MikroTik router vulnerabilities to gain full control of routers that have SSH (remote management access) exposed to the internet. [read more](https://www.bleepingcomputer.com/news/security/hackers-exploit-new-mikrotik-routeros-flaws-to-hijack-routers/)
+- **[UPDATE] [kritisch] Microsoft Windows Produkte: Mehrere Schwachstellen** — Microsoft released a critical patch addressing multiple vulnerabilities in Windows products that could allow attackers to escalate their access level, execute arbitrary code, crash systems, steal data, display false information, or manipulate data. [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2316)
+- **Attackers Hijack MikroTik Routers Through Internet-Exposed SSH Without Authentication** — Attackers are exploiting a flaw in MikroTik routers where the SSH service is accessible from the internet but does not properly require authentication, allowing attackers to log in and gain complete administrative control without a password. [read more](https://thehackernews.com/2026/09/attackers-hijack-mikrotik-routers.html)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-60004 (– CVSS, 87% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. N-able Issues Fourth N-central Hotfix in Five Weeks for Unauthenticated RCE Flaw
