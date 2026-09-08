@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Adobe Patches Magento Zero-Day Exploited to Deploy Rust Backdoor and PHP Web Shell** — Adobe released emergency patches for a critical flaw in its e-commerce software (Magento and Adobe Commerce) that attackers were already actively exploiting to break into online stores. [read more](https://thehackernews.com/2026/09/adobe-patches-magento-zero-day.html)
+- **Telerik UI Padding-Oracle Bug Chained to Unauthenticated RCE — Public Exploit Released** — A security researcher found a way to chain together two weaknesses in Telerik UI software—an encryption design flaw called a padding oracle plus missing authentication checks—to take over systems running non-default configurations. [read more](https://thehackernews.com/2026/09/telerik-ui-padding-oracle-bug-chained.html)
+- **⚡ Weekly Recap: Chrome 0-Day, Router Hijacks, Coder Supply Chain Attack and More** — Attackers discovered that security-conscious users block email images to avoid tracking, so they embedded instructions as text-based QR codes that appear even when images are disabled. [read more](https://thehackernews.com/2026/09/weekly-recap-chrome-0-day-router.html)
+- **Magento StyleSmuggler zero-day exploited to deploy Linux backdoor** — A zero-day flaw (vulnerability unknown to the vendor) in Magento and Adobe Commerce called StyleSmuggler is being weaponized by attackers to install persistent backdoors on online stores. [read more](https://www.bleepingcomputer.com/news/security/magento-stylesmuggler-zero-day-exploited-to-deploy-linux-backdoor/)
+- **Adobe Commerce Zero-Day Exploited to Backdoor Online Stores** — The StyleSmuggler zero-day in Adobe Commerce allows attackers to run their own code on compromised stores and install hidden backdoors that survive updates. [read more](https://www.securityweek.com/adobe-commerce-zero-day-exploited-to-backdoor-online-stores/)
+- **Mathspace discloses data breach affecting over 1 million people** — A breach of Mathspace, an online learning platform, exposed personal information of over 1 million students, staff, and parents after attackers broke into an internal reporting system called Metabase. [read more](https://www.bleepingcomputer.com/news/security/mathspace-discloses-data-breach-affecting-over-1-million-people/)
+- **N-able Issues Fourth N-central Hotfix in Five Weeks for Unauthenticated RCE Flaw** — N-able released a fourth emergency patch in five weeks for a critical remote code execution flaw in its N-central remote management software, suggesting attackers are actively exploiting it despite patches. [read more](https://thehackernews.com/2026/09/n-able-issues-fourth-n-central-hotfix.html)
+- **N-able patches max severity N-central flaw amid ongoing attacks** — N-able issued an urgent patch for a maximum-severity remote code execution vulnerability in N-central that allows attackers to take control of the platform, which IT teams use to manage networks. [read more](https://www.bleepingcomputer.com/news/security/n-able-patches-max-severity-n-central-flaw-amid-ongoing-attacks/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-60004 (– CVSS, 87% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Adobe Patches Magento Zero-Day Exploited to Deploy Rust Backdoor and PHP Web Shell
