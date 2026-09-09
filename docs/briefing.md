@@ -4,6 +4,20 @@
 
 *Today's focus: network infrastructure — a lighter refresh day.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Microsoft Patches Record 974 Flaws, Including Two Exploited Windows Zero-Days** — Microsoft released patches for 974 security vulnerabilities in a single month, which is a record number, and two of these flaws were already being actively used by attackers before the patches came out. [read more](https://thehackernews.com/2026/09/microsoft-patches-record-974-flaws.html)
+- **Adobe Patches Magento Zero-Day Exploited to Deploy Rust Backdoor and PHP Web Shell** — Adobe released an emergency patch for a critical flaw in its e-commerce software (Adobe Commerce and Magento) that attackers were already exploiting to install persistent malware (a backdoor written in the Rust programming language) and web-based shells that give ongoing access. [read more](https://thehackernews.com/2026/09/adobe-patches-magento-zero-day.html)
+- **September 2026 Microsoft Patch Tuesday, (Tue, Sep 8th)** — Microsoft released patches for 973 vulnerabilities in September 2026, which broke the previous record and included 113 critical-severity flaws, with two already being exploited by attackers and none disclosed publicly beforehand. [read more](https://isc.sans.edu/diary/rss/33320)
+- **Google warns of new Chrome zero-day bug exploited in attacks** — Google released security updates fixing 230 vulnerabilities in Chrome, including a seventh zero-day flaw that was actively being exploited in attacks during 2026. [read more](https://www.bleepingcomputer.com/news/security/google-patches-seventh-chrome-zero-day-exploited-in-attacks-this-year/)
+- **Chrome V8 Zero-Day Exploited in the Wild Enables Code Execution Inside Sandbox** — Google patched a medium-severity bug in Chrome's V8 JavaScript engine that allowed attackers to execute code inside the browser sandbox (a protected memory area that should limit damage even if code runs). [read more](https://thehackernews.com/2026/09/chrome-v8-zero-day-exploited-in-wild.html)
+- **Adobe Patches Over 170 Vulnerabilities, Including Commerce Zero-Day** — Adobe released patches for over 170 vulnerabilities, with a particularly critical one (CVE-2026-75650) in Adobe Commerce that allows unauthenticated attackers (those without login credentials) to run arbitrary code on affected systems. [read more](https://www.securityweek.com/adobe-patches-over-170-vulnerabilities-including-commerce-zero-day/)
+- **N-able N-central Pre-Auth RCE Flaw Exploited in the Wild** — CISA (a U.S. [read more](https://thehackernews.com/2026/09/n-able-n-central-pre-auth-rce-flaw.html)
+- **The EU CRA's Real Question: What Shipped, and When Did You Know?** — The European Union's new Cyber Resilience Act requires software vendors to report actively exploited security flaws to authorities within as little as 24 hours starting September 11, 2026, and vendors must accurately document what software versions shipped and when vulnerabilities were discovered. [read more](https://www.bleepingcomputer.com/news/security/the-eu-cras-real-question-what-shipped-and-when-did-you-know/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2021-23758 (– CVSS, 84% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Microsoft Patches Record 974 Flaws, Including Two Exploited Windows Zero-Days
