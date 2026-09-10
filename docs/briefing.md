@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **CISA: WatchGuard RCE flaw now exploited in ransomware attacks** — WatchGuard firewall devices have a flaw that lets attackers take control of them remotely, and criminals are now actively using this flaw to deploy ransomware (malicious software that locks up files for money). [read more](https://www.bleepingcomputer.com/news/security/cisa-watchguard-rce-flaw-now-exploited-in-ransomware-attacks/)
+- **Microsoft Patches Record 974 Flaws, Including Two Exploited Windows Zero-Days** — Microsoft released patches for 974 security flaws across its products (Windows, Office, SQL Server, and others) in a single month, and two of these flaws are already being exploited by attackers in real-world attacks. [read more](https://thehackernews.com/2026/09/microsoft-patches-record-974-flaws.html)
+- **Google warns of new Chrome zero-day bug exploited in attacks** — Google patched 230 security flaws in Chrome, including a zero-day (a flaw unknown to the vendor until attackers started using it) that criminals are already exploiting; this is the seventh Chrome zero-day found and patched so far this year. [read more](https://www.bleepingcomputer.com/news/security/google-patches-seventh-chrome-zero-day-exploited-in-attacks-this-year/)
+- **Chrome V8 Zero-Day Exploited in the Wild Enables Code Execution Inside Sandbox** — A medium-severity flaw in Chrome's V8 JavaScript engine allows attackers to write data outside the intended memory location and execute arbitrary code, even though Chrome's sandbox is supposed to contain such attacks. [read more](https://thehackernews.com/2026/09/chrome-v8-zero-day-exploited-in-wild.html)
+- **N-able N-central Pre-Auth RCE Flaw Exploited in the Wild** — N-able N-central (a remote management tool used by IT professionals) has a maximum-severity flaw that requires no authentication to exploit and allows full system takeover; U.S. [read more](https://thehackernews.com/2026/09/n-able-n-central-pre-auth-rce-flaw.html)
+- **Veradigm warns of patient data breach after ransomware gang claims attack** — Healthcare company Veradigm suffered a ransomware attack at a third-party vendor that exposed patient personal information. [read more](https://www.bleepingcomputer.com/news/security/veradigm-discloses-patient-data-breach-after-gentlemen-gang-claims-attack/)
+- **Cisco confirms CVE-2026-20079 Secure FMC flaw exploited in attacks** — Cisco's Secure Firewall Management Center has a maximum-severity flaw that lets attackers bypass authentication (the login process) and is currently being exploited in active attacks. [read more](https://www.bleepingcomputer.com/news/security/cisco-confirms-cve-2026-20079-secure-fmc-flaw-exploited-in-attacks/)
+- **New ‘ShieldCrash’ Zero-Day Exploit Targets Microsoft Defender** — A new exploit called 'ShieldCrash' targets Microsoft Defender (Windows built-in antivirus) and can grant attackers full system-level privileges even on machines running the latest September 2026 security patches. [read more](https://www.securityweek.com/new-shieldcrash-zero-day-exploit-targets-microsoft-defender/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-87491 (8.8 CVSS, 0% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. CISA: WatchGuard RCE flaw now exploited in ransomware attacks
