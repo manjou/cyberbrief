@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **CISA: WatchGuard RCE flaw now exploited in ransomware attacks** — Attackers are actively using a serious flaw in WatchGuard Firebox devices (network security appliances that protect company entrances) to break in and deploy ransomware, which locks up a company's data and demands payment. [read more](https://www.bleepingcomputer.com/news/security/cisa-watchguard-rce-flaw-now-exploited-in-ransomware-attacks/)
+- **Check Point Discloses Two 9.8-Rated VPN Certificate Flaws Enabling Unauthenticated RCE** — Check Point discovered two critical flaws in how its firewall products verify VPN certificates (digital credentials for secure remote access). [read more](https://thehackernews.com/2026/09/check-point-discloses-two-98-rated-vpn.html)
+- **Cisco FMC Flaws Exploited to Steal Credentials and Deploy Qilin Ransomware** — Multiple criminal and government hacking groups have been actively exploiting two flaws in Cisco's firewall management software to steal login credentials and install Qilin ransomware. [read more](https://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html)
+- **PaperCut Replaces Emergency Patches With Fixes for Two Actively Exploited Flaws** — PaperCut (print management software) released a more complete fix to replace earlier emergency patches for two vulnerabilities that hackers are already exploiting in the wild. [read more](https://thehackernews.com/2026/09/papercut-replaces-emergency-patches.html)
+- **Surfshark VPN says hackers breached internal testing, proxy servers** — Surfshark's internal testing server was exposed to the internet by accident, and hackers took advantage to break in and access internal systems. [read more](https://www.bleepingcomputer.com/news/security/surfshark-vpn-says-hackers-breached-internal-testing-proxy-servers/)
+- **New 'BlueMoon' kit exploited Windows and Chrome zero-day flaws** — Spy groups used a toolkit called BlueMoon that exploited never-before-disclosed security flaws in Windows and Chrome that the vendors didn't know about yet. [read more](https://www.bleepingcomputer.com/news/security/new-bluemoon-kit-exploited-windows-and-chrome-zero-day-flaws/)
+- **Trezor: 347,000 users targeted in phishing attacks after Brevo breach** — After a breach in Brevo (an email service), hackers used stolen email addresses to trick Trezor cryptocurrency wallet users into clicking malicious links, successfully compromising 2,500 accounts. [read more](https://www.bleepingcomputer.com/news/security/trezor-347-000-users-targeted-in-phishing-attacks-after-brevo-breach/)
+- **Cisco FMC flaws exploited by ransomware gang, state-sponsored hackers** — Two flaws in Cisco's firewall management center have been actively exploited by three separate attack groups—both criminal ransomware operations and state-sponsored hackers—after Cisco released patches. [read more](https://www.bleepingcomputer.com/news/security/cisco-fmc-flaws-exploited-by-ransomware-gang-state-sponsored-hackers/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-20079 (– CVSS, 75% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. CISA: WatchGuard RCE flaw now exploited in ransomware attacks
