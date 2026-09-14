@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Hackers exploit Tencent app flaw to deploy GrayRabbit malware** — Attackers found and are actively using a serious flaw in Tencent's Sogou Input Method (a typing tool for Windows) to sneak in GrayRabbit malware, which gives them hidden remote access to infected computers. [read more](https://www.bleepingcomputer.com/news/security/hackers-exploit-tencent-app-flaw-to-deploy-grayrabbit-malware/)
+- **Attackers Use Passkey Phishing to Hijack Microsoft Cloud Accounts and Exfiltrate Data** — Threat actors are sending fake financial scam emails through legitimate email delivery services, then tricking users with messages about passkeys (a newer, supposedly more secure login method) to steal Microsoft cloud account credentials and access sensitive data. [read more](https://thehackernews.com/2026/09/attackers-use-passkey-phishing-to.html)
+- **Revolut discloses data breach exposing financial info, passports** — Revolut accidentally shared customer financial information and passport data with someone claiming to be a government official—who turned out to be a criminal. [read more](https://www.bleepingcomputer.com/news/security/revolut-discloses-data-breach-exposing-financial-info-passports/)
+- **Three JFrog Artifactory Flaws Exploited for Backdoor Deployment** — Three security flaws in JFrog Artifactory (a software repository tool) allow attackers to skip normal login procedures and gain admin-level control, which lets them inject malicious code into software updates. [read more](https://www.securityweek.com/three-jfrog-artifactory-flaws-exploited-for-backdoor-deployment/)
+- **[UPDATE] [hoch] Red Hat Enterprise Linux (postgis, virtuoso-opensource): Mehrere Schwachstellen** — Several vulnerabilities exist in Red Hat Enterprise Linux packages (postgis and virtuoso-opensource) that attackers can exploit to either crash systems or steal confidential information. [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3306)
+- **Telus Warns Customers of Account Breaches** — Telus customers had usernames and passwords stolen, and attackers used these credentials over several months to log into accounts and access personal data and billing information. [read more](https://www.securityweek.com/telus-warns-customers-of-account-breaches/)
+- **CISA: Hackers now exploit max severity GitLab flaw in attacks** — Hackers are actively exploiting a critical vulnerability in GitLab (a software development collaboration platform) in real attacks, and the U.S. [read more](https://www.bleepingcomputer.com/news/security/cisa-hackers-now-exploit-max-severity-gitlab-flaw-in-attacks/)
+- **ConnectWise Patches ScreenConnect Vulnerability Exploited in Worm-Like Attacks** — ConnectWise ScreenConnect (remote access software) has a flaw that allows attackers to send and execute files on a target computer if they have an active remote session connection, spreading like a self-replicating worm. [read more](https://www.securityweek.com/connectwise-patches-screenconnect-vulnerability-exploited-in-worm-like-attacks/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-20079 (– CVSS, 76% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Hackers exploit Tencent app flaw to deploy GrayRabbit malware
