@@ -1,110 +1,94 @@
-# 🛡️ CyberBrief — GRC — Friday, 11 September 2026
+# 🛡️ CyberBrief — SOC — Monday, 14 September 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
-*Today's focus: breaches, regulation, and compliance impact.*
-
-## 🕔 5pm recap
-
-*Didn't get through this morning? Here's the quick version — full detail is still below.*
-
-- **CISA: WatchGuard RCE flaw now exploited in ransomware attacks** — Attackers are actively using a serious flaw in WatchGuard Firebox devices (network security appliances that protect company entrances) to break in and deploy ransomware, which locks up a company's data and demands payment. [read more](https://www.bleepingcomputer.com/news/security/cisa-watchguard-rce-flaw-now-exploited-in-ransomware-attacks/)
-- **Check Point Discloses Two 9.8-Rated VPN Certificate Flaws Enabling Unauthenticated RCE** — Check Point discovered two critical flaws in how its firewall products verify VPN certificates (digital credentials for secure remote access). [read more](https://thehackernews.com/2026/09/check-point-discloses-two-98-rated-vpn.html)
-- **Cisco FMC Flaws Exploited to Steal Credentials and Deploy Qilin Ransomware** — Multiple criminal and government hacking groups have been actively exploiting two flaws in Cisco's firewall management software to steal login credentials and install Qilin ransomware. [read more](https://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html)
-- **PaperCut Replaces Emergency Patches With Fixes for Two Actively Exploited Flaws** — PaperCut (print management software) released a more complete fix to replace earlier emergency patches for two vulnerabilities that hackers are already exploiting in the wild. [read more](https://thehackernews.com/2026/09/papercut-replaces-emergency-patches.html)
-- **Surfshark VPN says hackers breached internal testing, proxy servers** — Surfshark's internal testing server was exposed to the internet by accident, and hackers took advantage to break in and access internal systems. [read more](https://www.bleepingcomputer.com/news/security/surfshark-vpn-says-hackers-breached-internal-testing-proxy-servers/)
-- **New 'BlueMoon' kit exploited Windows and Chrome zero-day flaws** — Spy groups used a toolkit called BlueMoon that exploited never-before-disclosed security flaws in Windows and Chrome that the vendors didn't know about yet. [read more](https://www.bleepingcomputer.com/news/security/new-bluemoon-kit-exploited-windows-and-chrome-zero-day-flaws/)
-- **Trezor: 347,000 users targeted in phishing attacks after Brevo breach** — After a breach in Brevo (an email service), hackers used stolen email addresses to trick Trezor cryptocurrency wallet users into clicking malicious links, successfully compromising 2,500 accounts. [read more](https://www.bleepingcomputer.com/news/security/trezor-347-000-users-targeted-in-phishing-attacks-after-brevo-breach/)
-- **Cisco FMC flaws exploited by ransomware gang, state-sponsored hackers** — Two flaws in Cisco's firewall management center have been actively exploited by three separate attack groups—both criminal ransomware operations and state-sponsored hackers—after Cisco released patches. [read more](https://www.bleepingcomputer.com/news/security/cisco-fmc-flaws-exploited-by-ransomware-gang-state-sponsored-hackers/)
-- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-20079 (– CVSS, 75% EPSS)
+*Today's focus: active exploitation, incident response, and threat activity.*
 
 ## 🔥 Top stories
 
-### 1. CISA: WatchGuard RCE flaw now exploited in ransomware attacks
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisa-watchguard-rce-flaw-now-exploited-in-ransomware-attacks/)
+### 1. Hackers exploit Tencent app flaw to deploy GrayRabbit malware
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/hackers-exploit-tencent-app-flaw-to-deploy-grayrabbit-malware/)
 
-Attackers are actively using a serious flaw in WatchGuard Firebox devices (network security appliances that protect company entrances) to break in and deploy ransomware, which locks up a company's data and demands payment. This matters because firewalls are supposed to be the first line of defense, so a compromised firewall puts entire networks at risk. Defenders need to patch these firewalls immediately, monitor them for signs of intrusion, and assume any unpatched device may already be compromised.
+Attackers found and are actively using a serious flaw in Tencent's Sogou Input Method (a typing tool for Windows) to sneak in GrayRabbit malware, which gives them hidden remote access to infected computers. This matters because input method software runs at a deep system level with high privileges, making it an effective entry point for espionage. Defenders typically patch the vulnerability immediately, monitor for suspicious GrayRabbit signatures, and audit systems that have the affected software installed.
 
-> 📋 **ISO 27001:** A.8.13 Information backup, A.8.8 Management of technical vulnerabilities
+> 📋 **ISO 27001:** A.8.7 Protection against malware, A.8.8 Management of technical vulnerabilities
 
-### 2. Check Point Discloses Two 9.8-Rated VPN Certificate Flaws Enabling Unauthenticated RCE
-*The Hacker News* — [read more](https://thehackernews.com/2026/09/check-point-discloses-two-98-rated-vpn.html)
+### 2. Attackers Use Passkey Phishing to Hijack Microsoft Cloud Accounts and Exfiltrate Data
+*The Hacker News* — [read more](https://thehackernews.com/2026/09/attackers-use-passkey-phishing-to.html)
 
-Check Point discovered two critical flaws in how its firewall products verify VPN certificates (digital credentials for secure remote access). An attacker without credentials could potentially run code on these devices under certain conditions, though Check Point hasn't fully explained what those conditions are. Companies using Check Point need to apply patches urgently, limit who can access management interfaces, and watch for unauthorized connection attempts.
+Threat actors are sending fake financial scam emails through legitimate email delivery services, then tricking users with messages about passkeys (a newer, supposedly more secure login method) to steal Microsoft cloud account credentials and access sensitive data. This matters because passkeys are still new enough that users may not recognize phishing attempts using them, and compromised cloud accounts expose everything stored there. Defenders typically train users to verify login requests directly through official channels, enable additional account security checks, and monitor for unusual cloud access patterns.
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
+> 📋 **ISO 27001:** A.6.3 Awareness, education and training, A.5.19 Supplier relationships
 
-### 3. Cisco FMC Flaws Exploited to Steal Credentials and Deploy Qilin Ransomware
-*The Hacker News* — [read more](https://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html)
+### 3. Revolut discloses data breach exposing financial info, passports
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/revolut-discloses-data-breach-exposing-financial-info-passports/)
 
-Multiple criminal and government hacking groups have been actively exploiting two flaws in Cisco's firewall management software to steal login credentials and install Qilin ransomware. This is particularly serious because the management center controls all the firewalls in an organization, so compromising it gives attackers broad access. Defenders must patch immediately, reset compromised credentials, review audit logs for suspicious activity, and assume systems may be infected until proven otherwise.
+Revolut accidentally shared customer financial information and passport data with someone claiming to be a government official—who turned out to be a criminal. This matters because financial records and passport scans are high-value targets for identity theft and fraud, and the breach shows weak verification processes when handling data requests. Defenders typically implement strict data-sharing approval workflows, verify government requests through official channels only, and notify affected customers quickly so they can monitor for fraud.
 
-> 📋 **ISO 27001:** A.8.13 Information backup, A.8.8 Management of technical vulnerabilities
+> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
 
-### 4. PaperCut Replaces Emergency Patches With Fixes for Two Actively Exploited Flaws
-*The Hacker News* — [read more](https://thehackernews.com/2026/09/papercut-replaces-emergency-patches.html)
+### 4. Three JFrog Artifactory Flaws Exploited for Backdoor Deployment
+*SecurityWeek* — [read more](https://www.securityweek.com/three-jfrog-artifactory-flaws-exploited-for-backdoor-deployment/)
 
-PaperCut (print management software) released a more complete fix to replace earlier emergency patches for two vulnerabilities that hackers are already exploiting in the wild. This matters because the previous patches apparently didn't fully solve the problem, leaving systems still at risk. Organizations running PaperCut should apply this new version without delay and check their systems for signs that they were compromised before patching.
+Three security flaws in JFrog Artifactory (a software repository tool) allow attackers to skip normal login procedures and gain admin-level control, which lets them inject malicious code into software updates. This matters because Artifactory is central to many software supply chains, so compromising it can poison software used by hundreds of organizations. Defenders typically apply patches immediately, audit who accessed the system during the vulnerability window, and scan stored software for tampering.
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
+> 📋 **ISO 27001:** A.8.7 Protection against malware, A.8.8 Management of technical vulnerabilities
 
-### 5. Surfshark VPN says hackers breached internal testing, proxy servers
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/surfshark-vpn-says-hackers-breached-internal-testing-proxy-servers/)
+### 5. [UPDATE] [hoch] Red Hat Enterprise Linux (postgis, virtuoso-opensource): Mehrere Schwachstellen
+*CERT-Bund (DE)* — [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3306)
 
-Surfshark's internal testing server was exposed to the internet by accident, and hackers took advantage to break in and access internal systems. This matters because it shows how basic configuration mistakes can bypass all security controls, and it raises questions about what data might have been stolen. Defenders learn that internal tools need the same security rigor as external ones, and that misconfigured cloud/web storage should be monitored.
+Several vulnerabilities exist in Red Hat Enterprise Linux packages (postgis and virtuoso-opensource) that attackers can exploit to either crash systems or steal confidential information. This matters because Red Hat is widely used in enterprise and critical infrastructure environments, so these flaws affect many organizations. Defenders typically apply security patches promptly, test them in lab environments first, and monitor systems for signs of exploitation.
 
-> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII, A.8.20 Networks security
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.8.6 Capacity management
 
-### 6. New 'BlueMoon' kit exploited Windows and Chrome zero-day flaws
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/new-bluemoon-kit-exploited-windows-and-chrome-zero-day-flaws/)
+### 6. Telus Warns Customers of Account Breaches
+*SecurityWeek* — [read more](https://www.securityweek.com/telus-warns-customers-of-account-breaches/)
 
-Spy groups used a toolkit called BlueMoon that exploited never-before-disclosed security flaws in Windows and Chrome that the vendors didn't know about yet. This is important because zero-day flaws (unknown to vendors) can't be patched and are extremely valuable to attackers. Defenders rely on monitoring suspicious behavior, limiting user privileges, and assuming some systems are compromised despite no obvious signs.
+Telus customers had usernames and passwords stolen, and attackers used these credentials over several months to log into accounts and access personal data and billing information. This matters because once credentials are stolen, attackers can impersonate legitimate users and access everything tied to those accounts without triggering typical security alerts. Defenders typically reset passwords for affected customers, enable multi-factor authentication (an extra login verification step), investigate how long attackers had access, and monitor for ongoing misuse.
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
+> 📋 **ISO 27001:** A.5.17 Authentication information
 
-### 7. Trezor: 347,000 users targeted in phishing attacks after Brevo breach
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/trezor-347-000-users-targeted-in-phishing-attacks-after-brevo-breach/)
+### 7. CISA: Hackers now exploit max severity GitLab flaw in attacks
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisa-hackers-now-exploit-max-severity-gitlab-flaw-in-attacks/)
 
-After a breach in Brevo (an email service), hackers used stolen email addresses to trick Trezor cryptocurrency wallet users into clicking malicious links, successfully compromising 2,500 accounts. This matters because the attackers combined data from one breach with social engineering (phishing) to target a specific customer base. Defenders educate users about suspicious emails, implement email filtering, and encourage multi-factor authentication so clicking a link alone doesn't fully compromise an account.
+Hackers are actively exploiting a critical vulnerability in GitLab (a software development collaboration platform) in real attacks, and the U.S. government agency CISA is alerting organizations to patch immediately. This matters because GitLab often contains source code and development secrets, so compromised instances can expose an organization's entire software pipeline. Defenders typically deploy patches to all GitLab instances, scan for signs of past exploitation, and reset any credentials stored in the system.
 
-> 📋 **ISO 27001:** A.6.3 Awareness, education and training
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 8. Cisco FMC flaws exploited by ransomware gang, state-sponsored hackers
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisco-fmc-flaws-exploited-by-ransomware-gang-state-sponsored-hackers/)
+### 8. ConnectWise Patches ScreenConnect Vulnerability Exploited in Worm-Like Attacks
+*SecurityWeek* — [read more](https://www.securityweek.com/connectwise-patches-screenconnect-vulnerability-exploited-in-worm-like-attacks/)
 
-Two flaws in Cisco's firewall management center have been actively exploited by three separate attack groups—both criminal ransomware operations and state-sponsored hackers—after Cisco released patches. This shows attackers are treating vulnerabilities as high-priority targets once they become public. Organizations must apply patches before attackers do, assume any unpatched system may be compromised, and monitor for signs of the specific attacks described by Cisco.
+ConnectWise ScreenConnect (remote access software) has a flaw that allows attackers to send and execute files on a target computer if they have an active remote session connection, spreading like a self-replicating worm. This matters because remote access tools are trusted to connect to critical systems, and this flaw turns them into automatic infection vectors. Defenders typically apply the patch immediately, review logs for suspicious file transfers during remote sessions, and restrict who can initiate remote access.
 
-> 📋 **ISO 27001:** A.8.13 Information backup, A.8.8 Management of technical vulnerabilities
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
 ## 🚨 CVEs that matter today
 
 | CVE | Why it ranks | CVSS | EPSS | Exploited? |
 |-----|--------------|------|------|------------|
-| **CVE-2026-20079** | Cisco Firewall Management Center Authentication Bypass Using an Alternate Path or Channel Vulnerability | – | 75% | ⚠️ YES (KEV) |
+| **CVE-2026-20079** | Cisco Firewall Management Center Authentication Bypass Using an Alternate Path or Channel Vulnerability | – | 76% | ⚠️ YES (KEV) |
 | **CVE-2026-48710** | Kludex Starlette HTTP Request/Response Smuggling Vulnerability | – | 36% | ⚠️ YES (KEV) |
 | **CVE-2026-9586** | Sangoma Switchvox SQL Injection Vulnerability | – | 12% | ⚠️ YES (KEV) |
 | **CVE-2026-83549** | SonicWall SMA1000 Appliances OS Command Injection Vulnerability | – | 9% | ⚠️ YES (KEV) |
 | **CVE-2026-82329** | JFrog Artifactory Improper Authentication Vulnerability | – | 8% | ⚠️ YES (KEV) |
 
-**CVE-2026-20079** — This flaw (CVE-2026-20079) allows someone to bypass authentication—the process that verifies you are who you claim to be—on Cisco's firewall management software by using an alternate access path. An attacker could log in without a valid password or credentials. The highest priority is to patch immediately and reset all credentials, since attackers may have already logged in using this method.
+**CVE-2026-20079** — Cisco Firewall Management Center, which controls security devices across a network, can be accessed without proper login by bypassing authentication through an alternate technical pathway. This matters because the management center controls access rules for the entire network, so unauthorized access means an attacker can disable security and move freely. Defenders typically apply the patch, require multi-factor authentication for administrative access, and monitor for unauthorized login attempts.
 
-**CVE-2026-48710** — This vulnerability (CVE-2026-48710) in Starlette (a Python web framework) allows attackers to trick the system into misinterpreting where HTTP requests and responses begin and end, potentially allowing them to bypass security controls or inject malicious content. Developers should update Starlette and review any custom code that parses or forwards web traffic.
+**CVE-2026-48710** — Kludex Starlette (a web framework for building applications) has a vulnerability allowing attackers to manipulate HTTP requests and responses in ways that bypass security controls or smuggle hidden commands into the communication stream. This matters because this type of flaw is subtle and difficult to detect, allowing attackers to sneak payloads past firewalls and security filters. Defenders typically update Starlette to the patched version, add extra validation rules for incoming requests, and monitor network traffic for suspicious patterns.
 
-**CVE-2026-9586** — This flaw (CVE-2026-9586) in Sangoma phone system software allows attackers to inject SQL (database commands) into the system, potentially reading, modifying, or deleting customer data and system settings. Applications using databases need careful code review to prevent this type of injection; the main defense is updating Sangoma and ensuring any web interfaces are properly restricted.
+**CVE-2026-9586** — Sangoma Switchvox telephone system software contains a SQL injection vulnerability, meaning attackers can insert malicious database commands through normal input fields to steal, modify, or delete phone system data. This matters because phone systems often contain call logs, voicemails, and configuration data, and unauthorized changes can disrupt communications or enable eavesdropping. Defenders typically apply patches, validate all user inputs to ensure they cannot contain database commands, and restrict direct database access.
 
-**CVE-2026-83549** — This vulnerability (CVE-2026-83549) in SonicWall security appliances lets attackers run system commands directly on the device without authorization, giving them full control similar to logging in as an administrator. Organizations must patch immediately and limit network access to these appliances from untrusted sources, since a compromised appliance can access the entire protected network.
+**CVE-2026-83549** — SonicWall SMA1000 appliances (network security devices) have a flaw allowing attackers to inject operating system commands through normal input fields, giving them command-line control of the security device. This matters because these appliances protect network access, so compromising them puts the entire protected network at risk. Defenders typically patch immediately, restrict network access to the appliance management interface, and monitor for suspicious command execution attempts.
 
-**CVE-2026-82329** — This flaw (CVE-2026-83549) in JFrog Artifactory (software that stores and distributes code and binaries) allows attackers to bypass login verification and access stored software without credentials. This is critical because compromised software can be modified to contain malware before it reaches developers and end-users. Defenders must patch Artifactory, reset credentials, review logs for unauthorized access, and consider scanning all software that passed through the system for tampering.
+**CVE-2026-82329** — JFrog Artifactory has a flaw in its authentication system that allows attackers to access the software repository without valid credentials or with weaker verification than required. This matters because this enables attackers to view, modify, or replace software packages, potentially poisoning any software that uses this repository. Defenders typically apply the patch, audit access logs to detect unauthorized activity, and verify the integrity of stored packages.
 
 ## 📖 Jargon decoder
 
-- **CVSS** — Common Vulnerability Scoring System — rates how bad a vulnerability *could* be (0-10). High CVSS does not mean anyone is actually exploiting it.
 - **CVE** — Common Vulnerabilities and Exposures — the global ID system for security flaws, e.g. CVE-2026-12345.
 - **RCE** — Remote Code Execution — the worst-case flaw: an attacker runs their own code on your system over the network.
-- **zero-day** — A vulnerability attackers exploit before the vendor has released a patch — defenders start at zero days of warning.
-- **ransomware** — Malware that encrypts your files and demands payment. Modern gangs also steal data first and threaten to publish it (double extortion).
 - **KEV** — CISA's Known Exploited Vulnerabilities catalog — CVEs confirmed to be abused by attackers in the real world. If it's in KEV, patching it jumps to the top of the list.
 - **EPSS** — Exploit Prediction Scoring System — a 0-100% probability that a CVE will be exploited in the next 30 days. Better prioritization signal than CVSS alone.
+- **CVSS** — Common Vulnerability Scoring System — rates how bad a vulnerability *could* be (0-10). High CVSS does not mean anyone is actually exploiting it.
 
 ---
 *Generated by [CyberBrief](https://github.com/manjou/cyberbrief) — free, open source, no AI required.*
