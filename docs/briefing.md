@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **China-Linked Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy GRIMWEDGE** — A hacker group linked to China sent fake emails with malicious attachments to targets, using two recently-discovered security holes (one in Chrome browser, one in Windows) to install hidden backdoor software called GRIMWEDGE that lets them spy on victims. [read more](https://thehackernews.com/2026/09/china-linked-hackers-exploit-chrome.html)
+- **Japan's Digital Agency says VPN flaw exposed 246,000 personnel records** — Japan's government discovered that someone accessed a VPN (virtual private network—a secure tunnel for remote connections) and stole personal information about 246,000 government workers, including names and possibly addresses or ID numbers. [read more](https://www.bleepingcomputer.com/news/security/japans-digital-agency-says-vpn-flaw-exposed-246-000-personnel-records/)
+- **Root RCE Zero-Day in Cisco Secure Email Gateway Under Active Exploitation** — An attacker can exploit a security flaw in Cisco Secure Email Gateway (a device that filters incoming emails) without even needing login credentials, and then run any command they want with the highest level of system access (root privileges). [read more](https://www.securityweek.com/root-rce-zero-day-in-cisco-secure-email-gateway-under-active-exploitation/)
+- **Cisco Secure Email Gateway Flaw Exploited in the Wild, Enables Root Command Execution** — Cisco announced that hackers are already actively attacking a critical flaw (CVE-2026-76461) in their Secure Email Gateway product that allows remote attackers to run commands as root (highest privileges) without authentication, with a severity score of 9.8 out of 10. [read more](https://thehackernews.com/2026/09/cisco-secure-email-gateway-flaw.html)
+- **Revolut discloses data breach exposing financial info, passports** — Fintech company Revolut announced that someone breached their systems and obtained customer financial information and passport details after the company mistakenly shared data with someone pretending to be a government official. [read more](https://www.bleepingcomputer.com/news/security/revolut-discloses-data-breach-exposing-financial-info-passports/)
+- **Personal, Financial Info Exposed in Revolut Data Breach** — Revolut accidentally gave customer personal and financial information to a scammer who was impersonating a government agency requesting data. [read more](https://www.securityweek.com/personal-financial-info-exposed-in-revolut-data-breach/)
+- **Cisco patches Secure Email Gateway zero-day exploited in attacks** — Cisco released a security patch for a critical zero-day vulnerability (a flaw unknown to the public until attackers exploit it) in Secure Email Gateway that attackers were already using in real attacks. [read more](https://www.bleepingcomputer.com/news/security/new-cisco-secure-email-zero-day-exploited-to-execute-commands-as-root/)
+- **Webinar: How malicious OAuth apps can lead to Google Workspace breaches** — Attackers use social engineering tricks combined with fake applications that request permission to access Google Workspace (Gmail, Drive, etc.) to gain access to company data without needing stolen passwords. [read more](https://www.bleepingcomputer.com/news/security/webinar-how-malicious-oauth-apps-can-lead-to-google-workspace-breaches/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-20079 (– CVSS, 76% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. China-Linked Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy GRIMWEDGE
