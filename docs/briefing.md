@@ -4,6 +4,20 @@
 
 *Today's focus: network infrastructure — a lighter refresh day.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Attackers Exploit WooCommerce Wholesale Lead Capture Flaw to Plant PHP Web Shells** — Attackers found a security weakness in a WordPress plugin called WooCommerce Wholesale Lead Capture that allows them to upload malicious PHP files (backdoors) without needing a user account. [read more](https://thehackernews.com/2026/09/attackers-exploit-woocommerce-wholesale.html)
+- **CISA: Critical VMware RCE flaw now exploited by ransomware gangs** — Ransomware gangs (criminals who encrypt data and demand payment) have started using an old VMware security flaw that was supposed to be fixed in July to break into company systems. [read more](https://www.bleepingcomputer.com/news/security/cisa-critical-vmware-vcenter-rce-flaw-now-exploited-by-ransomware-gangs/)
+- **Cisco Secure Email Gateway Flaw Exploited in the Wild, Enables Root Command Execution** — A critical flaw in Cisco's email security gateway software allows attackers to send specially crafted emails that execute commands with the highest system privileges, and this is actively being exploited right now. [read more](https://thehackernews.com/2026/09/cisco-secure-email-gateway-flaw.html)
+- **Google fixes actively exploited Android zero-day on Pixel devices** — Google released monthly security updates for Pixel phones that fix 110 flaws, including one zero-day (a flaw attackers were already using before Google knew about it) that bad actors had been targeting specific victims with. [read more](https://www.bleepingcomputer.com/news/security/google-fixes-actively-exploited-android-zero-day-on-pixel-devices/)
+- **Hackers target WordPress sites via third-party WooCommerce plugin** — Hackers are actively breaking into WordPress websites by exploiting a critical vulnerability in the WooCommerce Wholesale Lead Capture plugin to upload a malicious PHP backdoor file that gives them ongoing access. [read more](https://www.bleepingcomputer.com/news/security/hackers-target-wordpress-sites-via-third-party-woocommerce-plugin/)
+- **China-Linked Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy GRIMWEDGE** — A Chinese hacking group sent phishing emails with malicious links that exploit recently patched security flaws in Google Chrome and Windows to install a JavaScript backdoor called GRIMWEDGE that secretly communicates with attackers. [read more](https://thehackernews.com/2026/09/china-linked-hackers-exploit-chrome.html)
+- **Cisco patches Secure Email Gateway zero-day exploited in attacks** — Cisco is warning customers that attackers are actively exploiting a zero-day flaw in Cisco Secure Email Gateway (a security tool that inspects company emails) to break in without using legitimate credentials. [read more](https://www.bleepingcomputer.com/news/security/new-cisco-secure-email-zero-day-exploited-to-execute-commands-as-root/)
+- **Acronis warns of actively exploited flaw in its cPanel backup plugin** — Acronis disclosed a high-severity flaw in its backup plugin for server management tools like cPanel that allows attackers with limited system access to gain full administrative control, and this vulnerability is already being exploited in real attacks. [read more](https://www.bleepingcomputer.com/news/security/acronis-warns-of-actively-exploited-flaw-in-its-cpanel-backup-plugin/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-20079 (– CVSS, 76% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Attackers Exploit WooCommerce Wholesale Lead Capture Flaw to Plant PHP Web Shells
