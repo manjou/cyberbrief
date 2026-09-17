@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Attackers Exploit WooCommerce Wholesale Lead Capture Flaw to Plant PHP Web Shells** — Attackers found a weakness in a popular WordPress plugin (WooCommerce Wholesale Lead Capture) that lets them upload malicious PHP files without logging in first; these files act as backdoors giving attackers control of the website. [read more](https://thehackernews.com/2026/09/attackers-exploit-woocommerce-wholesale.html)
+- **Critical ScreenConnect flaw now actively exploited in attacks** — A serious flaw in ConnectWise ScreenConnect (remote support software) is being actively used by real attackers to break into systems. [read more](https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-exploiting-critical-screenconnect-flaw/)
+- **Three Threat Groups Target Russian Enterprises With Backdoors, Ransomware, and Wipers** — Three separate hacking groups are targeting Russian companies with tools that create backdoors, lock files for ransom, and destroy data. [read more](https://thehackernews.com/2026/09/three-threat-groups-target-russian.html)
+- **Active Exploitation Triggers Emergency Patch for Cisco ISE Zero-Day** — A flaw in Cisco Identity Services Engine (authentication software) lets attackers bypass login security by sending specially crafted requests without credentials. [read more](https://www.securityweek.com/active-exploitation-triggers-emergency-patch-for-cisco-ise-zero-day/)
+- **Cisco warns of max severity ISE zero-day exploited in attacks** — Cisco released an urgent patch for a maximum-severity flaw in its Identity Services Engine that attackers are already exploiting in real attacks. [read more](https://www.bleepingcomputer.com/news/security/cisco-warns-of-identity-service-engine-zero-day-exploited-in-attacks/)
+- **Google fixes actively exploited Android zero-day on Pixel devices** — Google released monthly security updates for Pixel phones that fix 110 bugs, including one zero-day (previously unknown flaw) that targeted attackers are already using in real attacks. [read more](https://www.bleepingcomputer.com/news/security/google-fixes-actively-exploited-android-zero-day-on-pixel-devices/)
+- **Attackers Exploit Issabel Framework Flaw Enabling Unauthenticated OS Command Execution** — A critical flaw in Issabel Framework (used for phone systems) allows unauthenticated attackers to run operating system commands and take over the server. [read more](https://thehackernews.com/2026/09/attackers-exploit-issabel-framework.html)
+- **Unauthenticated RCE Flaws Could Expose 200,000+ WordPress Sites to Takeover** — Two vulnerabilities in The Events Calendar plugin for WordPress allow attackers to execute code remotely on over 200,000 websites that use it. [read more](https://www.securityweek.com/unauthenticated-rce-flaws-could-expose-200000-wordpress-sites-to-takeover/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-20079 (– CVSS, 76% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Attackers Exploit WooCommerce Wholesale Lead Capture Flaw to Plant PHP Web Shells
