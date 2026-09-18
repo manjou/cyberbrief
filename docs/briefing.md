@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Cisco warns of max severity ISE zero-day exploited in attacks** — Cisco's Identity Services Engine (ISE)—a system that controls who can access a network—has a critical flaw that hackers are already using to break in. [read more](https://www.bleepingcomputer.com/news/security/cisco-warns-of-identity-service-engine-zero-day-exploited-in-attacks/)
+- **Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root** — Check Point's Security Management Server, which controls firewall rules and admin access, has a flaw that allows someone without a login account to run commands as the highest-level user (root) remotely. [read more](https://thehackernews.com/2026/09/critical-check-point-management-server.html)
+- **Critical Unbound DNSSEC Validator Flaw Could Allow RCE via a Malicious DNS Zone** — Unbound is a DNS resolver (a system that translates domain names to IP addresses) that contains a memory overflow flaw in its DNSSEC validation—the security check for DNS answers. [read more](https://thehackernews.com/2026/09/critical-unbound-dnssec-validator-flaw.html)
+- **Critical Orkes Conductor Vulnerability Exploited in Attacks** — Orkes Conductor is a workflow automation tool with an unauthenticated remote code execution flaw (CVE-2026-58138) that attackers can trigger by submitting malicious workflow definitions. [read more](https://www.securityweek.com/critical-orkes-conductor-vulnerability-exploited-in-attacks/)
+- **Revolut Data Breach: 5 Months, 680 High-Profile Accounts, $3M Ransom** — Attackers gained access to Revolut's systems by impersonating an Italian government agency and stealing customer data; this went undetected for five months and affected 680 high-profile accounts before a $3 million ransom demand. [read more](https://www.securityweek.com/revolut-data-breach-5-months-680-high-profile-accounts-3m-ransom/)
+- **Cisco Warns of New Zero-Day ISE Auth Bypass (CVSS 10.0) Exploited in Active Attacks** — Cisco ISE has a maximum-severity authentication bypass flaw (CVE-2026-76460, CVSS 10.0) that allows remote attackers without credentials to skip authentication entirely and access the system. [read more](https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html)
+- **BIND 9 Update Fixes 14 Flaws, Including an Unauthenticated Crash Over DNS-over-HTTPS** — BIND 9, the widely-used DNS server software, had fourteen security flaws fixed in its latest update; one flaw allows an unauthenticated attacker to crash DNS-over-HTTPS (a modern encrypted DNS service) by sending a crafted request. [read more](https://thehackernews.com/2026/09/bind-9-update-fixes-14-flaws-including.html)
+- **Check Point, Kaspersky, Tanium Patch Product Vulnerabilities** — Check Point Security Management and Log Servers have a critical flaw allowing remote code execution with root-level privileges, giving attackers complete control of the firewall management system. [read more](https://www.securityweek.com/check-point-kaspersky-tanium-patch-product-vulnerabilities/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-20079 (– CVSS, 76% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Cisco warns of max severity ISE zero-day exploited in attacks
