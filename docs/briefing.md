@@ -1,100 +1,86 @@
-# 🛡️ CyberBrief — SOC — Thursday, 17 September 2026
+# 🛡️ CyberBrief — GRC — Friday, 18 September 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
-*Today's focus: active exploitation, incident response, and threat activity.*
-
-## 🕔 5pm recap
-
-*Didn't get through this morning? Here's the quick version — full detail is still below.*
-
-- **Attackers Exploit WooCommerce Wholesale Lead Capture Flaw to Plant PHP Web Shells** — Attackers found a weakness in a popular WordPress plugin (WooCommerce Wholesale Lead Capture) that lets them upload malicious PHP files without logging in first; these files act as backdoors giving attackers control of the website. [read more](https://thehackernews.com/2026/09/attackers-exploit-woocommerce-wholesale.html)
-- **Critical ScreenConnect flaw now actively exploited in attacks** — A serious flaw in ConnectWise ScreenConnect (remote support software) is being actively used by real attackers to break into systems. [read more](https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-exploiting-critical-screenconnect-flaw/)
-- **Three Threat Groups Target Russian Enterprises With Backdoors, Ransomware, and Wipers** — Three separate hacking groups are targeting Russian companies with tools that create backdoors, lock files for ransom, and destroy data. [read more](https://thehackernews.com/2026/09/three-threat-groups-target-russian.html)
-- **Active Exploitation Triggers Emergency Patch for Cisco ISE Zero-Day** — A flaw in Cisco Identity Services Engine (authentication software) lets attackers bypass login security by sending specially crafted requests without credentials. [read more](https://www.securityweek.com/active-exploitation-triggers-emergency-patch-for-cisco-ise-zero-day/)
-- **Cisco warns of max severity ISE zero-day exploited in attacks** — Cisco released an urgent patch for a maximum-severity flaw in its Identity Services Engine that attackers are already exploiting in real attacks. [read more](https://www.bleepingcomputer.com/news/security/cisco-warns-of-identity-service-engine-zero-day-exploited-in-attacks/)
-- **Google fixes actively exploited Android zero-day on Pixel devices** — Google released monthly security updates for Pixel phones that fix 110 bugs, including one zero-day (previously unknown flaw) that targeted attackers are already using in real attacks. [read more](https://www.bleepingcomputer.com/news/security/google-fixes-actively-exploited-android-zero-day-on-pixel-devices/)
-- **Attackers Exploit Issabel Framework Flaw Enabling Unauthenticated OS Command Execution** — A critical flaw in Issabel Framework (used for phone systems) allows unauthenticated attackers to run operating system commands and take over the server. [read more](https://thehackernews.com/2026/09/attackers-exploit-issabel-framework.html)
-- **Unauthenticated RCE Flaws Could Expose 200,000+ WordPress Sites to Takeover** — Two vulnerabilities in The Events Calendar plugin for WordPress allow attackers to execute code remotely on over 200,000 websites that use it. [read more](https://www.securityweek.com/unauthenticated-rce-flaws-could-expose-200000-wordpress-sites-to-takeover/)
-- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-20079 (– CVSS, 76% EPSS)
+*Today's focus: breaches, regulation, and compliance impact.*
 
 ## 🔥 Top stories
 
-### 1. Attackers Exploit WooCommerce Wholesale Lead Capture Flaw to Plant PHP Web Shells
-*The Hacker News* — [read more](https://thehackernews.com/2026/09/attackers-exploit-woocommerce-wholesale.html)
+### 1. Cisco warns of max severity ISE zero-day exploited in attacks
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisco-warns-of-identity-service-engine-zero-day-exploited-in-attacks/)
 
-Attackers found a weakness in a popular WordPress plugin (WooCommerce Wholesale Lead Capture) that lets them upload malicious PHP files without logging in first; these files act as backdoors giving attackers control of the website. This matters because 6,000+ websites use this plugin, so many sites could be compromised at once. Defenders patch the plugin immediately, scan servers for uploaded backdoors, and monitor file upload locations for suspicious activity.
-
-> 📋 **ISO 27001:** A.8.7 Protection against malware, A.8.8 Management of technical vulnerabilities
-
-### 2. Critical ScreenConnect flaw now actively exploited in attacks
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-exploiting-critical-screenconnect-flaw/)
-
-A serious flaw in ConnectWise ScreenConnect (remote support software) is being actively used by real attackers to break into systems. This matters because ScreenConnect is widely trusted for IT support, so compromised instances could give attackers deep access to company networks. Defenders apply the emergency patch right away, check logs for signs of exploitation, and isolate affected ScreenConnect servers while patching.
+Cisco's Identity Services Engine (ISE)—a system that controls who can access a network—has a critical flaw that hackers are already using to break in. This matters because ISE is widely used by organizations to manage network access, so attackers exploiting it could gain entry to many corporate networks. Defenders need to apply Cisco's security patches immediately and monitor their ISE systems for signs of compromise.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 3. Three Threat Groups Target Russian Enterprises With Backdoors, Ransomware, and Wipers
-*The Hacker News* — [read more](https://thehackernews.com/2026/09/three-threat-groups-target-russian.html)
+### 2. Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root
+*The Hacker News* — [read more](https://thehackernews.com/2026/09/critical-check-point-management-server.html)
 
-Three separate hacking groups are targeting Russian companies with tools that create backdoors, lock files for ransom, and destroy data. This matters because it shows a coordinated attack wave putting critical Russian infrastructure at serious risk. Defenders increase monitoring for these known threat groups' tactics, harden network defenses against backdoors, and prepare incident response plans for ransomware attacks.
-
-> 📋 **ISO 27001:** A.8.13 Information backup, A.8.7 Protection against malware
-
-### 4. Active Exploitation Triggers Emergency Patch for Cisco ISE Zero-Day
-*SecurityWeek* — [read more](https://www.securityweek.com/active-exploitation-triggers-emergency-patch-for-cisco-ise-zero-day/)
-
-A flaw in Cisco Identity Services Engine (authentication software) lets attackers bypass login security by sending specially crafted requests without credentials. This matters because if attackers skip authentication, they can access sensitive company systems and data. Defenders apply Cisco's emergency patch immediately, review logs for suspicious authentication bypasses, and add extra monitoring around identity systems.
+Check Point's Security Management Server, which controls firewall rules and admin access, has a flaw that allows someone without a login account to run commands as the highest-level user (root) remotely. This is severe because an attacker gaining root access to the management server can control an entire organization's firewall policies and security. Defenders must patch this immediately and restrict network access to the management server to trusted systems only.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
 
-### 5. Cisco warns of max severity ISE zero-day exploited in attacks
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisco-warns-of-identity-service-engine-zero-day-exploited-in-attacks/)
+### 3. Critical Unbound DNSSEC Validator Flaw Could Allow RCE via a Malicious DNS Zone
+*The Hacker News* — [read more](https://thehackernews.com/2026/09/critical-unbound-dnssec-validator-flaw.html)
 
-Cisco released an urgent patch for a maximum-severity flaw in its Identity Services Engine that attackers are already exploiting in real attacks. This matters because attackers are actively using this vulnerability right now, making it a top priority threat. Defenders treat this as critical, patch all affected systems within hours or days, and search for evidence of past exploitation in their logs.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
-
-### 6. Google fixes actively exploited Android zero-day on Pixel devices
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/google-fixes-actively-exploited-android-zero-day-on-pixel-devices/)
-
-Google released monthly security updates for Pixel phones that fix 110 bugs, including one zero-day (previously unknown flaw) that targeted attackers are already using in real attacks. This matters because zero-day attacks are especially dangerous since there's usually no warning before they're discovered. Defenders and users should install the September 2026 Pixel update immediately, especially if they work in high-risk roles.
+Unbound is a DNS resolver (a system that translates domain names to IP addresses) that contains a memory overflow flaw in its DNSSEC validation—the security check for DNS answers. An attacker controlling a malicious DNS zone can crash the resolver or run their own code on it by sending a specially crafted request. Defenders must update Unbound to version 1.26.1 or later and verify that DNS resolvers are only accepting queries from legitimate sources.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 7. Attackers Exploit Issabel Framework Flaw Enabling Unauthenticated OS Command Execution
-*The Hacker News* — [read more](https://thehackernews.com/2026/09/attackers-exploit-issabel-framework.html)
+### 4. Critical Orkes Conductor Vulnerability Exploited in Attacks
+*SecurityWeek* — [read more](https://www.securityweek.com/critical-orkes-conductor-vulnerability-exploited-in-attacks/)
 
-A critical flaw in Issabel Framework (used for phone systems) allows unauthenticated attackers to run operating system commands and take over the server. This matters because phone systems often connect to sensitive company networks, so compromise could expose internal communications and data. Defenders apply patches immediately, restrict access to Issabel management interfaces, and monitor for suspicious command execution.
+Orkes Conductor is a workflow automation tool with an unauthenticated remote code execution flaw (CVE-2026-58138) that attackers can trigger by submitting malicious workflow definitions. This matters because attackers can gain full control of the system without needing any credentials. Defenders must patch immediately, disable or restrict access to workflow definition uploads, and monitor logs for suspicious workflow submissions.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 8. Unauthenticated RCE Flaws Could Expose 200,000+ WordPress Sites to Takeover
-*SecurityWeek* — [read more](https://www.securityweek.com/unauthenticated-rce-flaws-could-expose-200000-wordpress-sites-to-takeover/)
+### 5. Revolut Data Breach: 5 Months, 680 High-Profile Accounts, $3M Ransom
+*SecurityWeek* — [read more](https://www.securityweek.com/revolut-data-breach-5-months-680-high-profile-accounts-3m-ransom/)
 
-Two vulnerabilities in The Events Calendar plugin for WordPress allow attackers to execute code remotely on over 200,000 websites that use it. This matters because successful exploitation gives attackers complete control of affected websites. Defenders update the plugin immediately across all sites, scan for signs of malicious code injection, and verify website integrity.
+Attackers gained access to Revolut's systems by impersonating an Italian government agency and stealing customer data; this went undetected for five months and affected 680 high-profile accounts before a $3 million ransom demand. This shows how social engineering and poor verification of requests can lead to large-scale data theft. Defenders learn from this that they need strict verification procedures for sensitive data requests, employee security training, and rapid incident detection systems.
+
+> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
+
+### 6. Cisco Warns of New Zero-Day ISE Auth Bypass (CVSS 10.0) Exploited in Active Attacks
+*The Hacker News* — [read more](https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html)
+
+Cisco ISE has a maximum-severity authentication bypass flaw (CVE-2026-76460, CVSS 10.0) that allows remote attackers without credentials to skip authentication entirely and access the system. This is critical because ISE controls network access for many organizations, so bypassing its authentication gives attackers direct entry. Defenders must apply the emergency patch from Cisco immediately and consider temporarily isolating ISE from untrusted networks.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
+
+### 7. BIND 9 Update Fixes 14 Flaws, Including an Unauthenticated Crash Over DNS-over-HTTPS
+*The Hacker News* — [read more](https://thehackernews.com/2026/09/bind-9-update-fixes-14-flaws-including.html)
+
+BIND 9, the widely-used DNS server software, had fourteen security flaws fixed in its latest update; one flaw allows an unauthenticated attacker to crash DNS-over-HTTPS (a modern encrypted DNS service) by sending a crafted request. Crashing DNS service disrupts organizations' ability to resolve domain names and access websites. Defenders should update BIND 9 to version 9.20.29 or 9.21.26 and monitor DNS server uptime.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
+
+### 8. Check Point, Kaspersky, Tanium Patch Product Vulnerabilities
+*SecurityWeek* — [read more](https://www.securityweek.com/check-point-kaspersky-tanium-patch-product-vulnerabilities/)
+
+Check Point Security Management and Log Servers have a critical flaw allowing remote code execution with root-level privileges, giving attackers complete control of the firewall management system. This matters because the management server controls all firewall policies and security rules across an organization. Defenders must patch immediately, isolate management servers from untrusted networks, and audit logs for unauthorized access.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.8.2 Privileged access rights
 
 ## 🚨 CVEs that matter today
 
 | CVE | Why it ranks | CVSS | EPSS | Exploited? |
 |-----|--------------|------|------|------------|
 | **CVE-2026-20079** | Cisco Firewall Management Center Authentication Bypass Using an Alternate Path or Channel Vulnerability | – | 76% | ⚠️ YES (KEV) |
-| **CVE-2026-58704** | Google Pixel Improper Authorization Vulnerability | 8.8 | 0% | ⚠️ YES (KEV) |
+| **CVE-2026-76460** | Cisco Identity Services Engine Incorrect Use of Privileged APIs Vulnerability | 10.0 | 0% | ⚠️ YES (KEV) |
 | **CVE-2026-85706** | GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability | – | 12% | ⚠️ YES (KEV) |
 | **CVE-2026-19490** | Citrix NetScaler Authentication Bypass Using an Alternate Path or Channel Vulnerability | – | 6% | ⚠️ YES (KEV) |
 | **CVE-2025-25249** | Fortinet Multiple Products Heap-based Buffer Overflow Vulnerability | – | 2% | ⚠️ YES (KEV) |
 
-**CVE-2026-20079** — A flaw in Cisco Firewall Management Center lets attackers bypass authentication by finding an alternate login path or channel without using the main login. This matters because the management center controls all firewall rules, so bypassing it could let attackers change security policies. Defenders patch immediately, review firewall logs for unauthorized access, and restrict network access to the management interface.
+**CVE-2026-20079** — CVE-2026-20079 is an authentication bypass flaw in Cisco Firewall Management Center that allows attackers to access the system through an unintended path or method rather than proper login. This is dangerous because the management center controls firewall policies protecting entire networks. Defenders should apply Cisco's patch, enforce multi-factor authentication on management access, and restrict management console access to specific trusted IP addresses.
 
-**CVE-2026-58704** — A bug in cellular modem code creates a permission bypass that allows remote attackers to escalate privileges (gain higher access levels) without needing to execute additional code or user interaction. This matters because mobile devices are critical entry points to company networks, so modem compromise could expose all phone data. Defenders apply modem firmware updates, monitor for privilege escalation attempts, and consider restricting modem access.
+**CVE-2026-76460** — CVE-2026-76460 is a Cisco ISE API endpoint that doesn't properly verify user identity, allowing unauthenticated attackers to send specially crafted requests and bypass authentication controls. This matters because ISE manages network access for thousands of organizations, so bypassing it grants unauthorized network entry. Defenders must patch immediately, disable unnecessary API endpoints, and add network-level access controls to ISE.
 
-**CVE-2026-85706** — A path traversal vulnerability in GitLab (both free and paid versions) lets attackers read files they shouldn't access by manipulating file paths. This matters because GitLab stores source code and credentials, so attackers could steal intellectual property or authentication secrets. Defenders patch GitLab immediately, audit file access logs for suspicious path requests, and verify no sensitive files were accessed.
+**CVE-2026-85706** — CVE-2026-85706 is a path traversal flaw in GitLab (a code repository and collaboration tool) that allows attackers to read files outside their intended directory by manipulating file paths. This could expose sensitive configuration files, source code, or credentials stored on the GitLab server. Defenders must update GitLab to a patched version and audit logs to see if attackers accessed restricted files.
 
-**CVE-2026-19490** — Citrix NetScaler has an authentication bypass flaw allowing attackers to log in without valid credentials by using an alternate login path. This matters because NetScaler controls network access for many companies, so compromise could give attackers broad network access. Defenders apply patches immediately, review login logs for unauthorized access attempts, and add network segmentation around NetScaler.
+**CVE-2026-19490** — CVE-2026-19490 is an authentication bypass in Citrix NetScaler (a network access control appliance) that allows attackers to gain access by using an alternate login path instead of the main one. This matters because NetScaler controls who can access corporate resources remotely. Defenders should patch immediately, monitor all access paths for suspicious activity, and enforce strong authentication on all entry points.
 
-**CVE-2025-25249** — A heap-based buffer overflow vulnerability in Fortinet products lets attackers write malicious data into memory and crash systems or execute code. This matters because buffer overflows are a classic attack method that often leads to complete system compromise. Defenders apply Fortinet patches to all affected products, monitor for crash patterns in logs, and test system stability after patching.
+**CVE-2025-25249** — CVE-2025-25249 is a heap-based buffer overflow in multiple Fortinet products (a memory safety flaw where data overflows into memory used by other programs). An attacker can exploit this overflow to crash the software or run their own code. Defenders must patch all affected Fortinet products, enable address space layout randomization (ASLR) on servers if available, and monitor for memory corruption errors in logs.
 
 ## 📖 Jargon decoder
 
@@ -102,7 +88,6 @@ Two vulnerabilities in The Events Calendar plugin for WordPress allow attackers 
 - **CVE** — Common Vulnerabilities and Exposures — the global ID system for security flaws, e.g. CVE-2026-12345.
 - **RCE** — Remote Code Execution — the worst-case flaw: an attacker runs their own code on your system over the network.
 - **zero-day** — A vulnerability attackers exploit before the vendor has released a patch — defenders start at zero days of warning.
-- **ransomware** — Malware that encrypts your files and demands payment. Modern gangs also steal data first and threaten to publish it (double extortion).
 - **KEV** — CISA's Known Exploited Vulnerabilities catalog — CVEs confirmed to be abused by attackers in the real world. If it's in KEV, patching it jumps to the top of the list.
 - **EPSS** — Exploit Prediction Scoring System — a 0-100% probability that a CVE will be exploited in the next 30 days. Better prioritization signal than CVSS alone.
 
