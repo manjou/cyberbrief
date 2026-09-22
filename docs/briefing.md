@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **CrowdSec Confirms Source Code Stolen in Supply Chain Attack** — CrowdSec's own source code was stolen by attackers who exploited a vulnerability in TanStack (a software library) in May 2026, gaining access to systems that used it. [read more](https://www.securityweek.com/crowdsec-confirms-source-code-stolen-in-supply-chain-attack/)
+- **BigCommerce alerts merchants of data breach linked to Ribon apps** — Attackers broke into third-party app credentials (login credentials for apps made by Ribon that connect to BigCommerce) and used those stolen credentials to inject malicious code into online stores that use these apps. [read more](https://www.bleepingcomputer.com/news/security/bigcommerce-alerts-merchants-of-data-breach-linked-to-ribon-apps/)
+- **Jade Sleet Linked to Indian IT Provider Breach With FLATROOF and ROOFDECK Backdoors** — North Korean hackers called Jade Sleet broke into an Indian IT services company and installed hidden malware tools called FLATROOF and ROOFDECK to spy on systems and move laterally to the company's clients. [read more](https://thehackernews.com/2026/09/jade-sleet-linked-to-indian-it-provider.html)
+- **⚡ Weekly Recap: Cisco 0-Day, AI Agent RCE, ClickFix Attacks, ClickFix Surge, and Browser Hijacks** — This week included multiple attack methods all targeting software and systems people trust: a Cisco vulnerability with no patch available yet (zero-day), malicious artificial intelligence tools that can execute code remotely, fake software updates, browser plugins that hijack searches, and other tricks hiding in normal-looking places. [read more](https://thehackernews.com/2026/09/weekly-recap-cisco-0-day-ai-agent-rce.html)
+- **New Windows Defender zero-day blocks Microsoft antivirus updates** — A security researcher released a vulnerability in Windows Defender (Microsoft's antivirus software) that allows attackers to block the software from downloading security updates, leaving systems defenseless. [read more](https://www.bleepingcomputer.com/news/security/new-windows-defender-zero-day-blocks-microsoft-antivirus-updates/)
+- **Google Hit With $463 Million Fine for EU Location Data Rule Breach** — Google was fined €403 million by European Union regulators for mishandling location data from users' phones—collecting and using it in ways that violated strict EU privacy laws (GDPR). [read more](https://www.securityweek.com/google-hit-with-463-million-fine-for-eu-location-data-rule-breach/)
+- **Google fined €403 million over location data privacy violations** — Ireland's Data Protection Commission fined Google €403 million for violating GDPR by improperly processing location data from users without sufficient consent or legal basis. [read more](https://www.bleepingcomputer.com/news/security/google-fined-403-million-over-location-data-privacy-violations/)
+- **TASK#STOMP PowerShell Backdoor Steals Documents, Wi-Fi Passwords, and Clipboard Data** — Attackers deployed a malicious PowerShell script (a built-in Windows administrative tool) called TASK#STOMP that automatically steals documents, Wi-Fi passwords, and clipboard data from infected computers and sends it to attacker servers. [read more](https://thehackernews.com/2026/09/taskstomp-powershell-backdoor-steals.html)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-20079 (– CVSS, 76% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. CrowdSec Confirms Source Code Stolen in Supply Chain Attack
