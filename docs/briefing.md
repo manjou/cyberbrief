@@ -4,6 +4,20 @@
 
 *Today's focus: network infrastructure — a lighter refresh day.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **F5 patches BIG-IP APM zero-day flaw exploited in RCE attacks** — F5 released patches for a critical flaw in BIG-IP APM (Access Policy Manager, a tool that controls who can access applications) that attackers were already exploiting to run code remotely on the system. [read more](https://www.bleepingcomputer.com/news/security/f5-warns-of-big-ip-apm-remote-code-execution-zero-day-exploited-in-attacks/)
+- **F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE on OAuth Servers** — Attackers found a way to exploit a flaw in F5 BIG-IP APM when it's set up to issue login tokens (OAuth authorization)—they can send malicious requests without logging in and execute code on the system. [read more](https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html)
+- **Critical F5 BIG-IP Vulnerability Exploited as Zero-Day** — A critical flaw in F5 BIG-IP allows attackers to send specially crafted network traffic that executes code on the device, and they don't need valid login credentials to do it. [read more](https://www.securityweek.com/critical-f5-big-ip-vulnerability-exploited-as-zero-day/)
+- **Check Point warns of Management Server zero-day exploited in attacks** — Check Point released emergency fixes for a critical flaw in their Security Management Server (the central control system that manages all security policies) that lets attackers run malicious scripts without proper authorization. [read more](https://www.bleepingcomputer.com/news/security/check-point-patches-management-server-zero-day-exploited-in-attacks/)
+- **Critical Bifrost AI Gateway Flaw Lets Attackers Run Commands Without Credentials** — A critical flaw in Bifrost, an open-source system that routes AI requests to services like ChatGPT, allows attackers to run commands on the Bifrost server by simply sending one malicious web request—no login required. [read more](https://thehackernews.com/2026/09/critical-bifrost-ai-gateway-flaw-lets.html)
+- **New CVSS 10.0 VeloCloud Orchestrator Flaw Actively Exploited in Certificate-Based Setups** — Arista discovered a critical flaw in VeloCloud Orchestrator, the server that controls SD-WAN edge devices (hardware that routes network traffic), and attackers are already exploiting it to gain privileged access without logging in. [read more](https://thehackernews.com/2026/09/new-cvss-100-velocloud-orchestrator.html)
+- **Arista Urges Immediate Patching of Exploited VCO Zero-Day** — A critical flaw in VeloCloud Orchestrator allows remote attackers to access privileged functions and sensitive capabilities without any login credentials, and attackers are actively exploiting this. [read more](https://www.securityweek.com/arista-urges-immediate-patching-of-exploited-vco-zero-day/)
+- **Chinese Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy CLEANGULP Malware** — A Chinese hacking group exploited two connected security flaws in Google Chrome and Microsoft Windows (vulnerabilities that were not yet publicly known) to trick users into visiting fake websites and install malware called CLEANGULP. [read more](https://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-20079 (– CVSS, 76% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. F5 patches BIG-IP APM zero-day flaw exploited in RCE attacks
