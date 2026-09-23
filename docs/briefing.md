@@ -1,104 +1,95 @@
-# 🛡️ CyberBrief — GRC — Tuesday, 22 September 2026
+# 🛡️ CyberBrief — Net+ — Wednesday, 23 September 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
-*Today's focus: breaches, regulation, and compliance impact.*
-
-## 🕔 5pm recap
-
-*Didn't get through this morning? Here's the quick version — full detail is still below.*
-
-- **CrowdSec Confirms Source Code Stolen in Supply Chain Attack** — CrowdSec's own source code was stolen by attackers who exploited a vulnerability in TanStack (a software library) in May 2026, gaining access to systems that used it. [read more](https://www.securityweek.com/crowdsec-confirms-source-code-stolen-in-supply-chain-attack/)
-- **BigCommerce alerts merchants of data breach linked to Ribon apps** — Attackers broke into third-party app credentials (login credentials for apps made by Ribon that connect to BigCommerce) and used those stolen credentials to inject malicious code into online stores that use these apps. [read more](https://www.bleepingcomputer.com/news/security/bigcommerce-alerts-merchants-of-data-breach-linked-to-ribon-apps/)
-- **Jade Sleet Linked to Indian IT Provider Breach With FLATROOF and ROOFDECK Backdoors** — North Korean hackers called Jade Sleet broke into an Indian IT services company and installed hidden malware tools called FLATROOF and ROOFDECK to spy on systems and move laterally to the company's clients. [read more](https://thehackernews.com/2026/09/jade-sleet-linked-to-indian-it-provider.html)
-- **⚡ Weekly Recap: Cisco 0-Day, AI Agent RCE, ClickFix Attacks, ClickFix Surge, and Browser Hijacks** — This week included multiple attack methods all targeting software and systems people trust: a Cisco vulnerability with no patch available yet (zero-day), malicious artificial intelligence tools that can execute code remotely, fake software updates, browser plugins that hijack searches, and other tricks hiding in normal-looking places. [read more](https://thehackernews.com/2026/09/weekly-recap-cisco-0-day-ai-agent-rce.html)
-- **New Windows Defender zero-day blocks Microsoft antivirus updates** — A security researcher released a vulnerability in Windows Defender (Microsoft's antivirus software) that allows attackers to block the software from downloading security updates, leaving systems defenseless. [read more](https://www.bleepingcomputer.com/news/security/new-windows-defender-zero-day-blocks-microsoft-antivirus-updates/)
-- **Google Hit With $463 Million Fine for EU Location Data Rule Breach** — Google was fined €403 million by European Union regulators for mishandling location data from users' phones—collecting and using it in ways that violated strict EU privacy laws (GDPR). [read more](https://www.securityweek.com/google-hit-with-463-million-fine-for-eu-location-data-rule-breach/)
-- **Google fined €403 million over location data privacy violations** — Ireland's Data Protection Commission fined Google €403 million for violating GDPR by improperly processing location data from users without sufficient consent or legal basis. [read more](https://www.bleepingcomputer.com/news/security/google-fined-403-million-over-location-data-privacy-violations/)
-- **TASK#STOMP PowerShell Backdoor Steals Documents, Wi-Fi Passwords, and Clipboard Data** — Attackers deployed a malicious PowerShell script (a built-in Windows administrative tool) called TASK#STOMP that automatically steals documents, Wi-Fi passwords, and clipboard data from infected computers and sends it to attacker servers. [read more](https://thehackernews.com/2026/09/taskstomp-powershell-backdoor-steals.html)
-- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-20079 (– CVSS, 76% EPSS)
+*Today's focus: network infrastructure — a lighter refresh day.*
 
 ## 🔥 Top stories
 
-### 1. CrowdSec Confirms Source Code Stolen in Supply Chain Attack
-*SecurityWeek* — [read more](https://www.securityweek.com/crowdsec-confirms-source-code-stolen-in-supply-chain-attack/)
+### 1. F5 patches BIG-IP APM zero-day flaw exploited in RCE attacks
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/f5-warns-of-big-ip-apm-remote-code-execution-zero-day-exploited-in-attacks/)
 
-CrowdSec's own source code was stolen by attackers who exploited a vulnerability in TanStack (a software library) in May 2026, gaining access to systems that used it. This matters because CrowdSec is a security company, so attackers now have detailed knowledge of how their defensive tools work, which could help criminals evade detection. Defenders respond by assuming the code is compromised, analyzing it for backdoors, and notifying customers to increase monitoring for related attacks.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.19 Supplier relationships
-
-### 2. BigCommerce alerts merchants of data breach linked to Ribon apps
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/bigcommerce-alerts-merchants-of-data-breach-linked-to-ribon-apps/)
-
-Attackers broke into third-party app credentials (login credentials for apps made by Ribon that connect to BigCommerce) and used those stolen credentials to inject malicious code into online stores that use these apps. This matters because customers shopping at these stores could have payment information or personal data stolen without the store owner knowing the app itself was compromised. Defenders typically audit third-party app access, reset compromised credentials immediately, scan stores for injected malicious code, and require stronger authentication (like multi-factor authentication) for app integrations.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.19 Supplier relationships
-
-### 3. Jade Sleet Linked to Indian IT Provider Breach With FLATROOF and ROOFDECK Backdoors
-*The Hacker News* — [read more](https://thehackernews.com/2026/09/jade-sleet-linked-to-indian-it-provider.html)
-
-North Korean hackers called Jade Sleet broke into an Indian IT services company and installed hidden malware tools called FLATROOF and ROOFDECK to spy on systems and move laterally to the company's clients. This matters because IT service providers have trusted access to many customer networks, so compromising one provider can give attackers a backdoor into dozens of organizations. Defenders respond by monitoring IT provider networks for suspicious activity, isolating provider access with separate accounts and restrictions, and regularly auditing what provider accounts are doing.
-
-> 📋 **ISO 27001:** A.8.7 Protection against malware
-
-### 4. ⚡ Weekly Recap: Cisco 0-Day, AI Agent RCE, ClickFix Attacks, ClickFix Surge, and Browser Hijacks
-*The Hacker News* — [read more](https://thehackernews.com/2026/09/weekly-recap-cisco-0-day-ai-agent-rce.html)
-
-This week included multiple attack methods all targeting software and systems people trust: a Cisco vulnerability with no patch available yet (zero-day), malicious artificial intelligence tools that can execute code remotely, fake software updates, browser plugins that hijack searches, and other tricks hiding in normal-looking places. This matters because attackers are exploiting the fact that defenders focus on obvious threats, so hiding attacks in trusted software is highly effective. Defenders respond by restricting plugin installations, monitoring network traffic for unusual activity, patching quickly when fixes are available, and requiring users to verify unexpected updates before installing them.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.34 Privacy and protection of PII
-
-### 5. New Windows Defender zero-day blocks Microsoft antivirus updates
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/new-windows-defender-zero-day-blocks-microsoft-antivirus-updates/)
-
-A security researcher released a vulnerability in Windows Defender (Microsoft's antivirus software) that allows attackers to block the software from downloading security updates, leaving systems defenseless. This matters because if antivirus cannot update, it cannot protect against new threats, essentially disabling the primary defense on infected machines. Defenders respond by applying Microsoft's emergency patches as soon as they are released, using additional detection tools alongside Windows Defender, and isolating affected systems from the network until patched.
+F5 released patches for a critical flaw in BIG-IP APM (Access Policy Manager, a tool that controls who can access applications) that attackers were already exploiting to run code remotely on the system. This matters because BIG-IP APM often sits between users and important applications, so compromising it gives attackers broad access to an organization's systems. Defenders typically apply the patch immediately and check logs to see if anyone exploited this flaw before the patch was installed.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 6. Google Hit With $463 Million Fine for EU Location Data Rule Breach
-*SecurityWeek* — [read more](https://www.securityweek.com/google-hit-with-463-million-fine-for-eu-location-data-rule-breach/)
+### 2. F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE on OAuth Servers
+*The Hacker News* — [read more](https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html)
 
-Google was fined €403 million by European Union regulators for mishandling location data from users' phones—collecting and using it in ways that violated strict EU privacy laws (GDPR). This matters because it establishes that companies must get clear permission and proper legal justification before tracking where people are, protecting user privacy and personal security. Defenders (companies handling personal data) respond by mapping out exactly what data they collect, getting explicit user consent, limiting data collection to only what is necessary, and regularly auditing their practices.
+Attackers found a way to exploit a flaw in F5 BIG-IP APM when it's set up to issue login tokens (OAuth authorization)—they can send malicious requests without logging in and execute code on the system. This is especially dangerous because OAuth servers handle login requests from many applications and users, making them attractive targets. Defenders should prioritize patching systems that use BIG-IP APM for OAuth, monitor for suspicious token requests, and check if the system was compromised before patching.
 
-### 7. Google fined €403 million over location data privacy violations
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/google-fined-403-million-over-location-data-privacy-violations/)
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
 
-Ireland's Data Protection Commission fined Google €403 million for violating GDPR by improperly processing location data from users without sufficient consent or legal basis. This matters because it reinforces that companies cannot collect sensitive personal information like location data without clear rules and user agreement, and violations carry massive financial penalties. Defenders respond by updating privacy policies to be clearer, implementing consent mechanisms that actually require active user approval, and keeping records of why data is being collected.
+### 3. Critical F5 BIG-IP Vulnerability Exploited as Zero-Day
+*SecurityWeek* — [read more](https://www.securityweek.com/critical-f5-big-ip-vulnerability-exploited-as-zero-day/)
 
-### 8. TASK#STOMP PowerShell Backdoor Steals Documents, Wi-Fi Passwords, and Clipboard Data
-*The Hacker News* — [read more](https://thehackernews.com/2026/09/taskstomp-powershell-backdoor-steals.html)
+A critical flaw in F5 BIG-IP allows attackers to send specially crafted network traffic that executes code on the device, and they don't need valid login credentials to do it. This matters because BIG-IP often handles traffic for many applications, so compromising it could affect many systems at once. Defenders need to patch immediately, restrict network access to BIG-IP management interfaces, and review network logs for suspicious traffic patterns.
 
-Attackers deployed a malicious PowerShell script (a built-in Windows administrative tool) called TASK#STOMP that automatically steals documents, Wi-Fi passwords, and clipboard data from infected computers and sends it to attacker servers. This matters because PowerShell is trusted by Windows, so it can access sensitive files without triggering obvious alarms, and the data stolen (documents, passwords, clipboard) is extremely valuable for further attacks or fraud. Defenders respond by restricting PowerShell execution, logging all PowerShell activity, monitoring for unusual script execution, and using endpoint detection tools that flag suspicious PowerShell behavior.
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-> 📋 **ISO 27001:** A.8.7 Protection against malware, A.5.34 Privacy and protection of PII
+### 4. Check Point warns of Management Server zero-day exploited in attacks
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/check-point-patches-management-server-zero-day-exploited-in-attacks/)
+
+Check Point released emergency fixes for a critical flaw in their Security Management Server (the central control system that manages all security policies) that lets attackers run malicious scripts without proper authorization. This is critical because the management server controls security across an entire organization, so compromising it gives attackers control over all protections. Defenders should apply these hotfixes urgently and review who accessed the management server recently.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
+
+### 5. Critical Bifrost AI Gateway Flaw Lets Attackers Run Commands Without Credentials
+*The Hacker News* — [read more](https://thehackernews.com/2026/09/critical-bifrost-ai-gateway-flaw-lets.html)
+
+A critical flaw in Bifrost, an open-source system that routes AI requests to services like ChatGPT, allows attackers to run commands on the Bifrost server by simply sending one malicious web request—no login required. This matters because Bifrost sits between applications and AI services, so controlling it could let attackers spy on or manipulate AI requests. Defenders should update Bifrost immediately, limit network access to it, and monitor for suspicious command patterns in logs.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
+
+### 6. New CVSS 10.0 VeloCloud Orchestrator Flaw Actively Exploited in Certificate-Based Setups
+*The Hacker News* — [read more](https://thehackernews.com/2026/09/new-cvss-100-velocloud-orchestrator.html)
+
+Arista discovered a critical flaw in VeloCloud Orchestrator, the server that controls SD-WAN edge devices (hardware that routes network traffic), and attackers are already exploiting it to gain privileged access without logging in. This matters because the orchestrator controls how network traffic flows across an organization, so compromising it could disrupt network operations or redirect traffic to attackers. Defenders should patch immediately, especially systems using certificate-based authentication, and review VCO logs for unauthorized access.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
+
+### 7. Arista Urges Immediate Patching of Exploited VCO Zero-Day
+*SecurityWeek* — [read more](https://www.securityweek.com/arista-urges-immediate-patching-of-exploited-vco-zero-day/)
+
+A critical flaw in VeloCloud Orchestrator allows remote attackers to access privileged functions and sensitive capabilities without any login credentials, and attackers are actively exploiting this. This matters because the orchestrator manages the entire SD-WAN infrastructure, so this flaw could give attackers control over critical network paths. Defenders should treat this as an emergency patch priority and monitor for unusual administrative activity on the orchestrator.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.8.2 Privileged access rights
+
+### 8. Chinese Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy CLEANGULP Malware
+*The Hacker News* — [read more](https://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html)
+
+A Chinese hacking group exploited two connected security flaws in Google Chrome and Microsoft Windows (vulnerabilities that were not yet publicly known) to trick users into visiting fake websites and install malware called CLEANGULP. This matters because zero-day exploits are especially dangerous—security patches don't exist yet—so traditional defenses can't stop them. Defenders should keep systems fully updated once patches release, be cautious of unexpected links, and monitor for suspicious processes that might indicate infection.
+
+> 📋 **ISO 27001:** A.8.7 Protection against malware, A.8.8 Management of technical vulnerabilities
 
 ## 🚨 CVEs that matter today
 
 | CVE | Why it ranks | CVSS | EPSS | Exploited? |
 |-----|--------------|------|------|------------|
 | **CVE-2026-20079** | Cisco Firewall Management Center Authentication Bypass Using an Alternate Path or Channel Vulnerability | – | 76% | ⚠️ YES (KEV) |
-| **CVE-2026-85706** | GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability | – | 15% | ⚠️ YES (KEV) |
-| **CVE-2026-42018** | JFrog Artifactory Improper Authentication Vulnerability | – | 11% | ⚠️ YES (KEV) |
-| **CVE-2026-42016** | JFrog Artifactory Incorrect Authorization Vulnerability | – | 9% | ⚠️ YES (KEV) |
-| **CVE-2026-86218** | N-able N-central Static Code Injection Vulnerability | – | 7% | ⚠️ YES (KEV) |
+| **CVE-2026-93616** | Check Point Multiple Products Path Traversal Vulnerability | 9.8 | 0% | ⚠️ YES (KEV) |
+| **CVE-2026-94127** | F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability | 9.8 | 0% | ⚠️ YES (KEV) |
+| **CVE-2026-93952** | Arista VeloCloud Orchestrator Improper Input Validation Vulnerability | 10.0 | 0% | ⚠️ YES (KEV) |
+| **CVE-2026-19490** | Citrix NetScaler Authentication Bypass Using an Alternate Path or Channel Vulnerability | – | 6% | ⚠️ YES (KEV) |
 
-**CVE-2026-20079** — A vulnerability exists in Cisco's Firewall Management Center (the control system for enterprise firewalls) that allows unauthenticated attackers to bypass login requirements and gain administrative access through an alternate method. This matters because firewalls are critical network defenses, and if someone can bypass authentication to control them, they can disable or redirect security protections across an entire organization. Defenders respond by immediately applying Cisco patches, restricting network access to the management center, implementing additional authentication factors (like hardware tokens), and monitoring for unauthorized administrative activity.
+**CVE-2026-20079** — A flaw in Cisco Firewall Management Center (the system that controls Cisco firewalls) allows attackers to bypass authentication using an alternate access method, meaning they can get in without proper credentials. This matters because the management center controls all firewall rules, so compromising it gives attackers the ability to disable security controls. Defenders should apply the Cisco patch, enforce multi-factor authentication (requiring multiple forms of proof), and limit which networks can access the management center.
 
-**CVE-2026-85706** — GitLab Community Edition and Enterprise Edition contain a vulnerability that allows attackers to read files and directories they should not have access to by manipulating file paths in requests. This matters because GitLab stores source code and configuration files—if attackers can read them, they can steal proprietary code, find credentials, and discover other vulnerabilities in systems. Defenders respond by updating GitLab immediately, auditing logs to see if anyone accessed files improperly, resetting any credentials that might have been exposed, and restricting who can access GitLab to necessary users only.
+**CVE-2026-93616** — A flaw in Check Point Management Server allows unauthenticated attackers to navigate the file system and upload malicious scripts that automatically execute on the server. This matters because the management server is the central control point for all Check Point security tools across an organization, so this flaw could compromise every protected system. Defenders must patch urgently, restrict file upload capabilities, and review recent file uploads and script executions for signs of compromise.
 
-**CVE-2026-42018** — JFrog Artifactory (a software repository manager that stores and distributes code libraries) has a vulnerability where authentication controls are not working properly, potentially allowing unauthenticated users to access or upload files. This matters because if someone can access the software repository without logging in, they could steal proprietary code, inject malicious code that gets distributed to many organizations, or sabotage software builds. Defenders respond by patching immediately, auditing logs for unauthorized access, scanning repositories for malicious code, and adding extra authentication layers until patches are applied.
+**CVE-2026-94127** — When F5 BIG-IP APM is configured to issue login tokens (OAuth), a flaw in how it processes requests allows attackers to execute code without logging in first. This matters only for organizations using BIG-IP specifically for OAuth token issuance, but for those organizations it's critical because login systems are high-value targets. Defenders should identify which BIG-IP systems have OAuth configured, patch them immediately, and audit token-related logs for suspicious activity.
 
-**CVE-2026-42016** — JFrog Artifactory has a vulnerability where authorization rules (permission checks that determine what users can do after login) are not properly enforced. This matters because someone with limited access (like a junior developer) could potentially perform restricted actions (like deleting code or changing security settings), either intentionally or through social engineering. Defenders respond by applying patches, reviewing user permission settings to ensure they match actual job responsibilities, auditing what actions each user has performed, and implementing approval workflows for sensitive actions.
+**CVE-2026-93952** — A flaw in VeloCloud Orchestrator (an on-premises version running in an organization's data center) lets remote attackers access privileged functions without authentication, potentially compromising the security, accuracy, and availability of the entire SD-WAN infrastructure and the data it carries. This matters because VeloCloud Orchestrator controls all SD-WAN edge devices, so compromising it could disrupt network operations across multiple locations. Defenders should patch immediately, implement network segmentation to restrict access to the orchestrator, and audit administrative logs for unauthorized changes.
 
-**CVE-2026-86218** — N-able N-central (remote monitoring and management software used by IT providers) contains a vulnerability where attackers can inject malicious code directly into the application through a static input field. This matters because N-central is installed on many customer networks, so injecting code here could compromise dozens of organizations simultaneously, and IT providers cannot detect the attack because it appears to come from the trusted tool they rely on. Defenders respond by patching immediately, reviewing N-central logs for suspicious activity, isolating N-central from critical systems, and implementing network segmentation so compromised remote management tools cannot access sensitive servers.
+**CVE-2026-19490** — A flaw in Citrix NetScaler (an application delivery and security system) allows attackers to bypass authentication using an alternate access path or method, letting them reach protected applications and data without proper credentials. This matters because NetScaler often protects critical business applications, so this flaw could allow unauthorized access to sensitive systems. Defenders should apply the Citrix security update, enable multi-factor authentication for administrative access, and restrict which networks can reach the NetScaler.
 
 ## 📖 Jargon decoder
 
+- **CVSS** — Common Vulnerability Scoring System — rates how bad a vulnerability *could* be (0-10). High CVSS does not mean anyone is actually exploiting it.
+- **CVE** — Common Vulnerabilities and Exposures — the global ID system for security flaws, e.g. CVE-2026-12345.
 - **RCE** — Remote Code Execution — the worst-case flaw: an attacker runs their own code on your system over the network.
 - **zero-day** — A vulnerability attackers exploit before the vendor has released a patch — defenders start at zero days of warning.
 - **KEV** — CISA's Known Exploited Vulnerabilities catalog — CVEs confirmed to be abused by attackers in the real world. If it's in KEV, patching it jumps to the top of the list.
 - **EPSS** — Exploit Prediction Scoring System — a 0-100% probability that a CVE will be exploited in the next 30 days. Better prioritization signal than CVSS alone.
-- **CVSS** — Common Vulnerability Scoring System — rates how bad a vulnerability *could* be (0-10). High CVSS does not mean anyone is actually exploiting it.
 
 ---
 *Generated by [CyberBrief](https://github.com/manjou/cyberbrief) — free, open source, no AI required.*
