@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Attackers Exploit WordPress CVE-2026-87902 Within Hours of Disclosure** — A serious security flaw in WordPress (rated 9.2 out of 10 in severity) was publicly announced, and hackers started using it to break into websites within hours. [read more](https://thehackernews.com/2026/09/attackers-exploit-wordpress-cve-2026.html)
+- **F5 patches BIG-IP APM zero-day flaw exploited in RCE attacks** — F5 released a security update for its BIG-IP APM (Access Policy Manager, a tool that controls who can access company networks) to fix a previously unknown vulnerability that attackers were already actively exploiting to run code on the system. [read more](https://www.bleepingcomputer.com/news/security/f5-warns-of-big-ip-apm-remote-code-execution-zero-day-exploited-in-attacks/)
+- **F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE on OAuth Servers** — A specific vulnerability (CVE-2026-94127) in F5 BIG-IP APM allows attackers to run malicious code on F5 systems without authenticating, but only affects systems using BIG-IP APM to manage OAuth tokens (a system for granting application access). [read more](https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html)
+- **Arista patches actively exploited VeloCloud Orchestrator zero-day** — Arista released patches for a previously unknown flaw in VeloCloud Orchestrator (on-premises version) that attackers were already actively exploiting. [read more](https://www.bleepingcomputer.com/news/security/arista-patches-actively-exploited-velocloud-orchestrator-zero-day/)
+- **Check Point warns of hackers exploiting Security Gateway VPN RCE flaw** — Attackers are actively exploiting CVE-2026-85102, a flaw in Check Point Security Gateway's VPN system that lets them run code without needing any credentials beforehand. [read more](https://www.bleepingcomputer.com/news/security/check-point-warns-of-hackers-exploiting-security-gateway-vpn-rce-flaw/)
+- **Chinese Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy CLEANGULP Malware** — A Chinese hacking group discovered and weaponized two previously unknown flaws—one in Google Chrome and one in Windows—chaining them together to attack targets through fake websites and install malware called CLEANGULP. [read more](https://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html)
+- **InfraTrust report warns network management systems under attack** — Attackers are increasingly targeting network management systems (the command-and-control tools for enterprise infrastructure) with several critical vulnerabilities being exploited either before vendors knew about them or shortly after public announcement. [read more](https://www.bleepingcomputer.com/news/security/infratrust-report-warns-network-management-systems-under-attack/)
+- **Critical WordPress Vulnerability Exploited Immediately After Disclosure** — CVE-2026-87902 is a path traversal flaw in WordPress that lets an attacker without a password access files and run code on a WordPress website by manipulating how the website loads files from its directory structure. [read more](https://www.securityweek.com/critical-wordpress-vulnerability-exploited-immediately-after-disclosure/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-93616 (9.8 CVSS, 2% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Attackers Exploit WordPress CVE-2026-87902 Within Hours of Disclosure
