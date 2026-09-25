@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Attackers Exploit WordPress CVE-2026-87902 Within Hours of Disclosure** — A serious WordPress security flaw (CVE-2026-87902) was publicly announced, and within hours, attackers began using it to break into websites and take complete control of them. [read more](https://thehackernews.com/2026/09/attackers-exploit-wordpress-cve-2026.html)
+- **Roundcube Pre-Auth SQL Injection Flaw Actively Exploited in the Wild** — A security weakness in Roundcube Webmail (CVE-2026-48842) that lets attackers access databases without logging in is being actively used in real attacks. [read more](https://thehackernews.com/2026/09/roundcube-pre-auth-sql-injection-flaw.html)
+- **CISA: Ransomware gangs now exploiting critical TeamCity flaw** — Criminal ransomware groups are exploiting a TeamCity flaw (a software build tool) that JetBrains fixed back in July, and U.S. [read more](https://www.bleepingcomputer.com/news/security/cisa-ransomware-gangs-now-exploiting-critical-teamcity-flaw/)
+- **WSO2 and Adobe Commerce Flaws Exploited in Attacks, Added to CISA KEV** — Two serious security flaws in WSO2 and Adobe Commerce were found being actively exploited, so CISA added them to a public list of known-exploited vulnerabilities that defenders should prioritize. [read more](https://thehackernews.com/2026/09/wso2-and-adobe-commerce-flaws-exploited.html)
+- **Hackers now exploit critical Roundcube flaw in code injection attacks** — A high-severity flaw in Roundcube Webmail from May that was patched is now being used in real attacks to inject malicious code. [read more](https://www.bleepingcomputer.com/news/security/critical-roundcube-flaw-now-actively-exploited-in-code-injection-attacks/)
+- **Hackers steal $351.6 million in Bitget crypto exchange hack** — North Korean hackers stole $351.6 million from Bitget, a cryptocurrency exchange, by accessing their hot wallets (funds kept online for quick transactions) and warm wallets (semi-active storage). [read more](https://www.bleepingcomputer.com/news/security/hackers-steal-3516-million-in-bitget-crypto-exchange-hack/)
+- **TeamFiltration Campaign Compromises Seven Microsoft 365 Accounts Using Default Passwords** — Attackers compromised over 5,700 Microsoft 365 email accounts across multiple companies using simple default passwords (unchanged login credentials). [read more](https://thehackernews.com/2026/09/teamfiltration-compromises-seven.html)
+- **‘SalesBleed’ Flaws in Salesforce Agentforce Enabled Zero-Click Data Exfiltration** — Three flaws in Salesforce Agentforce allowed attackers to take control of AI agents, steal customer data, and send fake phishing emails without user interaction. [read more](https://www.securityweek.com/salesbleed-flaws-in-salesforce-agentforce-enabled-zero-click-data-exfiltration/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-76460 (– CVSS, 14% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Attackers Exploit WordPress CVE-2026-87902 Within Hours of Disclosure
