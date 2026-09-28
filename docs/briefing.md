@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Warning: Two Unpatched Citrix NetScaler RCE Zero-Days Under Active Exploitation** — Citrix NetScaler ADC and Gateway products contain two serious security holes that allow attackers to execute code remotely without authentication, and hackers are actively using these holes to break into systems. [read more](https://thehackernews.com/2026/09/warning-two-unpatched-citrix-netscaler.html)
+- **Citrix confirms two NetScaler RCE zero-days exploited in attacks** — Two critical vulnerabilities in Citrix NetScaler (CVE-2026-88771 and CVE-2026-88772) that let attackers run unauthorized code have been confirmed as actively exploited in real attacks. [read more](https://www.bleepingcomputer.com/news/security/citrix-admins-warned-to-shut-down-netscalers-over-2-exploited-zero-days/)
+- **CISA Says Attackers Are Exploiting Two Critical Citrix NetScaler Flaws Globally** — The U.S. [read more](https://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html)
+- **Citrix Confirms 2 NetScaler Zero-Days After Admins Pulled the Plug** — Citrix released security updates to fix two critical remote code execution vulnerabilities (CVE-2026-88771 and CVE-2026-88772) in NetScaler products after administrators began taking affected systems offline due to active attacks. [read more](https://www.securityweek.com/citrix-confirms-2-netscaler-zero-days-after-admins-pulled-the-plug/)
+- **JADEPUFFER-Linked Attackers Used Compromised Service Principals to Delete Azure Resources** — A threat actor group called JADEPUFFER compromised Azure cloud service principals (automated accounts with special permissions) and used them to delete cloud resources in a customer's environment, representing a new tactic for this group. [read more](https://thehackernews.com/2026/09/jadepuffer-linked-attackers-used.html)
+- **CISA orders feds to patch exploited Citrix flaws by Wednesday** — CISA issued an emergency directive requiring all U.S. [read more](https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-exploited-citrix-flaws-by-wednesday/)
+- **Nvidia Unveils AI Agent Safety Platform With Hardware-Based Watchdog** — Nvidia released a platform designed to keep AI systems operating within pre-defined safe boundaries using hardware-based monitoring (a watchdog mechanism that automatically stops unsafe behavior). [read more](https://www.securityweek.com/nvidia-unveils-ai-agent-safety-platform-with-hardware-based-watchdog/)
+- **[NEU] [mittel] Linux Kernel: Mehrere Schwachstellen** — Multiple security flaws exist in the Linux Kernel (the core of Linux operating systems) that could allow attackers to leak sensitive information, cause system crashes, or break memory protection mechanisms. [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3588)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-71362 (– CVSS, 88% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Warning: Two Unpatched Citrix NetScaler RCE Zero-Days Under Active Exploitation
