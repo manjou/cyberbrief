@@ -1,98 +1,86 @@
-# 🛡️ CyberBrief — GRC — Friday, 25 September 2026
+# 🛡️ CyberBrief — SOC — Monday, 28 September 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
-*Today's focus: breaches, regulation, and compliance impact.*
-
-## 🕔 5pm recap
-
-*Didn't get through this morning? Here's the quick version — full detail is still below.*
-
-- **Attackers Exploit WordPress CVE-2026-87902 Within Hours of Disclosure** — A serious WordPress security flaw (CVE-2026-87902) was publicly announced, and within hours, attackers began using it to break into websites and take complete control of them. [read more](https://thehackernews.com/2026/09/attackers-exploit-wordpress-cve-2026.html)
-- **Roundcube Pre-Auth SQL Injection Flaw Actively Exploited in the Wild** — A security weakness in Roundcube Webmail (CVE-2026-48842) that lets attackers access databases without logging in is being actively used in real attacks. [read more](https://thehackernews.com/2026/09/roundcube-pre-auth-sql-injection-flaw.html)
-- **CISA: Ransomware gangs now exploiting critical TeamCity flaw** — Criminal ransomware groups are exploiting a TeamCity flaw (a software build tool) that JetBrains fixed back in July, and U.S. [read more](https://www.bleepingcomputer.com/news/security/cisa-ransomware-gangs-now-exploiting-critical-teamcity-flaw/)
-- **WSO2 and Adobe Commerce Flaws Exploited in Attacks, Added to CISA KEV** — Two serious security flaws in WSO2 and Adobe Commerce were found being actively exploited, so CISA added them to a public list of known-exploited vulnerabilities that defenders should prioritize. [read more](https://thehackernews.com/2026/09/wso2-and-adobe-commerce-flaws-exploited.html)
-- **Hackers now exploit critical Roundcube flaw in code injection attacks** — A high-severity flaw in Roundcube Webmail from May that was patched is now being used in real attacks to inject malicious code. [read more](https://www.bleepingcomputer.com/news/security/critical-roundcube-flaw-now-actively-exploited-in-code-injection-attacks/)
-- **Hackers steal $351.6 million in Bitget crypto exchange hack** — North Korean hackers stole $351.6 million from Bitget, a cryptocurrency exchange, by accessing their hot wallets (funds kept online for quick transactions) and warm wallets (semi-active storage). [read more](https://www.bleepingcomputer.com/news/security/hackers-steal-3516-million-in-bitget-crypto-exchange-hack/)
-- **TeamFiltration Campaign Compromises Seven Microsoft 365 Accounts Using Default Passwords** — Attackers compromised over 5,700 Microsoft 365 email accounts across multiple companies using simple default passwords (unchanged login credentials). [read more](https://thehackernews.com/2026/09/teamfiltration-compromises-seven.html)
-- **‘SalesBleed’ Flaws in Salesforce Agentforce Enabled Zero-Click Data Exfiltration** — Three flaws in Salesforce Agentforce allowed attackers to take control of AI agents, steal customer data, and send fake phishing emails without user interaction. [read more](https://www.securityweek.com/salesbleed-flaws-in-salesforce-agentforce-enabled-zero-click-data-exfiltration/)
-- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-76460 (– CVSS, 14% EPSS)
+*Today's focus: active exploitation, incident response, and threat activity.*
 
 ## 🔥 Top stories
 
-### 1. Attackers Exploit WordPress CVE-2026-87902 Within Hours of Disclosure
-*The Hacker News* — [read more](https://thehackernews.com/2026/09/attackers-exploit-wordpress-cve-2026.html)
+### 1. Warning: Two Unpatched Citrix NetScaler RCE Zero-Days Under Active Exploitation
+*The Hacker News* — [read more](https://thehackernews.com/2026/09/warning-two-unpatched-citrix-netscaler.html)
 
-A serious WordPress security flaw (CVE-2026-87902) was publicly announced, and within hours, attackers began using it to break into websites and take complete control of them. This matters because WordPress powers millions of websites, so a quick-exploited flaw puts many sites at immediate risk. Defenders typically apply security patches immediately, disable the vulnerable feature, or temporarily take affected sites offline until a fix is available.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
-
-### 2. Roundcube Pre-Auth SQL Injection Flaw Actively Exploited in the Wild
-*The Hacker News* — [read more](https://thehackernews.com/2026/09/roundcube-pre-auth-sql-injection-flaw.html)
-
-A security weakness in Roundcube Webmail (CVE-2026-48842) that lets attackers access databases without logging in is being actively used in real attacks. This is dangerous because email servers are high-value targets that attackers use to steal sensitive information and spread further into networks. Defenders patch the software urgently, update to newer versions, monitor email logs for suspicious activity, and restrict who can access the email server.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
-
-### 3. CISA: Ransomware gangs now exploiting critical TeamCity flaw
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisa-ransomware-gangs-now-exploiting-critical-teamcity-flaw/)
-
-Criminal ransomware groups are exploiting a TeamCity flaw (a software build tool) that JetBrains fixed back in July, and U.S. federal agencies have been warned. Ransomware attacks encrypt an organization's files and demand payment, so exploiting build tools gives attackers a way into critical systems. Defenders ensure all TeamCity installations are fully patched, review who has access to build systems, and watch for suspicious deployment or code changes.
-
-> 📋 **ISO 27001:** A.8.13 Information backup, A.8.8 Management of technical vulnerabilities
-
-### 4. WSO2 and Adobe Commerce Flaws Exploited in Attacks, Added to CISA KEV
-*The Hacker News* — [read more](https://thehackernews.com/2026/09/wso2-and-adobe-commerce-flaws-exploited.html)
-
-Two serious security flaws in WSO2 and Adobe Commerce were found being actively exploited, so CISA added them to a public list of known-exploited vulnerabilities that defenders should prioritize. When flaws are publicly confirmed as exploited, attackers know they work and will target unpatched systems more aggressively. Defenders treat these vulnerabilities as critical and patch immediately, or implement temporary workarounds if patching is not yet possible.
+Citrix NetScaler ADC and Gateway products contain two serious security holes that allow attackers to execute code remotely without authentication, and hackers are actively using these holes to break into systems. This matters because NetScaler is a critical networking device used by many organizations, so a flaw affecting it puts many companies at risk simultaneously. Defenders need to apply the security patches Citrix released immediately and check their systems for signs of compromise.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
 
-### 5. Hackers now exploit critical Roundcube flaw in code injection attacks
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/critical-roundcube-flaw-now-actively-exploited-in-code-injection-attacks/)
+### 2. Citrix confirms two NetScaler RCE zero-days exploited in attacks
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/citrix-admins-warned-to-shut-down-netscalers-over-2-exploited-zero-days/)
 
-A high-severity flaw in Roundcube Webmail from May that was patched is now being used in real attacks to inject malicious code. Email systems are common attack targets because they often contain sensitive business data and can be used to compromise entire organizations. Defenders update Roundcube immediately, check email server logs for signs of code injection, and reset credentials for accounts that may have been compromised.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
-
-### 6. Hackers steal $351.6 million in Bitget crypto exchange hack
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/hackers-steal-3516-million-in-bitget-crypto-exchange-hack/)
-
-North Korean hackers stole $351.6 million from Bitget, a cryptocurrency exchange, by accessing their hot wallets (funds kept online for quick transactions) and warm wallets (semi-active storage). This matters because large financial thefts damage customer trust and show that even well-resourced companies face advanced criminal threats. Defenders at crypto exchanges improve wallet security using hardware protection, add strict access controls, and monitor for unauthorized fund movements in real time.
-
-### 7. TeamFiltration Campaign Compromises Seven Microsoft 365 Accounts Using Default Passwords
-*The Hacker News* — [read more](https://thehackernews.com/2026/09/teamfiltration-compromises-seven.html)
-
-Attackers compromised over 5,700 Microsoft 365 email accounts across multiple companies using simple default passwords (unchanged login credentials). This is serious because email accounts are gateways to sensitive business data, financial records, and access to other company systems. Defenders enforce strong password policies, require password changes from defaults, enable multi-factor authentication (a second login step), and monitor for unusual login activity.
+Two critical vulnerabilities in Citrix NetScaler (CVE-2026-88771 and CVE-2026-88772) that let attackers run unauthorized code have been confirmed as actively exploited in real attacks. This is a top priority because attackers are already using these flaws, meaning organizations could be compromised if not patched quickly. Security teams must prioritize patching these specific CVE numbers and monitor for any suspicious activity on affected systems.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
 
-### 8. ‘SalesBleed’ Flaws in Salesforce Agentforce Enabled Zero-Click Data Exfiltration
-*SecurityWeek* — [read more](https://www.securityweek.com/salesbleed-flaws-in-salesforce-agentforce-enabled-zero-click-data-exfiltration/)
+### 3. CISA Says Attackers Are Exploiting Two Critical Citrix NetScaler Flaws Globally
+*The Hacker News* — [read more](https://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html)
 
-Three flaws in Salesforce Agentforce allowed attackers to take control of AI agents, steal customer data, and send fake phishing emails without user interaction. This matters because AI agents often handle sensitive customer information and trusted business communications, so compromising them spreads both data theft and fraud. Defenders apply Salesforce security patches, review agent permissions and activity logs, and educate users about verifying unusual agent communications.
+The U.S. government's cybersecurity agency (CISA) officially confirmed that two Citrix NetScaler vulnerabilities are being actively exploited globally and added them to a public watchlist. When CISA adds a vulnerability to this list, it signals that defenders across all sectors should treat it as an urgent threat. Organizations should immediately prioritize patches for CVE-2026-88771 and verify their NetScaler versions are up to date.
 
-> 📋 **ISO 27001:** A.6.3 Awareness, education and training, A.8.8 Management of technical vulnerabilities
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
+
+### 4. Citrix Confirms 2 NetScaler Zero-Days After Admins Pulled the Plug
+*SecurityWeek* — [read more](https://www.securityweek.com/citrix-confirms-2-netscaler-zero-days-after-admins-pulled-the-plug/)
+
+Citrix released security updates to fix two critical remote code execution vulnerabilities (CVE-2026-88771 and CVE-2026-88772) in NetScaler products after administrators began taking affected systems offline due to active attacks. This matters because the availability of patches means organizations can now protect themselves rather than having to disconnect critical systems. IT teams should test and deploy these patches to their NetScaler infrastructure as quickly as possible.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
+
+### 5. JADEPUFFER-Linked Attackers Used Compromised Service Principals to Delete Azure Resources
+*The Hacker News* — [read more](https://thehackernews.com/2026/09/jadepuffer-linked-attackers-used.html)
+
+A threat actor group called JADEPUFFER compromised Azure cloud service principals (automated accounts with special permissions) and used them to delete cloud resources in a customer's environment, representing a new tactic for this group. This matters because compromised service principals can give attackers the same permissions as trusted automated processes, making their malicious actions harder to detect. Defenders should review service principal permissions, enable auditing of service principal activities, and implement multi-factor authentication where possible.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
+
+### 6. CISA orders feds to patch exploited Citrix flaws by Wednesday
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-exploited-citrix-flaws-by-wednesday/)
+
+CISA issued an emergency directive requiring all U.S. federal agencies to patch two critical Citrix NetScaler vulnerabilities by the following Wednesday due to active exploitation. This mandatory order signals the severity of the threat and reflects government-wide risk, meaning private organizations should treat this with similar urgency. Organizations should align their patching timelines with this government deadline and treat it as a business-critical priority.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
+
+### 7. Nvidia Unveils AI Agent Safety Platform With Hardware-Based Watchdog
+*SecurityWeek* — [read more](https://www.securityweek.com/nvidia-unveils-ai-agent-safety-platform-with-hardware-based-watchdog/)
+
+Nvidia released a platform designed to keep AI systems operating within pre-defined safe boundaries using hardware-based monitoring (a watchdog mechanism that automatically stops unsafe behavior). This matters as AI systems become more powerful and are deployed in sensitive environments where uncontrolled behavior could cause harm. Defenders should evaluate AI safety controls when deploying AI tools and consider how to monitor autonomous AI agents in production.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
+
+### 8. [NEU] [mittel] Linux Kernel: Mehrere Schwachstellen
+*CERT-Bund (DE)* — [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3588)
+
+Multiple security flaws exist in the Linux Kernel (the core of Linux operating systems) that could allow attackers to leak sensitive information, cause system crashes, or break memory protection mechanisms. This matters because Linux runs on servers, cloud infrastructure, and embedded devices worldwide, so widespread kernel flaws affect a huge number of systems. Organizations should apply Linux kernel security updates promptly and monitor vendor advisories for patches relevant to their specific Linux distributions.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
 ## 🚨 CVEs that matter today
 
 | CVE | Why it ranks | CVSS | EPSS | Exploited? |
 |-----|--------------|------|------|------------|
-| **CVE-2026-76460** | Cisco Identity Services Engine Incorrect Use of Privileged APIs Vulnerability | – | 14% | ⚠️ YES (KEV) |
-| **CVE-2026-42018** | JFrog Artifactory Improper Authentication Vulnerability | – | 10% | ⚠️ YES (KEV) |
-| **CVE-2026-85706** | GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability | – | 9% | ⚠️ YES (KEV) |
-| **CVE-2026-42016** | JFrog Artifactory Incorrect Authorization Vulnerability | – | 9% | ⚠️ YES (KEV) |
-| **CVE-2025-39682** | Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability | – | 3% | ⚠️ YES (KEV) |
+| **CVE-2026-71362** | Adobe Commerce and Magento Incorrect Authorization Vulnerability  | – | 88% | ⚠️ YES (KEV) |
+| **CVE-2026-88771** | Citrix NetScaler Improper Input Validation Vulnerability | 9.5 | 0% | ⚠️ YES (KEV) |
+| **CVE-2026-88772** | Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability | 9.5 | 0% | ⚠️ YES (KEV) |
+| **CVE-2026-76461** | Cisco Secure Email Gateway SQL Injection Vulnerability | – | 28% | ⚠️ YES (KEV) |
+| **CVE-2026-93616** | Check Point Multiple Products Path Traversal Vulnerability | – | 20% | ⚠️ YES (KEV) |
 
-**CVE-2026-76460** — Cisco Identity Services Engine (a security authentication tool) has a flaw where it incorrectly uses high-privilege system functions, potentially letting attackers gain unauthorized elevated access. This is critical because authentication systems control access to entire networks, so compromising them gives attackers admin-level control. Defenders patch immediately, limit who can access the authentication system, and monitor for unusual privilege escalation attempts.
+**CVE-2026-71362** — An authorization flaw in Adobe Commerce and Magento (e-commerce platforms) allows users to access or modify resources they should not have permission to access. This matters because e-commerce platforms handle payment data and customer information, so authorization flaws could lead to fraud or data theft. Defenders should patch affected Commerce and Magento installations immediately and audit recent user access logs for suspicious activity.
 
-**CVE-2026-42018** — JFrog Artifactory (a software repository storage system) has a flaw in how it verifies user identities, potentially allowing unauthorized access to stored software code and components. This matters because software repositories contain the source code and tools companies use to build applications—compromising them lets attackers inject malicious code into software. Defenders patch urgently, review access logs for unauthorized logins, and verify the integrity of stored software.
+**CVE-2026-88771** — CVE-2026-88771 is a critical flaw in Citrix NetScaler ADC and Gateway that fails to properly validate user input, allowing unauthenticated attackers to compromise the system; it affects versions before 14.1-73.37 and 13.1-64.23. This is one of the two actively exploited vulnerabilities confirmed by CISA and Citrix, making it a top priority. Organizations must identify which NetScaler versions they run and immediately apply the patched versions listed.
 
-**CVE-2026-85706** — GitLab Community and Enterprise editions have a path traversal flaw that lets attackers access files they shouldn't be able to reach by using special file path tricks. This is dangerous because GitLab stores source code and deployment scripts—unauthorized access leaks company secrets and lets attackers modify code. Defenders patch immediately, audit who has accessed sensitive files, and review code changes for suspicious modifications.
+**CVE-2026-88772** — CVE-2026-88772 is a second critical flaw in Citrix NetScaler that allows unauthenticated remote code execution or system crashes; affected versions are before 14.1-73.37 and 13.1-64.23. This is the second of the two actively exploited Citrix vulnerabilities and has the same version ranges as CVE-2026-88771, meaning a single patch often fixes both. Defenders should apply patches to all affected version ranges and verify the update was successful.
 
-**CVE-2026-42016** — JFrog Artifactory has a flaw in how it checks permissions, potentially allowing users to access or modify software packages they should not have rights to. This matters because software packages are building blocks used across organizations, so unauthorized modification could spread compromised code organization-wide. Defenders patch immediately, audit permission settings, and verify that sensitive software packages have not been tampered with.
+**CVE-2026-76461** — CVE-2026-76461 is a SQL injection vulnerability in Cisco Secure Email Gateway (a device that filters and scans email traffic) that allows attackers to manipulate database queries. This matters because email gateways sit between external email and internal networks, so a compromise could allow attackers to bypass email security controls. Organizations using this product should apply Cisco security patches and consider implementing additional database query logging to detect suspicious activity.
 
-**CVE-2025-39682** — A Linux Kernel flaw fails to properly check for unusual conditions, which could allow attackers to crash systems or potentially execute code with elevated privileges. This is serious because Linux powers servers, cloud infrastructure, and critical systems worldwide—a wide-spread vulnerability puts many organizations at risk. Defenders apply kernel security updates promptly, prioritize patching critical systems, and monitor for system crashes or unusual behavior that could indicate exploitation.
+**CVE-2026-93616** — CVE-2026-93616 is a path traversal vulnerability in Check Point products (likely security or firewall software) that allows attackers to access files outside their intended directory. This matters because it could allow an attacker to read sensitive configuration files or system files they should not access. Defenders should apply Check Point security updates immediately and review access logs to determine if this vulnerability was exploited.
 
 ## 📖 Jargon decoder
 
@@ -100,7 +88,7 @@ Three flaws in Salesforce Agentforce allowed attackers to take control of AI age
 - **CVSS** — Common Vulnerability Scoring System — rates how bad a vulnerability *could* be (0-10). High CVSS does not mean anyone is actually exploiting it.
 - **CVE** — Common Vulnerabilities and Exposures — the global ID system for security flaws, e.g. CVE-2026-12345.
 - **RCE** — Remote Code Execution — the worst-case flaw: an attacker runs their own code on your system over the network.
-- **ransomware** — Malware that encrypts your files and demands payment. Modern gangs also steal data first and threaten to publish it (double extortion).
+- **zero-day** — A vulnerability attackers exploit before the vendor has released a patch — defenders start at zero days of warning.
 - **EPSS** — Exploit Prediction Scoring System — a 0-100% probability that a CVE will be exploited in the next 30 days. Better prioritization signal than CVSS alone.
 
 ---
