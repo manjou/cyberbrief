@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Times Car confirms data breach affecting 6.6 million user accounts** — Times Car, a Japanese car-sharing service, had hackers break into their systems and steal information from 6.6 million user accounts. [read more](https://www.bleepingcomputer.com/news/security/times-car-confirms-data-breach-affecting-66-million-user-accounts/)
+- **CISA Says Attackers Are Exploiting Two Critical Citrix NetScaler Flaws Globally** — CISA (a U.S. [read more](https://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html)
+- **JadePuffer agentic AI attacks target Azure, destroy cloud resources** — An AI-powered ransomware gang called JadePuffer is using automated 'agent' programs to attack Microsoft Azure cloud environments, stealing login credentials and destroying cloud resources to extort money. [read more](https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-ai-attacks-target-azure-destroy-cloud-resources/)
+- **CISA orders feds to patch exploited Citrix flaws by Wednesday** — CISA issued a mandatory order requiring all U.S. [read more](https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-exploited-citrix-flaws-by-wednesday/)
+- **Carbonato Botnet Compromises Docker Hosts to Deploy Telegram-Controlled Hermes AI Agent** — A new malware called Carbonato is spreading to Docker servers (containerized application environments) that are exposed to the internet, installing an AI agent framework called Hermes that attackers can control remotely via Telegram messaging. [read more](https://thehackernews.com/2026/09/carbonato-botnet-compromises-docker.html)
+- **Apple patches CoreGraphics zero-day flaw exploited in attacks** — Apple released emergency security updates to fix a zero-day vulnerability (a flaw unknown to the vendor until attackers exploited it) in the CoreGraphics system that was being used in extremely advanced, targeted attacks on iPhones. [read more](https://www.bleepingcomputer.com/news/security/apple-patches-coregraphics-zero-day-flaw-exploited-in-attacks/)
+- **Apple Patches Zero-Day Linked to ‘Extremely Sophisticated Attack’** — Apple patched a zero-day flaw (CVE-2026-86950) in iOS and macOS that was discovered by Meta's security team and exploited in highly sophisticated attacks on Apple devices. [read more](https://www.securityweek.com/apple-patches-meta-reported-zero-day-linked-to-extremely-sophisticated-attack/)
+- **Hackers Use NeedyMantis to Maintain Long-Term Access in Breached Networks** — Microsoft discovered that hackers used a malware tool called NeedyMantis to stay inside networks they had already broken into, maintaining hidden access for the long term; the attacks targeted telecom companies, universities, and medical nonprofits. [read more](https://thehackernews.com/2026/09/hackers-use-needymantis-to-maintain.html)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-88771 (9.8 CVSS, 0% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Times Car confirms data breach affecting 6.6 million user accounts
