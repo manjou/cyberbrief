@@ -4,6 +4,20 @@
 
 *Today's focus: network infrastructure — a lighter refresh day.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Citrix NetScaler CVE-2026-88772 Exploit Details Show Pre-Auth Path to Shellcode Execution** — A serious bug (memory overflow—where data is written beyond its intended storage area) was found in Citrix NetScaler, a device that controls network traffic for many organizations, and attackers are actively using it to run malicious code. [read more](https://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html)
+- **Hackers exploit Citrix NetScaler zero-day to deploy web shells** — Attackers used the same Citrix NetScaler vulnerability to install web shells (hidden backdoors for remote access) and tunneling malware, then steal login credentials and move deeper into victim networks. [read more](https://www.bleepingcomputer.com/news/security/hackers-exploit-citrix-netscaler-zero-day-to-deploy-web-shells/)
+- **Bitget hacked via zero-day in third-party security products** — Hackers broke into Bitget cryptocurrency exchange by exploiting an unknown flaw (zero-day) in third-party security software the company used, stealing $387.5 million. [read more](https://www.bleepingcomputer.com/news/security/bitget-hacked-via-zero-day-in-third-party-security-products/)
+- **Russian APT Star Blizzard Uses ‘RedFlick’ Infection Chain in Recent Attacks** — A Russian state-sponsored hacking group called Star Blizzard launched phishing campaigns using a malware chain called 'RedFlick' to deploy a backdoor called CosmicPulse. [read more](https://www.securityweek.com/russian-apt-star-blizzard-uses-redflick-infection-chain-in-recent-attacks/)
+- **Russia's Star Blizzard Targets 100+ Organizations With Fake Event Invites to Deliver Backdoor** — Star Blizzard sent fake event invitations to over 100 organizations (targeting those connected to Ukraine) to trick users into installing a backdoor on Windows computers. [read more](https://thehackernews.com/2026/09/russias-star-blizzard-targets-100.html)
+- **Attackers Exploit NetScaler Flaw for Root Access, Deploy WHIPSHOT and SLAPSHOT** — Unknown attackers exploited the same Citrix NetScaler flaw to gain root-level (complete) access and deployed two malware tools called WHIPSHOT and SLAPSHOT across organizations in North America and Europe in September 2026. [read more](https://thehackernews.com/2026/09/attackers-exploit-netscaler-flaw-for.html)
+- **Apple patches CoreGraphics zero-day flaw exploited in attacks** — Apple fixed a zero-day flaw in CoreGraphics (a core system component on iPhones and iPads) that attackers were actively exploiting in highly targeted campaigns against specific individuals. [read more](https://www.bleepingcomputer.com/news/security/apple-patches-coregraphics-zero-day-flaw-exploited-in-attacks/)
+- **Former US Air Force members sent to prison over BEC attacks** — Two former US Air Force members were imprisoned for running years-long business email compromise (BEC) and phishing scams, stealing money by impersonating trusted contacts. [read more](https://www.bleepingcomputer.com/news/security/former-us-air-force-members-sent-to-prison-over-bec-attacks/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-71362 (– CVSS, 88% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Citrix NetScaler CVE-2026-88772 Exploit Details Show Pre-Auth Path to Shellcode Execution
