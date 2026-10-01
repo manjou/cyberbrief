@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **DIVD says Zammad zero-days enabled AI-driven network breach** — DIVD's own network was breached because attackers exploited two previously unknown security holes (zero-days) in Zammad, a help-desk ticketing system they were using. [read more](https://www.bleepingcomputer.com/news/security/divd-says-zammad-zero-days-enabled-ai-driven-network-breach/)
+- **Attackers Exploit Zimbra Flaw to Deploy Web Shells and Harvest Authentication Secrets** — Attackers used a patched flaw (CVE-2026-73570) in Zimbra email software to plant persistent backdoors called web shells and steal login credentials from mailboxes. [read more](https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html)
+- **CISA warns of critical pre-auth RCE flaw in MikroTik RouterOS** — A critical flaw in MikroTik RouterOS allows attackers to remotely execute malicious commands or crash routers without needing valid login credentials. [read more](https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-pre-auth-rce-flaw-in-mikrotik-routeros/)
+- **Zammad Zero-Days Exploited in AI-Powered DIVD Hack** — Attackers chained two Zammad vulnerabilities to take over user sessions, run arbitrary code (remote code execution), and gain highest-level system access (root privileges). [read more](https://www.securityweek.com/zammad-zero-days-exploited-in-ai-powered-divd-hack/)
+- **Cisco Patches Exploited Catalyst SD-WAN Zero-Day Vulnerability** — A previously unknown flaw in Cisco SD-WAN appliances allows unauthenticated attackers to remotely log in with administrator-level permissions and control the device. [read more](https://www.securityweek.com/cisco-patches-exploited-catalyst-sd-wan-zero-day-vulnerability/)
+- **Bitget hacked via zero-day in third-party security products** — Bitget cryptocurrency exchange lost $387.5 million after attackers exploited a zero-day flaw not in Bitget's own code, but in third-party security software running on their systems. [read more](https://www.bleepingcomputer.com/news/security/bitget-hacked-via-zero-day-in-third-party-security-products/)
+- **Citrix NetScaler CVE-2026-88772 Exploit Details Show Pre-Auth Path to Shellcode Execution** — Researchers publicly revealed how to exploit a critical Citrix NetScaler flaw (CVE-2026-88772, scored 9.5/10 severity) involving a memory overflow that lets attackers run malicious code without authentication. [read more](https://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html)
+- **CISA Adds Exploited Cisco Catalyst SD-WAN Manager Auth Bypass to KEV** — A critical Cisco SD-WAN Manager flaw allows unauthenticated attackers to bypass login requirements and gain admin access—and CISA confirmed it's actively being exploited in the wild. [read more](https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-71362 (– CVSS, 88% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. DIVD says Zammad zero-days enabled AI-driven network breach
