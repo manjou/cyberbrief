@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Fortinet warns of critical FortiMail flaw exploited in zero-day attacks** — Fortinet discovered a serious security flaw in FortiMail (an email security tool) that attackers are already using to break into systems without permission. [read more](https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/)
+- **Critical FortiMail Zero-Day Flaw Exploited in Attacks Allows Unauthenticated Arbitrary File Writes** — CISA (a U.S. [read more](https://thehackernews.com/2026/10/critical-fortimail-zero-day-flaw.html)
+- **Exploited Fortinet FortiMail Zero-Day Calls for Urgent Action** — CVE-2026-104286 is a 'path traversal' vulnerability, which means attackers can trick the system into writing files outside the intended folder locations, potentially gaining full control. [read more](https://www.securityweek.com/exploited-fortinet-fortimail-zero-day-calls-for-urgent-action/)
+- **Police dismantle KillSec ransomware gang allegedly led by 16-year-old** — An international police operation shut down the KillSec ransomware group (criminals who encrypt company data and demand ransom payments), seized their data leak website, and arrested three people, including identifying a 16-year-old as a core leader. [read more](https://www.bleepingcomputer.com/news/security/police-dismantle-killsec-ransomware-gang-allegedly-led-by-16-year-old/)
+- **ThreatsDay: AI-Powered Zero-Day Chain, 543K Live Secrets, Model Inspection RCE and 13 More Stories** — This article discusses how common computer functions like model inspection, caching (temporary storage), and compilation can become security weaknesses if they perform unexpected actions or don't properly isolate data. [read more](https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html)
+- **Police Shut Down KillSec Ransomware, Identify Alleged Teen Leader** — Police took control of KillSec's leak website (where they posted stolen data to pressure victims into paying ransom) and secured at least 110 terabytes of stolen data, preventing criminals from using it as leverage. [read more](https://www.securityweek.com/police-shut-down-killsec-ransomware-identify-alleged-teen-leader/)
+- **CISA Adds Exploited Cisco Catalyst SD-WAN Manager Auth Bypass to KEV** — CISA added a critical authentication bypass flaw in Cisco Catalyst SD-WAN Manager (a network device manager) to its list of actively exploited vulnerabilities, meaning attackers can log in as administrators without valid credentials. [read more](https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html)
+- **Hackers stole Pentagon personnel records of over 3 million people** — Hackers breached the Pentagon's human resources database in October 2025 and stole personal records of over 3 million military service members, including likely names, Social Security numbers, and addresses. [read more](https://www.bleepingcomputer.com/news/security/hackers-breach-pentagon-human-resources-management-system-steal-data-of-nearly-3-million-people/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-71362 (– CVSS, 88% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Fortinet warns of critical FortiMail flaw exploited in zero-day attacks
