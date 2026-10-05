@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Citrix patches NetScaler SAML zero-day exploited in attacks** — Citrix released emergency security patches for a vulnerability in NetScaler (a network security appliance) that attackers are actively exploiting to crash systems. [read more](https://www.bleepingcomputer.com/news/security/citrix-patches-netscaler-saml-zero-day-exploited-in-attacks/)
+- **New NetScaler Zero-Day Exploited in Targeted Attacks Can Knock SAML Deployments Offline** — A serious flaw (rated 8.7 out of 10 in severity) in Citrix's NetScaler products is being attacked in real-world campaigns; the vulnerability disrupts SAML authentication (the system many companies use for single sign-on access). [read more](https://thehackernews.com/2026/10/new-netscaler-zero-day-exploited-in.html)
+- **Exploitation of Citrix NetScaler Zero-Day Hits Appliances Patched Days Earlier** — Citrix discovered that attackers found a new vulnerability and began exploiting it just days after the company had patched two other flaws in the same product. [read more](https://www.securityweek.com/exploitation-of-citrix-netscaler-zero-day-hits-appliances-patched-days-earlier/)
+- **Attackers Target Rejetto HFS Flaw That Enables Admin Session Forgery and RCE** — A critical flaw in Rejetto HFS (a file-sharing software) is under active attack; the problem stems from weak random number generation, which lets attackers guess the secret cookie that proves administrative access. [read more](https://thehackernews.com/2026/10/attackers-target-rejetto-hfs-flaw-that.html)
+- **Exploitation Hits Rejetto HFS Vulnerability Discovered by AI** — The same Rejetto HFS vulnerability allows attackers to recover the secret signing key used for admin session cookies and then execute arbitrary code on the server. [read more](https://www.securityweek.com/exploitation-hits-rejetto-hfs-vulnerability-discovered-by-ai/)
+- **Google halts open-source bug bounty program amid AI spam surge** — Google closed its bug bounty program for open-source software because it was flooded with low-quality, AI-generated vulnerability reports that wasted researcher time. [read more](https://www.bleepingcomputer.com/news/google/google-halts-open-source-bug-bounty-program-amid-ai-spam-surge/)
+- **[UPDATE] [mittel] Linux Kernel: Mehrere Schwachstellen** — Multiple vulnerabilities exist in the Linux Kernel (the core of Linux operating systems) that could let attackers leak information, crash systems, or execute other unspecified attacks. [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3588)
+- **[UPDATE] [kritisch] Vercel Next.js: Mehrere Schwachstellen ermöglichen Codeausführung** — Several critical flaws in Vercel Next.js (a web development framework) allow remote attackers to execute arbitrary code on servers running the software. [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3027)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-71362 (– CVSS, 88% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Citrix patches NetScaler SAML zero-day exploited in attacks
