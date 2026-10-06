@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **⚡ Weekly Recap: NetScaler and FortiMail 0-Days, AI Coding Leaks, Spectre v2 and Ransomware Arrests** — NetScaler, FortiMail, and other widely-used products have unpatched security flaws (called 0-days) that attackers are actively exploiting, plus AI tools leaked that help attackers write malicious code faster. [read more](https://thehackernews.com/2026/10/weekly-recap-netscaler-and-fortimail-0.html)
+- **Nikkei discloses breaches of employees’ Microsoft, Google email accounts** — Attackers broke into two employee email accounts at Nikkei (a major Japanese publisher) and used one account to send thousands of phishing emails to trick other people into revealing credentials. [read more](https://www.bleepingcomputer.com/news/security/nikkei-discloses-breaches-of-employees-microsoft-google-email-accounts/)
+- **8.8 Million Impacted by Data Breach at Denmark’s Central Person Register** — A company with authorized access to Denmark's Central Person Register (a government database of citizen records) was hacked, and attackers stole personal data on 8.8 million people using that company's legitimate access rights. [read more](https://www.securityweek.com/8-8-million-impacted-by-data-breach-at-denmarks-central-person-register/)
+- **Rejetto HFS servers now actively scanned for critical RCE flaw** — Attackers are actively scanning the internet for servers running Rejetto HFS software with a known critical flaw (CVE-2026-61500) that lets them forge sessions, take over accounts, or run code remotely. [read more](https://www.bleepingcomputer.com/news/security/rejetto-hfs-servers-now-actively-scanned-for-critical-rce-flaw/)
+- **Denmark population registry data breach affects 8.8 million people** — Denmark's Central Population Register (a government database storing personal details on 8.8 million citizens) was breached and personal information was stolen; this is the same incident as item 3 but framed from the registry operator's perspective. [read more](https://www.bleepingcomputer.com/news/security/denmark-population-registry-data-breach-affects-88-million-people/)
+- **Google Pauses OSS Product Bug Bounty Rewards After Surge in Invalid Automated Reports** — Google stopped accepting vulnerability reports through its bug bounty program for open-source projects like Go and Angular because too many automated tools were submitting invalid or low-quality reports, wasting researcher time. [read more](https://thehackernews.com/2026/10/google-pauses-oss-product-bug-bounty.html)
+- **250,000 Impacted by Data Breaches at New Jersey, Texas Healthcare Firms** — Hackers stole patient information (names, addresses, medical records, insurance details) from two US healthcare companies in July; about 250,000 people were affected. [read more](https://www.securityweek.com/250000-impacted-by-data-breaches-at-new-jersey-texas-healthcare-firms/)
+- **Critical Atlassian Flaw Lets Unauthenticated Attackers Read Known Files Across 8 Products** — A critical flaw in 8 Atlassian products (self-hosted, not cloud versions) allows an attacker to read files from the web application directory without logging in, but only if they already know the exact file name and path. [read more](https://thehackernews.com/2026/10/critical-atlassian-flaw-lets.html)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-71362 (– CVSS, 88% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. ⚡ Weekly Recap: NetScaler and FortiMail 0-Days, AI Coding Leaks, Spectre v2 and Ransomware Arrests
