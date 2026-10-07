@@ -4,6 +4,20 @@
 
 *Today's focus: network infrastructure — a lighter refresh day.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Google Pauses OSS Product Bug Bounty Rewards After Surge in Invalid Automated Reports** — Google stopped accepting bug bounty submissions for its open-source projects like Go and Angular because it was receiving too many low-quality automated reports that wasted reviewer time. [read more](https://thehackernews.com/2026/10/google-pauses-oss-product-bug-bounty.html)
+- **Advantest confirms personal information stolen in ransomware attack** — Attackers broke into Advantest Corporation's network using ransomware (malicious software that encrypts files and demands payment), and during that breach they copied personal information about employees or customers before encrypting systems. [read more](https://www.bleepingcomputer.com/news/security/advantest-confirms-personal-information-stolen-in-ransomware-attack/)
+- **Linux Backdoors Impersonate Email Security Tools to Evade Detection in Korea and Taiwan** — Malicious software targeting Linux systems in South Korea and Taiwan is disguising itself as legitimate email services and normal system processes so security tools won't detect and block it. [read more](https://thehackernews.com/2026/10/linux-backdoors-impersonate-email.html)
+- **ASOS confirms data breach after “HACKED” in-app notifications** — Hackers broke into ASOS's cloud data storage (Snowflake environment) and sent fake push notifications through the company's mobile app to announce the breach and grab attention. [read more](https://www.bleepingcomputer.com/news/security/asos-confirms-data-breach-after-hacked-in-app-notifications/)
+- **Ninja Forms plugin flaw exploited to hack WordPress sites** — Attackers found security flaws in two WordPress plugins (Ninja Forms and WPC Product Bundles) that allow injecting malicious code into websites; they used these flaws to install backdoors (hidden ways to access systems) and create fake admin accounts to maintain control. [read more](https://www.bleepingcomputer.com/news/security/ninja-forms-plugin-flaw-exploited-to-hack-wordpress-sites/)
+- **ASOS Confirms Cyberattack, Data Breach** — Hackers compromised a third-party messaging platform that ASOS uses to communicate with customers, then used it to send fake notifications claiming to have stolen data from ASOS. [read more](https://www.securityweek.com/asos-confirms-cyberattack-data-breach/)
+- **Engineer sentenced for locking over 3,000 devices on employer network** — A former engineer with internal network access deliberately locked thousands of company devices using ransomware-like tactics, likely in revenge after leaving or being fired. [read more](https://www.bleepingcomputer.com/news/security/engineer-sentenced-for-locking-thousands-of-devices-on-employer-network/)
+- **Atlassian Patches Critical Vulnerability Affecting 8 Products** — Atlassian (a software company) released a security patch fixing a critical flaw in 8 of its products that would let attackers without login credentials access files in web applications. [read more](https://www.securityweek.com/atlassian-patches-critical-vulnerability-affecting-8-products/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-71362 (– CVSS, 88% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Google Pauses OSS Product Bug Bounty Rewards After Surge in Invalid Automated Reports
