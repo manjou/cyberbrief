@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Unpatched Critical LMCache Flaw Lets Unauthenticated Attackers Run Code Remotely** — A serious security flaw in LMCache (software that speeds up AI language model servers) allows attackers to run malicious code on the server without needing a password or login credentials. [read more](https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html)
+- **Advantest Discloses Data Breach Months After Ransomware Attack** — Advantest, a major computer chip testing company, confirmed that hackers stole personal employee or customer data during a ransomware attack in February 2026, but the company delayed announcing the data theft for months after the initial attack. [read more](https://www.securityweek.com/advantest-discloses-data-breach-months-after-ransomware-attack/)
+- **Samsung Galaxy S26 hacked three more times at Pwn2Own Ireland** — Security researchers successfully hacked a Samsung Galaxy S26 phone three separate times at a hacking competition by exploiting 45 previously unknown software vulnerabilities (called zero-days), earning $232,500 in prize money. [read more](https://www.bleepingcomputer.com/news/security/samsung-galaxy-s26-hacked-three-more-times-at-pwn2own-ireland/)
+- **Eight Malicious npm Packages Downloaded 40,767 Times Deliver Overlord RAT and Stealer** — Attackers uploaded eight malicious software packages to npm (a popular code library repository used by millions of developers) that were downloaded over 40,000 times; the packages contained malware (RAT and stealers) that give attackers remote control or steal sensitive data from infected computers. [read more](https://thehackernews.com/2026/10/eight-malicious-npm-packages-downloaded.html)
+- **FBI Warns FortiBleed Remains Active After Amassing 86,644 Fortinet Device Credentials** — Attackers are actively targeting internet-facing Fortinet FortiGate firewalls (security devices that protect networks) using a credential harvesting campaign called FortiBleed that has already collected login credentials from over 86,000 devices. [read more](https://thehackernews.com/2026/10/fbi-warns-fortibleed-remains-active.html)
+- **ASOS links data breach to social engineering attack, credential theft** — ASOS (an online fashion retailer) suffered a cyberattack where hackers accessed customer personal data after using social engineering (manipulation tactics like phishing) to steal employee login credentials. [read more](https://www.bleepingcomputer.com/news/security/asos-links-data-breach-to-social-engineering-attack-credential-theft/)
+- **Advantest confirms personal information stolen in ransomware attack** — Advantest Corporation confirmed that personally identifiable information (names, addresses, contact details, etc.) was stolen from their systems during a ransomware attack earlier in the year. [read more](https://www.bleepingcomputer.com/news/security/advantest-confirms-personal-information-stolen-in-ransomware-attack/)
+- **MonsterCloud Owner Accused of Billing Over $19M While Secretly Paying Ransoms to Decrypt Data** — The U.S. [read more](https://thehackernews.com/2026/10/monstercloud-owner-accused-of-billing.html)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-71362 (– CVSS, 88% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Unpatched Critical LMCache Flaw Lets Unauthenticated Attackers Run Code Remotely
