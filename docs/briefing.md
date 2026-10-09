@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Citrix Patches Critical NetScaler Flaw That Could Enable RCE in SAML Deployments** — Citrix discovered a memory overflow bug (a type of coding error where data overwrites adjacent memory) in NetScaler products that attackers could exploit to run malicious code remotely, especially in systems using SAML authentication (a single sign-on method). [read more](https://thehackernews.com/2026/10/citrix-patches-critical-netscaler-flaw.html)
+- **ASOS links data breach to social engineering attack, credential theft** — ASOS customers had their personal information stolen after attackers tricked employees into revealing login credentials through social engineering (manipulating people into bypassing security rather than breaking through technical defenses). [read more](https://www.bleepingcomputer.com/news/security/asos-links-data-breach-to-social-engineering-attack-credential-theft/)
+- **Citrix warns admins to patch new NetScaler RCE flaw immediately** — Citrix is urgently telling administrators to install security updates for NetScaler products because of a newly discovered critical flaw that could let attackers execute code remotely. [read more](https://www.bleepingcomputer.com/news/security/citrix-warns-admins-to-patch-new-netscaler-rce-flaw-immediately/)
+- **Citrix Urges Immediate Patching of Critical NetScaler Vulnerability** — The same Citrix NetScaler vulnerability (CVE-2026-107406) can either allow attackers to run arbitrary code on the device or crash it to cause service outages. [read more](https://www.securityweek.com/citrix-urges-immediate-patching-of-critical-netscaler-vulnerability/)
+- **FBI disrupts Chinese hacking tools used to breach critical infrastructure** — The FBI seized internet domains that Chinese government-linked hackers (Flax Typhoon) were using to control hacking tools (MicroScan and FishHub) that targeted critical infrastructure like power grids and water systems. [read more](https://www.bleepingcomputer.com/news/security/fbi-disrupts-chinese-hacking-tools-used-to-breach-critical-infrastructure/)
+- **Cisco Patches a Dozen Critical Vulnerabilities** — Cisco released patches for twelve separate security flaws in its products that could lead to various types of attacks including unauthorized access, data theft, privilege escalation (gaining higher-level permissions), system crashes, and remote code execution. [read more](https://www.securityweek.com/cisco-patches-a-dozen-critical-vulnerabilities/)
+- **Ransomware attack disrupts Japan's IDCF Cloud used by govt clients** — IDC Frontier, a Japanese cloud provider, was hit with a ransomware attack (malware that encrypts files and demands payment) that knocked their IDCF Cloud service offline, affecting government clients who depended on it. [read more](https://www.bleepingcomputer.com/news/security/ransomware-attack-disrupts-japans-idcf-cloud-used-by-govt-clients/)
+- **Hackers get $1,262,000 for 98 zero-days at Pwn2Own Ireland** — At a security conference called Pwn2Own Ireland, hackers successfully exploited 98 zero-day vulnerabilities (previously unknown security flaws) and earned $1.26 million in rewards. [read more](https://www.bleepingcomputer.com/news/security/hackers-earn-1262000-for-98-zero-days-at-pwn2own-ireland/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2015-3306 (– CVSS, 97% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Citrix Patches Critical NetScaler Flaw That Could Enable RCE in SAML Deployments
