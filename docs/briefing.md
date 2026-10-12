@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE** — A WordPress plugin called Bricksforge has a severe flaw (rated 10.0 out of 10 in severity) that lets attackers who aren't logged in upload and run malicious code on websites using it. [read more](https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html)
+- **Bricksforge WordPress Plugin Vulnerability Exploited in the Wild** — The same Bricksforge vulnerability allows attackers to take complete control of affected WordPress websites without needing legitimate access. [read more](https://www.securityweek.com/bricksforge-wordpress-plugin-vulnerability-exploited-in-the-wild/)
+- **CyberXero Uses Claude Code in Campaign That Stole Over 628,000 Ukrainian Records** — A group called CyberXero used AI-powered tools to launch coordinated attacks against WordPress sites, online stores, and critical infrastructure in Ukraine, stealing information on over 628,000 people. [read more](https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html)
+- **Critical SonicWall SMA 1000 Flaw Targeted in 135 Exploitation Attempts After Patch** — A critical flaw in SonicWall's mobile access appliances (CVE-2026-102255) is being actively exploited within days of becoming public; attackers can trick the device into making unauthorized requests to other systems even without logging in first. [read more](https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html)
+- **Ransomware Response Expert Arrested in ShinyHunters FBI Hack Probe** — A suspect arrested in connection with a major cybersecurity hack targeting ShinyHunters is reportedly Edward Dubrovsky, a Canadian cybersecurity expert, suggesting insider knowledge may have been involved in the attack. [read more](https://www.securityweek.com/ransomware-response-expert-arrested-in-shinyhunters-fbi-hack-probe/)
+- **iRhythm Data Breach Impacts at Least 360,000 People** — Hackers broke into iRhythm and stole personal information from at least 360,000 patients, including names, addresses, emails, birthdates, and phone numbers. [read more](https://www.securityweek.com/irhythm-data-breach-impacts-over-360000-people/)
+- **Critical SonicWall Vulnerability Exploited Days After Disclosure** — The SonicWall flaw CVE-2026-102255 is a pre-authenticated SSRF (server-side request forgery) vulnerability, meaning attackers can make the device request unauthorized information from internal systems without logging in. [read more](https://www.securityweek.com/critical-sonicwall-vulnerability-exploited-days-after-disclosure/)
+- **Ledger Finds Unauthorized Hardware Implant in CryptoBilis-Sold Wallet Amid Fund Theft Reports** — Ledger, a cryptocurrency hardware wallet maker, found unauthorized hardware modifications in devices sold through reseller CryptoBilis and paused sales after reports of stolen funds from Southeast Asian customers. [read more](https://thehackernews.com/2026/10/ledger-finds-unauthorized-hardware.html)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2015-5477 (– CVSS, 99% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE
