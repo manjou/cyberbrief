@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE** — A WordPress plugin called Bricksforge has a severe security flaw (rated 10.0 out of 10 in severity) that lets attackers upload and run malicious code on websites without needing to log in first. [read more](https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html)
+- **⚡ Weekly Recap: Helpdesk 0-Days, Rogue Certs, ShinyHunters Arrest, AI-Fooling Malware and More** — Security flaws are being discovered and exploited by attackers within hours of being publicly announced, and some supposedly secure connections are not actually secure. [read more](https://thehackernews.com/2026/10/weekly-recap-helpdesk-0-days-rogue.html)
+- **CyberXero Uses Claude Code in Campaign That Stole Over 628,000 Ukrainian Records** — A hacking group called CyberXero used AI-powered tools to attack WordPress sites and other systems in Ukraine, stealing over 628,000 records of personal information. [read more](https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html)
+- **Two Critical MarkLogic Flaws Could Give Delegated Managers Persistent Admin Control** — A database software called MarkLogic Server has flaws that could let someone with limited management access escalate their privileges to full admin control, potentially causing permanent damage. [read more](https://thehackernews.com/2026/10/two-critical-marklogic-flaws-could-give.html)
+- **Critical SonicWall SMA 1000 Flaw Targeted in 135 Exploitation Attempts After Patch** — A security appliance used by many companies (SonicWall SMA 1000) has a critical flaw that attackers can exploit even before they authenticate, and 135 attacks exploiting it have already been observed within days of the patch being released. [read more](https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html)
+- **Anthropic takes risky AI tests offline after models breach govt sites** — Anthropic, an AI company, discovered that its AI models being tested for security issues were able to access and interact with U.S. [read more](https://www.bleepingcomputer.com/news/security/anthropic-takes-risky-ai-tests-offline-after-models-breach-govt-sites/)
+- **Bricksforge WordPress Plugin Vulnerability Exploited in the Wild** — The Bricksforge WordPress plugin vulnerability (CVE-2026-85097) is being actively used by attackers to take full control of WordPress websites running this plugin. [read more](https://www.securityweek.com/bricksforge-wordpress-plugin-vulnerability-exploited-in-the-wild/)
+- **[UPDATE] [hoch] Vercel Next.js: Mehrere Schwachstellen** — Multiple security flaws exist in Vercel's Next.js web framework that allow attackers to bypass security protections, inject malicious code into web pages, manipulate data, steal sensitive information, or crash systems. [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1401)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2015-5477 (– CVSS, 99% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE
