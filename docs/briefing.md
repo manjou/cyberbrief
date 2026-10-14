@@ -4,6 +4,20 @@
 
 *Today's focus: network infrastructure — a lighter refresh day.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Ivanti Zero-Day Chain Gave Attackers Root Access to Fully Patched VPN** — An attacker found a flaw in Ivanti Connect Secure (a VPN appliance that controls access to company networks) that lets them run commands with root privileges (maximum access) without even logging in, and this works even on systems with the latest security patches applied. [read more](https://www.securityweek.com/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn/)
+- **Ivanti warns of Connect Secure zero-day exploited in attacks** — Ivanti discovered that someone was actively using a previously unknown security flaw in their Connect Secure VPN product to break in, and they told all customers to patch right away. [read more](https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/)
+- **Citrix, Fortinet, Ivanti Patch 29 Vulnerabilities Across Their Products** — Citrix, Fortinet, and Ivanti all released patches for 29 security flaws, some of which are critical—meaning attackers could skip login checks, run their own code, or steal authentication details used to verify user identity. [read more](https://www.securityweek.com/citrix-fortinet-ivanti-patch-29-vulnerabilities-across-their-products/)
+- **Attacker Chains Three Ivanti Connect Secure Zero-Days for Root Access, Only Two Patched So Far** — A security researcher found that attackers were chaining three separate zero-day flaws (previously unknown vulnerabilities) in Ivanti Connect Secure together to gain root access without authentication, but Ivanti has only released fixes for two of them so far. [read more](https://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html)
+- **Microsoft October 2026 Patch Tuesday fixes 1,411 flaws, 3 zero-days** — Microsoft released security updates on their monthly Patch Tuesday that fix 1,411 separate vulnerabilities, which is unusually high, and three of these are zero-days (one is already being exploited in real attacks, two are public knowledge but not yet widely exploited). [read more](https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/)
+- **Microsoft Patches Record 1,413 Vulnerabilities, Including Exploited Windows Zero-Day** — Microsoft released patches for 1,413 security flaws, with CVE-2026-96951 being a Windows security feature bypass that attackers are already using in real attacks. [read more](https://www.securityweek.com/microsoft-patches-record-1413-vulnerabilities-including-exploited-windows-zero-day/)
+- **Ghostscript flaw lets hackers hijack servers via PDF uploads** — A critical flaw in Ghostscript (a PDF processing tool used by many servers) allows an attacker to craft a malicious PDF file that, when the server processes it, can run arbitrary commands and take over the server. [read more](https://www.bleepingcomputer.com/news/security/ghostscript-flaw-lets-hackers-hijack-servers-via-pdf-uploads/)
+- **OpenAI Employee Arrested for Allegedly Planting Hidden Recorder in Executive Conference Room** — An OpenAI employee was arrested for secretly planting a hidden recording device in a conference room to capture sensitive conversations, which is a physical security and insider threat incident rather than a cyber attack. [read more](https://thehackernews.com/2026/10/openai-employee-arrested-for-allegedly.html)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2015-5477 (– CVSS, 99% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Ivanti Zero-Day Chain Gave Attackers Root Access to Fully Patched VPN
