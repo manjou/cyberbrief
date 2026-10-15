@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Cisco patches new Secure Email Gateway zero-day exploited in attacks** — Cisco's email security product had a flaw that attackers could exploit without logging in to take full control of the system. [read more](https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/)
+- **Palo Alto Networks Patches PAN-OS Zero-Day Exploited for Remote Code Execution** — Palo Alto Networks released a fix for a serious flaw in PAN-OS (the operating system running their firewalls) that allows remote code execution—meaning attackers can run commands on the firewall without authentication. [read more](https://www.securityweek.com/palo-alto-networks-patches-pan-os-zero-day-exploited-for-remote-code-execution/)
+- **Palo Alto Networks warns of PAN-OS RCE flaw exploited in attacks** — A high-severity flaw (CVE-2026-0322) in Palo Alto's PAN-OS allows attackers to execute code remotely on firewalls, and it's already being actively exploited in real attacks. [read more](https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/)
+- **CISA warns admins to immediately fix Ivanti flaw exploited as zero-day** — CISA (the U.S. [read more](https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-immediately-fix-ivanti-flaw-exploited-as-zero-day/)
+- **CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts** — CISA warned organizations to urgently update Ivanti Connect Secure appliances after discovering an actively exploited vulnerability; honeypot systems (fake targets that log attacks) recorded over 100 exploit attempts. [read more](https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html)
+- **Palo Alto Networks Patches PAN-OS Authenticated RCE Flaw Amid Active Exploitation** — Palo Alto Networks patched a serious flaw (CVE-2026-0322, CVSS 8.6) in PAN-OS that allows authenticated users (or attackers with stolen credentials) to execute code on the firewall's management system. [read more](https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html)
+- **Langflow's Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts** — Threat actors are actively exploiting a critical vulnerability in Langflow (an open-source AI platform by DataStax) to run unauthorized commands; honeypots detected over 1,400 exploit attempts in February 2025. [read more](https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html)
+- **Hackers Backdoor Nextcloud Servers Through Critical Flaw in Collabora’s Built-in CODE App** — Attackers exploited a flaw in Collabora Online CODE (an optional app in Nextcloud) to install web shells (small malicious scripts) that give them ongoing access to Nextcloud servers. [read more](https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2015-5477 (– CVSS, 99% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Cisco patches new Secure Email Gateway zero-day exploited in attacks
