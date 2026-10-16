@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Next.js Ships Out-of-Band Patch for Two Critical RCE Flaws in Caching and SVG Processing** — Next.js released an emergency security patch on October 14 to fix two critical flaws that allow attackers to run malicious code on servers without needing a password. [read more](https://thehackernews.com/2026/10/nextjs-ships-out-of-band-patch-for-two.html)
+- **Critical PwnEscape Linux Kernel Vulnerability Lets Guest VMs Read Host Memory** — A critical flaw in the Linux kernel allows code running inside a virtual machine to read private data stored in the host computer's memory, breaking the isolation that should separate them. [read more](https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html)
+- **Hackers exploit Collabora RCE flaw to backdoor Nextcloud servers** — Attackers are actively exploiting a critical flaw (CVE-2026-110447) in the Collabora Online application that lets them run arbitrary commands on Nextcloud servers. [read more](https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/)
+- **Palo Alto Networks warns of PAN-OS RCE flaw exploited in attacks** — Palo Alto Networks discovered a high-severity flaw in PAN-OS (their firewall software) that allows remote code execution, and attackers are already exploiting it in the wild. [read more](https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/)
+- **BeyondTrust patches zero-day exploited in attacks since August** — BeyondTrust discovered that a critical flaw in its Remote Support product has been actively exploited by attackers since August, before a patch was publicly available (this is called a zero-day attack). [read more](https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/)
+- **Drupal Patches Critical Field UI Flaw With Unauthenticated RCE Path via Contributed Modules** — Drupal released security patches on October 14 for a critical flaw in its Field UI module that allows unauthenticated attackers to run code on vulnerable websites. [read more](https://thehackernews.com/2026/10/drupal-patches-critical-core-rce-flaw.html)
+- **China-Linked Hackers Exploited BeyondTrust Zero-Day to Take Over Remote Support Servers** — A China-linked hacking group called Armory Castle exploited a critical flaw (CVE-2026-102764) in BeyondTrust Remote Support in August 2026 before the company disclosed or patched it. [read more](https://thehackernews.com/2026/10/china-linked-hackers-exploited.html)
+- **CenterPoint Energy Data Breach Impacts 1 Million Texans** — CenterPoint Energy, a major utility company in Texas, suffered a data breach exposing sensitive personal information (names, addresses, Social Security numbers, driver's licenses) for about 1 million people. [read more](https://www.securityweek.com/centerpoint-energy-data-breach-impacts-1-million-texans/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2015-5477 (– CVSS, 99% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Next.js Ships Out-of-Band Patch for Two Critical RCE Flaws in Caching and SVG Processing
