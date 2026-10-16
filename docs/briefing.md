@@ -1,80 +1,66 @@
-# 🛡️ CyberBrief — SOC — Thursday, 15 October 2026
+# 🛡️ CyberBrief — GRC — Friday, 16 October 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
-*Today's focus: active exploitation, incident response, and threat activity.*
-
-## 🕔 5pm recap
-
-*Didn't get through this morning? Here's the quick version — full detail is still below.*
-
-- **Cisco patches new Secure Email Gateway zero-day exploited in attacks** — Cisco's email security product had a flaw that attackers could exploit without logging in to take full control of the system. [read more](https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/)
-- **Palo Alto Networks Patches PAN-OS Zero-Day Exploited for Remote Code Execution** — Palo Alto Networks released a fix for a serious flaw in PAN-OS (the operating system running their firewalls) that allows remote code execution—meaning attackers can run commands on the firewall without authentication. [read more](https://www.securityweek.com/palo-alto-networks-patches-pan-os-zero-day-exploited-for-remote-code-execution/)
-- **Palo Alto Networks warns of PAN-OS RCE flaw exploited in attacks** — A high-severity flaw (CVE-2026-0322) in Palo Alto's PAN-OS allows attackers to execute code remotely on firewalls, and it's already being actively exploited in real attacks. [read more](https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/)
-- **CISA warns admins to immediately fix Ivanti flaw exploited as zero-day** — CISA (the U.S. [read more](https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-immediately-fix-ivanti-flaw-exploited-as-zero-day/)
-- **CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts** — CISA warned organizations to urgently update Ivanti Connect Secure appliances after discovering an actively exploited vulnerability; honeypot systems (fake targets that log attacks) recorded over 100 exploit attempts. [read more](https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html)
-- **Palo Alto Networks Patches PAN-OS Authenticated RCE Flaw Amid Active Exploitation** — Palo Alto Networks patched a serious flaw (CVE-2026-0322, CVSS 8.6) in PAN-OS that allows authenticated users (or attackers with stolen credentials) to execute code on the firewall's management system. [read more](https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html)
-- **Langflow's Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts** — Threat actors are actively exploiting a critical vulnerability in Langflow (an open-source AI platform by DataStax) to run unauthorized commands; honeypots detected over 1,400 exploit attempts in February 2025. [read more](https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html)
-- **Hackers Backdoor Nextcloud Servers Through Critical Flaw in Collabora’s Built-in CODE App** — Attackers exploited a flaw in Collabora Online CODE (an optional app in Nextcloud) to install web shells (small malicious scripts) that give them ongoing access to Nextcloud servers. [read more](https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html)
-- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2015-5477 (– CVSS, 99% EPSS)
+*Today's focus: breaches, regulation, and compliance impact.*
 
 ## 🔥 Top stories
 
-### 1. Cisco patches new Secure Email Gateway zero-day exploited in attacks
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/)
+### 1. Next.js Ships Out-of-Band Patch for Two Critical RCE Flaws in Caching and SVG Processing
+*The Hacker News* — [read more](https://thehackernews.com/2026/10/nextjs-ships-out-of-band-patch-for-two.html)
 
-Cisco's email security product had a flaw that attackers could exploit without logging in to take full control of the system. This matters because email gateways protect organizations from malicious messages, so compromising one gives attackers a foothold to send phishing emails or access company data. Defenders must apply Cisco's patch immediately and monitor their email gateway logs for suspicious activity.
+Next.js released an emergency security patch on October 14 to fix two critical flaws that allow attackers to run malicious code on servers without needing a password. These flaws existed in how the framework handles caching and processes SVG image files. Defenders need to immediately update Next.js to the patched version and review their deployment logs to check if these flaws were exploited before patching.
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.8.2 Privileged access rights
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
 
-### 2. Palo Alto Networks Patches PAN-OS Zero-Day Exploited for Remote Code Execution
-*SecurityWeek* — [read more](https://www.securityweek.com/palo-alto-networks-patches-pan-os-zero-day-exploited-for-remote-code-execution/)
+### 2. Critical PwnEscape Linux Kernel Vulnerability Lets Guest VMs Read Host Memory
+*The Hacker News* — [read more](https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html)
 
-Palo Alto Networks released a fix for a serious flaw in PAN-OS (the operating system running their firewalls) that allows remote code execution—meaning attackers can run commands on the firewall without authentication. This is critical because firewalls are the main barrier between your network and the internet, so compromising one is like unlocking your front door. Defenders should apply the patch right away and check provided Indicators of Compromise (IoCs—technical fingerprints of attacks) to see if they were targeted.
+A critical flaw in the Linux kernel allows code running inside a virtual machine to read private data stored in the host computer's memory, breaking the isolation that should separate them. This is serious because cloud providers use virtual machines to isolate different customers' workloads from each other, so this flaw could expose one customer's data to another. Defenders need to patch their Linux kernels, review who has access to run virtual machines, and monitor for suspicious memory-reading activity.
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.8.20 Networks security
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.34 Privacy and protection of PII
 
-### 3. Palo Alto Networks warns of PAN-OS RCE flaw exploited in attacks
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/)
+### 3. Hackers exploit Collabora RCE flaw to backdoor Nextcloud servers
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/)
 
-A high-severity flaw (CVE-2026-0322) in Palo Alto's PAN-OS allows attackers to execute code remotely on firewalls, and it's already being actively exploited in real attacks. Firewalls are critical defensive tools, so this vulnerability puts organizations at immediate risk of network infiltration and data theft. Security teams must prioritize patching this flaw and reviewing firewall logs to detect any compromise attempts.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.8.20 Networks security
-
-### 4. CISA warns admins to immediately fix Ivanti flaw exploited as zero-day
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-immediately-fix-ivanti-flaw-exploited-as-zero-day/)
-
-CISA (the U.S. government's cybersecurity agency) issued an urgent alert about an Ivanti Connect Secure flaw that attackers have been exploiting since October without needing a patch. Ivanti appliances are remote access gateways, so this flaw could let attackers bypass authentication and access internal networks. Defenders should patch immediately, assume breach (meaning act as though attackers already got in), and review access logs from October onward.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
-
-### 5. CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts
-*The Hacker News* — [read more](https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html)
-
-CISA warned organizations to urgently update Ivanti Connect Secure appliances after discovering an actively exploited vulnerability; honeypot systems (fake targets that log attacks) recorded over 100 exploit attempts. Ivanti products are often the first thing employees use to access company networks remotely, making this flaw a high-value target for attackers. Organizations must update to the latest version and investigate whether their systems were compromised before the patch was available.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
-
-### 6. Palo Alto Networks Patches PAN-OS Authenticated RCE Flaw Amid Active Exploitation
-*The Hacker News* — [read more](https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html)
-
-Palo Alto Networks patched a serious flaw (CVE-2026-0322, CVSS 8.6) in PAN-OS that allows authenticated users (or attackers with stolen credentials) to execute code on the firewall's management system. While this requires some level of access, it's being actively exploited and lets attackers gain full control of a critical security tool. Defenders should apply the patch immediately, reset firewall administrative credentials, and audit who has had access.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
-
-### 7. Langflow's Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts
-*The Hacker News* — [read more](https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html)
-
-Threat actors are actively exploiting a critical vulnerability in Langflow (an open-source AI platform by DataStax) to run unauthorized commands; honeypots detected over 1,400 exploit attempts in February 2025. Langflow is used by developers to build AI applications, so compromise could lead to malicious AI applications or data theft. Organizations using Langflow must patch immediately and review application logs for signs of unauthorized access.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
-
-### 8. Hackers Backdoor Nextcloud Servers Through Critical Flaw in Collabora’s Built-in CODE App
-*The Hacker News* — [read more](https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html)
-
-Attackers exploited a flaw in Collabora Online CODE (an optional app in Nextcloud) to install web shells (small malicious scripts) that give them ongoing access to Nextcloud servers. Nextcloud is a file-sharing platform, so compromising it gives attackers access to sensitive documents and the ability to backdoor the system for long-term persistence. Defenders should disable the Collabora Online app if not needed, patch if available, and scan for web shells using file integrity monitoring.
+Attackers are actively exploiting a critical flaw (CVE-2026-110447) in the Collabora Online application that lets them run arbitrary commands on Nextcloud servers. Nextcloud is popular file-sharing and collaboration software, so compromised servers can lead to data theft or loss. Defenders should immediately update the richdocumentscode app, disable it if updates aren't available, and check server logs for signs of exploitation.
 
 > 📋 **ISO 27001:** A.8.7 Protection against malware, A.8.8 Management of technical vulnerabilities
+
+### 4. Palo Alto Networks warns of PAN-OS RCE flaw exploited in attacks
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/)
+
+Palo Alto Networks discovered a high-severity flaw in PAN-OS (their firewall software) that allows remote code execution, and attackers are already exploiting it in the wild. Firewalls are critical security devices, so compromising them gives attackers control over all network traffic flowing through them. Defenders must apply Palo Alto's security patches immediately and monitor firewall logs for suspicious activity.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.8.20 Networks security
+
+### 5. BeyondTrust patches zero-day exploited in attacks since August
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/)
+
+BeyondTrust discovered that a critical flaw in its Remote Support product has been actively exploited by attackers since August, before a patch was publicly available (this is called a zero-day attack). Remote Support software is used to manage and access computers remotely, so compromising it gives attackers direct access to customer systems. Defenders need to patch immediately, review access logs from August onward for suspicious connections, and check if their systems were compromised.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
+
+### 6. Drupal Patches Critical Field UI Flaw With Unauthenticated RCE Path via Contributed Modules
+*The Hacker News* — [read more](https://thehackernews.com/2026/10/drupal-patches-critical-core-rce-flaw.html)
+
+Drupal released security patches on October 14 for a critical flaw in its Field UI module that allows unauthenticated attackers to run code on vulnerable websites. The flaw cannot be exploited through Drupal core alone—attackers need certain add-on modules installed—but this still affects many real-world sites. Defenders must update Drupal to the patched versions and review which contributed modules are installed on their sites.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
+
+### 7. China-Linked Hackers Exploited BeyondTrust Zero-Day to Take Over Remote Support Servers
+*The Hacker News* — [read more](https://thehackernews.com/2026/10/china-linked-hackers-exploited.html)
+
+A China-linked hacking group called Armory Castle exploited a critical flaw (CVE-2026-102764) in BeyondTrust Remote Support in August 2026 before the company disclosed or patched it. The attackers gained control of customers' remote support servers, which typically have high-level access to corporate networks. Defenders need to assume their BeyondTrust systems may have been compromised, conduct forensic investigations of activity since August, patch immediately, and reset credentials for accounts that used those servers.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
+
+### 8. CenterPoint Energy Data Breach Impacts 1 Million Texans
+*SecurityWeek* — [read more](https://www.securityweek.com/centerpoint-energy-data-breach-impacts-1-million-texans/)
+
+CenterPoint Energy, a major utility company in Texas, suffered a data breach exposing sensitive personal information (names, addresses, Social Security numbers, driver's licenses) for about 1 million people. This kind of personal data is valuable to criminals for identity theft and fraud. Defenders should monitor breach notification sites, individuals should watch for suspicious credit activity, and companies should implement stronger data protection controls like encryption and access restrictions.
+
+> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
 
 ## 🚨 CVEs that matter today
 
@@ -83,18 +69,18 @@ Attackers exploited a flaw in Collabora Online CODE (an optional app in Nextclou
 | **CVE-2015-5477** |  ISC BIND Data Processing Errors Vulnerability | – | 99% | ⚠️ YES (KEV) |
 | **CVE-2015-3306** | ProFTPD Improper Access Control Vulnerability | – | 99% | ⚠️ YES (KEV) |
 | **CVE-2016-3081** | Apache Struts Command Injection Vulnerability | – | 96% | ⚠️ YES (KEV) |
-| **CVE-2026-104935** | Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability | 8.6 | 26% | ⚠️ YES (KEV) |
-| **CVE-2026-96951** | Microsoft Windows Command Injection Vulnerability | 8.8 | 2% | ⚠️ YES (KEV) |
+| **CVE-2026-76519** | Cisco Secure Email Gateway Relative Path Traversal Vulnerability | 9.8 | 2% | ⚠️ YES (KEV) |
+| **CVE-2026-0322** | Palo Alto Networks PAN-OS Code Injection Vulnerability | 8.6 | 1% | ⚠️ YES (KEV) |
 
-**CVE-2015-5477** — CVE-2015-5477 is a data processing error vulnerability in ISC BIND (the software that translates domain names to IP addresses). Flaws in DNS software can allow attackers to disrupt internet connectivity or redirect traffic, affecting any organization relying on that DNS server. Defenders should update BIND to patched versions and implement DNS query filtering to limit potential impact.
+**CVE-2015-5477** — CVE-2015-5477 is a flaw in ISC BIND, a widely-used DNS server software, that allows attackers to cause errors in how data is processed and potentially crash the service. DNS is critical infrastructure that translates website names to IP addresses, so disrupting it affects internet availability. Defenders should have patched this years ago if it's still running, but if legacy systems still use old BIND versions, they need urgent updates or network segmentation to isolate them.
 
-**CVE-2015-3306** — CVE-2015-3306 is an improper access control flaw in ProFTPD (file transfer software) that could allow attackers to access files they shouldn't have permission to view or modify. FTP servers often store sensitive files, so this flaw could lead to data theft or unauthorized modifications. Defenders should patch ProFTPD, restrict FTP access to necessary users only, and monitor file access logs.
+**CVE-2015-3306** — CVE-2015-3306 is a flaw in ProFTPD, a file-transfer server software, that improperly controls who can access files. An attacker with limited permissions might be able to access files they shouldn't, or an unauthenticated attacker might gain access to restricted areas. Defenders should update ProFTPD, review file permissions and access controls, and disable the service if it's not actively needed.
 
-**CVE-2016-3081** — CVE-2016-3081 is a command injection flaw in Apache Struts (a framework developers use to build Java web applications) that lets attackers execute arbitrary commands on the web server. Any web application built with vulnerable Struts versions is at risk of complete compromise. Defenders must update Struts to patched versions in all applications, validate and sanitize user input, and monitor server logs for suspicious command execution.
+**CVE-2016-3081** — CVE-2016-3081 is a command-injection flaw in Apache Struts, a popular framework for building web applications, that allows attackers to execute arbitrary system commands. If a web application built with vulnerable Struts is exploited, the attacker gets the same privileges as the web server process. Defenders should patch Apache Struts immediately, disable or isolate affected applications until patched, and review application logs for signs of exploitation.
 
-**CVE-2026-104935** — This Ivanti vulnerability (affecting versions after 22.7R2.14 but before 25.1.3.0) allows attackers to bypass authentication and run commands without logging in, exploiting a spoofing flaw (tricking the system into accepting false identity claims). Ivanti appliances control remote access to networks, so this flaw lets unauthenticated attackers gain entry to internal systems. Defenders must update to version 25.1.3.0 or later and verify that only legitimate users accessed the system before patching.
+**CVE-2026-76519** — CVE-2026-76519 is a flaw in Cisco Secure Email Gateway's malware protection feature that allows unauthenticated remote attackers to write arbitrary files to the server's operating system. Email gateways are often trusted security devices positioned between the internet and internal networks, so compromising them gives attackers a foothold to attack internal systems. Defenders must patch this immediately, restrict network access to the email gateway's management interface, and monitor for suspicious file-write activity.
 
-**CVE-2026-96951** — CVE-2026-96951 is a command injection flaw in Windows Shell that allows unauthenticated attackers to bypass security features and execute commands over the network. The Windows Shell is a core operating system component, so compromising it could give attackers broad control of Windows machines. Defenders should apply Microsoft security patches, implement network segmentation to limit Shell access, and use endpoint detection tools to catch malicious command execution.
+**CVE-2026-0322** — CVE-2026-0322 is a remote code execution flaw in Palo Alto Networks PAN-OS that allows an authenticated attacker (someone with valid login credentials) with network access to run arbitrary code with root privileges on the firewall. Root privileges mean complete control of the firewall. Defenders should apply the patch immediately, implement strong authentication (multi-factor authentication), restrict network access to the management interface to trusted administrators only, and review logs for unauthorized access attempts.
 
 ## 📖 Jargon decoder
 
