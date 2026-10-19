@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **[UPDATE] [hoch] Vercel Next.js: Mehrere Schwachstellen** — Vercel Next.js (a web framework) has multiple security flaws that attackers can exploit to run their own code on servers or crash services. [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3973)
+- **ConnectWise Suspends Cloud Backup After Attackers Compromise Microsoft 365 Tenants** — ConnectWise (a management software company) discovered that attackers stole login credentials for seven of its applications and used them to break into customers' Microsoft 365 accounts. [read more](https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html)
+- **Microsoft: October Windows Server updates break Exchange sign-in, mail flow** — Microsoft's October security updates for Windows Server are causing problems with Exchange Server (email software), preventing users from signing in and receiving mail. [read more](https://www.bleepingcomputer.com/news/microsoft/microsoft-october-windows-server-updates-cause-exchange-issues/)
+- **OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys** — An attacker broke into an old system at OpenCode (a development tool company) and may have stolen API keys (access credentials) that users stored there for OpenAI, Anthropic, and Google services. [read more](https://thehackernews.com/2026/10/opencode-console-breach-may-have.html)
+- **[UPDATE] [mittel] Fortinet FortiOS, FortiProxy und FortiSwitch: Schwachstelle ermöglicht Manipulation von Dateien** — Fortinet's firewall and network products have a flaw that lets an attacker with local access (already on the system) modify or delete files. [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1096)
+- **[UPDATE] [mittel] OpenVPN: Mehrere Schwachstellen ermöglichen Umgehen von Sicherheitsvorkehrungen** — OpenVPN (a remote access tool) has multiple flaws that let someone already on the system bypass security protections that are supposed to restrict what they can do. [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2707)
+- **[UPDATE] [mittel] OpenVPN: Schwachstelle ermöglicht DoS und die Offenlegung von Informationen** — OpenVPN has a flaw that lets someone who is already logged in crash the service (denial of service) or steal sensitive information from it. [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2605)
+- **Hackers exploit SiteGuard WAF flaw to run commands as admins** — SiteGuard WAF (a web firewall) has a flaw that lets attackers inject operating system commands and run them with top-level (admin/root) privileges on the server. [read more](https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2015-5477 (– CVSS, 99% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. [UPDATE] [hoch] Vercel Next.js: Mehrere Schwachstellen
