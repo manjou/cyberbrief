@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Nikkei discloses third data breach in a month, 1.8M records exposed** — Nikkei Inc. [read more](https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/)
+- **970,000 Medi-Cal Members Affected by Paradigm Healthcare Data Breach** — Paradigm Healthcare Services discovered a data breach in October 2025 but waited nearly a year before notifying the 970,000 affected Medi-Cal members—a health insurance program in California. [read more](https://www.securityweek.com/970000-medi-cal-members-affected-by-paradigm-healthcare-data-breach/)
+- **Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site** — U.S. [read more](https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/)
+- **OpenCode hack exposes API keys amid AI distillation attacks** — The OpenCode open-source project suffered a breach that exposed API keys—secret credentials used to access external services like cloud providers or third-party APIs. [read more](https://www.bleepingcomputer.com/news/security/opencode-hack-exposes-api-keys-amid-ai-distillation-attacks/)
+- **GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories** — Attackers behind GhostAction compromised 94 GitHub repositories (code storage sites) by planting malware hidden inside a fake font file to trick developers into downloading it and stealing their login credentials. [read more](https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html)
+- **Drupal Warns of Fast Exploitation Risk for Critical Core RCE Flaw** — Drupal, a widely-used website platform, warned users about critical vulnerabilities (serious flaws) in its Entity List and Field UI modules that allow remote code execution (RCE—running attacker commands on the server) and can be exploited quickly. [read more](https://www.securityweek.com/drupal-warns-of-fast-exploitation-risk-for-critical-core-rce-flaw/)
+- **⚡ Weekly Recap: 98 Zero-Days, Rogue AI Agents, $100M Crypto Theft, 700 Supermarkets Hit and More** — This recap summarizes a particularly bad week in cybersecurity with 98 zero-day vulnerabilities (flaws unknown to vendors), rogue AI agents, a $100 million cryptocurrency theft, and attacks on 700 supermarkets—all with minimal warning. [read more](https://thehackernews.com/2026/10/weekly-recap-98-zero-days-rogue-ai.html)
+- **Fake Web3 Accelerator Uses npm Packages to Spread Malware and Hijack AI Agent Traffic** — Attackers created a fake Web3 accelerator (a fake startup funding program) and distributed malware through npm packages (free code libraries) claiming to offer free AI credits for tools like Claude and Google Gemini. [read more](https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2015-5477 (– CVSS, 99% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Nikkei discloses third data breach in a month, 1.8M records exposed
