@@ -4,6 +4,20 @@
 
 *Today's focus: network infrastructure — a lighter refresh day.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution** — A security researcher published working code showing how to exploit a critical bug in Fortinet's FortiSIEM (a security monitoring tool), allowing an attacker to run unauthorized commands on unprotected systems. [read more](https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html)
+- **CISA: SafePay ransomware hit over 600 critical infrastructure orgs** — The SafePay ransomware group has successfully broken into over 600 important organizations (like power plants, hospitals, and water systems) since 2024, according to the U.S. [read more](https://www.bleepingcomputer.com/news/security/cisa-and-fbi-safepay-ransomware-has-hit-over-600-critical-infrastructure-organizations/)
+- **PHP2Shell: Mass Exploitation Looms for Leaked Critical PHP Flaws** — Two serious bugs (CVE-2026-109618 and CVE-2026-109619) have been discovered in PHP that allow attackers to run code on servers without needing credentials, and the technical details are now public. [read more](https://www.securityweek.com/php2shell-mass-exploitation-looms-for-leaked-critical-php-flaws/)
+- **PHP2Shell: Two Unpatched Critical PHP RCE Flaws (CVSS 9.2) Trigger Emergency Security Alert** — PHP developers announced they will release emergency security fixes today for two critical vulnerabilities that can allow remote code execution; the details leaked before the official patch was available. [read more](https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html)
+- **Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA** — Two ransomware groups (Qilin and INC) are actively using a now-patched Palo Alto Networks flaw (CVE-2026-0257) to bypass multi-factor authentication (MFA—an extra login verification step) and enter networks. [read more](https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html)
+- **Hackers Hid Vasilek Backdoor in VMware Tools During 2-Year Russian Healthcare Intrusion** — A Belarus-linked hacking group called Partisan Zmiy spent nearly two years hiding inside a Russian hospital's network using a backdoor (hidden access point) sneaked into VMware Tools (a legitimate administrative software). [read more](https://thehackernews.com/2026/10/hackers-hid-vasilek-backdoor-in-vmware.html)
+- **Stolen UpdraftCentral keys used to backdoor WordPress sites** — A threat actor compromised TeamUpdraft's website and stole special access keys for UpdraftCentral (a WordPress management tool), then used those keys to install backdoors on multiple WordPress websites. [read more](https://www.bleepingcomputer.com/news/security/stolen-updraftcentral-keys-used-to-backdoor-wordpress-sites/)
+- **PHP warns admins of two critical flaws, emergency patches coming tomorrow** — The PHP security team announced they will release urgent patches tomorrow for two critical flaws, warning administrators in advance because details about the vulnerabilities are leaking early. [read more](https://www.bleepingcomputer.com/news/security/php-warns-admins-of-two-critical-flaws-emergency-patches-coming-tomorrow/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2015-5477 (– CVSS, 99% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution
