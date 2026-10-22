@@ -1,80 +1,66 @@
-# 🛡️ CyberBrief — Net+ — Wednesday, 21 October 2026
+# 🛡️ CyberBrief — SOC — Thursday, 22 October 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
-*Today's focus: network infrastructure — a lighter refresh day.*
-
-## 🕔 5pm recap
-
-*Didn't get through this morning? Here's the quick version — full detail is still below.*
-
-- **Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution** — A security researcher published working code showing how to exploit a critical bug in Fortinet's FortiSIEM (a security monitoring tool), allowing an attacker to run unauthorized commands on unprotected systems. [read more](https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html)
-- **CISA: SafePay ransomware hit over 600 critical infrastructure orgs** — The SafePay ransomware group has successfully broken into over 600 important organizations (like power plants, hospitals, and water systems) since 2024, according to the U.S. [read more](https://www.bleepingcomputer.com/news/security/cisa-and-fbi-safepay-ransomware-has-hit-over-600-critical-infrastructure-organizations/)
-- **PHP2Shell: Mass Exploitation Looms for Leaked Critical PHP Flaws** — Two serious bugs (CVE-2026-109618 and CVE-2026-109619) have been discovered in PHP that allow attackers to run code on servers without needing credentials, and the technical details are now public. [read more](https://www.securityweek.com/php2shell-mass-exploitation-looms-for-leaked-critical-php-flaws/)
-- **PHP2Shell: Two Unpatched Critical PHP RCE Flaws (CVSS 9.2) Trigger Emergency Security Alert** — PHP developers announced they will release emergency security fixes today for two critical vulnerabilities that can allow remote code execution; the details leaked before the official patch was available. [read more](https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html)
-- **Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA** — Two ransomware groups (Qilin and INC) are actively using a now-patched Palo Alto Networks flaw (CVE-2026-0257) to bypass multi-factor authentication (MFA—an extra login verification step) and enter networks. [read more](https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html)
-- **Hackers Hid Vasilek Backdoor in VMware Tools During 2-Year Russian Healthcare Intrusion** — A Belarus-linked hacking group called Partisan Zmiy spent nearly two years hiding inside a Russian hospital's network using a backdoor (hidden access point) sneaked into VMware Tools (a legitimate administrative software). [read more](https://thehackernews.com/2026/10/hackers-hid-vasilek-backdoor-in-vmware.html)
-- **Stolen UpdraftCentral keys used to backdoor WordPress sites** — A threat actor compromised TeamUpdraft's website and stole special access keys for UpdraftCentral (a WordPress management tool), then used those keys to install backdoors on multiple WordPress websites. [read more](https://www.bleepingcomputer.com/news/security/stolen-updraftcentral-keys-used-to-backdoor-wordpress-sites/)
-- **PHP warns admins of two critical flaws, emergency patches coming tomorrow** — The PHP security team announced they will release urgent patches tomorrow for two critical flaws, warning administrators in advance because details about the vulnerabilities are leaking early. [read more](https://www.bleepingcomputer.com/news/security/php-warns-admins-of-two-critical-flaws-emergency-patches-coming-tomorrow/)
-- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2015-5477 (– CVSS, 99% EPSS)
+*Today's focus: active exploitation, incident response, and threat activity.*
 
 ## 🔥 Top stories
 
-### 1. Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution
-*The Hacker News* — [read more](https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html)
+### 1. Widespread PHP Flaw May Cause Many Site Outages Today
+*Krebs on Security* — [read more](https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/)
 
-A security researcher published working code showing how to exploit a critical bug in Fortinet's FortiSIEM (a security monitoring tool), allowing an attacker to run unauthorized commands on unprotected systems. This matters because FortiSIEM is widely used by organizations to detect threats, so compromising it gives attackers a foothold deep inside networks. Defenders need to immediately patch FortiSIEM systems and monitor them closely for signs of compromise, since the exploit code is now publicly available.
+A flaw in PHP (the software that powers about 70% of websites) lets attackers take complete control of affected servers, which is why you're seeing lots of 404 errors as sites go down or get shut down preemptively. This matters because it's widespread—affecting millions of websites—and attackers already have working attack code. Defenders need to update PHP immediately to patched versions and monitor their systems for signs of compromise.
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.8.6 Capacity management
 
-### 2. CISA: SafePay ransomware hit over 600 critical infrastructure orgs
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisa-and-fbi-safepay-ransomware-has-hit-over-600-critical-infrastructure-organizations/)
+### 2. PHP ships emergency patches for critical PHP2Shell flaws
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/)
 
-The SafePay ransomware group has successfully broken into over 600 important organizations (like power plants, hospitals, and water systems) since 2024, according to the U.S. government's cybersecurity agency. This matters because critical infrastructure failures affect public safety and daily life for millions of people. Defenders in these sectors should assume they may be targeted, strengthen access controls, back up important data offline, and prepare incident response plans.
-
-> 📋 **ISO 27001:** A.8.13 Information backup
-
-### 3. PHP2Shell: Mass Exploitation Looms for Leaked Critical PHP Flaws
-*SecurityWeek* — [read more](https://www.securityweek.com/php2shell-mass-exploitation-looms-for-leaked-critical-php-flaws/)
-
-Two serious bugs (CVE-2026-109618 and CVE-2026-109619) have been discovered in PHP that allow attackers to run code on servers without needing credentials, and the technical details are now public. This matters because PHP powers a huge portion of websites worldwide, so attackers will likely test these flaws rapidly at scale. Defenders must patch PHP immediately on all web servers and monitor for active exploitation attempts.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.34 Privacy and protection of PII
-
-### 4. PHP2Shell: Two Unpatched Critical PHP RCE Flaws (CVSS 9.2) Trigger Emergency Security Alert
-*The Hacker News* — [read more](https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html)
-
-PHP developers announced they will release emergency security fixes today for two critical vulnerabilities that can allow remote code execution; the details leaked before the official patch was available. This matters because the gap between leaked vulnerability information and available patches creates a dangerous window where attackers can exploit unpatched systems. Defenders should plan to apply patches immediately once released and check logs for any suspicious activity on PHP applications.
+PHP released emergency security patches for two critical vulnerabilities (PHP2Shell) that allow remote code execution (RCE, meaning running unauthorized commands on a server) without needing login credentials. This matters because the flaws are in the core language itself, affecting a huge portion of the internet, and updates are emergency-only because exploits are actively being used. Defenders must apply patches to all affected PHP versions as their highest priority.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
 
-### 5. Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA
-*The Hacker News* — [read more](https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html)
+### 3. China-Linked Hackers Use ARTEX AI Agents in ConnectWise Supply Chain Attack
+*The Hacker News* — [read more](https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html)
 
-Two ransomware groups (Qilin and INC) are actively using a now-patched Palo Alto Networks flaw (CVE-2026-0257) to bypass multi-factor authentication (MFA—an extra login verification step) and enter networks. This matters because MFA is a key defense against account takeover, and these attacks show that architectural flaws can render even strong security controls useless. Defenders must patch the Palo Alto appliance immediately, monitor for unauthorized access attempts, and implement additional network segmentation.
+A Chinese state-backed hacking group compromised ConnectWise Cloud Backup software in the supply chain (meaning the attacker broke into the vendor's systems, not individual customers' networks) and used an AI-based penetration testing tool called ARTEX to move through victim networks. This matters because supply chain attacks affect thousands of organizations at once, and the use of AI tools shows sophisticated attacker capabilities. Defenders need to patch ConnectWise immediately, hunt for unauthorized access in their systems, and monitor for the specific tools this group is known to use.
 
 > 📋 **ISO 27001:** A.8.13 Information backup, A.8.8 Management of technical vulnerabilities
 
-### 6. Hackers Hid Vasilek Backdoor in VMware Tools During 2-Year Russian Healthcare Intrusion
-*The Hacker News* — [read more](https://thehackernews.com/2026/10/hackers-hid-vasilek-backdoor-in-vmware.html)
+### 4. PHP Issues Emergency Patches for Two Critical PHP2Shell RCE Flaws as Exploit Attempts Emerge
+*The Hacker News* — [read more](https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html)
 
-A Belarus-linked hacking group called Partisan Zmiy spent nearly two years hiding inside a Russian hospital's network using a backdoor (hidden access point) sneaked into VMware Tools (a legitimate administrative software). This matters because long-term undetected intrusions allow attackers to steal sensitive data and plan major attacks, and using trusted software as a hiding place is an effective evasion technique. Defenders should inventory and monitor all administrative tools, scan for unauthorized modifications, and hunt for suspicious lateral movement activity.
-
-> 📋 **ISO 27001:** A.8.7 Protection against malware
-
-### 7. Stolen UpdraftCentral keys used to backdoor WordPress sites
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/stolen-updraftcentral-keys-used-to-backdoor-wordpress-sites/)
-
-A threat actor compromised TeamUpdraft's website and stole special access keys for UpdraftCentral (a WordPress management tool), then used those keys to install backdoors on multiple WordPress websites. This matters because WordPress powers roughly 43% of all websites, and stolen management credentials let attackers take control at scale. Defenders should rotate all UpdraftCentral keys, audit which sites were accessed, check for unauthorized user accounts, and review access logs for suspicious activity.
-
-> 📋 **ISO 27001:** A.8.13 Information backup, A.8.7 Protection against malware
-
-### 8. PHP warns admins of two critical flaws, emergency patches coming tomorrow
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/php-warns-admins-of-two-critical-flaws-emergency-patches-coming-tomorrow/)
-
-The PHP security team announced they will release urgent patches tomorrow for two critical flaws, warning administrators in advance because details about the vulnerabilities are leaking early. This matters because advance notice gives defenders a head start to prepare and apply patches quickly, reducing the window when systems are vulnerable. Defenders should test patches in a non-production environment tonight and have a rollout plan ready to deploy them as soon as they're available.
+PHP released emergency security updates fixing two critical remote code execution flaws that let attackers run commands on web servers without any account access—the fixes are available in specific patched versions (8.5.12, 8.4.27, 8.3.36, and 8.2.35). This matters because it's a core language vulnerability affecting millions of sites, and partial patches don't help. Defenders must update to the full patched versions and verify the update actually took effect.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.34 Privacy and protection of PII
+
+### 5. CISA: SafePay ransomware hit over 600 critical infrastructure orgs
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisa-and-fbi-safepay-ransomware-has-hit-over-600-critical-infrastructure-organizations/)
+
+The SafePay ransomware gang has attacked and successfully encrypted data on over 600 critical infrastructure organizations (power plants, hospitals, utilities, etc.) since 2024, according to CISA (a U.S. government cybersecurity agency). This matters because critical infrastructure attacks can endanger public safety and national security, and 600 breaches means this group is highly active and successful. Defenders in critical infrastructure must assume they're a target, enforce strong backup strategies, and implement detection tools specifically tuned for ransomware.
+
+> 📋 **ISO 27001:** A.8.13 Information backup
+
+### 6. Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases
+*The Hacker News* — [read more](https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html)
+
+GitLab released a patch for a flaw (rated 10.0, the highest severity) that lets unauthenticated attackers run code on self-managed GitLab servers, and the flaw exists in every version released since 2014—even organizations that patched 9 days earlier are still vulnerable. This matters because GitLab is used by many organizations to store and manage code, so a breach can compromise source code and secrets, and the wide affected range means almost all GitLab users need to patch immediately. Defenders must apply the October 21 patch regardless of previous patch dates and scan server logs for suspicious activity.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
+
+### 7. Authorities disrupt nearly 11,000 cybercrime networks in Africa
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/authorities-disrupt-nearly-11-000-cybercrime-networks-in-africa/)
+
+Law enforcement agencies worldwide arrested over 1,400 cybercriminals and shut down nearly 11,000 criminal networks in Operation Serengeti III, targeting business email compromise scams, ransomware gangs, and online fraud. This matters because it shows that coordinated law enforcement action can disrupt criminal operations at scale. Defenders should use this window to strengthen defenses against these attack types, knowing that some of the criminals behind recent attacks are now arrested or displaced.
+
+> 📋 **ISO 27001:** A.8.13 Information backup, A.8.8 Management of technical vulnerabilities
+
+### 8. LiteLLM Suspects GitHub Token Leak in AI Gateway Logs Behind Malicious Package Release
+*The Hacker News* — [read more](https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html)
+
+Attackers compromised LiteLLM's code release system and pushed a malicious version of their Python software package that included a credential stealer and backdoor; the compromise suggests attackers leaked stolen GitHub tokens (security credentials) from system logs to gain access. This matters because Python packages are widely downloaded and trusted, so a compromised package can infect thousands of developer machines and systems, and it shows that logging systems can leak secrets if not properly protected. Defenders need to audit their Python package versions, rotate any GitHub credentials, and implement secret detection in logs.
+
+> 📋 **ISO 27001:** A.8.7 Protection against malware, A.5.19 Supplier relationships
 
 ## 🚨 CVEs that matter today
 
@@ -84,17 +70,17 @@ The PHP security team announced they will release urgent patches tomorrow for tw
 | **CVE-2015-3306** | ProFTPD Improper Access Control Vulnerability | – | 99% | ⚠️ YES (KEV) |
 | **CVE-2016-3081** | Apache Struts Command Injection Vulnerability | – | 96% | ⚠️ YES (KEV) |
 | **CVE-2026-104935** | Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability | – | 26% | ⚠️ YES (KEV) |
-| **CVE-2026-76519** | Cisco Secure Email Gateway Relative Path Traversal Vulnerability | – | 2% | ⚠️ YES (KEV) |
+| **CVE-2021-3199** | ONLYOFFICE Docs Server Path Traversal Vulnerability | – | 20% | ⚠️ YES (KEV) |
 
-**CVE-2015-5477** — CVE-2015-5477 is a flaw in ISC BIND (the software most DNS servers use to translate website names into IP addresses) where the server crashes or misbehaves when processing certain network data. This matters because a crashed DNS server can make entire networks unreachable, and attackers can trigger this remotely. Defenders should ensure BIND is updated, monitor DNS performance for crashes, and have a failover DNS server ready.
+**CVE-2015-5477** — CVE-2015-5477 is a vulnerability in ISC BIND (the software that translates domain names to IP addresses) where improper data processing allows attackers to cause problems with DNS services. This matters because DNS is foundational to the internet, so disruptions affect all web services. Defenders should ensure BIND is patched and monitor for unusual DNS query patterns.
 
-**CVE-2015-3306** — CVE-2015-3306 is a flaw in ProFTPD (file transfer software) where access control checks are not properly enforced, allowing users to access files they shouldn't be able to reach. This matters because file servers often contain sensitive documents, and this flaw lets attackers or insiders browse beyond their permissions. Defenders should patch ProFTPD immediately, review file access logs for suspicious activity, and verify file permissions are correctly configured.
+**CVE-2015-3306** — CVE-2015-3306 is an access control flaw in ProFTPD (file transfer software) that lets users access files they shouldn't have permission to reach. This matters because file servers often hold sensitive company data. Defenders need to update ProFTPD and audit who has accessed which files.
 
-**CVE-2016-3081** — CVE-2016-3081 is a command injection flaw in Apache Struts (a web application framework) that lets attackers run arbitrary operating system commands on vulnerable servers. This matters because Struts is used in many business applications, and successful exploitation gives attackers full system access. Defenders must patch Apache Struts on all applications, review server logs for suspicious command execution, and consider web application firewalls (WAF) to block malicious requests.
+**CVE-2016-3081** — CVE-2016-3081 is a command injection flaw in Apache Struts (web development framework) where attackers can run arbitrary commands by exploiting how the framework processes user input. This matters because Struts powers many business web applications, so compromise could affect entire organizations. Defenders must patch Struts and review web application logs for suspicious commands.
 
-**CVE-2026-104935** — CVE-2026-104935 is an authentication bypass flaw in Ivanti Connect Secure (remote access software) where attackers can forge credentials or spoof requests to gain access without a real password. This matters because VPN systems are the front door to corporate networks, and bypassing authentication opens access to internal resources. Defenders should patch immediately, force re-authentication of all active sessions, and review VPN access logs for suspicious logins.
+**CVE-2026-104935** — CVE-2026-104935 is an authentication bypass flaw in Ivanti Connect Secure (remote access software) where attackers can trick the system into granting access by spoofing identity, allowing them to bypass login. This matters because remote access software is a primary target—a breach means attackers can enter corporate networks without credentials. Defenders need to patch immediately and add additional authentication checks (like requiring a second factor).
 
-**CVE-2026-76519** — CVE-2026-76519 is a path traversal flaw in Cisco Secure Email Gateway (email security appliance) where attackers can navigate to files outside the intended directory and potentially read sensitive data. This matters because email gateways sit between the internet and internal email systems, making them high-value targets. Defenders should apply the Cisco patch, audit what files may have been accessed, and monitor the gateway for exploitation attempts.
+**CVE-2021-3199** — CVE-2021-3199 is a path traversal flaw in ONLYOFFICE Docs Server where attackers can access files outside the intended directory by manipulating file paths (like using "../" to go up folders), potentially reading sensitive documents. This matters because document servers hold confidential company files. Defenders must patch ONLYOFFICE and audit logs for attempted path traversal attacks.
 
 ## 📖 Jargon decoder
 
