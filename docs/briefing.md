@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Arista patches new VeloCloud Orchestrator zero-day exploited in attacks** — Arista Networks released patches for a zero-day vulnerability (a previously unknown security flaw) in VeloCloud Orchestrator that attackers were already actively exploiting in real attacks. [read more](https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/)
+- **China-Linked Hackers Use ARTEX AI Agents in ConnectWise Supply Chain Attack** — A Chinese state-affiliated hacking group called Storm-0940 compromised ConnectWise's Cloud Backup software through its supply chain (meaning they hacked the software vendor, not individual users) and used an AI-based penetration testing tool called ARTEX to explore victim networks. [read more](https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html)
+- **ThreatsDay: AI Secrets Leak, PingCAP Source Theft, Signal Hang-Up Flaw, Laravel Auth Bypass + 21 More** — Multiple critical vulnerabilities were disclosed in a single week across popular software including PHP, GitLab, Linux, Node.js, and others, plus compromised security certificates and hijacked network infrastructure. [read more](https://thehackernews.com/2026/10/threatsday-ai-secrets-leak-pingcap.html)
+- **11 Million Impacted by Capcom Data Breach** — Hackers stole email addresses from Capcom's gaming membership service (CAPCOM ID) affecting 11 million users and changed passwords on 196 accounts, likely to lock legitimate users out or use those accounts for further attacks. [read more](https://www.securityweek.com/11-million-impacted-by-capcom-data-breach/)
+- **Capcom confirms data breach affecting 11.7 million accounts** — Capcom confirmed that more than 11.7 million customer records were stolen from their CAPCOM ID membership service, exposing email addresses and associated account information. [read more](https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/)
+- **Machine speed attacks require machine speed detection and response** — Attackers can now move so fast through compromised systems (stealing credentials and copying files within minutes) that traditional security teams cannot respond in time using manual processes. [read more](https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/)
+- **Attackers Exploit Third VeloCloud Orchestrator Zero-Day in Four Months** — A third critical zero-day vulnerability in VeloCloud Orchestrator was discovered within four months, this time a SQL injection flaw (a coding mistake that lets attackers run unauthorized database commands) that allows attackers to gain administrative operator privileges. [read more](https://www.securityweek.com/attackers-exploit-third-velocloud-orchestrator-zero-day-in-four-months/)
+- **Two CVSS 9.0 Linux KSMBD RCE Flaws Disclosed on Public Mailing Lists Before Kernel Fixes** — Two severe remote code execution flaws (rated 9.0 out of 10 in severity) were publicly disclosed in KSMBD, a Linux file-sharing server built into the kernel, before security fixes were available in the official Linux code. [read more](https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-105134 (– CVSS, 38% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Arista patches new VeloCloud Orchestrator zero-day exploited in attacks
