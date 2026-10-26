@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **PHP2Shell security flaws now sucessfully exploited in the wild** — Two critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619), collectively tracked as PHP2Shell, have been successfully exploited in the wild. [read more](https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/)
+- **Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations** — Cybersecurity researchers have disclosed a Microsoft 365 campaign that has been observed leveraging an adversary-in-the-middle (AitM) relay to capture sign-in sessions and then replay the stolen tokens to break into email accounts at 79 organizations. [read more](https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html)
+- **uCreator Android Spyware Can Steal Telegram 2FA Passwords and Clone WeChat Accounts** — A rentable Android spyware kit called uCreator takes over Telegram and WeChat accounts by hiding its code inside working copies of the two apps, researcher Ovi found. [read more](https://thehackernews.com/2026/10/ucreator-android-spyware-can-steal.html)
+- **OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication** — OpenAI has announced plans to conduct frontier model training with no live internet access, as it resumes reinforcement learning (RL) training and internal inference of its most advanced AI models. [read more](https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html)
+- **Gheist Uses Stolen GitHub Tokens to Steal Private Repository Secrets via Actions Logs** — An automated campaign is using stolen GitHub tokens to plant workflows that print a repository's secrets into its GitHub Actions logs, which the attackers then download before deleting the runs. [read more](https://thehackernews.com/2026/10/gheist-uses-stolen-github-tokens-to.html)
+- **Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware** — A malicious instruction file sitting in a developer's Downloads folder tried to make their AI coding agent install a known-malicious npm package, security firm Forever Security said in a report published last week. [read more](https://thehackernews.com/2026/10/malicious-file-in-downloads-folder.html)
+- **Node2Shell: Brotli Flaw Triggers Patching Across Microsoft, Node.js, Python Packages** — An out-of-bounds write in Google’s Brotli decoder affects Node.js, .NET, PowerShell, and Python packages, and can lead to code execution. [read more](https://www.securityweek.com/node2shell-brotli-flaw-triggers-patching-across-microsoft-node-js-python-packages/)
+- **[UPDATE] [hoch] Microsoft Apps: Mehrere Schwachstellen ermöglichen Privilegieneskalation** — Ein Angreifer kann mehrere Schwachstellen in Microsoft Authenticator und Microsoft Xbox Gaming Services ausnutzen, um seine Privilegien zu erhöhen. [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3241)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-21589 (– CVSS, 99% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. PHP2Shell security flaws now sucessfully exploited in the wild
