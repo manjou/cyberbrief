@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Energy giant ENGIE discloses data breach affecting customers** — French energy giant ENGIE, one of the world's largest power and natural gas providers, confirmed that attackers stole customer data after breaching a marketing platform used by business partners. [read more](https://www.bleepingcomputer.com/news/security/energy-giant-engie-discloses-data-breach-affecting-customers/)
+- **⚡ Weekly Recap: This2Shell, That2Shell, Everything's an RCE? Rogue AI, Supply Chain Chaos and More** — This2Shell, That2Shell, Everything2Shell. [read more](https://thehackernews.com/2026/10/weekly-recap-this2shell-that2shell.html)
+- **PHP2Shell security flaws now sucessfully exploited in the wild** — Two critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619), collectively tracked as PHP2Shell, have been successfully exploited in the wild. [read more](https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/)
+- **University of Copenhagen data breach exposes data of 525,000 people** — The University of Copenhagen in Denmark confirmed that hackers accessed one of its test environments containing personal data belonging to 525,000 people. [read more](https://www.bleepingcomputer.com/news/security/university-of-copenhagen-data-breach-exposes-data-of-525-000-people/)
+- **This is Fine: What NetScaler Zero-Days Tell Us About the New Normal** — Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon. [read more](https://www.securityweek.com/this-is-fine-what-netscaler-zero-days-tell-us-about-the-new-normal/)
+- **CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution** — The U.S. [read more](https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html)
+- **CISA confirms PHP2Shell vulnerabilities now exploited in attacks** — The U.S. [read more](https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/)
+- **Microsoft releases emergency .NET patches for critical Brotli flaw** — Microsoft released emergency .NET security updates to patch a critical vulnerability known as Broccoli2Shell, also tracked as Node2Shell and HTTP2Shell. [read more](https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-emergency-net-patches-for-critical-brotli-flaw/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-109618 (– CVSS, 100% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Energy giant ENGIE discloses data breach affecting customers
