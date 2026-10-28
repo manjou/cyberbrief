@@ -1,78 +1,64 @@
-# 🛡️ CyberBrief — GRC — Tuesday, 27 October 2026
+# 🛡️ CyberBrief — Net+ — Wednesday, 28 October 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
-*Today's focus: breaches, regulation, and compliance impact.*
-
-## 🕔 5pm recap
-
-*Didn't get through this morning? Here's the quick version — full detail is still below.*
-
-- **Energy giant ENGIE discloses data breach affecting customers** — French energy giant ENGIE, one of the world's largest power and natural gas providers, confirmed that attackers stole customer data after breaching a marketing platform used by business partners. [read more](https://www.bleepingcomputer.com/news/security/energy-giant-engie-discloses-data-breach-affecting-customers/)
-- **⚡ Weekly Recap: This2Shell, That2Shell, Everything's an RCE? Rogue AI, Supply Chain Chaos and More** — This2Shell, That2Shell, Everything2Shell. [read more](https://thehackernews.com/2026/10/weekly-recap-this2shell-that2shell.html)
-- **PHP2Shell security flaws now sucessfully exploited in the wild** — Two critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619), collectively tracked as PHP2Shell, have been successfully exploited in the wild. [read more](https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/)
-- **University of Copenhagen data breach exposes data of 525,000 people** — The University of Copenhagen in Denmark confirmed that hackers accessed one of its test environments containing personal data belonging to 525,000 people. [read more](https://www.bleepingcomputer.com/news/security/university-of-copenhagen-data-breach-exposes-data-of-525-000-people/)
-- **This is Fine: What NetScaler Zero-Days Tell Us About the New Normal** — Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon. [read more](https://www.securityweek.com/this-is-fine-what-netscaler-zero-days-tell-us-about-the-new-normal/)
-- **CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution** — The U.S. [read more](https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html)
-- **CISA confirms PHP2Shell vulnerabilities now exploited in attacks** — The U.S. [read more](https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/)
-- **Microsoft releases emergency .NET patches for critical Brotli flaw** — Microsoft released emergency .NET security updates to patch a critical vulnerability known as Broccoli2Shell, also tracked as Node2Shell and HTTP2Shell. [read more](https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-emergency-net-patches-for-critical-brotli-flaw/)
-- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-109618 (– CVSS, 100% EPSS)
+*Today's focus: network infrastructure — a lighter refresh day.*
 
 ## 🔥 Top stories
 
-### 1. Energy giant ENGIE discloses data breach affecting customers
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/energy-giant-engie-discloses-data-breach-affecting-customers/)
+### 1. ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws
+*The Hacker News* — [read more](https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html)
 
-French energy giant ENGIE, one of the world's largest power and natural gas providers, confirmed that attackers stole customer data after breaching a marketing platform used by business partners.
-
-> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
-
-### 2. ⚡ Weekly Recap: This2Shell, That2Shell, Everything's an RCE? Rogue AI, Supply Chain Chaos and More
-*The Hacker News* — [read more](https://thehackernews.com/2026/10/weekly-recap-this2shell-that2shell.html)
-
-This2Shell, That2Shell, Everything2Shell. That's pretty much how the last week went. Critical bugs that let attackers run code remotely are showing up everywhere. Hackers are scanning for targets, some flaws are already being used in attacks, and security teams have more urgent patches than they can keep up with. And that's not even the full story. A leaked key led to a software supply-chain
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.19 Supplier relationships
-
-### 3. PHP2Shell security flaws now sucessfully exploited in the wild
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/)
-
-Two critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619), collectively tracked as PHP2Shell, have been successfully exploited in the wild.
+The critical Oracle PeopleSoft bug that ShinyHunters has exploited since May is not one flaw but three chained together, the researchers who reported it said this week. Oracle patched all three under a single identifier, CVE-2026-35273, in June. Its root is a server-side request forgery (SSRF) that reaches an internal management interface because PeopleSoft trusts its own loopback address
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
 
-### 4. University of Copenhagen data breach exposes data of 525,000 people
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/university-of-copenhagen-data-breach-exposes-data-of-525-000-people/)
+### 2. Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges
+*The Hacker News* — [read more](https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html)
 
-The University of Copenhagen in Denmark confirmed that hackers accessed one of its test environments containing personal data belonging to 525,000 people.
-
-> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
-
-### 5. This is Fine: What NetScaler Zero-Days Tell Us About the New Normal
-*SecurityWeek* — [read more](https://www.securityweek.com/this-is-fine-what-netscaler-zero-days-tell-us-about-the-new-normal/)
-
-Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon.
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added two vulnerabilities impacting Adobe Commerce and Magento, and Google's Brotli decoder library to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vulnerabilities are listed below - CVE-2026-111497 (CVSS score: 9.2) - An unchecked return value vulnerability in
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 6. CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution
+### 3. Japan's GMO urges customers to shut down PCs amid ransomware threat
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/)
+
+The GMO Group has urged customers to disconnect their systems from the internet and shut down computers after a threat actor who breached the company's Onamae Desktop Cloud threatened to launch a ransomware attack today.
+
+> 📋 **ISO 27001:** A.8.13 Information backup, A.5.23 Cloud services security
+
+### 4. CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution
 *The Hacker News* — [read more](https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html)
 
 The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday confirmed active exploitation of the recently patched PHP2Shell flaws by adding them to its Known Exploited Vulnerabilities (KEV) catalog. The PHP vulnerabilities, both rated 9.2 on the CVSS scoring system, facilitate unauthenticated remote code execution on affected deployments - CVE-2026-109618 - An out-of-memory
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
 
-### 7. CISA confirms PHP2Shell vulnerabilities now exploited in attacks
+### 5. HPE Patches Dozens of Critical Flaws in Networking Products
+*SecurityWeek* — [read more](https://www.securityweek.com/hpe-patches-dozens-of-critical-flaws-in-networking-products/)
+
+Eight max-severity security defects could lead to remote code execution and authentication bypass.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
+
+### 6. CISA confirms PHP2Shell vulnerabilities now exploited in attacks
 *BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/)
 
 The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added the PHP2Shell vulnerabilities to its catalog of actively exploited security flaws and ordered federal agencies to patch their systems by Thursday.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
 
-### 8. Microsoft releases emergency .NET patches for critical Brotli flaw
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-emergency-net-patches-for-critical-brotli-flaw/)
+### 7. Hackers Start Probing Fresh Oracle EBS Vulnerability
+*SecurityWeek* — [read more](https://www.securityweek.com/hackers-start-probing-fresh-oracle-ebs-vulnerability/)
 
-Microsoft released emergency .NET security updates to patch a critical vulnerability known as Broccoli2Shell, also tracked as Node2Shell and HTTP2Shell.
+CVE-2026-101767 is an unauthenticated SQL injection that can be exploited for remote code execution.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
+
+### 8. CISA warns of hackers now exploiting critical Node2Shell flaw
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-now-exploiting-critical-node2shell-flaw/)
+
+On Tuesday, the US Cybersecurity and Infrastructure Security Agency (CISA) confirmed that hackers have begun exploiting a critical Brotli vulnerability known as Node2Shell, Broccoli2Shell, and HTTP2Shell.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
@@ -83,8 +69,8 @@ Microsoft released emergency .NET security updates to patch a critical vulnerabi
 | **CVE-2026-109618** | PHP Memory Corruption Vulnerability | – | 100% | ⚠️ YES (KEV) |
 | **CVE-2026-109619** | PHP Stale Internal Request-State Vulnerability | – | 100% | ⚠️ YES (KEV) |
 | **CVE-2026-21589** | Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability | – | 99% | ⚠️ YES (KEV) |
-| **CVE-2026-104935** | Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability | – | 87% | ⚠️ YES (KEV) |
-| **CVE-2026-105134** | Ahsay AhsayCBS Command Injection Vulnerability | – | 86% | ⚠️ YES (KEV) |
+| **CVE-2026-105134** | Ahsay AhsayCBS Command Injection Vulnerability | – | 82% | ⚠️ YES (KEV) |
+| **CVE-2026-105133** | Ahsay AhsayCBS Improper Authentication Vulnerability | – | 79% | ⚠️ YES (KEV) |
 
 ## 📖 Jargon decoder
 
@@ -93,6 +79,7 @@ Microsoft released emergency .NET security updates to patch a critical vulnerabi
 - **CVE** — Common Vulnerabilities and Exposures — the global ID system for security flaws, e.g. CVE-2026-12345.
 - **RCE** — Remote Code Execution — the worst-case flaw: an attacker runs their own code on your system over the network.
 - **zero-day** — A vulnerability attackers exploit before the vendor has released a patch — defenders start at zero days of warning.
+- **ransomware** — Malware that encrypts your files and demands payment. Modern gangs also steal data first and threaten to publish it (double extortion).
 - **EPSS** — Exploit Prediction Scoring System — a 0-100% probability that a CVE will be exploited in the next 30 days. Better prioritization signal than CVSS alone.
 
 <sub>Sources unavailable this run: AI explanations (HTTPError)</sub>
