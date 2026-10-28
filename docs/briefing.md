@@ -4,6 +4,20 @@
 
 *Today's focus: network infrastructure — a lighter refresh day.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws** — The critical Oracle PeopleSoft bug that ShinyHunters has exploited since May is not one flaw but three chained together, the researchers who reported it said this week. [read more](https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html)
+- **Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges** — The U.S. [read more](https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html)
+- **Japan's GMO urges customers to shut down PCs amid ransomware threat** — The GMO Group has urged customers to disconnect their systems from the internet and shut down computers after a threat actor who breached the company's Onamae Desktop Cloud threatened to launch a ransomware attack today. [read more](https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/)
+- **CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution** — The U.S. [read more](https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html)
+- **HPE Patches Dozens of Critical Flaws in Networking Products** — Eight max-severity security defects could lead to remote code execution and authentication bypass. [read more](https://www.securityweek.com/hpe-patches-dozens-of-critical-flaws-in-networking-products/)
+- **CISA confirms PHP2Shell vulnerabilities now exploited in attacks** — The U.S. [read more](https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/)
+- **Hackers Start Probing Fresh Oracle EBS Vulnerability** — CVE-2026-101767 is an unauthenticated SQL injection that can be exploited for remote code execution. [read more](https://www.securityweek.com/hackers-start-probing-fresh-oracle-ebs-vulnerability/)
+- **CISA warns of hackers now exploiting critical Node2Shell flaw** — On Tuesday, the US Cybersecurity and Infrastructure Security Agency (CISA) confirmed that hackers have begun exploiting a critical Brotli vulnerability known as Node2Shell, Broccoli2Shell, and HTTP2Shell. [read more](https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-now-exploiting-critical-node2shell-flaw/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-109618 (– CVSS, 100% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws
