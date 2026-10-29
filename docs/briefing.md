@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls** — Cisco has released patches to address a high-severity security flaw in Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software that it said has been exploited in the wild. [read more](https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html)
+- **Attackers Exploit Second Cisco Firewall VPN Zero-Day Since August** — An exploited flaw in the Remote Access SSL VPN service lets unauthenticated attackers remotely force ASA and FTD firewalls to reload. [read more](https://www.securityweek.com/attackers-exploit-second-cisco-firewall-vpn-zero-day-since-august/)
+- **New Cisco firewall zero-day exploited to crash SSL VPN devices** — Cisco released security updates to patch a denial-of-service zero-day in Adaptive Security Appliance (ASA) and Threat Defense (FTD) software that attackers are exploiting to remotely crash vulnerable firewall devices. [read more](https://www.bleepingcomputer.com/news/security/cisco-warns-of-firewall-zero-day-exploited-to-crash-ssl-vpn-devices/)
+- **China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility** — The U.S. [read more](https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html)
+- **Cisco SD-WAN Zero-Day Exploitation Tied to Volt Typhoon’s ‘Silent Train’ Network** — Cisco Talos linked SD-WAN key-stealing malware to infrastructure overlapping Volt Typhoon’s Silent Train network, which Lumen detailed. [read more](https://www.securityweek.com/cisco-sd-wan-zero-day-exploitation-tied-to-volt-typhoons-silent-train-network/)
+- **ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws** — The critical Oracle PeopleSoft bug that ShinyHunters has exploited since May is not one flaw but three chained together, the researchers who reported it said this week. [read more](https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html)
+- **Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges** — The U.S. [read more](https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html)
+- **Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch** — Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused Cyber. [read more](https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-109618 (– CVSS, 100% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls
