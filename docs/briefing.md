@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls** — Cisco has released patches to address a high-severity security flaw in Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software that it said has been exploited in the wild. [read more](https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html)
+- **CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV** — The U.S. [read more](https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html)
+- **Drupal Commerce Core Vulnerability Exploited Against Online Stores** — Drupal says a highly critical Commerce Core access bypass is exploited in the wild and urges store owners to audit their orders. [read more](https://www.securityweek.com/drupal-commerce-core-vulnerability-exploited-against-online-stores/)
+- **Drupal warns of critical Commerce Core flaw exploited in attacks** — Drupal warned admins to patch a critical access bypass vulnerability in the Commerce Core module that attackers are exploiting in the wild. [read more](https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/)
+- **China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility** — The U.S. [read more](https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html)
+- **Japan Airlines suffers third-party data breach exposing passenger info** — Japan Airlines (JAL) has announced that a data breach at Amadeus's Passenger Service System exposed the data of about 92,000 customers. [read more](https://www.bleepingcomputer.com/news/security/japan-airlines-suffers-third-party-data-breach-exposing-passenger-info/)
+- **Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw** — Drupal has warned that threat actors are exploiting a "highly critical" security flaw in its Commerce Core component. [read more](https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html)
+- **Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen** — Cryptocurrency giant Binance said on Thursday that a "security incident" on its platform has impacted about $6.3 billion worth of assets. [read more](https://thehackernews.com/2026/10/binance-suffers-security-breach.html)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-109618 (– CVSS, 100% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls
