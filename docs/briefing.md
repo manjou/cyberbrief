@@ -1,22 +1,8 @@
-# 🛡️ CyberBrief — SOC — Thursday, 29 October 2026
+# 🛡️ CyberBrief — GRC — Friday, 30 October 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
-*Today's focus: active exploitation, incident response, and threat activity.*
-
-## 🕔 5pm recap
-
-*Didn't get through this morning? Here's the quick version — full detail is still below.*
-
-- **Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls** — Cisco has released patches to address a high-severity security flaw in Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software that it said has been exploited in the wild. [read more](https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html)
-- **Attackers Exploit Second Cisco Firewall VPN Zero-Day Since August** — An exploited flaw in the Remote Access SSL VPN service lets unauthenticated attackers remotely force ASA and FTD firewalls to reload. [read more](https://www.securityweek.com/attackers-exploit-second-cisco-firewall-vpn-zero-day-since-august/)
-- **New Cisco firewall zero-day exploited to crash SSL VPN devices** — Cisco released security updates to patch a denial-of-service zero-day in Adaptive Security Appliance (ASA) and Threat Defense (FTD) software that attackers are exploiting to remotely crash vulnerable firewall devices. [read more](https://www.bleepingcomputer.com/news/security/cisco-warns-of-firewall-zero-day-exploited-to-crash-ssl-vpn-devices/)
-- **China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility** — The U.S. [read more](https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html)
-- **Cisco SD-WAN Zero-Day Exploitation Tied to Volt Typhoon’s ‘Silent Train’ Network** — Cisco Talos linked SD-WAN key-stealing malware to infrastructure overlapping Volt Typhoon’s Silent Train network, which Lumen detailed. [read more](https://www.securityweek.com/cisco-sd-wan-zero-day-exploitation-tied-to-volt-typhoons-silent-train-network/)
-- **ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws** — The critical Oracle PeopleSoft bug that ShinyHunters has exploited since May is not one flaw but three chained together, the researchers who reported it said this week. [read more](https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html)
-- **Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges** — The U.S. [read more](https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html)
-- **Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch** — Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused Cyber. [read more](https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html)
-- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-109618 (– CVSS, 100% EPSS)
+*Today's focus: breaches, regulation, and compliance impact.*
 
 ## 🔥 Top stories
 
@@ -27,54 +13,54 @@ Cisco has released patches to address a high-severity security flaw in Secure Fi
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.8.20 Networks security
 
-### 2. Attackers Exploit Second Cisco Firewall VPN Zero-Day Since August
-*SecurityWeek* — [read more](https://www.securityweek.com/attackers-exploit-second-cisco-firewall-vpn-zero-day-since-august/)
+### 2. CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV
+*The Hacker News* — [read more](https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html)
 
-An exploited flaw in the Remote Access SSL VPN service lets unauthenticated attackers remotely force ASA and FTD firewalls to reload.
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Cisco and GitLab software to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation. The vulnerabilities are listed below - CVE-2026-97229 (CVSS score: 10.0) - An integer overflow or wraparound vulnerability in GitLab Community Edition and Enterprise
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.8.20 Networks security
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
 
-### 3. New Cisco firewall zero-day exploited to crash SSL VPN devices
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisco-warns-of-firewall-zero-day-exploited-to-crash-ssl-vpn-devices/)
+### 3. Drupal Commerce Core Vulnerability Exploited Against Online Stores
+*SecurityWeek* — [read more](https://www.securityweek.com/drupal-commerce-core-vulnerability-exploited-against-online-stores/)
 
-Cisco released security updates to patch a denial-of-service zero-day in Adaptive Security Appliance (ASA) and Threat Defense (FTD) software that attackers are exploiting to remotely crash vulnerable firewall devices.
+Drupal says a highly critical Commerce Core access bypass is exploited in the wild and urges store owners to audit their orders.
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.8.20 Networks security
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 4. China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility
+### 4. Drupal warns of critical Commerce Core flaw exploited in attacks
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/)
+
+Drupal warned admins to patch a critical access bypass vulnerability in the Commerce Core module that attackers are exploiting in the wild.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
+
+### 5. China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility
 *The Hacker News* — [read more](https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html)
 
 The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a security flaw impacting Broadcom VMware ESX to its Known Exploited Vulnerabilities (KEV) catalog, after CrowdStrike revealed that it had been weaponized by a China-nexus threat actor known as Warp Panda in attacks targeting the U.S. legal sector. The vulnerability in question is CVE-2026-41709 (CVSS score:
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 5. Cisco SD-WAN Zero-Day Exploitation Tied to Volt Typhoon’s ‘Silent Train’ Network
-*SecurityWeek* — [read more](https://www.securityweek.com/cisco-sd-wan-zero-day-exploitation-tied-to-volt-typhoons-silent-train-network/)
+### 6. Japan Airlines suffers third-party data breach exposing passenger info
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/japan-airlines-suffers-third-party-data-breach-exposing-passenger-info/)
 
-Cisco Talos linked SD-WAN key-stealing malware to infrastructure overlapping Volt Typhoon’s Silent Train network, which Lumen detailed.
+Japan Airlines (JAL) has announced that a data breach at Amadeus's Passenger Service System exposed the data of about 92,000 customers.
 
-> 📋 **ISO 27001:** A.8.7 Protection against malware, A.8.8 Management of technical vulnerabilities
+> 📋 **ISO 27001:** A.5.19 Supplier relationships, A.5.34 Privacy and protection of PII
 
-### 6. ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws
-*The Hacker News* — [read more](https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html)
+### 7. Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw
+*The Hacker News* — [read more](https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html)
 
-The critical Oracle PeopleSoft bug that ShinyHunters has exploited since May is not one flaw but three chained together, the researchers who reported it said this week. Oracle patched all three under a single identifier, CVE-2026-35273, in June. Its root is a server-side request forgery (SSRF) that reaches an internal management interface because PeopleSoft trusts its own loopback address
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
-
-### 7. Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges
-*The Hacker News* — [read more](https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html)
-
-The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added two vulnerabilities impacting Adobe Commerce and Magento, and Google's Brotli decoder library to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vulnerabilities are listed below - CVE-2026-111497 (CVSS score: 9.2) - An unchecked return value vulnerability in
+Drupal has warned that threat actors are exploiting a "highly critical" security flaw in its Commerce Core component. The vulnerability, tracked as CVE-2026-118539 (CVSS score: N/A), is a case of missing authorization affecting Commerce Core versions from 0.0.0 to 2.41 and from 3.0.0 to 3.3.13. "This module enables you to sell goods and services to customers through an included shopping cart
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 8. Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch
-*The Hacker News* — [read more](https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html)
+### 8. Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen
+*The Hacker News* — [read more](https://thehackernews.com/2026/10/binance-suffers-security-breach.html)
 
-Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused Cyber. The vulnerability in question is CVE-2026-101767 (CVSS score: 9.8) , a case of improper authentication in the Oracle Application Object Library of Oracle E-Business Suite. It was patched by Oracle last week as part of its Critical
+Cryptocurrency giant Binance said on Thursday that a "security incident" on its platform has impacted about $6.3 billion worth of assets. The world's biggest cryptocurrency exchange said nearly $3 billion of those assets have been frozen on-chain so far. Tether and Circle said they have frozen more than 1.567 billion USDT and 800 million USDC related to the incident, respectively. The
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
+> 📋 **ISO 27001:** A.5.24 Incident management planning
 
 ## 🚨 CVEs that matter today
 
@@ -82,9 +68,9 @@ Threat actors are beginning to probe for a newly patched critical vulnerability 
 |-----|--------------|------|------|------------|
 | **CVE-2026-109618** | PHP Memory Corruption Vulnerability | – | 100% | ⚠️ YES (KEV) |
 | **CVE-2026-109619** | PHP Stale Internal Request-State Vulnerability | – | 100% | ⚠️ YES (KEV) |
-| **CVE-2026-21589** | Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability | – | 99% | ⚠️ YES (KEV) |
-| **CVE-2026-111497** | Google Brotli Unchecked Return Value Vulnerability | – | 88% | ⚠️ YES (KEV) |
-| **CVE-2026-48356** | Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability | – | 59% | ⚠️ YES (KEV) |
+| **CVE-2026-111497** | Google Brotli Unchecked Return Value Vulnerability | – | 83% | ⚠️ YES (KEV) |
+| **CVE-2026-110447** | Collabora Online – Built-in CODE Server OS Command Injection Vulnerability | – | 73% | ⚠️ YES (KEV) |
+| **CVE-2026-48356** | Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability | – | 45% | ⚠️ YES (KEV) |
 
 ## 📖 Jargon decoder
 
