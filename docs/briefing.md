@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Over 1,000 GitLab servers vulnerable to ongoing RCE attacks** — Over 1,000 Internet-exposed GitLab servers are still unpatched against a maximum-severity flaw actively exploited in remote code execution attacks. [read more](https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/)
+- **Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers** — Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code, IBM said last week. [read more](https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html)
+- **Ivanti Patches Two More Zero-Days Exploited in Connect Secure Attack Chain** — CISA has added CVE-2026-111357 and CVE-2026-118527 to its KEV catalog after the Ivanti VPN flaws were chained in zero-day attacks. [read more](https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/)
+- **Alpine Linux rebuilds GitLab after attempted RCE attack** — Hackers attempted to exploit a critical GitLab vulnerability in Alpine Linux's development infrastructure on October 20-21, prompting the open-source project to rebuild its GitLab server and reset all passwords over concerns of a possible compromise. [read more](https://www.bleepingcomputer.com/news/security/alpine-linux-rebuilds-gitlab-after-attempted-rce-attack/)
+- **Synology warns of C3RB3R ransomware attacks targeting NAS devices** — Taiwanese network-attached storage (NAS) appliance maker Synology warned customers to update their devices immediately due to a surge in C3RB3r ransomware attacks. [read more](https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/)
+- **Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy** — Forty percent of security teams now use AI every day, and another 56% are testing it. [read more](https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html)
+- **Revolve Data Breach Impacts at Least 180,000 People** — Hackers accessed its online shopping platform and stole customers’ personal and payment card information. [read more](https://www.securityweek.com/revolve-data-breach-impacts-at-least-180000-people/)
+- **Chainalysis Discloses Data Breach Following AI-Driven Cyberattack** — The attackers used offensive agentic techniques to access the company’s systems and internal tools. [read more](https://www.securityweek.com/chainalysis-discloses-data-breach-following-ai-driven-cyberattack/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-109618 (– CVSS, 100% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Over 1,000 GitLab servers vulnerable to ongoing RCE attacks
