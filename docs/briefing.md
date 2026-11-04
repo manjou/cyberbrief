@@ -1,80 +1,64 @@
-# 🛡️ CyberBrief — GRC — Tuesday, 03 November 2026
+# 🛡️ CyberBrief — Net+ — Wednesday, 04 November 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
-*Today's focus: breaches, regulation, and compliance impact.*
-
-## 🕔 5pm recap
-
-*Didn't get through this morning? Here's the quick version — full detail is still below.*
-
-- **Harvard University data breach exposed info of 851,000 accounts** — Hackers who breached Harvard University's Alumni Affairs and Development systems in November 2025 stole data linked to more than 850,000 unique email addresses, according to breach notification service Have I Been Pwned. [read more](https://www.bleepingcomputer.com/news/security/harvard-university-data-breach-exposed-info-of-851-000-accounts/)
-- **Over 1,000 GitLab servers vulnerable to ongoing RCE attacks** — Over 1,000 Internet-exposed GitLab servers are still unpatched against a maximum-severity flaw actively exploited in remote code execution attacks. [read more](https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/)
-- **Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers** — Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code, IBM said last week. [read more](https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html)
-- **Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors** — A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed. [read more](https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html)
-- **Revolve Data Breach Impacts at Least 200,000 People** — Hackers accessed its online shopping platform and stole customers’ personal and payment card information. [read more](https://www.securityweek.com/revolve-data-breach-impacts-at-least-180000-people/)
-- **⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More** — Some attacks this week didn't need much of a trick. [read more](https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html)
-- **Ivanti patches two more Connect Secure zero-days chained in attacks** — Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1. [read more](https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/)
-- **Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing** — Fixed kernels for a use-after-free vulnerability in the Linux kernel's IPv4 TCP code are now available for Red Hat Enterprise Linux 8, 9, and 10, while Ubuntu's fixes for its three newest long-term-support releases remain in its opt-in testing channel with no date for a regular update. [read more](https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html)
-- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-109618 (– CVSS, 100% EPSS)
+*Today's focus: network infrastructure — a lighter refresh day.*
 
 ## 🔥 Top stories
 
-### 1. Harvard University data breach exposed info of 851,000 accounts
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/harvard-university-data-breach-exposed-info-of-851-000-accounts/)
+### 1. CISA flags WordPress RCE flaw as actively exploited in attacks
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/)
 
-Hackers who breached Harvard University's Alumni Affairs and Development systems in November 2025 stole data linked to more than 850,000 unique email addresses, according to breach notification service Have I Been Pwned.
+The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers have started exploiting a recently patched high-severity WordPress vulnerability in the wild.
 
-> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 2. Over 1,000 GitLab servers vulnerable to ongoing RCE attacks
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/)
+### 2. Google Warns LLMjacking Attacks Are Costing Some Enterprises Up to $1 Million in Cloud Charges
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html)
 
-Over 1,000 Internet-exposed GitLab servers are still unpatched against a maximum-severity flaw actively exploited in remote code execution attacks.
+Google on Monday warned that threat actors are hijacking enterprise access to Large Language Models (LLMs) to fraudulently leverage expensive computing resources and AI services. The tactic is called LLMjacking, a form of resource hijacking adapted for the LLM era, where an attacker obtains an API key through phishing, source code leaks, misconfigured environments, or exposed client-side code
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.34 Privacy and protection of PII
+> 📋 **ISO 27001:** A.6.3 Awareness, education and training, A.8.8 Management of technical vulnerabilities
 
-### 3. Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html)
-
-Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code, IBM said last week. Langflow is an open-source tool for building AI agents and workflows, and its vulnerability reports go to IBM. Every release from 1.0.0 through 1.12.8 has the flaws, and the only fix is version 1.13.0. Neither flaw is in CISA's Known
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
-
-### 4. Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors
+### 3. Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors
 *The Hacker News* — [read more](https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html)
 
 A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed. The vulnerability, tracked as CVE-2026-58115 (CVSS score: 10.0), is a case of missing authentication for a critical function that could be exploited by an unauthenticated remote attacker to run arbitrary code. "SIMATIC IoT2050 Advanced devices running
 
 > 📋 **ISO 27001:** A.8.7 Protection against malware, A.8.8 Management of technical vulnerabilities
 
-### 5. Revolve Data Breach Impacts at Least 200,000 People
-*SecurityWeek* — [read more](https://www.securityweek.com/revolve-data-breach-impacts-at-least-180000-people/)
+### 4. Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html)
 
-Hackers accessed its online shopping platform and stole customers’ personal and payment card information.
+Synology is urging customers to update the DiskStation Manager (DSM) software powering its Network Attached Storage (NAS) devices following ransomware attacks. The Taiwanese vendor said it observed threat actors exploiting a vulnerability patched in December 2024 to target devices running outdated versions of DSM. "These attacks aim to encrypt data and extort ransom," it said in a statement
 
-> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
+> 📋 **ISO 27001:** A.8.13 Information backup, A.8.8 Management of technical vulnerabilities
 
-### 6. ⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html)
+### 5. Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html)
 
-Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password. Small things that people barely think about. Yet each was enough to cause serious trouble. Then there were the bigger messes. Billions stolen, hidden networks of hacked devices, poisoned software, and attackers finding new ways to turn normal tools against
-
-> 📋 **ISO 27001:** A.8.7 Protection against malware, A.6.3 Awareness, education and training
-
-### 7. Ivanti patches two more Connect Secure zero-days chained in attacks
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/)
-
-Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
-
-### 8. Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html)
-
-Fixed kernels for a use-after-free vulnerability in the Linux kernel's IPv4 TCP code are now available for Red Hat Enterprise Linux 8, 9, and 10, while Ubuntu's fixes for its three newest long-term-support releases remain in its opt-in testing channel with no date for a regular update. The flaw, tracked as CVE-2026-98432, can be reached by a remote, unauthenticated attacker and can
+A critical Android flaw could allow an attacker to run code on a phone without any user action remotely, Google said in its November security bulletin. The flaw, CVE-2026-58868, affects Android 14 through 17. Phones get the fix with security patch level 2026-11-01 or later, which phone makers and carriers send on their own schedules. As of November 4, Google's bulletin did not report
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
+
+### 6. Critical Rails Flaw Lets Attackers Write Server Files via Crafted ImageMagick Uploads
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html)
+
+A critical flaw in Ruby on Rails could allow an unauthenticated attacker to write arbitrary files on an app's server by uploading a crafted file if the app processes uploads using ImageMagick. The Rails project disclosed the flaw in an advisory and fixed it in versions 8.1.4.1 and 8.0.5.2. The flaw is in Active Storage, the part of Rails that handles file uploads. Some apps store
+
+### 7. China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html)
+
+A China-aligned threat actor known as SlippyNunchucks has been attributed to a Domain Name System (DNS) hijacking operation abusing insecure HTTP communications in Windows versions of Sogou Input Method as part of a surveillance campaign designed to deploy an implant called DarkVigil (aka FDMTP). The campaign, observed starting July 1, 2026, is assessed to have targeted organizations and
+
+> 📋 **ISO 27001:** A.8.7 Protection against malware
+
+### 8. WorkOS says attacker used ARTEX AI to breach internal sales app
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/)
+
+Developer platform WorkOS suffered a data breach after a threat actor accessed business contact records and summaries of customer communications.
+
+> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
 
 ## 🚨 CVEs that matter today
 
@@ -91,7 +75,7 @@ Fixed kernels for a use-after-free vulnerability in the Linux kernel's IPv4 TCP 
 - **CVSS** — Common Vulnerability Scoring System — rates how bad a vulnerability *could* be (0-10). High CVSS does not mean anyone is actually exploiting it.
 - **CVE** — Common Vulnerabilities and Exposures — the global ID system for security flaws, e.g. CVE-2026-12345.
 - **RCE** — Remote Code Execution — the worst-case flaw: an attacker runs their own code on your system over the network.
-- **zero-day** — A vulnerability attackers exploit before the vendor has released a patch — defenders start at zero days of warning.
+- **ransomware** — Malware that encrypts your files and demands payment. Modern gangs also steal data first and threaten to publish it (double extortion).
 - **KEV** — CISA's Known Exploited Vulnerabilities catalog — CVEs confirmed to be abused by attackers in the real world. If it's in KEV, patching it jumps to the top of the list.
 - **EPSS** — Exploit Prediction Scoring System — a 0-100% probability that a CVE will be exploited in the next 30 days. Better prioritization signal than CVSS alone.
 
