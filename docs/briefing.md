@@ -4,6 +4,20 @@
 
 *Today's focus: network infrastructure — a lighter refresh day.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **CISA flags WordPress RCE flaw as actively exploited in attacks** — The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers have started exploiting a recently patched high-severity WordPress vulnerability in the wild. [read more](https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/)
+- **Google Warns LLMjacking Attacks Are Costing Some Enterprises Up to $1 Million in Cloud Charges** — Google on Monday warned that threat actors are hijacking enterprise access to Large Language Models (LLMs) to fraudulently leverage expensive computing resources and AI services. [read more](https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html)
+- **Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors** — A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed. [read more](https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html)
+- **Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw** — Synology is urging customers to update the DiskStation Manager (DSM) software powering its Network Attached Storage (NAS) devices following ransomware attacks. [read more](https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html)
+- **Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction** — A critical Android flaw could allow an attacker to run code on a phone without any user action remotely, Google said in its November security bulletin. [read more](https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html)
+- **Critical Rails Flaw Lets Attackers Write Server Files via Crafted ImageMagick Uploads** — A critical flaw in Ruby on Rails could allow an unauthenticated attacker to write arbitrary files on an app's server by uploading a crafted file if the app processes uploads using ImageMagick. [read more](https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html)
+- **China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor** — A China-aligned threat actor known as SlippyNunchucks has been attributed to a Domain Name System (DNS) hijacking operation abusing insecure HTTP communications in Windows versions of Sogou Input Method as part of a surveillance campaign designed to deploy an implant called DarkVigil (aka FDMTP). [read more](https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html)
+- **WorkOS says attacker used ARTEX AI to breach internal sales app** — Developer platform WorkOS suffered a data breach after a threat actor accessed business contact records and summaries of customer communications. [read more](https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-109618 (– CVSS, 100% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. CISA flags WordPress RCE flaw as actively exploited in attacks
