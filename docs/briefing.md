@@ -1,22 +1,8 @@
-# 🛡️ CyberBrief — Net+ — Wednesday, 04 November 2026
+# 🛡️ CyberBrief — SOC — Thursday, 05 November 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
-*Today's focus: network infrastructure — a lighter refresh day.*
-
-## 🕔 5pm recap
-
-*Didn't get through this morning? Here's the quick version — full detail is still below.*
-
-- **CISA flags WordPress RCE flaw as actively exploited in attacks** — The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers have started exploiting a recently patched high-severity WordPress vulnerability in the wild. [read more](https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/)
-- **Google Warns LLMjacking Attacks Are Costing Some Enterprises Up to $1 Million in Cloud Charges** — Google on Monday warned that threat actors are hijacking enterprise access to Large Language Models (LLMs) to fraudulently leverage expensive computing resources and AI services. [read more](https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html)
-- **Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors** — A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed. [read more](https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html)
-- **Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw** — Synology is urging customers to update the DiskStation Manager (DSM) software powering its Network Attached Storage (NAS) devices following ransomware attacks. [read more](https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html)
-- **Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction** — A critical Android flaw could allow an attacker to run code on a phone without any user action remotely, Google said in its November security bulletin. [read more](https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html)
-- **Critical Rails Flaw Lets Attackers Write Server Files via Crafted ImageMagick Uploads** — A critical flaw in Ruby on Rails could allow an unauthenticated attacker to write arbitrary files on an app's server by uploading a crafted file if the app processes uploads using ImageMagick. [read more](https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html)
-- **China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor** — A China-aligned threat actor known as SlippyNunchucks has been attributed to a Domain Name System (DNS) hijacking operation abusing insecure HTTP communications in Windows versions of Sogou Input Method as part of a surveillance campaign designed to deploy an implant called DarkVigil (aka FDMTP). [read more](https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html)
-- **WorkOS says attacker used ARTEX AI to breach internal sales app** — Developer platform WorkOS suffered a data breach after a threat actor accessed business contact records and summaries of customer communications. [read more](https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/)
-- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-109618 (– CVSS, 100% EPSS)
+*Today's focus: active exploitation, incident response, and threat activity.*
 
 ## 🔥 Top stories
 
@@ -27,52 +13,54 @@ The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal ag
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 2. Google Warns LLMjacking Attacks Are Costing Some Enterprises Up to $1 Million in Cloud Charges
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html)
+### 2. Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html)
 
-Google on Monday warned that threat actors are hijacking enterprise access to Large Language Models (LLMs) to fraudulently leverage expensive computing resources and AI services. The tactic is called LLMjacking, a form of resource hijacking adapted for the LLM era, where an attacker obtains an API key through phishing, source code leaks, misconfigured environments, or exposed client-side code
+Zyxel GS1900 network switches that received the vendor's earlier fix for an actively exploited flaw are still open to the exploit attackers used, researchers at Binarly found. The exploit lets anyone who can reach a switch's web management interface run commands on it without logging in. Zyxel has released new firmware for 10 GS1900 models that closes the hole. The earlier fix is the 2.90
 
-> 📋 **ISO 27001:** A.6.3 Awareness, education and training, A.8.8 Management of technical vulnerabilities
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.19 Supplier relationships
 
-### 3. Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html)
+### 3. CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html)
 
-A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed. The vulnerability, tracked as CVE-2026-58115 (CVSS score: 10.0), is a case of missing authentication for a critical function that could be exploited by an unauthenticated remote attacker to run arbitrary code. "SIMATIC IoT2050 Advanced devices running
+The Indian Computer Emergency Response Team (CERT-In) has disclosed that an artificial intelligence (AI)-assisted threat actor it tracks as Crafty Falcon is targeting organizations in the Banking, Financial Services, and Insurance (BFSI) sectors in the country. Describing the threat as active and ongoing, the activity involves the use of publicly-available AI-driven offensive security tools
 
-> 📋 **ISO 27001:** A.8.7 Protection against malware, A.8.8 Management of technical vulnerabilities
+> 📋 **ISO 27001:** A.8.7 Protection against malware, A.5.24 Incident management planning
 
-### 4. Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html)
+### 4. APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html)
 
-Synology is urging customers to update the DiskStation Manager (DSM) software powering its Network Attached Storage (NAS) devices following ransomware attacks. The Taiwanese vendor said it observed threat actors exploiting a vulnerability patched in December 2024 to target devices running outdated versions of DSM. "These attacks aim to encrypt data and extort ransom," it said in a statement
+The Russia-linked threat actor known as APT29 is presumed to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker. "The injected JavaScript code collects browser and device attributes," Sekoia researchers Amaury-Jacques Garçon and
 
-> 📋 **ISO 27001:** A.8.13 Information backup, A.8.8 Management of technical vulnerabilities
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.19 Supplier relationships
 
-### 5. Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html)
+### 5. 5 Active Cyber Threats That Put US Enterprises at Risk in October 2026
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/5-active-cyber-threats-that-put-us.html)
 
-A critical Android flaw could allow an attacker to run code on a phone without any user action remotely, Google said in its November security bulletin. The flaw, CVE-2026-58868, affects Android 14 through 17. Phones get the fix with security patch level 2026-11-01 or later, which phone makers and carriers send on their own schedules. As of November 4, Google's bulletin did not report
+October 2026 brought another wave of cyber threats targeting US businesses, with attackers exploiting trusted platforms, legitimate authentication processes, and everyday business workflows. For enterprises, these campaigns raise the stakes beyond individual security incidents, increasing the risk of financial losses, data breaches, and costly operational disruption. Below, we examine five
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.34 Privacy and protection of PII
+
+### 6. Zyxel Switch Hacks Blamed on Patched Flaw Actually Exploited a Zero-Day
+*SecurityWeek* — [read more](https://www.securityweek.com/zyxel-switch-hacks-blamed-on-patched-flaw-actually-exploited-a-zero-day/)
+
+Tracked as CVE-2026-107441, the out-of-bounds write flaw could allow attackers to execute OS commands via crafted HTTP requests.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 6. Critical Rails Flaw Lets Attackers Write Server Files via Crafted ImageMagick Uploads
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html)
+### 7. Zyxel fixes zero-day exploited to hack nearly 1,000 network switches
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/)
 
-A critical flaw in Ruby on Rails could allow an unauthenticated attacker to write arbitrary files on an app's server by uploading a crafted file if the app processes uploads using ImageMagick. The Rails project disclosed the flaw in an advisory and fixed it in versions 8.1.4.1 and 8.0.5.2. The flaw is in Active Storage, the part of Rails that handles file uploads. Some apps store
+Zyxel has patched a zero-day vulnerability in its GS1900 series network switches that hackers exploited to compromise nearly 1,000 devices worldwide and steal configuration files and credentials.
 
-### 7. China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html)
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
 
-A China-aligned threat actor known as SlippyNunchucks has been attributed to a Domain Name System (DNS) hijacking operation abusing insecure HTTP communications in Windows versions of Sogou Input Method as part of a surveillance campaign designed to deploy an implant called DarkVigil (aka FDMTP). The campaign, observed starting July 1, 2026, is assessed to have targeted organizations and
+### 8. Vercel rolls out new protection against stolen session cookie attacks
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks/)
 
-> 📋 **ISO 27001:** A.8.7 Protection against malware
+Vercel is gradually rolling out Device Bound Session Credentials (DBSC) on its platform as a key defense against information stealer malware.
 
-### 8. WorkOS says attacker used ARTEX AI to breach internal sales app
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/)
-
-Developer platform WorkOS suffered a data breach after a threat actor accessed business contact records and summaries of customer communications.
-
-> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
+> 📋 **ISO 27001:** A.8.7 Protection against malware, A.8.8 Management of technical vulnerabilities
 
 ## 🚨 CVEs that matter today
 
@@ -82,16 +70,16 @@ Developer platform WorkOS suffered a data breach after a threat actor accessed b
 | **CVE-2026-109619** | PHP Stale Internal Request-State Vulnerability | – | 100% | ⚠️ YES (KEV) |
 | **CVE-2026-111497** | Google Brotli Unchecked Return Value Vulnerability | – | 83% | ⚠️ YES (KEV) |
 | **CVE-2026-110447** | Collabora Online – Built-in CODE Server OS Command Injection Vulnerability | – | 73% | ⚠️ YES (KEV) |
-| **CVE-2026-48356** | Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability | – | 45% | ⚠️ YES (KEV) |
+| **CVE-2026-97229** | GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability | – | 65% | ⚠️ YES (KEV) |
 
 ## 📖 Jargon decoder
 
-- **CVSS** — Common Vulnerability Scoring System — rates how bad a vulnerability *could* be (0-10). High CVSS does not mean anyone is actually exploiting it.
 - **CVE** — Common Vulnerabilities and Exposures — the global ID system for security flaws, e.g. CVE-2026-12345.
 - **RCE** — Remote Code Execution — the worst-case flaw: an attacker runs their own code on your system over the network.
-- **ransomware** — Malware that encrypts your files and demands payment. Modern gangs also steal data first and threaten to publish it (double extortion).
+- **zero-day** — A vulnerability attackers exploit before the vendor has released a patch — defenders start at zero days of warning.
 - **KEV** — CISA's Known Exploited Vulnerabilities catalog — CVEs confirmed to be abused by attackers in the real world. If it's in KEV, patching it jumps to the top of the list.
 - **EPSS** — Exploit Prediction Scoring System — a 0-100% probability that a CVE will be exploited in the next 30 days. Better prioritization signal than CVSS alone.
+- **CVSS** — Common Vulnerability Scoring System — rates how bad a vulnerability *could* be (0-10). High CVSS does not mean anyone is actually exploiting it.
 
 <sub>Sources unavailable this run: AI explanations (HTTPError)</sub>
 
