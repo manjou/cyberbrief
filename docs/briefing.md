@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution** — Zyxel GS1900 network switches that received the vendor's earlier fix for an actively exploited flaw are still open to the exploit attackers used, researchers at Binarly found. [read more](https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html)
+- **Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It** — A fix for CVE-2026-83844, a remote code execution flaw in Windows Paint, is now in the Microsoft Store. [read more](https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html)
+- **DigiCert data breach exposes customer information, identity documents** — DigiCert warns it suffered a data breach after a server migration mistakenly exposed an internal business system to the internet, allowing unauthorized access to customer information and identity documents. [read more](https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents/)
+- **ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories** — How much damage can someone do without breaking much? Quite a lot, it seems. [read more](https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html)
+- **5 Active Cyber Threats That Put US Enterprises at Risk in October 2026** — October 2026 brought another wave of cyber threats targeting US businesses, with attackers exploiting trusted platforms, legitimate authentication processes, and everyday business workflows. [read more](https://thehackernews.com/2026/11/5-active-cyber-threats-that-put-us.html)
+- **CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access** — The Indian Computer Emergency Response Team (CERT-In) has disclosed that an artificial intelligence (AI)-assisted threat actor it tracks as Crafty Falcon is targeting organizations in the Banking, Financial Services, and Insurance (BFSI) sectors in the country. [read more](https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html)
+- **Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services** — Blockchain analysis firm Chainalysis has revealed that its ongoing investigation into the agentic cyber attack targeting its systems also exposed names, usernames, password hashes and live tokens for all users. [read more](https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html)
+- **D-Link warns of multiple zero-days in DGS-3130 Series switches** — D-Link shared mitigation measures for multiple unpatched security flaws affecting DGS-3130 series managed Gigabit stackable switches. [read more](https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-109618 (– CVSS, 100% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution
