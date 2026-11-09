@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **U.S. Agencies Warn Refrigeration Controller Attacks Could Cause Fires and Inventory Losses** — U.S. [read more](https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html)
+- **CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation** — The U.S. [read more](https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html)
+- **Hackers Exploiting ‘SSHole’ Authentication Bypass in OpenSSH** — The initial exploitation attempts are attributed to botnets and crypto miners, but other threat actors are expected to follow suit. [read more](https://www.securityweek.com/hackers-exploiting-sshole-authentication-bypass-in-openssh/)
+- **LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks** — Everyone running LNbits, a free, open-source Bitcoin Lightning wallet system, should shut down their servers now because of a wave of attacks, the project said yesterday. [read more](https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html)
+- **Ukraine dismantles crypto scam network that stole €4.3 million** — Ukrainian law enforcement arrested four suspects in a case involving the theft of more than €4.3 million using a network of cryptocurrency investment scam call centers. [read more](https://www.bleepingcomputer.com/news/security/ukraine-dismantles-crypto-scam-network-that-stole-43-million/)
+- **Amplifon Americas Data Breach Impacts 1.3 Million** — Hackers stole personal, health, and insurance information, including Social Security numbers, from the company’s internal systems. [read more](https://www.securityweek.com/amplifon-americas-data-breach-impacts-1-3-million/)
+- **Over 3 Million People Hit by Frontline Education Data Breach** — Frontline Education told Indiana regulators that its August data breach affected over 3 million school district staff and students. [read more](https://www.securityweek.com/3-million-people-hit-by-frontline-education-data-breach/)
+- **[NEU] [mittel] IBM QRadar SIEM (Log Source Management App): Mehrere Schwachstellen** — Ein Angreifer kann mehrere Schwachstellen in IBM QRadar SIEM (Log Source Management App) ausnutzen, um einen Denial of Service Angriff durchzuführen und um Informationen offenzulegen. [read more](https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4413)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-109618 (– CVSS, 100% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. U.S. Agencies Warn Refrigeration Controller Attacks Could Cause Fires and Inventory Losses
