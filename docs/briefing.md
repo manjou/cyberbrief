@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026** — Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild. [read more](https://thehackernews.com/2026/11/google-issues-chrome-security-update.html)
+- **SEGA newsletter data breach exposes 2.2 million email addresses** — Japanese gaming giant SEGA has disclosed that a data breach at its third-party newsletter provider, ARARA, exposed the email addresses of 2.2 million newsletter subscribers. [read more](https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/)
+- **Binance denies data breach after alleged ShinyHunters claims** — Binance, the world's largest crypto exchange, has denied claims of a new security breach made by a threat actor using the 'ShinyHunters' handle on a newly emerged underground cybercrime forum. [read more](https://www.bleepingcomputer.com/news/security/binance-denies-data-breach-after-alleged-shinyhunters-claims/)
+- **Google patches eighth Chrome zero-day exploited in attacks this year** — Google has released emergency security updates to patch a new Chrome vulnerability exploited in zero-day attacks, the eighth such flaw since the start of the year. [read more](https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/)
+- **N-able Takes N-central Offline as Researcher Drops Over 30 Zero-Days** — Attackers could exploit the flaws for remote code execution, credential theft, and administrator account creation. [read more](https://www.securityweek.com/n-able-takes-n-central-offline-as-researcher-drops-over-30-zero-days/)
+- **Revolve Puts Data Breach Victim Count at 1.5 Million** — Online fashion retailer Revolve has told regulators that the September cyberattack affected more than 1.5 million individuals. [read more](https://www.securityweek.com/revolve-puts-data-breach-victim-count-at-1-5-million/)
+- **Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia** — The South Asian cyber espionage group known as Bitter (aka APT-C-08, APT-Q-37, Hazy Tiger, Orange Yali, T-APT-17, and TA397) has been observed targeting South Asian organizations with a previously unreported remote access trojan called PapRAT. [read more](https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html)
+- **Turla hackers use new Cereal malware to spy on govt Exchange servers** — The Russian state-backed threat group Turla has been using a new malicious toolset called 'Cereal' to intercept emails on Microsoft Exchange servers at government organizations. [read more](https://www.bleepingcomputer.com/news/security/turla-hackers-use-new-ceral-malware-to-spy-on-govt-exchange-servers/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-111497 (– CVSS, 83% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026
