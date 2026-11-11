@@ -4,6 +4,20 @@
 
 *Today's focus: network infrastructure — a lighter refresh day.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026** — Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild. [read more](https://thehackernews.com/2026/11/google-issues-chrome-security-update.html)
+- **Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access** — French software company Vates VMS has warned of a critical security vulnerability in Xen Orchestra that it said is being actively exploited in the wild. [read more](https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html)
+- **Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day** — Today is Microsoft's November 2026 Patch Tuesday, with security updates addressing a record-breaking 1,235 flaws, including one actively exploited Microsoft Outlook zero-day vulnerability. [read more](https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/)
+- **Microsoft Fixes Nearly 1,100 Security Vulnerabilities** — Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. [read more](https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/)
+- **CISA flags Cisco BroadWorks flaw as actively exploited in attacks** — The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in attacks. [read more](https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/)
+- **N-able releases security hotfixes for zero-day vulnerabilities** — N-able released hotfixes to address zero-day bugs affecting its N-central remote monitoring and management (RMM) platform, which were publicly disclosed over the weekend and forced it to take vulnerable hosted environments offline. [read more](https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/)
+- **Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches** — The U.S. [read more](https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html)
+- **SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users** — An attacker exploited a remote code execution flaw in SGLang, an open-source inference engine, and ran code on one of NEAR AI's inference servers last Sunday. [read more](https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-97229 (– CVSS, 65% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026
