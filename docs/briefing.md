@@ -1,98 +1,84 @@
-# 🛡️ CyberBrief — GRC — Tuesday, 10 November 2026
+# 🛡️ CyberBrief — Net+ — Wednesday, 11 November 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
-*Today's focus: breaches, regulation, and compliance impact.*
-
-## 🕔 5pm recap
-
-*Didn't get through this morning? Here's the quick version — full detail is still below.*
-
-- **Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026** — Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild. [read more](https://thehackernews.com/2026/11/google-issues-chrome-security-update.html)
-- **SEGA newsletter data breach exposes 2.2 million email addresses** — Japanese gaming giant SEGA has disclosed that a data breach at its third-party newsletter provider, ARARA, exposed the email addresses of 2.2 million newsletter subscribers. [read more](https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/)
-- **Binance denies data breach after alleged ShinyHunters claims** — Binance, the world's largest crypto exchange, has denied claims of a new security breach made by a threat actor using the 'ShinyHunters' handle on a newly emerged underground cybercrime forum. [read more](https://www.bleepingcomputer.com/news/security/binance-denies-data-breach-after-alleged-shinyhunters-claims/)
-- **Google patches eighth Chrome zero-day exploited in attacks this year** — Google has released emergency security updates to patch a new Chrome vulnerability exploited in zero-day attacks, the eighth such flaw since the start of the year. [read more](https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/)
-- **N-able Takes N-central Offline as Researcher Drops Over 30 Zero-Days** — Attackers could exploit the flaws for remote code execution, credential theft, and administrator account creation. [read more](https://www.securityweek.com/n-able-takes-n-central-offline-as-researcher-drops-over-30-zero-days/)
-- **Revolve Puts Data Breach Victim Count at 1.5 Million** — Online fashion retailer Revolve has told regulators that the September cyberattack affected more than 1.5 million individuals. [read more](https://www.securityweek.com/revolve-puts-data-breach-victim-count-at-1-5-million/)
-- **Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia** — The South Asian cyber espionage group known as Bitter (aka APT-C-08, APT-Q-37, Hazy Tiger, Orange Yali, T-APT-17, and TA397) has been observed targeting South Asian organizations with a previously unreported remote access trojan called PapRAT. [read more](https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html)
-- **Turla hackers use new Cereal malware to spy on govt Exchange servers** — The Russian state-backed threat group Turla has been using a new malicious toolset called 'Cereal' to intercept emails on Microsoft Exchange servers at government organizations. [read more](https://www.bleepingcomputer.com/news/security/turla-hackers-use-new-ceral-malware-to-spy-on-govt-exchange-servers/)
-- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-111497 (– CVSS, 83% EPSS)
+*Today's focus: network infrastructure — a lighter refresh day.*
 
 ## 🔥 Top stories
 
 ### 1. Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026
 *The Hacker News* — [read more](https://thehackernews.com/2026/11/google-issues-chrome-security-update.html)
 
-Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild. The high-severity vulnerability, assigned the CVE identifier CVE-2026-125350 (CVSS score: N/A), has been described as a use-after-free bug in the XML component. Use-after-free bugs typically occur when a program attempts to access a memory location after
+Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild. The high-severity vulnerability, assigned the CVE identifier CVE-2026-125350 (CVSS score: 8.8), has been described as a use-after-free bug in the XML component. "Use-after-free in XML in Google Chrome prior to 157.0.8103.50 allowed a remote attacker
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 2. SEGA newsletter data breach exposes 2.2 million email addresses
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/)
+### 2. Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html)
 
-Japanese gaming giant SEGA has disclosed that a data breach at its third-party newsletter provider, ARARA, exposed the email addresses of 2.2 million newsletter subscribers.
+French software company Vates VMS has warned of a critical security vulnerability in Xen Orchestra that it said is being actively exploited in the wild. The authentication bypass flaw, which does not yet have a CVE identifier, is tracked as VSA-2026-062. "REST cookie parsing turns authenticationToken=j:%7B%7D into {}," Vates VMS said in an alert. "REST authentication passes that object to the
 
-> 📋 **ISO 27001:** A.5.19 Supplier relationships, A.5.34 Privacy and protection of PII
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
 
-### 3. Binance denies data breach after alleged ShinyHunters claims
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/binance-denies-data-breach-after-alleged-shinyhunters-claims/)
+### 3. Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/)
 
-Binance, the world's largest crypto exchange, has denied claims of a new security breach made by a threat actor using the 'ShinyHunters' handle on a newly emerged underground cybercrime forum.
-
-> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
-
-### 4. Google patches eighth Chrome zero-day exploited in attacks this year
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/)
-
-Google has released emergency security updates to patch a new Chrome vulnerability exploited in zero-day attacks, the eighth such flaw since the start of the year.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
-
-### 5. N-able Takes N-central Offline as Researcher Drops Over 30 Zero-Days
-*SecurityWeek* — [read more](https://www.securityweek.com/n-able-takes-n-central-offline-as-researcher-drops-over-30-zero-days/)
-
-Attackers could exploit the flaws for remote code execution, credential theft, and administrator account creation.
+Today is Microsoft's November 2026 Patch Tuesday, with security updates addressing a record-breaking 1,235 flaws, including one actively exploited Microsoft Outlook zero-day vulnerability.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
 
-### 6. Revolve Puts Data Breach Victim Count at 1.5 Million
-*SecurityWeek* — [read more](https://www.securityweek.com/revolve-puts-data-breach-victim-count-at-1-5-million/)
+### 4. Microsoft Fixes Nearly 1,100 Security Vulnerabilities
+*Krebs on Security* — [read more](https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/)
 
-Online fashion retailer Revolve has told regulators that the September cyberattack affected more than 1.5 million individuals.
+Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday addresses 63 critical flaws -- including a zero-day in Microsoft Outlook -- and comes amid important security updates from other software makers, including Adobe, Apple, Google and Mozilla.
 
-> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
 
-### 7. Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html)
+### 5. CISA flags Cisco BroadWorks flaw as actively exploited in attacks
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/)
 
-The South Asian cyber espionage group known as Bitter (aka APT-C-08, APT-Q-37, Hazy Tiger, Orange Yali, T-APT-17, and TA397) has been observed targeting South Asian organizations with a previously unreported remote access trojan called PapRAT. "PapRAT has both C++ and Rust implementations," Fortinet FortiGuard Labs researcher Cara Lin said. "Its capabilities include command execution, file
+The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in attacks.
 
-> 📋 **ISO 27001:** A.8.7 Protection against malware
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 8. Turla hackers use new Cereal malware to spy on govt Exchange servers
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/turla-hackers-use-new-ceral-malware-to-spy-on-govt-exchange-servers/)
+### 6. N-able releases security hotfixes for zero-day vulnerabilities
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/)
 
-The Russian state-backed threat group Turla has been using a new malicious toolset called 'Cereal' to intercept emails on Microsoft Exchange servers at government organizations.
+N-able released hotfixes to address zero-day bugs affecting its N-central remote monitoring and management (RMM) platform, which were publicly disclosed over the weekend and forced it to take vulnerable hosted environments offline.
 
-> 📋 **ISO 27001:** A.8.7 Protection against malware, A.8.8 Management of technical vulnerabilities
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
+
+### 7. Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html)
+
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) Tuesday added two security flaws impacting Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. Details of the vulnerabilities are below - CVE-2026-20320 (CVSS score: 7.5) - An improper restriction of XML external entity
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
+
+### 8. SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html)
+
+An attacker exploited a remote code execution flaw in SGLang, an open-source inference engine, and ran code on one of NEAR AI's inference servers last Sunday. The attacker could also have seen requests being processed on that server that day, including requests sent in confidential mode, the company said earlier this week. That mode processes requests inside a trusted execution environment (TEE
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
 ## 🚨 CVEs that matter today
 
 | CVE | Why it ranks | CVSS | EPSS | Exploited? |
 |-----|--------------|------|------|------------|
-| **CVE-2026-111497** | Google Brotli Unchecked Return Value Vulnerability | – | 83% | ⚠️ YES (KEV) |
 | **CVE-2026-97229** | GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability | – | 65% | ⚠️ YES (KEV) |
-| **CVE-2026-48356** | Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability | – | 47% | ⚠️ YES (KEV) |
-| **CVE-2026-46300** | Linux Kernel Missing Initialization of a Variable Vulnerability | – | 16% | ⚠️ YES (KEV) |
-| **CVE-2024-27834** | Apple Multiple Products Improper Authentication Vulnerability | – | 2% | ⚠️ YES (KEV) |
+| **CVE-2026-125350** | Google Chromium Use-After-Free Vulnerability | 8.8 | 0% | ⚠️ YES (KEV) |
+| **CVE-2026-118527** | Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability | – | 1% | ⚠️ YES (KEV) |
+| **CVE-2026-76418** | Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability | – | 1% | ⚠️ YES (KEV) |
+| **CVE-2026-41709** | Broadcom VMWare ESX Insufficient Logging Vulnerability | – | 1% | ⚠️ YES (KEV) |
 
 ## 📖 Jargon decoder
 
+- **KEV** — CISA's Known Exploited Vulnerabilities catalog — CVEs confirmed to be abused by attackers in the real world. If it's in KEV, patching it jumps to the top of the list.
 - **CVSS** — Common Vulnerability Scoring System — rates how bad a vulnerability *could* be (0-10). High CVSS does not mean anyone is actually exploiting it.
 - **CVE** — Common Vulnerabilities and Exposures — the global ID system for security flaws, e.g. CVE-2026-12345.
 - **RCE** — Remote Code Execution — the worst-case flaw: an attacker runs their own code on your system over the network.
 - **zero-day** — A vulnerability attackers exploit before the vendor has released a patch — defenders start at zero days of warning.
-- **KEV** — CISA's Known Exploited Vulnerabilities catalog — CVEs confirmed to be abused by attackers in the real world. If it's in KEV, patching it jumps to the top of the list.
 - **EPSS** — Exploit Prediction Scoring System — a 0-100% probability that a CVE will be exploited in the next 30 days. Better prioritization signal than CVSS alone.
 
 <sub>Sources unavailable this run: AI explanations (HTTPError)</sub>
