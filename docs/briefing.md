@@ -1,52 +1,38 @@
-# 🛡️ CyberBrief — Net+ — Wednesday, 11 November 2026
+# 🛡️ CyberBrief — SOC — Thursday, 12 November 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
-*Today's focus: network infrastructure — a lighter refresh day.*
-
-## 🕔 5pm recap
-
-*Didn't get through this morning? Here's the quick version — full detail is still below.*
-
-- **Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026** — Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild. [read more](https://thehackernews.com/2026/11/google-issues-chrome-security-update.html)
-- **Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access** — French software company Vates VMS has warned of a critical security vulnerability in Xen Orchestra that it said is being actively exploited in the wild. [read more](https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html)
-- **Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day** — Today is Microsoft's November 2026 Patch Tuesday, with security updates addressing a record-breaking 1,235 flaws, including one actively exploited Microsoft Outlook zero-day vulnerability. [read more](https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/)
-- **Microsoft Fixes Nearly 1,100 Security Vulnerabilities** — Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. [read more](https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/)
-- **CISA flags Cisco BroadWorks flaw as actively exploited in attacks** — The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in attacks. [read more](https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/)
-- **N-able releases security hotfixes for zero-day vulnerabilities** — N-able released hotfixes to address zero-day bugs affecting its N-central remote monitoring and management (RMM) platform, which were publicly disclosed over the weekend and forced it to take vulnerable hosted environments offline. [read more](https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/)
-- **Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches** — The U.S. [read more](https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html)
-- **SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users** — An attacker exploited a remote code execution flaw in SGLang, an open-source inference engine, and ran code on one of NEAR AI's inference servers last Sunday. [read more](https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html)
-- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-97229 (– CVSS, 65% EPSS)
+*Today's focus: active exploitation, incident response, and threat activity.*
 
 ## 🔥 Top stories
 
-### 1. Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/google-issues-chrome-security-update.html)
+### 1. Maersk confirms data breach as WhiteArmor ransomware demands $5 million
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/)
 
-Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild. The high-severity vulnerability, assigned the CVE identifier CVE-2026-125350 (CVSS score: 8.8), has been described as a use-after-free bug in the XML component. "Use-after-free in XML in Google Chrome prior to 157.0.8103.50 allowed a remote attacker
+Maersk announced that a threat actor gained unauthorized access to a local legacy system inherited through an earlier acquisition and extracted data from it.
+
+> 📋 **ISO 27001:** A.8.13 Information backup, A.5.34 Privacy and protection of PII
+
+### 2. N-able releases security hotfixes for zero-day vulnerabilities
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/)
+
+N-able released hotfixes to address zero-day bugs affecting its N-central remote monitoring and management (RMM) platform, which were publicly disclosed over the weekend and forced it to take vulnerable hosted environments offline.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 2. Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html)
+### 3. Hackers Target N-central Zero-Days as N-able Rushes Patches
+*SecurityWeek* — [read more](https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/)
 
-French software company Vates VMS has warned of a critical security vulnerability in Xen Orchestra that it said is being actively exploited in the wild. The authentication bypass flaw, which does not yet have a CVE identifier, is tracked as VSA-2026-062. "REST cookie parsing turns authenticationToken=j:%7B%7D into {}," Vates VMS said in an alert. "REST authentication passes that object to the
+The malicious activity started shortly after a researcher dropped over 30 zero-days. N-able patched the unauthenticated ones.
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 3. Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/)
+### 4. PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html)
 
-Today is Microsoft's November 2026 Patch Tuesday, with security updates addressing a record-breaking 1,235 flaws, including one actively exploited Microsoft Outlook zero-day vulnerability.
+PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution. The security flaw, tracked as CVE-2026-126325, carries a CVSS v4 score of 9.2 out of a maximum of 10.0. It has been described as a case of improper input validation and deserialization of untrusted data that could result in
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
-
-### 4. Microsoft Fixes Nearly 1,100 Security Vulnerabilities
-*Krebs on Security* — [read more](https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/)
-
-Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday addresses 63 critical flaws -- including a zero-day in Microsoft Outlook -- and comes amid important security updates from other software makers, including Adobe, Apple, Google and Mozilla.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
 ### 5. CISA flags Cisco BroadWorks flaw as actively exploited in attacks
 *BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/)
@@ -55,24 +41,24 @@ The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 6. N-able releases security hotfixes for zero-day vulnerabilities
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/)
-
-N-able released hotfixes to address zero-day bugs affecting its N-central remote monitoring and management (RMM) platform, which were publicly disclosed over the weekend and forced it to take vulnerable hosted environments offline.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
-
-### 7. Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches
+### 6. Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches
 *The Hacker News* — [read more](https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html)
 
 The U.S. Cybersecurity and Infrastructure Security Agency (CISA) Tuesday added two security flaws impacting Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. Details of the vulnerabilities are below - CVE-2026-20320 (CVSS score: 7.5) - An improper restriction of XML external entity
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
 
-### 8. SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html)
+### 7. Hackers plant GSocket on Linux servers for persistent access
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/hackers-plant-gsocket-on-linux-servers-for-persistent-access/)
 
-An attacker exploited a remote code execution flaw in SGLang, an open-source inference engine, and ran code on one of NEAR AI's inference servers last Sunday. The attacker could also have seen requests being processed on that server that day, including requests sent in confidential mode, the company said earlier this week. That mode processes requests inside a trusted execution environment (TEE
+Multiple threat actors are abusing GSocket, a legitimate open-source remote access tool, to maintain access to Linux servers even after patching the vulnerabilities exploited to gain initial access.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
+
+### 8. eBPF Rootkits: Why Underground Actors Are Taking Notice
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/ebpf-rootkits-why-underground-actors-are-taking-notice/)
+
+Linux eBPF rootkits can hide malicious activity and evade traditional detection methods without loading kernel modules. Flare reveals how these techniques are spreading through underground forums, where threat actors are sharing rootkit source code, tutorials, and exploits targeting Linux systems.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
@@ -82,9 +68,9 @@ An attacker exploited a remote code execution flaw in SGLang, an open-source inf
 |-----|--------------|------|------|------------|
 | **CVE-2026-97229** | GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability | – | 65% | ⚠️ YES (KEV) |
 | **CVE-2026-125350** | Google Chromium Use-After-Free Vulnerability | 8.8 | 0% | ⚠️ YES (KEV) |
-| **CVE-2026-118527** | Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability | – | 1% | ⚠️ YES (KEV) |
-| **CVE-2026-76418** | Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability | – | 1% | ⚠️ YES (KEV) |
-| **CVE-2026-41709** | Broadcom VMWare ESX Insufficient Logging Vulnerability | – | 1% | ⚠️ YES (KEV) |
+| **CVE-2026-123158** | OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability | – | 17% | ⚠️ YES (KEV) |
+| **CVE-2026-116779** | SignalWire FreeSwitch Code Injection Vulnerability | – | 2% | ⚠️ YES (KEV) |
+| **CVE-2026-116606** | Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability | – | 2% | ⚠️ YES (KEV) |
 
 ## 📖 Jargon decoder
 
@@ -93,6 +79,7 @@ An attacker exploited a remote code execution flaw in SGLang, an open-source inf
 - **CVE** — Common Vulnerabilities and Exposures — the global ID system for security flaws, e.g. CVE-2026-12345.
 - **RCE** — Remote Code Execution — the worst-case flaw: an attacker runs their own code on your system over the network.
 - **zero-day** — A vulnerability attackers exploit before the vendor has released a patch — defenders start at zero days of warning.
+- **ransomware** — Malware that encrypts your files and demands payment. Modern gangs also steal data first and threaten to publish it (double extortion).
 - **EPSS** — Exploit Prediction Scoring System — a 0-100% probability that a CVE will be exploited in the next 30 days. Better prioritization signal than CVSS alone.
 
 <sub>Sources unavailable this run: AI explanations (HTTPError)</sub>
