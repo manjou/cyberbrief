@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Maersk confirms data breach as WhiteArmor ransomware demands $5 million** — Maersk announced that a threat actor gained unauthorized access to a local legacy system inherited through an earlier acquisition and extracted data from it. [read more](https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/)
+- **N-able releases security hotfixes for zero-day vulnerabilities** — N-able released hotfixes to address zero-day bugs affecting its N-central remote monitoring and management (RMM) platform, which were publicly disclosed over the weekend and forced it to take vulnerable hosted environments offline. [read more](https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/)
+- **Hackers Target N-central Zero-Days as N-able Rushes Patches** — The malicious activity started shortly after a researcher dropped over 30 zero-days. [read more](https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/)
+- **PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution** — PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution. [read more](https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html)
+- **CISA flags Cisco BroadWorks flaw as actively exploited in attacks** — The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in attacks. [read more](https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/)
+- **Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches** — The U.S. [read more](https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html)
+- **Hackers plant GSocket on Linux servers for persistent access** — Multiple threat actors are abusing GSocket, a legitimate open-source remote access tool, to maintain access to Linux servers even after patching the vulnerabilities exploited to gain initial access. [read more](https://www.bleepingcomputer.com/news/security/hackers-plant-gsocket-on-linux-servers-for-persistent-access/)
+- **eBPF Rootkits: Why Underground Actors Are Taking Notice** — Linux eBPF rootkits can hide malicious activity and evade traditional detection methods without loading kernel modules. [read more](https://www.bleepingcomputer.com/news/security/ebpf-rootkits-why-underground-actors-are-taking-notice/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-97229 (– CVSS, 65% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Maersk confirms data breach as WhiteArmor ransomware demands $5 million
