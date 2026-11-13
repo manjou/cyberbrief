@@ -1,78 +1,64 @@
-# 🛡️ CyberBrief — SOC — Thursday, 12 November 2026
+# 🛡️ CyberBrief — GRC — Friday, 13 November 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
-*Today's focus: active exploitation, incident response, and threat activity.*
-
-## 🕔 5pm recap
-
-*Didn't get through this morning? Here's the quick version — full detail is still below.*
-
-- **Maersk confirms data breach as WhiteArmor ransomware demands $5 million** — Maersk announced that a threat actor gained unauthorized access to a local legacy system inherited through an earlier acquisition and extracted data from it. [read more](https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/)
-- **N-able releases security hotfixes for zero-day vulnerabilities** — N-able released hotfixes to address zero-day bugs affecting its N-central remote monitoring and management (RMM) platform, which were publicly disclosed over the weekend and forced it to take vulnerable hosted environments offline. [read more](https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/)
-- **Hackers Target N-central Zero-Days as N-able Rushes Patches** — The malicious activity started shortly after a researcher dropped over 30 zero-days. [read more](https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/)
-- **PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution** — PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution. [read more](https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html)
-- **CISA flags Cisco BroadWorks flaw as actively exploited in attacks** — The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in attacks. [read more](https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/)
-- **Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches** — The U.S. [read more](https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html)
-- **Hackers plant GSocket on Linux servers for persistent access** — Multiple threat actors are abusing GSocket, a legitimate open-source remote access tool, to maintain access to Linux servers even after patching the vulnerabilities exploited to gain initial access. [read more](https://www.bleepingcomputer.com/news/security/hackers-plant-gsocket-on-linux-servers-for-persistent-access/)
-- **eBPF Rootkits: Why Underground Actors Are Taking Notice** — Linux eBPF rootkits can hide malicious activity and evade traditional detection methods without loading kernel modules. [read more](https://www.bleepingcomputer.com/news/security/ebpf-rootkits-why-underground-actors-are-taking-notice/)
-- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-97229 (– CVSS, 65% EPSS)
+*Today's focus: breaches, regulation, and compliance impact.*
 
 ## 🔥 Top stories
 
-### 1. Maersk confirms data breach as WhiteArmor ransomware demands $5 million
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/)
+### 1. Apache HTTP Server patches critical HTTP/2 remote code execution flaw
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/)
 
-Maersk announced that a threat actor gained unauthorized access to a local legacy system inherited through an earlier acquisition and extracted data from it.
-
-> 📋 **ISO 27001:** A.8.13 Information backup, A.5.34 Privacy and protection of PII
-
-### 2. N-able releases security hotfixes for zero-day vulnerabilities
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/)
-
-N-able released hotfixes to address zero-day bugs affecting its N-central remote monitoring and management (RMM) platform, which were publicly disclosed over the weekend and forced it to take vulnerable hosted environments offline.
+A critical vulnerability in the HTTP/2 module of Apache HTTP Server could be exploited by an unauthenticated attacker to obtain remote code execution (RCE).
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 3. Hackers Target N-central Zero-Days as N-able Rushes Patches
-*SecurityWeek* — [read more](https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/)
+### 2. Check Point warns of zero-day flaw exploited for root access
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/)
 
-The malicious activity started shortly after a researcher dropped over 30 zero-days. N-able patched the unauthenticated ones.
+Check Point Software has released emergency hotfixes to address a high-severity flaw that hackers have been exploiting to gain root privileges and establish persistence on vulnerable devices since late October.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.8.2 Privileged access rights
+
+### 3. Hackers Exploit New N-central Zero-Day Hours After PoC Publication
+*SecurityWeek* — [read more](https://www.securityweek.com/hackers-exploit-new-n-central-zero-day-hours-after-poc-publication/)
+
+Dubbed 4EverAble2Shell, the flaw could allow remote, unauthenticated attackers to execute code with root privileges.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.8.2 Privileged access rights
+
+### 4. Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html)
+
+An international police operation took down servers behind Gootloader, CastleRAT and StealC this week. Criminals used the three malware tools to gain access to computers, steal passwords, and launch ransomware attacks. Police also seized about 6.4 million stolen logins belonging to more than 40,000 victims, according to Germany's Federal Criminal Police Office (BKA). Gootloader is a loader:
+
+> 📋 **ISO 27001:** A.8.13 Information backup, A.8.7 Protection against malware
+
+### 5. New N-able "4EverAble2Shell" zero-day exploited hours after PoC released
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/)
+
+Hackers are actively exploiting a newly disclosed N-able N-central zero-day vulnerability dubbed "4EverAble2Shell" to compromise servers and deploy cryptocurrency miners, with researchers reporting at least 21 affected systems, including 19 running the company's latest security update.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 4. PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution
+### 6. Apify rotates API tokens, prompts 2FA resets after breach
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/)
+
+Apify has rotated critical internal secrets and revoked some third-party OAuth connections after detecting unauthorized access to its internal systems.
+
+> 📋 **ISO 27001:** A.5.19 Supplier relationships, A.5.17 Authentication information
+
+### 7. Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’
+*SecurityWeek* — [read more](https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/)
+
+It abuses CLFS and Windows Defender to trigger arbitrary file creation in the context of the antimalware process.
+
+> 📋 **ISO 27001:** A.8.7 Protection against malware, A.8.8 Management of technical vulnerabilities
+
+### 8. PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution
 *The Hacker News* — [read more](https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html)
 
 PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution. The security flaw, tracked as CVE-2026-126325, carries a CVSS v4 score of 9.2 out of a maximum of 10.0. It has been described as a case of improper input validation and deserialization of untrusted data that could result in
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
-
-### 5. CISA flags Cisco BroadWorks flaw as actively exploited in attacks
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/)
-
-The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in attacks.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
-
-### 6. Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html)
-
-The U.S. Cybersecurity and Infrastructure Security Agency (CISA) Tuesday added two security flaws impacting Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. Details of the vulnerabilities are below - CVE-2026-20320 (CVSS score: 7.5) - An improper restriction of XML external entity
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
-
-### 7. Hackers plant GSocket on Linux servers for persistent access
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/hackers-plant-gsocket-on-linux-servers-for-persistent-access/)
-
-Multiple threat actors are abusing GSocket, a legitimate open-source remote access tool, to maintain access to Linux servers even after patching the vulnerabilities exploited to gain initial access.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
-
-### 8. eBPF Rootkits: Why Underground Actors Are Taking Notice
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/ebpf-rootkits-why-underground-actors-are-taking-notice/)
-
-Linux eBPF rootkits can hide malicious activity and evade traditional detection methods without loading kernel modules. Flare reveals how these techniques are spreading through underground forums, where threat actors are sharing rootkit source code, tutorials, and exploits targeting Linux systems.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
@@ -80,20 +66,20 @@ Linux eBPF rootkits can hide malicious activity and evade traditional detection 
 
 | CVE | Why it ranks | CVSS | EPSS | Exploited? |
 |-----|--------------|------|------|------------|
-| **CVE-2026-97229** | GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability | – | 65% | ⚠️ YES (KEV) |
-| **CVE-2026-125350** | Google Chromium Use-After-Free Vulnerability | 8.8 | 0% | ⚠️ YES (KEV) |
-| **CVE-2026-123158** | OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability | – | 17% | ⚠️ YES (KEV) |
+| **CVE-2026-123158** | OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability | – | 19% | ⚠️ YES (KEV) |
+| **CVE-2026-116606** | Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability | – | 9% | ⚠️ YES (KEV) |
+| **CVE-2026-111560** | Barracuda Networks Multiple Products OS Command Injection Vulnerability | – | 6% | ⚠️ YES (KEV) |
 | **CVE-2026-116779** | SignalWire FreeSwitch Code Injection Vulnerability | – | 2% | ⚠️ YES (KEV) |
-| **CVE-2026-116606** | Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability | – | 2% | ⚠️ YES (KEV) |
+| **CVE-2026-124194** | Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability | – | 2% | ⚠️ YES (KEV) |
 
 ## 📖 Jargon decoder
 
-- **KEV** — CISA's Known Exploited Vulnerabilities catalog — CVEs confirmed to be abused by attackers in the real world. If it's in KEV, patching it jumps to the top of the list.
 - **CVSS** — Common Vulnerability Scoring System — rates how bad a vulnerability *could* be (0-10). High CVSS does not mean anyone is actually exploiting it.
 - **CVE** — Common Vulnerabilities and Exposures — the global ID system for security flaws, e.g. CVE-2026-12345.
 - **RCE** — Remote Code Execution — the worst-case flaw: an attacker runs their own code on your system over the network.
 - **zero-day** — A vulnerability attackers exploit before the vendor has released a patch — defenders start at zero days of warning.
 - **ransomware** — Malware that encrypts your files and demands payment. Modern gangs also steal data first and threaten to publish it (double extortion).
+- **KEV** — CISA's Known Exploited Vulnerabilities catalog — CVEs confirmed to be abused by attackers in the real world. If it's in KEV, patching it jumps to the top of the list.
 - **EPSS** — Exploit Prediction Scoring System — a 0-100% probability that a CVE will be exploited in the next 30 days. Better prioritization signal than CVSS alone.
 
 <sub>Sources unavailable this run: AI explanations (HTTPError)</sub>
