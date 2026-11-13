@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Apache HTTP Server patches critical HTTP/2 remote code execution flaw** — A critical vulnerability in the HTTP/2 module of Apache HTTP Server could be exploited by an unauthenticated attacker to obtain remote code execution (RCE). [read more](https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/)
+- **Check Point warns of zero-day flaw exploited for root access** — Check Point Software has released emergency hotfixes to address a high-severity flaw that hackers have been exploiting to gain root privileges and establish persistence on vulnerable devices since late October. [read more](https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/)
+- **Hackers Exploit New N-central Zero-Day Hours After PoC Publication** — Dubbed 4EverAble2Shell, the flaw could allow remote, unauthenticated attackers to execute code with root privileges. [read more](https://www.securityweek.com/hackers-exploit-new-n-central-zero-day-hours-after-poc-publication/)
+- **Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins** — An international police operation took down servers behind Gootloader, CastleRAT and StealC this week. [read more](https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html)
+- **New N-able "4EverAble2Shell" zero-day exploited hours after PoC released** — Hackers are actively exploiting a newly disclosed N-able N-central zero-day vulnerability dubbed "4EverAble2Shell" to compromise servers and deploy cryptocurrency miners, with researchers reporting at least 21 affected systems, including 19 running the company's latest security update. [read more](https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/)
+- **Apify rotates API tokens, prompts 2FA resets after breach** — Apify has rotated critical internal secrets and revoked some third-party OAuth connections after detecting unauthorized access to its internal systems. [read more](https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/)
+- **Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’** — It abuses CLFS and Windows Defender to trigger arbitrary file creation in the context of the antimalware process. [read more](https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/)
+- **PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution** — PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution. [read more](https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-123158 (– CVSS, 19% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Apache HTTP Server patches critical HTTP/2 remote code execution flaw
