@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **TSMC employee data breach linked to cloud provider** — Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly stolen from the company up for auction. [read more](https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/)
+- **Telegram Widgets Hit by RCE Demos, Malware Warning Days After Launch** — Kaspersky suspects exploitation of Telegram’s new widgets to deliver WebRAT, as researchers demo RCE and Pavel Durov disputes the claims. [read more](https://www.securityweek.com/telegram-widgets-hit-by-rce-demos-malware-warning-days-after-launch/)
+- **Scans for LiteLLM/Starlette (CVE-2026-42271, CVE-2026-48710), (Mon, Nov 16th)** — This weekend, we started seeing requests for /mcp-rest/test/tools/list hitting our honeypots. [read more](https://isc.sans.edu/diary/rss/33522)
+- **Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign** — Phishing emails posing as Microsoft 365 service notices referenced the real outage incident and threatened to delete held messages. [read more](https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/)
+- **Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident** — The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. [read more](https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html)
+- **Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys** — Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records. [read more](https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html)
+- **BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server** — An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server. [read more](https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html)
+- **Uber Data Breach Impacts 150,000 People** — Hackers compromised a third-party services provider and stole names, addresses, and driver’s license numbers. [read more](https://www.securityweek.com/uber-data-breach-impacts-150000-people/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-123158 (– CVSS, 19% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. TSMC employee data breach linked to cloud provider
