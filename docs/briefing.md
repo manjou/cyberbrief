@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **N-able Kills Legacy APIs, Patches 17 N-central Zero-Days** — The patches target recently disclosed zero-days, as well as vulnerabilities already exploited in the wild. [read more](https://www.securityweek.com/n-able-kills-legacy-apis-patches-17-n-central-zero-days/)
+- **Uber notifies drivers of data breach affecting nearly 150,000 people** — Ride-hailing company Uber is notifying nearly 150,000 drivers that attackers stole their data after breaching AI infrastructure provider Fireworks in early October. [read more](https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/)
+- **Access Dental Management Data Breach Impacts Over 340,000** — Hackers breached Access Dental’s network and stole personal, health, and insurance information. [read more](https://www.securityweek.com/access-dental-management-data-breach-impacts-over-340000/)
+- **Fandango says hackers stole payment card details from checkout pages** — Ticket seller Fandango Media is notifying customers about a data breach that exposed payment card details entered on its checkout pages. [read more](https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/)
+- **Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap** — Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. [read more](https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html)
+- **Optimizely hack infected CNN, Fox News, BBC, Salesforce sites with malware** — A suspected supply chain attack targeting Optimizely has led to malicious JavaScript being loaded on numerous popular websites, including Zoom, CNN, Fox News, BBC, Salesforce, and GitLab, exposing visitors to scripts designed to steal cryptocurrency and payment information and exploit vulnerabilities in iOS devices. [read more](https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/)
+- **7 Tips For Complying with CJIS Password and MFA Requirements** — The FBI's latest CJIS Security Policy requires law enforcement agencies to strengthen password protections and enforce MFA across privileged and non-privileged accounts. [read more](https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/)
+- **New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels** — Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage legitimate services like Microsoft SharePoint and GitHub for command‑and‑control (C2). [read more](https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-123158 (– CVSS, 19% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. N-able Kills Legacy APIs, Patches 17 N-central Zero-Days
