@@ -1,80 +1,66 @@
-# 🛡️ CyberBrief — SOC — Monday, 16 November 2026
+# 🛡️ CyberBrief — GRC — Tuesday, 17 November 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
-*Today's focus: active exploitation, incident response, and threat activity.*
-
-## 🕔 5pm recap
-
-*Didn't get through this morning? Here's the quick version — full detail is still below.*
-
-- **TSMC employee data breach linked to cloud provider** — Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly stolen from the company up for auction. [read more](https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/)
-- **Telegram Widgets Hit by RCE Demos, Malware Warning Days After Launch** — Kaspersky suspects exploitation of Telegram’s new widgets to deliver WebRAT, as researchers demo RCE and Pavel Durov disputes the claims. [read more](https://www.securityweek.com/telegram-widgets-hit-by-rce-demos-malware-warning-days-after-launch/)
-- **Scans for LiteLLM/Starlette (CVE-2026-42271, CVE-2026-48710), (Mon, Nov 16th)** — This weekend, we started seeing requests for /mcp-rest/test/tools/list hitting our honeypots. [read more](https://isc.sans.edu/diary/rss/33522)
-- **Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign** — Phishing emails posing as Microsoft 365 service notices referenced the real outage incident and threatened to delete held messages. [read more](https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/)
-- **Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident** — The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. [read more](https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html)
-- **Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys** — Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records. [read more](https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html)
-- **BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server** — An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server. [read more](https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html)
-- **Uber Data Breach Impacts 150,000 People** — Hackers compromised a third-party services provider and stole names, addresses, and driver’s license numbers. [read more](https://www.securityweek.com/uber-data-breach-impacts-150000-people/)
-- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-123158 (– CVSS, 19% EPSS)
+*Today's focus: breaches, regulation, and compliance impact.*
 
 ## 🔥 Top stories
 
-### 1. TSMC employee data breach linked to cloud provider
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/)
+### 1. N-able Kills Legacy APIs, Patches 17 N-central Zero-Days
+*SecurityWeek* — [read more](https://www.securityweek.com/n-able-kills-legacy-apis-patches-17-n-central-zero-days/)
 
-Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly stolen from the company up for auction.
-
-> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII, A.5.23 Cloud services security
-
-### 2. Telegram Widgets Hit by RCE Demos, Malware Warning Days After Launch
-*SecurityWeek* — [read more](https://www.securityweek.com/telegram-widgets-hit-by-rce-demos-malware-warning-days-after-launch/)
-
-Kaspersky suspects exploitation of Telegram’s new widgets to deliver WebRAT, as researchers demo RCE and Pavel Durov disputes the claims.
-
-> 📋 **ISO 27001:** A.8.7 Protection against malware, A.8.8 Management of technical vulnerabilities
-
-### 3. Scans for LiteLLM/Starlette (CVE-2026-42271, CVE-2026-48710), (Mon, Nov 16th)
-*SANS ISC* — [read more](https://isc.sans.edu/diary/rss/33522)
-
-This weekend, we started seeing requests for /mcp-rest/test/tools/list hitting our honeypots. These requests appear to attempt to exploit CVE-2026-42271 and CVE-2026-48710. Horizon3.ai published a short write-up about how these vulnerabilities can be chained to achieve remote code execution without authentication &#x5b;Horizon3&#x5d;&#xd;
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
-
-### 4. Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign
-*SecurityWeek* — [read more](https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/)
-
-Phishing emails posing as Microsoft 365 service notices referenced the real outage incident and threatened to delete held messages.
-
-> 📋 **ISO 27001:** A.6.3 Awareness, education and training, A.8.6 Capacity management
-
-### 5. Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html)
-
-The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. "An attacker obtained an access key we had issued to Fireworks," Cursor said in a Friday update. "The key was exposed by Fireworks, and the attacker used it to copy data from a read-only
-
-> 📋 **ISO 27001:** A.8.7 Protection against malware, A.5.34 Privacy and protection of PII
-
-### 6. Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html)
-
-Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records. The records, which Amazon's threat intelligence team captured with decoy servers, describe stolen keys being used to run the AI models that powered the search for more keys. The team said this
-
-> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
-
-### 7. BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html)
-
-An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server. The activity, documented by Kaspersky's ICS CERT team after it was contacted by the affected developer in June 2025, has been attributed to a threat actor named BO Team (aka Black Owl, Hoody Hyena,
+The patches target recently disclosed zero-days, as well as vulnerabilities already exploited in the wild.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 8. Uber Data Breach Impacts 150,000 People
-*SecurityWeek* — [read more](https://www.securityweek.com/uber-data-breach-impacts-150000-people/)
+### 2. Uber notifies drivers of data breach affecting nearly 150,000 people
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/)
 
-Hackers compromised a third-party services provider and stole names, addresses, and driver’s license numbers.
+Ride-hailing company Uber is notifying nearly 150,000 drivers that attackers stole their data after breaching AI infrastructure provider Fireworks in early October.
 
-> 📋 **ISO 27001:** A.5.19 Supplier relationships, A.5.34 Privacy and protection of PII
+> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
+
+### 3. Access Dental Management Data Breach Impacts Over 340,000
+*SecurityWeek* — [read more](https://www.securityweek.com/access-dental-management-data-breach-impacts-over-340000/)
+
+Hackers breached Access Dental’s network and stole personal, health, and insurance information.
+
+> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
+
+### 4. Fandango says hackers stole payment card details from checkout pages
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/)
+
+Ticket seller Fandango Media is notifying customers about a data breach that exposed payment card details entered on its checkout pages.
+
+> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
+
+### 5. Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html)
+
+Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it. In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicious code that looked like it came from GitHub's official checkout tool. They even labeled it a
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.19 Supplier relationships
+
+### 6. Optimizely hack infected CNN, Fox News, BBC, Salesforce sites with malware
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/)
+
+A suspected supply chain attack targeting Optimizely has led to malicious JavaScript being loaded on numerous popular websites, including Zoom, CNN, Fox News, BBC, Salesforce, and GitLab, exposing visitors to scripts designed to steal cryptocurrency and payment information and exploit vulnerabilities in iOS devices.
+
+> 📋 **ISO 27001:** A.8.7 Protection against malware, A.8.8 Management of technical vulnerabilities
+
+### 7. 7 Tips For Complying with CJIS Password and MFA Requirements
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/)
+
+The FBI's latest CJIS Security Policy requires law enforcement agencies to strengthen password protections and enforce MFA across privileged and non-privileged accounts. Specops Software outlines seven practical steps to meet these requirements, block compromised passwords, and maintain compliance.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
+
+### 8. New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html)
+
+Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage legitimate services like Microsoft SharePoint and GitHub for command‑and‑control (C2). The activity has been codenamed Operation ShadowCloud by Kaspersky. The Russian cybersecurity company said it identified the campaign in early 2026.
+
+> 📋 **ISO 27001:** A.8.7 Protection against malware, A.5.23 Cloud services security
 
 ## 🚨 CVEs that matter today
 
@@ -88,8 +74,8 @@ Hackers compromised a third-party services provider and stole names, addresses, 
 
 ## 📖 Jargon decoder
 
-- **CVE** — Common Vulnerabilities and Exposures — the global ID system for security flaws, e.g. CVE-2026-12345.
 - **RCE** — Remote Code Execution — the worst-case flaw: an attacker runs their own code on your system over the network.
+- **zero-day** — A vulnerability attackers exploit before the vendor has released a patch — defenders start at zero days of warning.
 - **KEV** — CISA's Known Exploited Vulnerabilities catalog — CVEs confirmed to be abused by attackers in the real world. If it's in KEV, patching it jumps to the top of the list.
 - **EPSS** — Exploit Prediction Scoring System — a 0-100% probability that a CVE will be exploited in the next 30 days. Better prioritization signal than CVSS alone.
 - **CVSS** — Common Vulnerability Scoring System — rates how bad a vulnerability *could* be (0-10). High CVSS does not mean anyone is actually exploiting it.
