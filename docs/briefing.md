@@ -1,98 +1,84 @@
-# 🛡️ CyberBrief — GRC — Tuesday, 17 November 2026
+# 🛡️ CyberBrief — Net+ — Wednesday, 18 November 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
-*Today's focus: breaches, regulation, and compliance impact.*
-
-## 🕔 5pm recap
-
-*Didn't get through this morning? Here's the quick version — full detail is still below.*
-
-- **N-able Kills Legacy APIs, Patches 17 N-central Zero-Days** — The patches target recently disclosed zero-days, as well as vulnerabilities already exploited in the wild. [read more](https://www.securityweek.com/n-able-kills-legacy-apis-patches-17-n-central-zero-days/)
-- **Uber notifies drivers of data breach affecting nearly 150,000 people** — Ride-hailing company Uber is notifying nearly 150,000 drivers that attackers stole their data after breaching AI infrastructure provider Fireworks in early October. [read more](https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/)
-- **Access Dental Management Data Breach Impacts Over 340,000** — Hackers breached Access Dental’s network and stole personal, health, and insurance information. [read more](https://www.securityweek.com/access-dental-management-data-breach-impacts-over-340000/)
-- **Fandango says hackers stole payment card details from checkout pages** — Ticket seller Fandango Media is notifying customers about a data breach that exposed payment card details entered on its checkout pages. [read more](https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/)
-- **Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap** — Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. [read more](https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html)
-- **Optimizely hack infected CNN, Fox News, BBC, Salesforce sites with malware** — A suspected supply chain attack targeting Optimizely has led to malicious JavaScript being loaded on numerous popular websites, including Zoom, CNN, Fox News, BBC, Salesforce, and GitLab, exposing visitors to scripts designed to steal cryptocurrency and payment information and exploit vulnerabilities in iOS devices. [read more](https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/)
-- **7 Tips For Complying with CJIS Password and MFA Requirements** — The FBI's latest CJIS Security Policy requires law enforcement agencies to strengthen password protections and enforce MFA across privileged and non-privileged accounts. [read more](https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/)
-- **New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels** — Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage legitimate services like Microsoft SharePoint and GitHub for command‑and‑control (C2). [read more](https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html)
-- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-123158 (– CVSS, 19% EPSS)
+*Today's focus: network infrastructure — a lighter refresh day.*
 
 ## 🔥 Top stories
 
-### 1. N-able Kills Legacy APIs, Patches 17 N-central Zero-Days
-*SecurityWeek* — [read more](https://www.securityweek.com/n-able-kills-legacy-apis-patches-17-n-central-zero-days/)
+### 1. Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html)
 
-The patches target recently disclosed zero-days, as well as vulnerabilities already exploited in the wild.
+Oracle is preparing to release security patches for 11 vulnerabilities in Java SE on Tuesday, November 17, 2026, all of which may be exploited remotely without authentication, as separate reports warn of a potentially critical remote code execution (RCE) flaw affecting OpenJDK. The 11 vulnerabilities carry a maximum CVSS 3.1 severity score of 8.1, according to Oracle's advance security notice.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
+
+### 2. Critical Java4Shell flaw allows RCE attacks on major Java applications
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/)
+
+A critical vulnerability dubbed Java4Shell in OpenJDK, the open-source implementation of Java, can allow unauthenticated attackers to remotely execute code on popular enterprise applications, including Jenkins, Atlassian Jira, Confluence, and Keycloak.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 2. Uber notifies drivers of data breach affecting nearly 150,000 people
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/)
+### 3. Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html)
 
-Ride-hailing company Uber is notifying nearly 150,000 drivers that attackers stole their data after breaching AI infrastructure provider Fireworks in early October.
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical security flaw impacting Perforce Puppet, an enterprise infrastructure-as-code (IaC) and configuration management platform, to its Known Exploited Vulnerabilities (KEV) catalog, citing reports of active exploitation. The vulnerability, tracked as CVE-2026-115731 (CVSS score: 9.4), is a case of
 
-> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 3. Access Dental Management Data Breach Impacts Over 340,000
-*SecurityWeek* — [read more](https://www.securityweek.com/access-dental-management-data-breach-impacts-over-340000/)
+### 4. CISA Urges Immediate Patching of Java4Shell Flaw That Could Allow Remote Code Execution
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html)
 
-Hackers breached Access Dental’s network and stole personal, health, and insurance information.
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has urged organizations to immediately patch a newly disclosed critical security flaw impacting Oracle Java. The flaw, tracked as CVE-2026-114938 (CVSS score: 8.1), refers to a case of out-of-bounds write that can lead to denial-of-service (DoS) or remote code execution under certain conditions. "This critical memory-corruption
 
-> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 4. Fandango says hackers stole payment card details from checkout pages
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/)
+### 5. Apache warns of Roller RCE vulnerability exploited in attacks
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/)
 
-Ticket seller Fandango Media is notifying customers about a data breach that exposed payment card details entered on its checkout pages.
+Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers.
 
-> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 5. Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap
+### 6. Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap
 *The Hacker News* — [read more](https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html)
 
 Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it. In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicious code that looked like it came from GitHub's official checkout tool. They even labeled it a
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.19 Supplier relationships
 
-### 6. Optimizely hack infected CNN, Fox News, BBC, Salesforce sites with malware
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/)
+### 7. Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization
+*SecurityWeek* — [read more](https://www.securityweek.com/russian-apt-poses-as-employee-of-hacked-firm-to-breach-another-us-organization/)
 
-A suspected supply chain attack targeting Optimizely has led to malicious JavaScript being loaded on numerous popular websites, including Zoom, CNN, Fox News, BBC, Salesforce, and GitLab, exposing visitors to scripts designed to steal cryptocurrency and payment information and exploit vulnerabilities in iOS devices.
+Star Blizzard weaponized data and identities stolen in late 2025 to phish and compromise a US organization.
 
-> 📋 **ISO 27001:** A.8.7 Protection against malware, A.8.8 Management of technical vulnerabilities
+> 📋 **ISO 27001:** A.8.2 Privileged access rights
 
-### 7. 7 Tips For Complying with CJIS Password and MFA Requirements
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/)
+### 8. Java4Shell Vulnerability Puts Many Enterprise Applications at Risk of Takeover
+*SecurityWeek* — [read more](https://www.securityweek.com/java4shell-vulnerability-puts-many-enterprise-applications-at-risk-of-takeover/)
 
-The FBI's latest CJIS Security Policy requires law enforcement agencies to strengthen password protections and enforce MFA across privileged and non-privileged accounts. Specops Software outlines seven practical steps to meet these requirements, block compromised passwords, and maintain compliance.
+Calif demonstrated remote code execution in Jira, Jenkins and Keycloak, while VulnCheck says real-world RCE requires per-target work
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
-
-### 8. New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html)
-
-Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage legitimate services like Microsoft SharePoint and GitHub for command‑and‑control (C2). The activity has been codenamed Operation ShadowCloud by Kaspersky. The Russian cybersecurity company said it identified the campaign in early 2026.
-
-> 📋 **ISO 27001:** A.8.7 Protection against malware, A.5.23 Cloud services security
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
 ## 🚨 CVEs that matter today
 
 | CVE | Why it ranks | CVSS | EPSS | Exploited? |
 |-----|--------------|------|------|------------|
+| **CVE-2026-123039** | Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability | – | 2% | ⚠️ YES (KEV) |
+| **CVE-2026-20320** | Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability | – | 1% | ⚠️ YES (KEV) |
+| **CVE-2026-19868** | SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability | – | 1% | ⚠️ YES (KEV) |
 | **CVE-2026-123158** | OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability | – | 19% | ⚠️ YES (KEV) |
 | **CVE-2026-116606** | Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability | – | 11% | ⚠️ YES (KEV) |
-| **CVE-2026-111560** | Barracuda Networks Multiple Products OS Command Injection Vulnerability | – | 9% | ⚠️ YES (KEV) |
-| **CVE-2026-116779** | SignalWire FreeSwitch Code Injection Vulnerability | – | 2% | ⚠️ YES (KEV) |
-| **CVE-2026-123039** | Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability | – | 2% | ⚠️ YES (KEV) |
 
 ## 📖 Jargon decoder
 
-- **RCE** — Remote Code Execution — the worst-case flaw: an attacker runs their own code on your system over the network.
-- **zero-day** — A vulnerability attackers exploit before the vendor has released a patch — defenders start at zero days of warning.
 - **KEV** — CISA's Known Exploited Vulnerabilities catalog — CVEs confirmed to be abused by attackers in the real world. If it's in KEV, patching it jumps to the top of the list.
-- **EPSS** — Exploit Prediction Scoring System — a 0-100% probability that a CVE will be exploited in the next 30 days. Better prioritization signal than CVSS alone.
 - **CVSS** — Common Vulnerability Scoring System — rates how bad a vulnerability *could* be (0-10). High CVSS does not mean anyone is actually exploiting it.
+- **CVE** — Common Vulnerabilities and Exposures — the global ID system for security flaws, e.g. CVE-2026-12345.
+- **RCE** — Remote Code Execution — the worst-case flaw: an attacker runs their own code on your system over the network.
+- **EPSS** — Exploit Prediction Scoring System — a 0-100% probability that a CVE will be exploited in the next 30 days. Better prioritization signal than CVSS alone.
 
 <sub>Sources unavailable this run: AI explanations (HTTPError)</sub>
 
