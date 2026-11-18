@@ -4,6 +4,20 @@
 
 *Today's focus: network infrastructure — a lighter refresh day.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges** — Oracle is preparing to release security patches for 11 vulnerabilities in Java SE on Tuesday, November 17, 2026, all of which may be exploited remotely without authentication, as separate reports warn of a potentially critical remote code execution (RCE) flaw affecting OpenJDK. [read more](https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html)
+- **Critical Java4Shell flaw allows RCE attacks on major Java applications** — A critical vulnerability dubbed Java4Shell in OpenJDK, the open-source implementation of Java, can allow unauthenticated attackers to remotely execute code on popular enterprise applications, including Jenkins, Atlassian Jira, Confluence, and Keycloak. [read more](https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/)
+- **Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers** — The U.S. [read more](https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html)
+- **CISA Urges Immediate Patching of Java4Shell Flaw That Could Allow Remote Code Execution** — The U.S. [read more](https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html)
+- **Apache warns of Roller RCE vulnerability exploited in attacks** — Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers. [read more](https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/)
+- **Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap** — Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. [read more](https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html)
+- **Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization** — Star Blizzard weaponized data and identities stolen in late 2025 to phish and compromise a US organization. [read more](https://www.securityweek.com/russian-apt-poses-as-employee-of-hacked-firm-to-breach-another-us-organization/)
+- **Java4Shell Vulnerability Puts Many Enterprise Applications at Risk of Takeover** — Calif demonstrated remote code execution in Jira, Jenkins and Keycloak, while VulnCheck says real-world RCE requires per-target work. [read more](https://www.securityweek.com/java4shell-vulnerability-puts-many-enterprise-applications-at-risk-of-takeover/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-123039 (– CVSS, 2% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges
