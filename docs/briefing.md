@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required** — A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF) The vulnerability, tracked as CVE-2026-129448 (CVSS score: 9.8), is a case of unauthenticated deserialization in the XML-RPC endpoint that could lead to remote code execution. [read more](https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html)
+- **Drupal patches critical RCE flaw, warns exploits may surface quickly** — The Drupal Security Team has patched a critical remote code execution vulnerability that can let attackers take over vulnerable sites. [read more](https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/)
+- **CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks** — The U.S. [read more](https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html)
+- **Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE** — Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. [read more](https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html)
+- **NVIDIA investigating Gentlemen ransomware breach claims** — NVIDIA is investigating claims of a security breach after the Gentlemen ransomware group has added the company to its dark web data leak site. [read more](https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/)
+- **Apache warns of Roller RCE vulnerability exploited in attacks** — Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers. [read more](https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/)
+- **Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers** — The U.S. [read more](https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html)
+- **10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers** — A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in. [read more](https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-40217 (– CVSS, 62% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required
