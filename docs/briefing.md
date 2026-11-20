@@ -1,80 +1,66 @@
-# 🛡️ CyberBrief — SOC — Thursday, 19 November 2026
+# 🛡️ CyberBrief — GRC — Friday, 20 November 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
-*Today's focus: active exploitation, incident response, and threat activity.*
-
-## 🕔 5pm recap
-
-*Didn't get through this morning? Here's the quick version — full detail is still below.*
-
-- **Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required** — A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF) The vulnerability, tracked as CVE-2026-129448 (CVSS score: 9.8), is a case of unauthenticated deserialization in the XML-RPC endpoint that could lead to remote code execution. [read more](https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html)
-- **Drupal patches critical RCE flaw, warns exploits may surface quickly** — The Drupal Security Team has patched a critical remote code execution vulnerability that can let attackers take over vulnerable sites. [read more](https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/)
-- **CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks** — The U.S. [read more](https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html)
-- **Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE** — Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. [read more](https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html)
-- **NVIDIA investigating Gentlemen ransomware breach claims** — NVIDIA is investigating claims of a security breach after the Gentlemen ransomware group has added the company to its dark web data leak site. [read more](https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/)
-- **Apache warns of Roller RCE vulnerability exploited in attacks** — Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers. [read more](https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/)
-- **Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers** — The U.S. [read more](https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html)
-- **10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers** — A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in. [read more](https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html)
-- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-40217 (– CVSS, 62% EPSS)
+*Today's focus: breaches, regulation, and compliance impact.*
 
 ## 🔥 Top stories
 
-### 1. Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html)
+### 1. F5 releases emergency patches for critical BIG-IP RCE flaws
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/)
 
-A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF) The vulnerability, tracked as CVE-2026-129448 (CVSS score: 9.8), is a case of unauthenticated deserialization in the XML-RPC endpoint that could lead to remote code execution. "Deserialization of Untrusted
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
-
-### 2. Drupal patches critical RCE flaw, warns exploits may surface quickly
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/)
-
-The Drupal Security Team has patched a critical remote code execution vulnerability that can let attackers take over vulnerable sites.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
-
-### 3. CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html)
-
-The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added four vulnerabilities impacting Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis, and Vanderbilt University Research Electronic Data Capture (REDCap) to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vulnerabilities are listed below -
-
-> 📋 **ISO 27001:** A.8.13 Information backup, A.8.8 Management of technical vulnerabilities
-
-### 4. Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html)
-
-Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. For five of them, its maintainers say, proof-of-concept exploits, or PoCs, have shown that crafted input can run code on the machine. "We are aware of PoCs that prove some of them can be used to trigger remote code execution," the maintainers said. The project released fixed versions
+US cybersecurity company F5 warned customers to patch five critical BIG-IP vulnerabilities that attackers can exploit to trigger denial-of-service (DoS) or gain remote code execution.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
 
-### 5. NVIDIA investigating Gentlemen ransomware breach claims
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/)
+### 2. New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html)
 
-NVIDIA is investigating claims of a security breach after the Gentlemen ransomware group has added the company to its dark web data leak site.
-
-> 📋 **ISO 27001:** A.8.13 Information backup, A.5.34 Privacy and protection of PII
-
-### 6. Apache warns of Roller RCE vulnerability exploited in attacks
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/)
-
-Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers.
+A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. Whoever uses it gets only a limited account, not administrator control of the machine. The method was posted yesterday by a researcher who uses the handles MSNightmare and Nightmare Eclipse, and the endpoint-security firm ThreatLocker
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 7. Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html)
+### 3. Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html)
 
-The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical security flaw impacting Perforce Puppet, an enterprise infrastructure-as-code (IaC) and configuration management platform, to its Known Exploited Vulnerabilities (KEV) catalog, citing reports of active exploitation. The vulnerability, tracked as CVE-2026-115731 (CVSS score: 9.4), is a case of
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
-
-### 8. 10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html)
-
-A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in. The decade-old flaw, CVE-2026-123007, dubbed "nginx2root," has been present in NGINX's open-source code since version 1.9.5, released on September 22, 2015. Fixed versions 1.31.9 and 1.30.7 came out today. F5, the company behind NGINX, says attackers can run code where
+Threat actors have been observed exploiting a recently disclosed critical security flaw in Cisco Expressway to breach a Russian organization shortly after the public release of a proof-of-concept (PoC) exploit. The activity involves the exploitation of CVE-2026-76466 (CVSS score: 9.8), a vulnerability that could allow an unauthenticated, remote attacker with network access to a Cisco Expressway
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
+
+### 4. Five warning signs of ransomware breach before encryption or data theft
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/)
+
+Ransomware attacks often involve credential theft, lateral movement, and attempts to disable security controls long before encryption begins. Acronis examines five warning signs that can help defenders detect intrusions earlier, contain malicious activity, and protect critical systems and backups.
+
+> 📋 **ISO 27001:** A.8.13 Information backup, A.5.17 Authentication information
+
+### 5. Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT
+*SecurityWeek* — [read more](https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/)
+
+Google says a China-linked espionage group exploited a critical VMware vCenter authentication bypass before Broadcom released a patch.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
+
+### 6. China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html)
+
+The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026. The vulnerability, tracked as CVE-2026-123890 (CVSS score: 9.8), is a case of authentication bypass in the VMware Directory Service that could be exploited to gain unauthorized
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
+
+### 7. VMware patches vCenter zero-day exploited in attacks since September
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/)
+
+Broadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
+
+### 8. Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html)
+
+Under specific conditions, a critical vulnerability in Drupal core can allow an attacker without login credentials to use the built-in installer to attempt to reinstall a site. That can lead to a site takeover or remote code execution, and the project rates the vulnerable configurations as uncommon. Fixed releases for all supported branches shipped yesterday. The Drupal Security Team disclosed
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
 
 ## 🚨 CVEs that matter today
 
@@ -88,11 +74,12 @@ A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers wi
 
 ## 📖 Jargon decoder
 
-- **KEV** — CISA's Known Exploited Vulnerabilities catalog — CVEs confirmed to be abused by attackers in the real world. If it's in KEV, patching it jumps to the top of the list.
 - **CVSS** — Common Vulnerability Scoring System — rates how bad a vulnerability *could* be (0-10). High CVSS does not mean anyone is actually exploiting it.
 - **CVE** — Common Vulnerabilities and Exposures — the global ID system for security flaws, e.g. CVE-2026-12345.
 - **RCE** — Remote Code Execution — the worst-case flaw: an attacker runs their own code on your system over the network.
+- **zero-day** — A vulnerability attackers exploit before the vendor has released a patch — defenders start at zero days of warning.
 - **ransomware** — Malware that encrypts your files and demands payment. Modern gangs also steal data first and threaten to publish it (double extortion).
+- **KEV** — CISA's Known Exploited Vulnerabilities catalog — CVEs confirmed to be abused by attackers in the real world. If it's in KEV, patching it jumps to the top of the list.
 - **EPSS** — Exploit Prediction Scoring System — a 0-100% probability that a CVE will be exploited in the next 30 days. Better prioritization signal than CVSS alone.
 
 <sub>Sources unavailable this run: AI explanations (HTTPError)</sub>
