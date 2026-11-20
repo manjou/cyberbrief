@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **F5 releases emergency patches for critical BIG-IP RCE flaws** — US cybersecurity company F5 warned customers to patch five critical BIG-IP vulnerabilities that attackers can exploit to trigger denial-of-service (DoS) or gain remote code execution. [read more](https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/)
+- **New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It** — A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. [read more](https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html)
+- **Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network** — Threat actors have been observed exploiting a recently disclosed critical security flaw in Cisco Expressway to breach a Russian organization shortly after the public release of a proof-of-concept (PoC) exploit. [read more](https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html)
+- **Five warning signs of ransomware breach before encryption or data theft** — Ransomware attacks often involve credential theft, lateral movement, and attempts to disable security controls long before encryption begins. [read more](https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/)
+- **Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT** — Google says a China-linked espionage group exploited a critical VMware vCenter authentication bypass before Broadcom released a patch. [read more](https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/)
+- **China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data** — The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026. [read more](https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html)
+- **VMware patches vCenter zero-day exploited in attacks since September** — Broadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026. [read more](https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/)
+- **Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites** — Under specific conditions, a critical vulnerability in Drupal core can allow an attacker without login credentials to use the built-in installer to attempt to reinstall a site. [read more](https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-40217 (– CVSS, 62% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. F5 releases emergency patches for critical BIG-IP RCE flaws
