@@ -1,90 +1,76 @@
-# 🛡️ CyberBrief — GRC — Tuesday, 24 November 2026
+# 🛡️ CyberBrief — Net+ — Wednesday, 25 November 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
-*Today's focus: breaches, regulation, and compliance impact.*
-
-## 🕔 5pm recap
-
-*Didn't get through this morning? Here's the quick version — full detail is still below.*
-
-- **CISA flags critical Cisco RCE flaw as actively exploited in attacks** — The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers are now exploiting a recently patched critical Cisco Expressway vulnerability in the wild. [read more](https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/)
-- **⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble** — A stolen key. [read more](https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html)
-- **Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE** — Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf ("Idunno.AntiCsrf.dll") following the discovery of a critical vulnerability that has been exploited in the wild. [read more](https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html)
-- **McDonald's Japan data breach exposes customer location information** — McDonald's Japan, the fast-food giant's Japanese subsidiary, has disclosed a data breach after attackers accessed a database containing sensitive information for users of the company's official smartphone app. [read more](https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/)
-- **VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation** — Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication. [read more](https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html)
-- **Spanish LaLiga confirms hackers stole soccer fans’ personal data** — LaLiga, Spain's top men's football league, disclosed a data breach that exposed personal information belonging to users of its services and those of some affiliated clubs. [read more](https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/)
-- **Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day** — The U.S. [read more](https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html)
-- **European Commission Uncovers Data Breach in Cyberattack Investigation** — Names and email addresses of EU Academy users were exposed in the AI-assisted cyberattack the European Commission detected in October. [read more](https://www.securityweek.com/european-commission-uncovers-data-breach-in-cyberattack-investigation/)
-- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-40217 (– CVSS, 83% EPSS)
+*Today's focus: network infrastructure — a lighter refresh day.*
 
 ## 🔥 Top stories
 
-### 1. CISA flags critical Cisco RCE flaw as actively exploited in attacks
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/)
-
-The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers are now exploiting a recently patched critical Cisco Expressway vulnerability in the wild.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
-
-### 2. ⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html)
-
-A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open. This week's stories show how quickly a small opening can turn into a much bigger mess. One breach helps attackers reach another target. Tools people rely
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
-
-### 3. Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html)
-
-Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf ("Idunno.AntiCsrf.dll") following the discovery of a critical vulnerability that has been exploited in the wild. The vulnerability, tracked as CVE-2026-131914, carries a CVSS score of 9.3 out of 10.0. The issue affects versions 0.9.1.0 and 0.9.1 Beta, and relates to an
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
-
-### 4. McDonald's Japan data breach exposes customer location information
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/)
-
-McDonald's Japan, the fast-food giant's Japanese subsidiary, has disclosed a data breach after attackers accessed a database containing sensitive information for users of the company's official smartphone app.
-
-> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
-
-### 5. VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation
+### 1. VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation
 *The Hacker News* — [read more](https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html)
 
 Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication. The critical vulnerability, tracked as CVE-2026-123903, is rated 9.8 out of 10.0 on the CVSS scoring system. It resides in the VMware Directory Service ("vmdir"). "A malicious actor with
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
 
-### 6. Spanish LaLiga confirms hackers stole soccer fans’ personal data
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/)
+### 2. Hackers now exploit critical Drupal RCE flaw to hijack sites
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/)
 
-LaLiga, Spain's top men's football league, disclosed a data breach that exposed personal information belonging to users of its services and those of some affiliated clubs.
+The Drupal security team has confirmed that a critical vulnerability that lets attackers hijack unpatched sites has been actively exploited since at least Thursday.
 
-> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 7. Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day
+### 3. Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html)
+
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical flaw impacting Drupal to its Known Exploited Vulnerabilities (KEV) catalog, requiring federal agencies to apply the fixes by November 27, 2026. The vulnerability, tracked as CVE-2026-132165 aka Fail2Install (CVSS score: 9.8), is a case of remote code execution (RCE) impacting Drupal core. "Drupal Core
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
+
+### 4. Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day
 *The Hacker News* — [read more](https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html)
 
 The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added two flaws impacting N-able MailAssure and MONAI Label to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The critical vulnerabilities are listed below - CVE-2026-134624 (CVSS score: 9.3) - A server-side request forgery (SSRF) vulnerability in N-able MailAssure's LDAP
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
 
-### 8. European Commission Uncovers Data Breach in Cyberattack Investigation
-*SecurityWeek* — [read more](https://www.securityweek.com/european-commission-uncovers-data-breach-in-cyberattack-investigation/)
+### 5. Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html)
 
-Names and email addresses of EU Academy users were exposed in the AI-assisted cyberattack the European Commission detected in October.
+Threat actors are actively exploiting two newly patched security flaws in GeoServer, according to watchTowr. The vulnerabilities in question are CVE-2026-120705 and CVE-2026-129243, details of which are below - CVE-2026-120705 (CVSS score: 8.6) - An arbitrary file read vulnerability that could enable an attacker to access local text files readable by the GeoServer process or fetch
 
-> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
+
+### 6. InfraTrust warns of exploited supply chain flaws in network appliances
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/)
+
+Eclypsium's November InfraTrust report warns that most infrastructure security advisories addressing exploited vulnerabilities over the past month involve flaws in third-party software bundled into products rather than code developed by the vendors themselves.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.19 Supplier relationships
+
+### 7. Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html)
+
+Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it. In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicious code that looked like it came from GitHub's official checkout tool. They even labeled it a
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.19 Supplier relationships
+
+### 8. Two Newly Disclosed GeoServer Vulnerabilities Under Attack
+*SecurityWeek* — [read more](https://www.securityweek.com/two-newly-disclosed-geoserver-vulnerabilities-under-attack/)
+
+Attackers are probing GeoServer instances for two high-severity flaws that can be chained with other bugs for unauthenticated RCE.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
 
 ## 🚨 CVEs that matter today
 
 | CVE | Why it ranks | CVSS | EPSS | Exploited? |
 |-----|--------------|------|------|------------|
-| **CVE-2026-40217** | BerriAI LiteLLM Unprotected Alternate Channel Vulnerability | – | 83% | ⚠️ YES (KEV) |
-| **CVE-2026-116606** | Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability | – | 75% | ⚠️ YES (KEV) |
-| **CVE-2026-111560** | Barracuda Networks Multiple Products OS Command Injection Vulnerability | – | 64% | ⚠️ YES (KEV) |
 | **CVE-2024-10441** | Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability | – | 3% | ⚠️ YES (KEV) · ransomware |
-| **CVE-2026-133968** | Project MONAI MONAI Label Path Traversal Vulnerability | – | 50% | ⚠️ YES (KEV) |
+| **CVE-2026-123890** | VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability | – | 5% | ⚠️ YES (KEV) |
+| **CVE-2026-76466** | Cisco Expressway Series Use of Hard-coded Credentials Vulnerability | – | 1% | ⚠️ YES (KEV) |
+| **CVE-2026-103406** | Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability | – | 1% | ⚠️ YES (KEV) |
+| **CVE-2026-123039** | Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability | – | 0% | ⚠️ YES (KEV) |
 
 ## 📖 Jargon decoder
 
