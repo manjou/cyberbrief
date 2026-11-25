@@ -4,6 +4,20 @@
 
 *Today's focus: network infrastructure — a lighter refresh day.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation** — Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication. [read more](https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html)
+- **Hackers now exploit critical Drupal RCE flaw to hijack sites** — The Drupal security team has confirmed that a critical vulnerability that lets attackers hijack unpatched sites has been actively exploited since at least Thursday. [read more](https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/)
+- **Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation** — The U.S. [read more](https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html)
+- **Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day** — The U.S. [read more](https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html)
+- **Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains** — Threat actors are actively exploiting two newly patched security flaws in GeoServer, according to watchTowr. [read more](https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html)
+- **InfraTrust warns of exploited supply chain flaws in network appliances** — Eclypsium's November InfraTrust report warns that most infrastructure security advisories addressing exploited vulnerabilities over the past month involve flaws in third-party software bundled into products rather than code developed by the vendors themselves. [read more](https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/)
+- **Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap** — Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. [read more](https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html)
+- **Two Newly Disclosed GeoServer Vulnerabilities Under Attack** — Attackers are probing GeoServer instances for two high-severity flaws that can be chained with other bugs for unauthenticated RCE. [read more](https://www.securityweek.com/two-newly-disclosed-geoserver-vulnerabilities-under-attack/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2024-10441 (– CVSS, 3% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation
