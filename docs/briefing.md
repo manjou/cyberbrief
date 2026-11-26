@@ -4,6 +4,20 @@
 
 *Today's focus: active exploitation, incident response, and threat activity.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Hackers now exploit critical Drupal RCE flaw to hijack sites** — The Drupal security team has confirmed that a critical vulnerability that lets attackers hijack unpatched sites has been actively exploited since at least Thursday. [read more](https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/)
+- **Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation** — The U.S. [read more](https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html)
+- **Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains** — Threat actors are actively exploiting two newly patched security flaws in GeoServer, according to watchTowr. [read more](https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html)
+- **Remus malware steals Gmail messages via fake Google Sheets extension** — The Remus infostealer is stealing Gmail messages through a stealthy malicious Chrome extension, a capability the malware operators marketed as a zero-day exploit in Google's email service. [read more](https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/)
+- **1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach** — Popular password management software 1Password on Wednesday disclosed a security incident involving its backend systems that led to the unauthorized access of some customer information, but emphasized that customer password vaults and other secrets were not accessed. [read more](https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html)
+- **Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation** — Drupal has warned of a new "highly critical" security flaw impacting Drupal core that it said has been exploited in the wild. [read more](https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html)
+- **Mitel MiCollab Zero-Days Exploited in Suspected AI-Assisted Attacks** — Accenture says hackers exploited MiCollab flaws before Mitel’s advisory, likely aided by AI, in a suspected extortion campaign. [read more](https://www.securityweek.com/mitel-micollab-zero-days-exploited-in-suspected-ai-assisted-attacks/)
+- **Two Newly Disclosed GeoServer Vulnerabilities Under Attack** — Attackers are probing GeoServer instances for two high-severity flaws that can be chained with other bugs for unauthenticated RCE. [read more](https://www.securityweek.com/two-newly-disclosed-geoserver-vulnerabilities-under-attack/)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2024-10441 (– CVSS, 3% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Hackers now exploit critical Drupal RCE flaw to hijack sites
