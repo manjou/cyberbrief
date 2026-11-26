@@ -1,73 +1,59 @@
-# 🛡️ CyberBrief — Net+ — Wednesday, 25 November 2026
+# 🛡️ CyberBrief — SOC — Thursday, 26 November 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
-*Today's focus: network infrastructure — a lighter refresh day.*
-
-## 🕔 5pm recap
-
-*Didn't get through this morning? Here's the quick version — full detail is still below.*
-
-- **VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation** — Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication. [read more](https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html)
-- **Hackers now exploit critical Drupal RCE flaw to hijack sites** — The Drupal security team has confirmed that a critical vulnerability that lets attackers hijack unpatched sites has been actively exploited since at least Thursday. [read more](https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/)
-- **Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation** — The U.S. [read more](https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html)
-- **Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day** — The U.S. [read more](https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html)
-- **Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains** — Threat actors are actively exploiting two newly patched security flaws in GeoServer, according to watchTowr. [read more](https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html)
-- **InfraTrust warns of exploited supply chain flaws in network appliances** — Eclypsium's November InfraTrust report warns that most infrastructure security advisories addressing exploited vulnerabilities over the past month involve flaws in third-party software bundled into products rather than code developed by the vendors themselves. [read more](https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/)
-- **Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap** — Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. [read more](https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html)
-- **Two Newly Disclosed GeoServer Vulnerabilities Under Attack** — Attackers are probing GeoServer instances for two high-severity flaws that can be chained with other bugs for unauthenticated RCE. [read more](https://www.securityweek.com/two-newly-disclosed-geoserver-vulnerabilities-under-attack/)
-- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2024-10441 (– CVSS, 3% EPSS)
+*Today's focus: active exploitation, incident response, and threat activity.*
 
 ## 🔥 Top stories
 
-### 1. VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html)
-
-Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication. The critical vulnerability, tracked as CVE-2026-123903, is rated 9.8 out of 10.0 on the CVSS scoring system. It resides in the VMware Directory Service ("vmdir"). "A malicious actor with
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
-
-### 2. Hackers now exploit critical Drupal RCE flaw to hijack sites
+### 1. Hackers now exploit critical Drupal RCE flaw to hijack sites
 *BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/)
 
 The Drupal security team has confirmed that a critical vulnerability that lets attackers hijack unpatched sites has been actively exploited since at least Thursday.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 3. Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation
+### 2. Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation
 *The Hacker News* — [read more](https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html)
 
 The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical flaw impacting Drupal to its Known Exploited Vulnerabilities (KEV) catalog, requiring federal agencies to apply the fixes by November 27, 2026. The vulnerability, tracked as CVE-2026-132165 aka Fail2Install (CVSS score: 9.8), is a case of remote code execution (RCE) impacting Drupal core. "Drupal Core
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 4. Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html)
-
-The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added two flaws impacting N-able MailAssure and MONAI Label to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The critical vulnerabilities are listed below - CVE-2026-134624 (CVSS score: 9.3) - A server-side request forgery (SSRF) vulnerability in N-able MailAssure's LDAP
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
-
-### 5. Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains
+### 3. Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains
 *The Hacker News* — [read more](https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html)
 
 Threat actors are actively exploiting two newly patched security flaws in GeoServer, according to watchTowr. The vulnerabilities in question are CVE-2026-120705 and CVE-2026-129243, details of which are below - CVE-2026-120705 (CVSS score: 8.6) - An arbitrary file read vulnerability that could enable an attacker to access local text files readable by the GeoServer process or fetch
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
 
-### 6. InfraTrust warns of exploited supply chain flaws in network appliances
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/)
+### 4. Remus malware steals Gmail messages via fake Google Sheets extension
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/)
 
-Eclypsium's November InfraTrust report warns that most infrastructure security advisories addressing exploited vulnerabilities over the past month involve flaws in third-party software bundled into products rather than code developed by the vendors themselves.
+The Remus infostealer is stealing Gmail messages through a stealthy malicious Chrome extension, a capability the malware operators marketed as a zero-day exploit in Google's email service.
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.19 Supplier relationships
+> 📋 **ISO 27001:** A.8.7 Protection against malware, A.8.8 Management of technical vulnerabilities
 
-### 7. Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html)
+### 5. 1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html)
 
-Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it. In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicious code that looked like it came from GitHub's official checkout tool. They even labeled it a
+Popular password management software 1Password on Wednesday disclosed a security incident involving its backend systems that led to the unauthorized access of some customer information, but emphasized that customer password vaults and other secrets were not accessed. "While we took immediate steps to contain the incident, the attacker gained access to some of our backend systems and accessed a
 
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.19 Supplier relationships
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
+
+### 6. Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html)
+
+Drupal has warned of a new "highly critical" security flaw impacting Drupal core that it said has been exploited in the wild. The vulnerability, tracked as CVE-2026-136716 (CVSS score: N/A), has been described as a case of improper checking for unusual or exceptional conditions. It also relates to CVE-2026-132165 aka Fail2Install in that it addresses remaining vulnerable installation states
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
+
+### 7. Mitel MiCollab Zero-Days Exploited in Suspected AI-Assisted Attacks
+*SecurityWeek* — [read more](https://www.securityweek.com/mitel-micollab-zero-days-exploited-in-suspected-ai-assisted-attacks/)
+
+Accenture says hackers exploited MiCollab flaws before Mitel’s advisory, likely aided by AI, in a suspected extortion campaign.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
 
 ### 8. Two Newly Disclosed GeoServer Vulnerabilities Under Attack
 *SecurityWeek* — [read more](https://www.securityweek.com/two-newly-disclosed-geoserver-vulnerabilities-under-attack/)
@@ -81,10 +67,10 @@ Attackers are probing GeoServer instances for two high-severity flaws that can b
 | CVE | Why it ranks | CVSS | EPSS | Exploited? |
 |-----|--------------|------|------|------------|
 | **CVE-2024-10441** | Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability | – | 3% | ⚠️ YES (KEV) · ransomware |
-| **CVE-2026-123890** | VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability | – | 5% | ⚠️ YES (KEV) |
-| **CVE-2026-76466** | Cisco Expressway Series Use of Hard-coded Credentials Vulnerability | – | 1% | ⚠️ YES (KEV) |
-| **CVE-2026-103406** | Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability | – | 1% | ⚠️ YES (KEV) |
-| **CVE-2026-123039** | Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability | – | 0% | ⚠️ YES (KEV) |
+| **CVE-2026-133469** | Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability | – | 32% | ⚠️ YES (KEV) |
+| **CVE-2026-133968** | Project MONAI MONAI Label Path Traversal Vulnerability | – | 27% | ⚠️ YES (KEV) |
+| **CVE-2026-129448** | Apache Roller Deserialization of Untrusted Data Vulnerability | – | 24% | ⚠️ YES (KEV) |
+| **CVE-2026-40217** | BerriAI LiteLLM Unprotected Alternate Channel Vulnerability | – | 20% | ⚠️ YES (KEV) |
 
 ## 📖 Jargon decoder
 
