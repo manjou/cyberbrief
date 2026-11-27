@@ -1,99 +1,84 @@
-# 🛡️ CyberBrief — SOC — Thursday, 26 November 2026
+# 🛡️ CyberBrief — GRC — Friday, 27 November 2026
 
 *Your daily security briefing, ranked by real-world urgency (KEV → EPSS → CVSS), explained for humans.*
 
-*Today's focus: active exploitation, incident response, and threat activity.*
-
-## 🕔 5pm recap
-
-*Didn't get through this morning? Here's the quick version — full detail is still below.*
-
-- **Hackers now exploit critical Drupal RCE flaw to hijack sites** — The Drupal security team has confirmed that a critical vulnerability that lets attackers hijack unpatched sites has been actively exploited since at least Thursday. [read more](https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/)
-- **Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation** — The U.S. [read more](https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html)
-- **Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains** — Threat actors are actively exploiting two newly patched security flaws in GeoServer, according to watchTowr. [read more](https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html)
-- **Remus malware steals Gmail messages via fake Google Sheets extension** — The Remus infostealer is stealing Gmail messages through a stealthy malicious Chrome extension, a capability the malware operators marketed as a zero-day exploit in Google's email service. [read more](https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/)
-- **1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach** — Popular password management software 1Password on Wednesday disclosed a security incident involving its backend systems that led to the unauthorized access of some customer information, but emphasized that customer password vaults and other secrets were not accessed. [read more](https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html)
-- **Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation** — Drupal has warned of a new "highly critical" security flaw impacting Drupal core that it said has been exploited in the wild. [read more](https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html)
-- **Mitel MiCollab Zero-Days Exploited in Suspected AI-Assisted Attacks** — Accenture says hackers exploited MiCollab flaws before Mitel’s advisory, likely aided by AI, in a suspected extortion campaign. [read more](https://www.securityweek.com/mitel-micollab-zero-days-exploited-in-suspected-ai-assisted-attacks/)
-- **Two Newly Disclosed GeoServer Vulnerabilities Under Attack** — Attackers are probing GeoServer instances for two high-severity flaws that can be chained with other bugs for unauthenticated RCE. [read more](https://www.securityweek.com/two-newly-disclosed-geoserver-vulnerabilities-under-attack/)
-- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2024-10441 (– CVSS, 3% EPSS)
+*Today's focus: breaches, regulation, and compliance impact.*
 
 ## 🔥 Top stories
 
-### 1. Hackers now exploit critical Drupal RCE flaw to hijack sites
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/)
+### 1. Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html)
 
-The Drupal security team has confirmed that a critical vulnerability that lets attackers hijack unpatched sites has been actively exploited since at least Thursday.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
-
-### 2. Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html)
-
-The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical flaw impacting Drupal to its Known Exploited Vulnerabilities (KEV) catalog, requiring federal agencies to apply the fixes by November 27, 2026. The vulnerability, tracked as CVE-2026-132165 aka Fail2Install (CVSS score: 9.8), is a case of remote code execution (RCE) impacting Drupal core. "Drupal Core
+Details have emerged about a new zero-day vulnerability in Cacti, an open-source network monitoring tool, that could be exploited to achieve remote code execution. The proof-of-concept (PoC) exploit, which has yet to be assigned a CVE identifier, has been tracked as 4HTTP2SHELL and 4HTTP2ROOT. "I found a path from a fresh, unauthenticated HTTP session to command execution as the Cacti server
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 3. Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html)
-
-Threat actors are actively exploiting two newly patched security flaws in GeoServer, according to watchTowr. The vulnerabilities in question are CVE-2026-120705 and CVE-2026-129243, details of which are below - CVE-2026-120705 (CVSS score: 8.6) - An arbitrary file read vulnerability that could enable an attacker to access local text files readable by the GeoServer process or fetch
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
-
-### 4. Remus malware steals Gmail messages via fake Google Sheets extension
-*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/)
-
-The Remus infostealer is stealing Gmail messages through a stealthy malicious Chrome extension, a capability the malware operators marketed as a zero-day exploit in Google's email service.
-
-> 📋 **ISO 27001:** A.8.7 Protection against malware, A.8.8 Management of technical vulnerabilities
-
-### 5. 1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach
+### 2. 1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach
 *The Hacker News* — [read more](https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html)
 
 Popular password management software 1Password on Wednesday disclosed a security incident involving its backend systems that led to the unauthorized access of some customer information, but emphasized that customer password vaults and other secrets were not accessed. "While we took immediate steps to contain the incident, the attacker gained access to some of our backend systems and accessed a
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.17 Authentication information
 
-### 6. Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation
-*The Hacker News* — [read more](https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html)
+### 3. 100,000 Potentially Impacted by Colorado Data Breach
+*SecurityWeek* — [read more](https://www.securityweek.com/100000-potentially-impacted-by-colorado-data-breach/)
 
-Drupal has warned of a new "highly critical" security flaw impacting Drupal core that it said has been exploited in the wild. The vulnerability, tracked as CVE-2026-136716 (CVSS score: N/A), has been described as a case of improper checking for unusual or exceptional conditions. It also relates to CVE-2026-132165 aka Fail2Install in that it addresses remaining vulnerable installation states
+Hackers breached the digital identification and document storage application myColorado and accessed user-uploaded data.
+
+> 📋 **ISO 27001:** A.5.34 Privacy and protection of PII
+
+### 4. Hex Package Manager Warns of Potential Data Breach
+*SecurityWeek* — [read more](https://www.securityweek.com/hex-package-manager-warns-of-potential-data-breach/)
+
+A vulnerability in hex.pm allowed hackers to run commands on web servers. No evidence of data modification was found, but database reads are not logged.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.34 Privacy and protection of PII
+
+### 5. In Other News: Tanker Cyberattacks, EU Quantum Act, New VirusTotal Capabilities
+*SecurityWeek* — [read more](https://www.securityweek.com/in-other-news-tanker-cyberattacks-eu-quantum-act-new-virustotal-capabilities/)
+
+Noteworthy stories that might have slipped under the radar: RansomwareHelp accused of profiting from ransom payments, USDA payment systems breach, cybersecurity firm Radware hacked.
+
+> 📋 **ISO 27001:** A.8.13 Information backup
+
+### 6. US Air Force cloud platform reportedly hacked in latest federal breach
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/)
+
+Hackers have reportedly breached the US Air Force's Cloud One computing platform, adding to a recent wave of cyberattacks affecting US government agencies, including the FBI, CIA, and Treasury Department.
+
+> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
+
+### 7. Drupal warns of new site takeover flaw exploited in attacks
+*BleepingComputer* — [read more](https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/)
+
+The Drupal security team says attackers are exploiting a second critical vulnerability that lets them breach and hijack unpatched websites.
 
 > 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities
 
-### 7. Mitel MiCollab Zero-Days Exploited in Suspected AI-Assisted Attacks
-*SecurityWeek* — [read more](https://www.securityweek.com/mitel-micollab-zero-days-exploited-in-suspected-ai-assisted-attacks/)
+### 8. Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators
+*The Hacker News* — [read more](https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html)
 
-Accenture says hackers exploited MiCollab flaws before Mitel’s advisory, likely aided by AI, in a suspected extortion campaign.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
-
-### 8. Two Newly Disclosed GeoServer Vulnerabilities Under Attack
-*SecurityWeek* — [read more](https://www.securityweek.com/two-newly-disclosed-geoserver-vulnerabilities-under-attack/)
-
-Attackers are probing GeoServer instances for two high-severity flaws that can be chained with other bugs for unauthenticated RCE.
-
-> 📋 **ISO 27001:** A.8.8 Management of technical vulnerabilities, A.5.23 Cloud services security
+Attackers using AI agents have broken into computer systems at Swiss organizations in four of five confirmed attacks, the first such cases in the country, the country's cybersecurity agency said yesterday. Three of the attacks targeted critical infrastructure operators, and two of those succeeded, with no major disruptions reported. The victims have not been named, and it is not known who is
 
 ## 🚨 CVEs that matter today
 
 | CVE | Why it ranks | CVSS | EPSS | Exploited? |
 |-----|--------------|------|------|------------|
+| **CVE-2026-132165** | Drupal Core Remote Code Execution Vulnerability | 9.8 | 8% | ⚠️ YES (KEV) |
 | **CVE-2024-10441** | Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability | – | 3% | ⚠️ YES (KEV) · ransomware |
 | **CVE-2026-133469** | Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability | – | 32% | ⚠️ YES (KEV) |
 | **CVE-2026-133968** | Project MONAI MONAI Label Path Traversal Vulnerability | – | 27% | ⚠️ YES (KEV) |
 | **CVE-2026-129448** | Apache Roller Deserialization of Untrusted Data Vulnerability | – | 24% | ⚠️ YES (KEV) |
-| **CVE-2026-40217** | BerriAI LiteLLM Unprotected Alternate Channel Vulnerability | – | 20% | ⚠️ YES (KEV) |
 
 ## 📖 Jargon decoder
 
-- **KEV** — CISA's Known Exploited Vulnerabilities catalog — CVEs confirmed to be abused by attackers in the real world. If it's in KEV, patching it jumps to the top of the list.
-- **CVSS** — Common Vulnerability Scoring System — rates how bad a vulnerability *could* be (0-10). High CVSS does not mean anyone is actually exploiting it.
 - **CVE** — Common Vulnerabilities and Exposures — the global ID system for security flaws, e.g. CVE-2026-12345.
 - **RCE** — Remote Code Execution — the worst-case flaw: an attacker runs their own code on your system over the network.
 - **zero-day** — A vulnerability attackers exploit before the vendor has released a patch — defenders start at zero days of warning.
+- **ransomware** — Malware that encrypts your files and demands payment. Modern gangs also steal data first and threaten to publish it (double extortion).
+- **KEV** — CISA's Known Exploited Vulnerabilities catalog — CVEs confirmed to be abused by attackers in the real world. If it's in KEV, patching it jumps to the top of the list.
 - **EPSS** — Exploit Prediction Scoring System — a 0-100% probability that a CVE will be exploited in the next 30 days. Better prioritization signal than CVSS alone.
+- **CVSS** — Common Vulnerability Scoring System — rates how bad a vulnerability *could* be (0-10). High CVSS does not mean anyone is actually exploiting it.
 
 <sub>Sources unavailable this run: AI explanations (HTTPError)</sub>
 
