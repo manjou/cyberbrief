@@ -4,6 +4,20 @@
 
 *Today's focus: breaches, regulation, and compliance impact.*
 
+## 🕔 5pm recap
+
+*Didn't get through this morning? Here's the quick version — full detail is still below.*
+
+- **Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access** — Details have emerged about a new zero-day vulnerability in Cacti, an open-source network monitoring tool, that could be exploited to achieve remote code execution. [read more](https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html)
+- **1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach** — Popular password management software 1Password on Wednesday disclosed a security incident involving its backend systems that led to the unauthorized access of some customer information, but emphasized that customer password vaults and other secrets were not accessed. [read more](https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html)
+- **100,000 Potentially Impacted by Colorado Data Breach** — Hackers breached the digital identification and document storage application myColorado and accessed user-uploaded data. [read more](https://www.securityweek.com/100000-potentially-impacted-by-colorado-data-breach/)
+- **Hex Package Manager Warns of Potential Data Breach** — A vulnerability in hex.pm allowed hackers to run commands on web servers. [read more](https://www.securityweek.com/hex-package-manager-warns-of-potential-data-breach/)
+- **In Other News: Tanker Cyberattacks, EU Quantum Act, New VirusTotal Capabilities** — Noteworthy stories that might have slipped under the radar: RansomwareHelp accused of profiting from ransom payments, USDA payment systems breach, cybersecurity firm Radware hacked. [read more](https://www.securityweek.com/in-other-news-tanker-cyberattacks-eu-quantum-act-new-virustotal-capabilities/)
+- **US Air Force cloud platform reportedly hacked in latest federal breach** — Hackers have reportedly breached the US Air Force's Cloud One computing platform, adding to a recent wave of cyberattacks affecting US government agencies, including the FBI, CIA, and Treasury Department. [read more](https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/)
+- **Drupal warns of new site takeover flaw exploited in attacks** — The Drupal security team says attackers are exploiting a second critical vulnerability that lets them breach and hijack unpatched websites. [read more](https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/)
+- **Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators** — Attackers using AI agents have broken into computer systems at Swiss organizations in four of five confirmed attacks, the first such cases in the country, the country's cybersecurity agency said yesterday. [read more](https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html)
+- 5 CVEs flagged today (5 in active-exploitation KEV) — top: CVE-2026-132165 (9.8 CVSS, 8% EPSS)
+
 ## 🔥 Top stories
 
 ### 1. Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access
